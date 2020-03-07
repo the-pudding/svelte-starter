@@ -1,4 +1,8 @@
-# Svelte Template Hot
+# Svelte HMR and Sapper Export
+
+Trying to get the best of both worlds: fast and easy svelte development with Sapper bake out html deploy.
+
+## Svelte Template Hot
 
 This is a copy of official [Svelte template](https://github.com/sveltejs/template) with added HMR support. It lives at https://github.com/rixo/svelte-template-hot.
 
