@@ -2,6 +2,10 @@
 
 Trying to get the best of both worlds: fast and easy svelte development with Sapper bake out html deploy.
 
+## Insallation
+
+Clone the repo and run `npm install`.
+
 ## Development
 
 ```bash
