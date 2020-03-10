@@ -34,6 +34,8 @@
     "dev:livereload": "cross-env LIVERELOAD=1 rollup -c -w",
     "dev:nollup": "cross-env NOLLUP=1 nollup -c --hot --port 5000 --content-base ./public",
     "dev": "npm run dev:rollup",
+    "github": "BASEPATH=svelte-hmr-sapper sapper export --basepath svelte-hmr-sapper",
+    "pudding": "BASEPATH=2020/01/name sapper export --basepath 2020/01/name",
     "export": "sapper export",
     "start": "sirv public"
   }

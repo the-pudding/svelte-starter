@@ -1,7 +1,7 @@
 <script>
+  import Child from "./Child.svelte";
   import wordmarkSvg from "../svg/wordmark.svg";
   import petData from "../data/pets.csv";
-  export let name;
 </script>
 
 <style>
@@ -23,7 +23,7 @@
   {@html wordmarkSvg}
 </a>
 
-<h1>Hello {name}!</h1>
+<h1>Hello!</h1>
 
 {#each petData as { name, pet }}
   <p>
@@ -31,3 +31,5 @@
     <strong>{pet}.</strong>
   </p>
 {/each}
+
+<Child />
