@@ -15,7 +15,7 @@ Modify content in `src` and `public`.
 For github deploy:
 
 ```bash
-npm run export
+npm run deploy
 make github
 ```
 

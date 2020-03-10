@@ -8,7 +8,6 @@
     "@rollup/plugin-node-resolve": "^6.0.0",
     "autoprefixer": "^9.7.4",
     "cross-env": "^6.0.3",
-    "nollup": "^0.10.0",
     "postcss": "^7.0.27",
     "rollup": "^1.26.3",
     "rollup-plugin-hot": "^0.0.10",
@@ -31,10 +30,8 @@
   "scripts": {
     "build": "rollup -c rollup.config-dev.js",
     "dev:rollup": "rollup -c rollup.config-dev.js -w",
-    "dev:livereload": "cross-env LIVERELOAD=1 rollup -c -w",
-    "dev:nollup": "cross-env NOLLUP=1 nollup -c --hot --port 5000 --content-base ./public",
     "dev": "npm run dev:rollup",
-    "export": "BASEPATH=svelte-hmr-sapper sapper export --basepath svelte-hmr-sapper",
+    "deploy": "BASEPATH=svelte-hmr-sapper sapper export --basepath svelte-hmr-sapper",
     "pudding": "BASEPATH=2020/01/name sapper export --basepath 2020/01/name",
     "start": "sirv public"
   }
