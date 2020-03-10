@@ -19,7 +19,7 @@ const production = !dev;
 const hot = watch && !useLiveReload;
 
 const preprocess = sveltePreprocess({
-  stylus: true,
+  scss: true,
   postcss: {
     plugins: [require("autoprefixer")]
   }

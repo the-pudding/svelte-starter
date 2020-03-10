@@ -5,7 +5,7 @@
 </script>
 
 <style>
-  /* vars defined in global.css */
+  /* vars defined in public/assets/global.css */
   h1 {
     color: var(--c1);
   }
@@ -20,7 +20,7 @@
   }
 </style>
 
-<!-- <style src="../css/app.styl">
+<!-- <style src="../css/app.scss">
 
 </style> -->
 

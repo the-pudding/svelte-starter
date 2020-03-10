@@ -21,7 +21,7 @@ const dedupe = importee =>
   importee === "svelte" || importee.startsWith("svelte/");
 
 const preprocess = sveltePreprocess({
-  stylus: true,
+  scss: true,
   postcss: {
     plugins: [require("autoprefixer")]
   }
