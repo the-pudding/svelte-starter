@@ -13,6 +13,11 @@
   strong {
     color: var(--c2);
   }
+
+  img {
+    width: 20rem;
+    display: block;
+  }
 </style>
 
 <!-- <style src="../css/app.styl">
@@ -32,4 +37,5 @@
   </p>
 {/each}
 
+<img alt="smokey" src="assets/smokey.jpg" />
 <Child />
