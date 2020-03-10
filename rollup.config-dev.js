@@ -9,7 +9,6 @@ import dsv from "@rollup/plugin-dsv";
 import { terser } from "rollup-plugin-terser";
 import hmr, { autoCreate } from "rollup-plugin-hot";
 
-const nollup = !!process.env.NOLLUP;
 const watch = !!process.env.ROLLUP_WATCH;
 const useLiveReload = !!process.env.LIVERELOAD;
 
@@ -52,7 +51,7 @@ export default {
     }),
     commonjs(),
 
-    dev && !nollup && serve(),
+    dev && serve(),
     useLiveReload && livereload("public"),
     production && terser(),
     hot &&
