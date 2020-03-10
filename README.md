@@ -8,10 +8,15 @@ Trying to get the best of both worlds: fast and easy svelte development with Sap
 npm run dev
 ```
 
+Modify content in `src` and `public`.
+
 ## Deploy
 
+For github deploy:
+
 ```bash
-npm run github
+npm run export
+make github
 ```
 
-You need to modify the basepath depending on where it is hosted.
+You need to modify the basepath in `package.json` depending on where it is hosted.
