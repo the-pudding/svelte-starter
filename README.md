@@ -8,7 +8,7 @@ Trying to get the best of both worlds: fast and easy svelte development with Sap
 npm run dev
 ```
 
-Modify content in `src` and `static`.
+Modify content in `src` and `public`.
 
 ## Deploy
 
