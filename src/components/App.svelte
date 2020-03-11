@@ -1,9 +1,3 @@
-<script>
-  import Child from "./Child.svelte";
-  import wordmarkSvg from "../svg/wordmark.svg";
-  import petData from "../data/pets.csv";
-</script>
-
 <style>
   /* vars defined in public/assets/global.css */
   h1 {
@@ -19,6 +13,12 @@
     display: block;
   }
 </style>
+
+<script>
+  import Child from "./Child.svelte";
+  import wordmarkSvg from "../svg/wordmark.svg";
+  import petData from "../data/pets.csv";
+</script>
 
 <!-- <style src="../css/app.scss">
 
