@@ -2,6 +2,10 @@
   "name": "svelte-app",
   "version": "1.0.0",
   "dependencies": {
+    "polka": "next",
+    "sirv": "^0.4.0"
+  },
+  "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-dsv": "^2.0.1",
     "@rollup/plugin-json": "^4.0.2",
