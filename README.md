@@ -24,3 +24,14 @@ make github
 ```
 
 You need to modify the basepath in `package.json` depending on where it is hosted.
+
+## Notes
+
+Must put browser-dependent modules with dynamic load in `onMount`:
+
+```
+onMount(async () => {
+    const module = await import("tone");
+    if (!Tone) Tone = module.default;
+});
+```
