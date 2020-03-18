@@ -1,6 +1,14 @@
-# Svelte HMR and Sapper Export
+# Svelte Starter
 
 Trying to get the best of both worlds: fast and easy svelte development with Sapper bake out html deploy.
+
+#### Features
+
+- HMR for lightning fast development
+- Includes csv, json, and svg imports by default
+- LayerCake preloaded for graphic development
+- Uses Sapper to deploy as pre-baked out HTML
+- Configured to make easy deploment to Github Pages
 
 ## Insallation
 
@@ -23,7 +31,7 @@ npm run deploy
 make github
 ```
 
-You need to modify the basepath in `package.json` depending on where it is hosted.
+You need to modify the basepath in `package.json` and `Makefile`.
 
 ## Notes
 
@@ -35,3 +43,9 @@ onMount(async () => {
     if (!Tone) Tone = module.default;
 });
 ```
+
+## Style
+
+CSS or SCSS both work fine. Either do within style tag or externally like:
+
+`<style src="../css/app.scss"></style> -->`

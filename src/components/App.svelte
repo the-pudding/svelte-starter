@@ -12,9 +12,9 @@
     width: 20rem;
     display: block;
   }
-  .chart-container {
-    width: 300px;
-    height: 300px;
+  .chart {
+    width: 20rem;
+    height: 20rem;
     background: pink;
   }
 </style>
@@ -30,10 +30,6 @@
   const r = 6;
   const padding = { top: r * 2, right: r * 2, bottom: r * 2, left: r * 2 };
 </script>
-
-<!-- <style src="../css/app.scss">
-
-</style> -->
 
 <a class="wordmark" href="https://pudding.cool">
   {@html wordmarkSvg}
@@ -51,7 +47,7 @@
 <img alt="smokey" src="assets/smokey.jpg" />
 <Child />
 
-<div class="chart-container">
+<div class="chart">
   <LayerCake data="{points}" x="x" y="y" {padding}>
     <Svg>
       <Scatter {r} />
