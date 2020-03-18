@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "svelte-starter",
   "version": "1.0.0",
   "dependencies": {
     "polka": "next",
@@ -36,7 +36,7 @@
     "build": "rollup -c rollup.config-dev.js",
     "dev:rollup": "rollup -c rollup.config-dev.js -w",
     "dev": "npm run dev:rollup",
-    "deploy": "node copy.js && BASEPATH=svelte-hmr-sapper sapper export --basepath svelte-hmr-sapper",
+    "deploy": "node copy.js && BASEPATH=svelte-starter sapper export --basepath svelte-starter",
     "pudding": "BASEPATH=2020/01/name sapper export --basepath 2020/01/name",
     "start": "sirv public"
   }

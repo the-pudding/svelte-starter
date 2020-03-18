@@ -2,7 +2,7 @@ PHONY: github aws-sync aws-cache pudding
 
 github:
 	rm -rf docs
-	cp -r __sapper__/export/svelte-hmr-sapper docs
+	cp -r __sapper__/export/svelte-starter docs
 	git add -A
 	git commit -m "update dev version"
 	git push
