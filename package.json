@@ -1,6 +1,9 @@
 {
   "name": "svelte-starter",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.6.1"
+  },
   "dependencies": {
     "polka": "next",
     "sirv": "^0.4.0"
