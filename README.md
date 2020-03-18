@@ -7,6 +7,7 @@ Trying to get the best of both worlds: fast and easy svelte development with Sap
 - HMR for lightning fast development
 - Includes csv, json, and svg imports by default
 - LayerCake preloaded for graphic development
+- SCSS-ready optional
 - Uses Sapper to deploy as pre-baked out HTML
 - Configured to make easy deploment to Github Pages
 
