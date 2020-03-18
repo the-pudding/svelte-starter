@@ -4,7 +4,7 @@ github:
 	rm -rf docs
 	cp -r __sapper__/export/svelte-starter docs
 	git add -A
-	git commit -m "update dev version"
+	git commit -m "update github pages"
 	git push
 	
 aws-sync:
