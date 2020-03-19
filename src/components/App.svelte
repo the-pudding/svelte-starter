@@ -25,6 +25,7 @@
   import Scatter from "./Scatter.svelte";
   import wordmarkSvg from "../svg/wordmark.svg";
   import petData from "../data/pets.csv";
+  import user from "tabler-icons/icons/user.svg";
 
   const points = [{ x: 0, y: 1 }, { x: 10, y: 5 }, { x: 15, y: 10 }];
   const r = 6;

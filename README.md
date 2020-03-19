@@ -4,11 +4,12 @@ Trying to get the best of both worlds: fast and easy svelte development with Sap
 
 #### Features
 
-- HMR for lightning fast development
+- [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
 - Includes csv, json, and svg imports by default
-- LayerCake preloaded for graphic development
-- SCSS-ready optional
-- Uses Sapper to deploy as pre-baked out HTML
+- [SCSS](https://sass-lang.com/) ready (optional)
+- [LayerCake](https://layercake.graphics/) preloaded for graphic development
+- [Tabler-Icons](https://github.com/tabler/tabler-icons) for simple/easy svg icons
+- [Sapper](https://sapper.svelte.dev/) to deploy as pre-baked out HTML
 - Configured to make easy deploment to Github Pages
 
 ## Insallation

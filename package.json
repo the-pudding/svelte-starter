@@ -5,8 +5,8 @@
     "node": "12.6.1"
   },
   "dependencies": {
-    "polka": "next",
-    "sirv": "^0.4.0"
+    "layercake": "^2.0.1",
+    "tabler-icons": "^1.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
@@ -18,8 +18,8 @@
     "compression": "^1.7.4",
     "copy-dir": "^1.2.0",
     "cross-env": "^6.0.3",
-    "layercake": "^2.0.1",
     "node-sass": "^4.13.1",
+    "polka": "next",
     "postcss": "^7.0.27",
     "prettier": "^1.19.1",
     "prettier-plugin-svelte": "^0.7.0",
@@ -31,6 +31,7 @@
     "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-terser": "^5.1.2",
     "sapper": "^0.27.10",
+    "sirv": "^0.4.0",
     "sirv-cli": "^0.4.4",
     "svelte": "^3.19.1",
     "svelte-preprocess": "^3.4.0"
