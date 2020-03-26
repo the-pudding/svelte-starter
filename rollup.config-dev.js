@@ -6,14 +6,12 @@ import livereload from "rollup-plugin-livereload";
 import svg from "rollup-plugin-svg";
 import json from "@rollup/plugin-json";
 import dsv from "@rollup/plugin-dsv";
-import { terser } from "rollup-plugin-terser";
 import hmr, { autoCreate } from "rollup-plugin-hot";
 
 const watch = !!process.env.ROLLUP_WATCH;
 const useLiveReload = !!process.env.LIVERELOAD;
 
 const dev = watch || useLiveReload;
-const production = !dev;
 
 const hot = watch && !useLiveReload;
 
@@ -34,7 +32,7 @@ export default {
   },
   plugins: [
     svelte({
-      dev: !production,
+      dev: dev,
       ...(!hot && {
         css: css => {
           css.write("public/build/bundle.css");
@@ -53,7 +51,6 @@ export default {
 
     dev && serve(),
     useLiveReload && livereload("public"),
-    production && terser(),
     hot &&
       autoCreate({
         include: "src/**/*",
