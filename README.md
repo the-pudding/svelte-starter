@@ -16,7 +16,7 @@ Trying to get the best of both worlds: fast and easy svelte development with Sap
 
 ```bash
 npx degit russellgoldenberg/svelte-starter my-project
-cd my-svelte-project
+cd my-project
 
 npm install
 npm run dev
