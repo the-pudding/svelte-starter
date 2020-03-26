@@ -12,17 +12,19 @@ Trying to get the best of both worlds: fast and easy svelte development with Sap
 - [Sapper](https://sapper.svelte.dev/) to deploy as pre-baked out HTML
 - Configured to make easy deploment to Github Pages
 
-## Insallation
-
-Clone the repo and run `npm install`.
-
-## Development
+## Quickstart
 
 ```bash
+npx degit russellgoldenberg/svelte-starter my-project
+cd my-svelte-project
+
+npm install
 npm run dev
 ```
 
-Modify content in `src` and `public/assets`.
+## Development
+
+Modify content in `src` and `public/assets`. Do not touch `static`.
 
 ## Deploy
 
