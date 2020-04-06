@@ -1,23 +1,9 @@
-PHONY: github aws-sync aws-cache pudding
+PHONY: github
 
 github:
 	rm -rf docs
-	cp -r __sapper__/export/svelte-starter docs
+	# cp -r __sapper__/export/svelte-starter docs
+	cp -r public docs
 	git add -A
 	git commit -m "update github pages"
 	git push
-
-# github:
-# 	rm -rf docs
-# 	cp -r public docs
-# 	git add -A
-# 	git commit -m "update github pages"
-# 	git push
-	
-aws-sync:
-	aws s3 sync __sapper__/export/year/month/name s3://pudding.cool/year/month/name --delete --cache-control 'max-age=31536000'
-
-aws-cache:
-	aws cloudfront create-invalidation --distribution-id E13X38CRR4E04D --paths '/year/month/name*'	
-
-pudding: aws-sync aws-cache

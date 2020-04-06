@@ -30,12 +30,21 @@ Modify content in `src` and `public/assets`. Do not touch `static`.
 
 For github deploy:
 
+#### Svelte-only
+
+```bash
+npm run prod
+make github
+```
+
+#### Sapper with SSR
+
 ```bash
 npm run deploy
 make github
 ```
 
-You need to modify the basepath in `package.json` and `Makefile`.
+_Note: You need to modify the basepath in `package.json` and `Makefile`._
 
 ## Notes
 
