@@ -48,7 +48,7 @@ _Note: You need to modify the basepath in `package.json` and `Makefile`._
 
 ## Notes
 
-Must put browser-dependent modules with dynamic load in `onMount`:
+For Sapper render, must put browser-dependent modules with dynamic load in `onMount`:
 
 ```
 onMount(async () => {
