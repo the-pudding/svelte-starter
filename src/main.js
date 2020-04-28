@@ -4,7 +4,7 @@ const dev = !!import.meta.hot;
 
 const app = new App({
   target: document.querySelector("main"),
-  props: { name: "main" },
+  props: { name: "Russell" },
   hydrate: !dev
 });
 

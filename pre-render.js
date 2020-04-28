@@ -25,3 +25,4 @@ const minified = minifier.minify(result, {
 
 fs.writeFileSync(indexPath, minified);
 rimraf.sync(tempPath);
+process.exit();

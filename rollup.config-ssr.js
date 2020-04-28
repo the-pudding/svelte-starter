@@ -18,7 +18,7 @@ export default {
   input: "src/components/App.svelte",
   output: {
     format: "cjs",
-    file: "public/.temp/ssr.js"
+    file: "public/.tmp/ssr.js"
   },
   plugins: [
     svelte({
