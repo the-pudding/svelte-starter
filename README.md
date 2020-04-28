@@ -43,3 +43,7 @@ If deploy to github pages:
 CSS or SCSS both work fine. Either do within style tag or externally like:
 
 `<style src="../css/app.scss"></style> -->`
+
+## Notes
+
+Any html tags, e.g., `{@html user}` must be inside of a dom element so they can be properly hydrated.

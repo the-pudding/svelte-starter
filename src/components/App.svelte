@@ -13,6 +13,7 @@
     display: block;
   }
   .chart {
+    position: relative;
     width: 20rem;
     height: 20rem;
     background: pink;
@@ -20,23 +21,25 @@
 </style>
 
 <script>
+  import { onMount } from "svelte";
   import { LayerCake, Svg } from "layercake";
   import Child from "./Child.svelte";
   import Scatter from "./Scatter.svelte";
-  import wordmarkSvg from "../svg/wordmark.svg";
   import petData from "../data/pets.csv";
   import user from "tabler-icons/icons/user.svg";
 
-  export let name;
+  let name = "Loading";
 
   const points = [{ x: 0, y: 1 }, { x: 10, y: 5 }, { x: 15, y: 10 }];
   const r = 6;
   const padding = { top: r * 2, right: r * 2, bottom: r * 2, left: r * 2 };
+
+  onMount(() => (name = "User"));
 </script>
 
-<a class="wordmark" href="https://pudding.cool">
-  {@html wordmarkSvg}
-</a>
+<div>
+  {@html user}
+</div>
 
 <h1>Hello {name}!</h1>
 

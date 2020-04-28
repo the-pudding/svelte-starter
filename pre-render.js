@@ -12,11 +12,9 @@ const tempPath = path.resolve(CWD, "public/.tmp");
 const template = fs.readFileSync(templatePath, "utf8");
 const app = require(ssrPath);
 
-const { html, css } = app.render({ name: "Yeet" });
+const { html } = app.render();
 
-const result = template
-  .replace("<!-- CSS -->", `<style>${css.code}</style>`)
-  .replace("<!-- HTML -->", html);
+const result = template.replace("<!-- HTML -->", html);
 
 const minified = minifier.minify(result, {
   minifyCSS: true,
