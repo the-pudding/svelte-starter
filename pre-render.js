@@ -5,7 +5,7 @@ const minifier = require("html-minifier");
 
 const CWD = process.cwd();
 const templatePath = path.resolve(CWD, "src/template.html");
-const ssrPath = path.resolve(CWD, "public/.temp/ssr.js");
+const ssrPath = path.resolve(CWD, "public/.tmp/ssr.js");
 const indexPath = path.resolve(CWD, "public/index.html");
 const tempPath = path.resolve(CWD, "public/.tmp");
 
@@ -25,4 +25,3 @@ const minified = minifier.minify(result, {
 
 fs.writeFileSync(indexPath, minified);
 rimraf.sync(tempPath);
-process.exit();
