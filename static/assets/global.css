@@ -1,9 +1,0 @@
-:root {
-  --c1: blue;
-  --c2: red;
-}
-
-a.wordmark {
-  display: block;
-  max-width: 10rem;
-}

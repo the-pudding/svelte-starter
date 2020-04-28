@@ -1,15 +1,18 @@
 import App from "./components/App.svelte";
 
+const dev = !!import.meta.hot;
+
 const app = new App({
-  target: document.querySelector("main")
+  target: document.querySelector("main"),
+  props: { name: "main" },
+  hydrate: !dev
 });
 
-export default app;
-
-// recreate the whole app if an HMR update touches this module
-if (import.meta.hot) {
+if (dev) {
   import.meta.hot.dispose(() => {
     app.$destroy();
   });
   import.meta.hot.accept();
 }
+
+export default app;

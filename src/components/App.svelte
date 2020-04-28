@@ -27,6 +27,8 @@
   import petData from "../data/pets.csv";
   import user from "tabler-icons/icons/user.svg";
 
+  export let name;
+
   const points = [{ x: 0, y: 1 }, { x: 10, y: 5 }, { x: 15, y: 10 }];
   const r = 6;
   const padding = { top: r * 2, right: r * 2, bottom: r * 2, left: r * 2 };
@@ -36,7 +38,7 @@
   {@html wordmarkSvg}
 </a>
 
-<h1>Hello!</h1>
+<h1>Hello {name}!</h1>
 
 {#each petData as { name, pet }}
   <p>
