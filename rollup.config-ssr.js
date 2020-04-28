@@ -5,9 +5,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import svg from "rollup-plugin-svg";
 import json from "@rollup/plugin-json";
 import dsv from "@rollup/plugin-dsv";
-import { terser } from "rollup-plugin-terser";
-
-const production = true;
+import execute from "rollup-plugin-execute";
 
 const preprocess = sveltePreprocess({
   scss: true,
@@ -17,21 +15,16 @@ const preprocess = sveltePreprocess({
 });
 
 export default {
-  input: "src/main-prod.js",
+  input: "src/components/App.svelte",
   output: {
-    sourcemap: true,
-    format: "iife",
-    name: "app",
-    file: "public/build/bundle.js"
+    format: "cjs",
+    file: "public/.temp/ssr.js"
   },
   plugins: [
     svelte({
-      css: css => {
-        css.write("public/build/bundle.css");
-      },
+      generate: "ssr",
       preprocess
     }),
-
     resolve({
       browser: true,
       dedupe: ["svelte"]
@@ -40,6 +33,6 @@ export default {
     json(),
     dsv(),
     svg(),
-    production && terser()
+    execute("node pre-render.js")
   ]
 };

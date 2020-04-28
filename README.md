@@ -9,7 +9,7 @@ Trying to get the best of both worlds: fast and easy svelte development with Sap
 - [SCSS](https://sass-lang.com/) ready (optional)
 - [LayerCake](https://layercake.graphics/) preloaded for graphic development
 - [Tabler-Icons](https://github.com/tabler/tabler-icons) for simple/easy svg icons
-- [Sapper](https://sapper.svelte.dev/) to deploy as pre-baked out HTML
+- Pre-render on deploy for a baked-out HTML with content that is hydrated on load
 - Configured to make easy deploment to Github Pages
 
 ## Quickstart
@@ -24,37 +24,18 @@ npm run dev
 
 ## Development
 
-Modify content in `src` and `public/assets`. Do not touch `static`.
+Modify content in `src` and `public/assets`.
 
 ## Deploy
 
-For github deploy:
-
-#### Svelte-only
-
-```bash
-npm run prod
-make github
-```
-
-#### Sapper with SSR
-
 ```bash
 npm run deploy
-make github
 ```
 
-_Note: You need to modify the basepath in `package.json` and `Makefile`._
+If deploy to github pages:
 
-## Notes
-
-For Sapper render, must put browser-dependent modules with dynamic load in `onMount`:
-
-```
-onMount(async () => {
-    const module = await import("tone");
-    if (!Tone) Tone = module.default;
-});
+```bash
+	make github
 ```
 
 ## Style
