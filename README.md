@@ -35,7 +35,7 @@ npm run deploy
 If deploy to github pages:
 
 ```bash
-	make github
+make github
 ```
 
 ## Style
