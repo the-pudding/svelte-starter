@@ -32,7 +32,7 @@ Modify content in `src` and `public/assets`.
 npm run deploy
 ```
 
-If deploy to github pages:
+If deploying to github pages:
 
 ```bash
 make github
