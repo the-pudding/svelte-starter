@@ -1,6 +1,6 @@
 # Svelte Starter
 
-Trying to get the best of both worlds: fast and easy svelte development with Sapper bake out html deploy.
+This [starter template](https://github.com/russellgoldenberg/svelte-starter) aims for fast and easy web development with HMR, and pre-rendered HTML for optimal static hosting.
 
 #### Features
 
