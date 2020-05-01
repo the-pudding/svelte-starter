@@ -18,7 +18,8 @@ const { html, head } = app.render();
 const result = template
   .replace("<!-- HTML -->", html)
   .replace("<!-- HEAD -->", head)
-  .replace(/version=0/g, `version=${version}`);
+  .replace(/\.css/g, `.css?version=${version}`)
+  .replace(/\.js/g, `.js?version=${version}`);
 
 const minified = minifier.minify(result, {
   minifyCSS: true,
