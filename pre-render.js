@@ -12,11 +12,13 @@ const tempPath = path.resolve(CWD, "public/.tmp");
 const template = fs.readFileSync(templatePath, "utf8");
 const app = require(ssrPath);
 
+const version = Date.now();
 const { html, head } = app.render();
 
 const result = template
   .replace("<!-- HTML -->", html)
-  .replace("<!-- HEAD -->", head);
+  .replace("<!-- HEAD -->", head)
+  .replace(/version=0/g, `version=${version}`);
 
 const minified = minifier.minify(result, {
   minifyCSS: true,
