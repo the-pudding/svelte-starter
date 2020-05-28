@@ -6,7 +6,7 @@ This [starter template](https://github.com/russellgoldenberg/svelte-starter) aim
 
 - [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
 - Includes csv, json, and svg imports by default
-- [SCSS](https://sass-lang.com/) ready (optional)
+- [SCSS](https://sass-lang.com/) ready
 - [LayerCake](https://layercake.graphics/) preloaded for graphic development
 - [Tabler-Icons](https://github.com/tabler/tabler-icons) for simple/easy svg icons
 - Pre-render on deploy for a baked-out HTML with content that is hydrated on load
@@ -40,9 +40,11 @@ make github
 
 ## Style
 
-CSS or SCSS both work fine. Either do within style tag or externally like:
+Style with normal CSS in the file or externally like:
 
 `<style src="../css/app.scss"></style> -->`
+
+You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
 
 ## Notes
 

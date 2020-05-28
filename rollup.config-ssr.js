@@ -8,7 +8,6 @@ import dsv from "@rollup/plugin-dsv";
 import execute from "rollup-plugin-execute";
 
 const preprocess = sveltePreprocess({
-  scss: true,
   postcss: {
     plugins: [require("autoprefixer")]
   }

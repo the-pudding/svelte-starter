@@ -1,7 +1,6 @@
-<style lang="scss">
-  $c: green;
+<style>
   p {
-    color: $c;
+    color: green;
   }
 </style>
 
