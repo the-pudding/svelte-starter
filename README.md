@@ -5,10 +5,11 @@ This [starter template](https://github.com/russellgoldenberg/svelte-starter) aim
 #### Features
 
 - [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
-- Includes csv, json, and svg imports by default
-- [SCSS](https://sass-lang.com/) ready
 - [LayerCake](https://layercake.graphics/) preloaded for graphic development
 - [Tabler-Icons](https://github.com/tabler/tabler-icons) for simple/easy svg icons
+- [SCSS](https://sass-lang.com/) ready
+- [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs
+- Includes csv, json, and svg imports by default
 - Pre-render on deploy for a baked-out HTML with content that is hydrated on load
 - Configured to make easy deploment to Github Pages
 
