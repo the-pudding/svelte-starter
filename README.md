@@ -47,6 +47,15 @@ Style with normal CSS in the file or externally like:
 
 You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
 
+## Google Docs
+
+- Create a Google Doc
+- Click `Share` button -> advanced -> Change... -> to "Anyone with this link"
+- In the address bar, grab the ID - eg. ...com/document/d/**1IiA5a5iCjbjOYvZVgPcjGzMy5PyfCzpPF-LnQdCdFI0**/edit
+- paste in the ID above into `config.json`
+
+Running `npm run doc` at any point (even in new tab while server is running) will pull down the latest, and output a file to `src/data/copy.json` (or customize in the config file).
+
 ## Notes
 
 Any html tags, e.g., `{@html user}` must be inside of a dom element so they can be properly hydrated.
