@@ -36,7 +36,6 @@ function parseHTML(html) {
             const tags = {
               [boldClass]: "strong",
               [italicClass]: "em",
-              [underlineClass]: "u",
             };
             const tag = tags[child.attribs && child.attribs.class];
             if (tag) {
@@ -54,7 +53,7 @@ function parseHTML(html) {
         return tagHandlers._base(spanTag);
       },
       h: function (hTag) {
-        return "# " + tagHandlers._base(hTag);
+        return tagHandlers._base(hTag);
       },
       p: function (pTag) {
         return tagHandlers._base(pTag) + "\n";
@@ -74,7 +73,7 @@ function parseHTML(html) {
           href = url.parse(aTag.attribs.href, true).query.q;
         }
 
-        let str = '<a href="' + href + '">';
+        let str = `<a href='${href}'>`;
         str += tagHandlers._base(aTag);
         str += "</a>";
         return str;
@@ -105,10 +104,6 @@ function parseHTML(html) {
         str.includes("font-style:italic")
       );
       italicClass = rules[italicRuleIndex - 1] || "italic";
-      const underlineRuleIndex = rules.findIndex((str) =>
-        str.includes("text-decoration:underline")
-      );
-      underlineClass = rules[underlineRuleIndex - 1] || "underline";
     } catch (err) {
       return Promise.reject(err);
     }

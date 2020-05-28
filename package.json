@@ -38,7 +38,7 @@
     "url": "^0.11.0"
   },
   "scripts": {
-    "fetch-doc": "node fetch-google-doc.js",
+    "doc": "node fetch-google-doc.js",
     "dev": "rollup -c -w",
     "predeploy": "rollup -c",
     "deploy": "rollup -c rollup.config-ssr.js",
