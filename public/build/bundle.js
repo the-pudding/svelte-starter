@@ -11,6 +11,7 @@
       host: null,
       port: 33440,
       ws: false,
+      hot: true,
       then: function(cb) {
         if (loaded) {
           setTimeout(cb, 0);
