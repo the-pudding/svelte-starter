@@ -33,8 +33,7 @@ export default {
         css.write("public/build/bundle.css");
       },
       hot: dev && {
-        optimistic: true,
-        noPreserveState: false
+        optimistic: true
       },
       preprocess
     }),
