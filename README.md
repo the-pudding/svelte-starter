@@ -5,12 +5,12 @@ This [starter template](https://github.com/russellgoldenberg/svelte-starter) aim
 #### Features
 
 - [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
-- [LayerCake](https://layercake.graphics/) preloaded for graphic development
+- [LayerCake](https://layercake.graphics/) enabled by default for chart development
 - [Tabler-Icons](https://github.com/tabler/tabler-icons) for simple/easy svg icons
 - [SCSS](https://sass-lang.com/) ready
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs
 - Includes csv, json, and svg imports by default
-- Pre-render on deploy for a baked-out HTML with content that is hydrated on load
+- Pre-renders HTML on deploy with content that is hydrated on load
 - Configured to make easy deploment to Github Pages
 
 ## Quickstart
@@ -41,11 +41,11 @@ make github
 
 ## Style
 
-Style with normal CSS in the file or externally like:
+You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
+
+You can use external stylesheets like so:
 
 `<style src="../css/app.scss"></style> -->`
-
-You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
 
 ## Google Docs
 
@@ -58,4 +58,4 @@ Running `npm run doc` at any point (even in new tab while server is running) wil
 
 ## Notes
 
-Any html tags, e.g., `{@html user}` must be inside of a dom element so they can be properly hydrated.
+Any @html tags, e.g., `{@html user}` must be the child of a dom element so they can be properly hydrated.
