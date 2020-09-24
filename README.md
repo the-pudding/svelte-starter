@@ -45,7 +45,7 @@ You can use SCSS or another CSS preprocessor by installing the module (eg. `node
 
 You can use external stylesheets like so:
 
-`<style src="../css/app.scss"></style> -->`
+`<style src="../css/app.scss"></style>`
 
 ## Google Docs
 
