@@ -1,4 +1,4 @@
-import svelte from "rollup-plugin-svelte-hot";
+import svelte from "rollup-plugin-svelte";
 import sveltePreprocess from "svelte-preprocess";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
