@@ -20,7 +20,6 @@
     "layercake": "^3.1.1",
     "postcss": "^8.1.4",
     "request": "^2.88.2",
-    "rimraf": "^3.0.2",
     "rollup": "^2.32.1",
     "rollup-plugin-execute": "^1.1.1",
     "rollup-plugin-hot": "^0.1.1",
@@ -28,14 +27,18 @@
     "rollup-plugin-svelte-hot": "^0.11.1",
     "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-terser": "^7.0.2",
+    "shelljs": "^0.8.4",
     "sirv-cli": "^1.0.8",
     "svelte": "^3.29.4",
     "svelte-preprocess": "^4.5.2"
   },
   "scripts": {
+    "build": "rollup -c",
+    "dev:rollup": "rollup -c -w",
+    "dev:livereload": "rollup -c -w --environment LIVERELOAD",
     "doc": "node fetch-google-doc.js",
-    "dev": "rollup -c -w",
-    "predeploy": "rollup -c",
+    "dev": "npm run dev:rollup",
+    "predeploy": "npm run build",
     "deploy": "rollup -c rollup.config-ssr.js",
     "start": "sirv public"
   }

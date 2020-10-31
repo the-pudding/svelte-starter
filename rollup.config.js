@@ -9,13 +9,44 @@ import hmr from "rollup-plugin-hot";
 import execute from "rollup-plugin-execute";
 import { terser } from "rollup-plugin-terser";
 
-const dev = !!process.env.ROLLUP_WATCH;
+const isWatch = !!process.env.ROLLUP_WATCH;
+const isLiveReload = !!process.env.LIVERELOAD;
+const isDev = isWatch || isLiveReload;
+const isProduction = !isDev;
+const isHot = isWatch && !isLiveReload;
 
 const preprocess = sveltePreprocess({
   postcss: {
     plugins: [require("autoprefixer")]
   }
 });
+
+
+function serve() {
+  let server;
+
+  function toExit() {
+    if (server) server.kill(0);
+  }
+
+  return {
+    name: 'svelte/template:serve',
+    writeBundle() {
+      if (server) return;
+      server = require('child_process').spawn(
+        'npm',
+        ['run', 'start', '--', '--dev'],
+        {
+          stdio: ['ignore', 'inherit', 'inherit'],
+          shell: true,
+        }
+      );
+
+      process.on('SIGTERM', toExit);
+      process.on('exit', toExit);
+    },
+  };
+}
 
 export default {
   input: "src/main.js",
@@ -27,13 +58,18 @@ export default {
   },
   plugins: [
     svelte({
-      dev: dev,
-      hydratable: !dev,
+      dev: !isProduction,
+      hydratable: isProduction,
       css: css => {
         css.write("public/build/bundle.css");
       },
-      hot: dev && {
-        optimistic: true
+      hot: isHot && {
+        // Optimistic will try to recover from runtime
+        // errors during component init
+        optimistic: true,
+        // Turn on to disable preservation of local component
+        // state -- i.e. non exported `let` variables
+        noPreserveState: false,
       },
       preprocess
     }),
@@ -42,37 +78,33 @@ export default {
       dedupe: ["svelte"]
     }),
     commonjs(),
-    dev && serve(),
-    dev &&
+		json(),
+    dsv(),
+		svg(),
+		
+		// In dev mode, call `npm run start` once
+    // the bundle has been generated
+    isDev && serve(),
+
+    // Watch the `public` directory and refresh the
+    // browser on changes when not in production
+    isLiveReload && livereload('public'),
+
+    // If we're building for production (npm run build
+    // instead of npm run dev), minify
+    isProduction && terser(),
+
+
+    isDev &&
       hmr({
         public: "public",
         inMemory: true,
-        compatModuleHot: !dev
+        compatModuleHot: !isHot
       }),
-    json(),
-    dsv(),
-    svg(),
-    !dev && terser(),
-    dev && execute("node copy-template.js")
+    
+    isDev && execute("node copy-template.js")
   ],
   watch: {
     clearScreen: false
   }
 };
-
-function serve() {
-  let started = false;
-  return {
-    name: "svelte/template:serve",
-    writeBundle() {
-      if (!started) {
-        started = true;
-        const flags = ["run", "start", "--", "--dev"];
-        require("child_process").spawn("npm", flags, {
-          stdio: ["ignore", "inherit", "inherit"],
-          shell: true
-        });
-      }
-    }
-  };
-}

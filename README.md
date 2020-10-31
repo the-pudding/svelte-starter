@@ -20,6 +20,7 @@ npx degit russellgoldenberg/svelte-starter my-project
 cd my-project
 
 npm install
+npm run build
 npm run dev
 ```
 
