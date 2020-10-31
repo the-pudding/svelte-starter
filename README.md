@@ -43,10 +43,6 @@ make github
 
 You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
 
-You can use external stylesheets like so:
-
-`<style src="../css/app.scss"></style>`
-
 ## Google Docs
 
 - Create a Google Doc
