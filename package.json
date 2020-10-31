@@ -16,9 +16,7 @@
     "archieml": "^0.4.2",
     "autoprefixer": "^10.0.1",
     "compression": "^1.7.4",
-    "html-entities": "^1.3.1",
     "html-minifier": "^4.0.0",
-    "htmlparser2": "^5.0.1",
     "layercake": "^3.1.1",
     "postcss": "^8.1.4",
     "request": "^2.88.2",
@@ -32,8 +30,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "sirv-cli": "^1.0.8",
     "svelte": "^3.29.4",
-    "svelte-preprocess": "^4.5.2",
-    "url": "^0.11.0"
+    "svelte-preprocess": "^4.5.2"
   },
   "scripts": {
     "doc": "node fetch-google-doc.js",
