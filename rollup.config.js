@@ -61,7 +61,7 @@ export default {
       dev: !isProduction,
       hydratable: isProduction,
       css: css => {
-        css.write("public/build/bundle.css");
+        css.write("bundle.css");
       },
       hot: isHot && {
         // Optimistic will try to recover from runtime
