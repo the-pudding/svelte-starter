@@ -5,10 +5,9 @@ This [starter template](https://github.com/russellgoldenberg/svelte-starter) aim
 #### Features
 
 - [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
-- [LayerCake](https://layercake.graphics/) enabled by default for chart development
 - [Tabler-Icons](https://github.com/tabler/tabler-icons) for simple/easy svg icons
-- [SCSS](https://sass-lang.com/) ready
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs
+- [LayerCake](https://layercake.graphics/) enabled by default for chart development
 - Includes csv, json, and svg imports by default
 - Pre-renders HTML on deploy with content that is hydrated on load
 - Configured to make easy deploment to Github Pages
@@ -33,6 +32,8 @@ Modify content in `src` and `public/assets`.
 ```bash
 npm run deploy
 ```
+
+This generates a directory called `ssr` with the server-side rendered static-hostable app.
 
 If deploying to github pages:
 
