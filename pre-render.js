@@ -10,7 +10,6 @@ const outPath = path.resolve(CWD, "ssr");
 const tmpPath = path.resolve(CWD, ".tmp");
 const ssrPath = `${tmpPath}/ssr.js`;
 
-shell.rm("-Rf", tmpPath);
 shell.cp('-Rf', `${inPath}/*`, tmpPath);
 
 const template = fs.readFileSync(templatePath, "utf8");
@@ -33,5 +32,6 @@ const minified = minifier.minify(result, {
 fs.writeFileSync(`${tmpPath}/index.html`, minified);
 shell.rm(`${tmpPath}/ssr.js`);
 shell.cp("-Rf", tmpPath, outPath);
+shell.rm("-Rf", tmpPath);
 
 process.exit();
