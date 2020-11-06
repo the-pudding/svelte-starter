@@ -1,6 +1,8 @@
 <script>
   import { onMount } from "svelte";
   import { LayerCake, Svg } from "layercake";
+  import Meta from "./Meta.svelte";
+
   import Child from "./Child.svelte";
   import Scatter from "./Scatter.svelte";
   import petData from "../data/pets.csv";
