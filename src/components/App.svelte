@@ -21,6 +21,8 @@
   onMount(() => (name = "User"));
 </script>
 
+<Meta />
+
 <div>
   {@html user}
 </div>
