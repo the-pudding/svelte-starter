@@ -6,7 +6,7 @@
   import Child from "./Child.svelte";
   import Scatter from "./Scatter.svelte";
   import petData from "../data/pets.csv";
-  import user from "tabler-icons/icons/user.svg";
+  import user from "@tabler/icons/icons/user.svg";
 
   let name = "Loading";
 
