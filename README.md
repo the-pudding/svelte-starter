@@ -14,16 +14,28 @@ This [starter template](https://github.com/russellgoldenberg/svelte-starter) aim
 
 ## Quickstart
 
-```bash
-npx degit russellgoldenberg/svelte-starter my-project
-cd my-project
+New school: just click the `Use this template` button above.
 
+Old school:
+
+```bash
+npx degit the-pudding/svelte-starter my-project
+```
+
+Then in your local repo:
+
+```bash
 npm install
 npm run build
-npm run dev
 ```
 
 ## Development
+
+To start the dev server:
+
+```bash
+npm run dev
+```
 
 Modify content in `src` and `public/assets`.
 
