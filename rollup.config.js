@@ -102,7 +102,7 @@ export default {
         compatModuleHot: !isHot
       }),
     
-    isDev && execute("node copy-template.js")
+    isDev && execute("node scripts/copy-template.js")
   ],
   watch: {
     clearScreen: false

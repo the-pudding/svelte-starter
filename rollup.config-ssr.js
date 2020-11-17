@@ -32,6 +32,6 @@ export default {
     json(),
     dsv(),
     svg(),
-    execute("node pre-render.js")
+    execute("node scripts/pre-render.js")
   ]
 };
