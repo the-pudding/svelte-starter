@@ -67,13 +67,6 @@
   /* vars defined in public/assets/global.css */
   h1 {
     color: var(--primary);
-    font-size: 2em;
-    margin-bottom: 0.5em;
-  }
-
-  p {
-    font-size: 1.5em;
-    margin: 1em auto;
   }
 
   img {

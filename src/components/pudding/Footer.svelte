@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import wordmark from "../../pudding-svg/wordmark.svg";
   import facebook from "@tabler/icons/icons/brand-facebook.svg";
   import twitter from "@tabler/icons/icons/brand-twitter.svg";
@@ -12,6 +13,12 @@
   const v = Date.now();
   const url = `https://pudding.cool/assets/data/stories.json?v=${v}`;
 
+  let localURL;
+
+  onMount(() => {
+    localURL = window.location.href;
+  });
+
   const fetchData = (async () => {
     const response = await fetch(url);
     return await response.json();
@@ -20,18 +27,17 @@
 
 <footer>
   <section class="stories">
-    <h3>More stories from The Pudding</h3>
     {#await fetchData then data}
-      {#each data.slice(0, 5) as { hed, url, image }}
+      {#each data
+        .filter((d) => d.url !== localURL)
+        .slice(0, 4) as { hed, url, image }}
         <div class="story">
-          <p>
-            <a href="{url}">
-              <img
-                src="https://pudding.cool/common/assets/thumbnails/640/{image}.jpg"
-                alt="{hed}" />
-              <span>{hed}</span>
-            </a>
-          </p>
+          <a href="{url}">
+            <img
+              src="https://pudding.cool/common/assets/thumbnails/640/{image}.jpg"
+              alt="{hed}" />
+            <span>{hed}</span>
+          </a>
         </div>
       {/each}
     {/await}
@@ -104,14 +110,131 @@
 
 <style>
   footer {
-    padding: 2rem 1rem;
-    text-align: center;
+    background-color: var(--fg);
+    color: var(--bg);
+    font-family: var(--sans);
+    padding: 3em 1em;
+    margin-top: 3em;
   }
 
-  ul {
-    list-style-type: none;
+  a {
+    display: block;
+    font-weight: 700;
+    text-decoration: none;
   }
 
-  h3 {
+  a,
+  a:visited,
+  a:hover {
+    color: var(--bg);
+  }
+
+  span {
+    display: block;
+    margin-top: 1em;
+    line-height: 1.2;
+  }
+  .stories {
+    max-width: 70em;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .story {
+    display: block;
+    width: 100%;
+    border: none;
+    margin-bottom: 2rem;
+  }
+
+  /* footer.pudding-footer .footer-company {
+  margin: 0 auto;
+  margin-top: 3rem;
+  max-width: 65rem;
+  display: flex;
+  flex-direction: column;
+  font-family: $sans-display;
+mq('bp-5')
+}
+footer.pudding-footer .footer-company__cta {
+  order: 1;
+  margin: 2rem 0 0 0;
+  width: 100%;
+mq('bp-5')
+}
+footer.pudding-footer .footer-company__cta-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 12rem;
+mq('bp-5')
+}
+footer.pudding-footer .footer-company__cta-list li {
+  display: flex;
+  width: 50%;
+  margin-bottom: 1rem;
+  align-items: center;
+mq('bp-5')
+}
+footer.pudding-footer .footer-company__cta-list li a {
+  display: flex;
+  border: none;
+}
+footer.pudding-footer .footer-company__cta-list li p {
+  font-family: $sans-display;
+  margin: 0;
+  padding-left: 0.5rem;
+  padding-top: 0.1rem;
+  line-height: 1;
+  color: $gray;
+mq('bp-4')
+}
+footer.pudding-footer .footer-company__cta-list li svg {
+  fill: $gray;
+  stroke: none;
+  vertical-align: middle;
+}
+footer.pudding-footer .footer-company__cta-list li svg circle,
+footer.pudding-footer .footer-company__cta-list li svg polyline,
+footer.pudding-footer .footer-company__cta-list li svg line {
+  fill: none;
+  stroke: $gray;
+}
+footer.pudding-footer .footer-company__cta-list li .feather-mail path,
+footer.pudding-footer .footer-company__cta-list li .feather-lock path,
+footer.pudding-footer .footer-company__cta-list li .feather-rss path {
+  stroke: $gray;
+  fill: none;
+}
+footer.pudding-footer .footer-company__about {
+  order: 0;
+  width: 100%;
+  color: $gray;
+  display: flex;
+  flex-direction: column;
+mq('bp-5')
+}
+footer.pudding-footer .footer-company__about p {
+  margin: 0;
+  line-height: 1.4;
+}
+footer.pudding-footer .footer-company__about svg {
+  width: 12rem;
+  margin-bottom: 0.5rem;
+} */
+  @media only screen and (min-width: 30em) {
+    .story {
+      width: 50%;
+      padding: 0 1em;
+    }
+  }
+
+  @media only screen and (min-width: 50em) {
+    .story {
+      width: 25%;
+      padding: 0 1em;
+    }
   }
 </style>
