@@ -1,9 +1,13 @@
 :root {
-  --c1: blue;
-  --c2: red;
+  --primary: #f30;
 }
 
-a.wordmark {
-  display: block;
-  max-width: 10rem;
+main {
+	padding: 1rem;
+}
+
+/* demo */
+#demo svg {
+	width: 1em;
+	vertical-align: middle;
 }
