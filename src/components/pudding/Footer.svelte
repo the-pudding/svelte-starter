@@ -24,7 +24,14 @@
     {#await fetchData then data}
       {#each data.slice(0, 5) as { hed, url, image }}
         <div class="story">
-          <p><a href="{url}">{hed}</a></p>
+          <p>
+            <a href="{url}">
+              <img
+                src="https://pudding.cool/common/assets/thumbnails/640/{image}.jpg"
+                alt="{hed}" />
+              <span>{hed}</span>
+            </a>
+          </p>
         </div>
       {/each}
     {/await}
@@ -97,16 +104,14 @@
 
 <style>
   footer {
-    background: #efefef;
     padding: 2rem 1rem;
     text-align: center;
   }
-  h3 {
-    font-size: 1.25em;
+
+  ul {
+    list-style-type: none;
   }
-  @media only screen and (min-width: 640px) {
-    h3 {
-      font-size: 1.5em;
-    }
+
+  h3 {
   }
 </style>
