@@ -1,0 +1,24 @@
+<script>
+  import wordmark from "../../pudding-svg/wordmark.svg";
+</script>
+
+<header>
+  <div class="wordmark">
+    <a href="https://pudding.cool">{@html wordmark}</a>
+  </div>
+</header>
+
+<style>
+  .wordmark {
+    max-width: 10em;
+    margin: 1em auto;
+  }
+
+  .wordmark a {
+    border: none;
+  }
+
+  .wordmark a:hover {
+    background-color: transparent;
+  }
+</style>

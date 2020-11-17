@@ -61,6 +61,7 @@
 <style>
   section {
     font-family: sans-serif;
+    padding: 1rem;
   }
 
   /* vars defined in public/assets/global.css */
