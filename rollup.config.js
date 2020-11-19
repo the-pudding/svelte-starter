@@ -64,12 +64,7 @@ export default {
         css.write("bundle.css");
       },
       hot: isHot && {
-        // Optimistic will try to recover from runtime
-        // errors during component init
         optimistic: true,
-        // Turn on to disable preservation of local component
-        // state -- i.e. non exported `let` variables
-        noPreserveState: false,
       },
       preprocess
     }),
