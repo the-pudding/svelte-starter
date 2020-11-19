@@ -1,9 +1,116 @@
 :root {
-  --primary: #f30;
+	--sans: "National 2 Web", Helvetica, Arial, sans-serif;
+	--serif: "Tiempos Text Web", Georgia, Times, serif;
+	--mono: Menlo, Consolas, Monaco, 'Courier New', monospace;
+	
+	--z-bottom: -100;
+  --z-middle: 0;
+  --z-top: 100;
+	--z-overlay: 1000;
+
+	--black: #000;
+	--off-black: #282828;
+	--gray-dark: #5b5b5b;
+	--gray: #949494;
+	--gray-light: #c9c9c9;
+	--off-white: #f4f4f4;
+	--white: #fff;
+	
+	--bg: var(--white);
+	--fg: var(--off-black);
+	--primary: var(--off-black);
 }
 
-main {
-	padding: 1rem;
+body {
+  font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
+  background-color: var(--bg);
+  color: var(--fg);
+	font-family: var(--serif);
+	font-weight: 500;
+}
+
+p {
+	margin: 1.5em 0;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1em 0;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+em, i {
+  font-style: italic;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img, video {
+  display: block;
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: 0;
+	padding: 0;
+	font-size: 1em;
+	font-family: var(--sans);
+}
+
+sub, sup {
+  font-size: 0.75rem;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+.skip-to-main {
+	border: none;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.skip-to-main:focus {
+	width: auto;
+	height: auto;
+	padding: 0.5em;
+	z-index: 1000;
+}
+
+/* pudding */
+.wordmark svg path {
+	fill: currentColor;
 }
 
 /* demo */
