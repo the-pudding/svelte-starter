@@ -27,16 +27,16 @@
 
   const fetchData = (async () => {
     const response = await fetch(url);
-    return await response.json();
+    const data = await response.json();
+    const stories = data.filter((d) => d.url !== localURL).slice(0, 4);
+    return stories;
   })();
 </script>
 
 <footer>
   <section class="stories">
     {#await fetchData then data}
-      {#each data
-        .filter((d) => d.url !== localURL)
-        .slice(0, 4) as { hed, url, image }}
+      {#each data as { hed, url, image }}
         <div class="story">
           <a href="{url}">
             <img
