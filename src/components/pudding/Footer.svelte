@@ -1,4 +1,4 @@
-<script>
+<!--<script>
   import { onMount } from "svelte";
   import wordmark from "../../pudding-svg/wordmark.svg";
   import facebook from "@tabler/icons/icons/brand-facebook.svg";
@@ -38,9 +38,7 @@
     const response = await fetch(url);
     return await response.json();
   })();
-</script>
-
-<footer>
+</script><footer>
   <section class="stories">
     {#await fetchData then data}
       {#each data
@@ -81,9 +79,7 @@
       {/each}
     </ul>
   </section>
-</footer>
-
-<style>
+</footer><style>
   footer {
     background-color: var(--fg);
     color: var(--bg);
@@ -171,4 +167,4 @@
       padding: 0 1em;
     }
   }
-</style>
+</style>-->

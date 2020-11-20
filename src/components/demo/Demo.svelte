@@ -2,6 +2,7 @@
   import { onMount } from "svelte";
   import { LayerCake, Svg } from "layercake";
   import Scatter from "./Scatter.svelte";
+  import Icon from "../helpers/Icon.svelte";
   import sampleData from "../../data/demo/sample.csv";
   import copyData from "../../data/demo/copy.json";
 
@@ -20,7 +21,8 @@
   <p>
     Hello svelter! Here is an inline svg icon:
     <!-- icon from tabler (see styling in global.css -->
-    {@html moodSmile}
+    <!-- {@html moodSmile} -->
+    <Icon name="feather" />
   </p>
 
   <p>A table from CSV data</p>
