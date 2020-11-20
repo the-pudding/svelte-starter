@@ -7,7 +7,7 @@ _Please note: do not use or reproduce The Pudding logos or fonts without written
 #### Features
 
 - [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
-- [Tabler-Icons](https://github.com/tabler/tabler-icons) for simple/easy svg icons
+- [Feather Icons](https://github.com/feathericons/feather) for simple/easy svg icons
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs
 - [LayerCake](https://layercake.graphics/) enabled by default for chart development
 - Includes csv, json, and svg imports by default

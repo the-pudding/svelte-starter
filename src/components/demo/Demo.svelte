@@ -4,7 +4,6 @@
   import Scatter from "./Scatter.svelte";
   import sampleData from "../../data/demo/sample.csv";
   import copyData from "../../data/demo/copy.json";
-  import moodSmile from "@tabler/icons/icons/mood-smile.svg";
 
   const points = [
     { x: 0, y: 1 },
