@@ -1,5 +1,5 @@
 <script>
-  import wordmark from "../../pudding-svg/wordmark.svg";
+  import wordmark from "../../svg/pudding/wordmark.svg";
 </script>
 
 <header>

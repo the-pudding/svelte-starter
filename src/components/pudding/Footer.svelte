@@ -1,14 +1,6 @@
-<!--<script>
+<script>
   import { onMount } from "svelte";
-  import wordmark from "../../pudding-svg/wordmark.svg";
-  import facebook from "@tabler/icons/icons/brand-facebook.svg";
-  import twitter from "@tabler/icons/icons/brand-twitter.svg";
-  import instagram from "@tabler/icons/icons/brand-instagram.svg";
-  import patreon from "@tabler/icons/icons/brand-patreon.svg";
-  import about from "@tabler/icons/icons/info-circle.svg";
-  import privacy from "@tabler/icons/icons/lock.svg";
-  import newsletter from "@tabler/icons/icons/mail.svg";
-  import rss from "@tabler/icons/icons/rss.svg";
+  import wordmark from "../../svg/pudding/wordmark.svg";
 
   const v = Date.now();
   const url = `https://pudding.cool/assets/data/stories.json?v=${v}`;
@@ -16,18 +8,17 @@
   let localURL;
 
   const links = [
-    { about, name: "about", url: "https://pudding.cool/about" },
-    { facebook, name: "facebook", url: "https://facebook.com/pudding.viz/" },
-    { twitter, name: "twitter", url: "https://twitter.com/puddingviz/" },
+    { name: "about", url: "https://pudding.cool/about" },
+    { name: "facebook", url: "https://facebook.com/pudding.viz/" },
+    { name: "twitter", url: "https://twitter.com/puddingviz/" },
     {
-      instagram,
       name: "instagram",
       url: "https://www.instagram.com/the.pudding",
     },
-    { patreon, name: "patreon", url: "https://patreon.com/thepudding/" },
-    { privacy, name: "privacy", url: "https://pudding.cool/privacy/" },
-    { newsletter, name: "newsletter", url: "http://eepurl.com/czym6f" },
-    { rss, name: "rss", url: "https://pudding.cool/feed/index.xml" },
+    { name: "patreon", url: "https://patreon.com/thepudding/" },
+    { name: "privacy", url: "https://pudding.cool/privacy/" },
+    { name: "newsletter", url: "http://eepurl.com/czym6f" },
+    { name: "rss", url: "https://pudding.cool/feed/index.xml" },
   ];
 
   onMount(() => {
@@ -38,7 +29,9 @@
     const response = await fetch(url);
     return await response.json();
   })();
-</script><footer>
+</script>
+
+<footer>
   <section class="stories">
     {#await fetchData then data}
       {#each data
@@ -72,14 +65,16 @@
       {#each links as link}
         <li>
           <a href="{link.url}">
-            {@html link[link.name]}
+            <!-- TODO icon -->
             <span>{link.name.toUpperCase()}</span>
           </a>
         </li>
       {/each}
     </ul>
   </section>
-</footer><style>
+</footer>
+
+<style>
   footer {
     background-color: var(--fg);
     color: var(--bg);
@@ -167,4 +162,4 @@
       padding: 0 1em;
     }
   }
-</style>-->
+</style>
