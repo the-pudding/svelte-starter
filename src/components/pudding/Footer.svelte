@@ -76,8 +76,8 @@
 
 <style>
   footer {
-    background-color: var(--fg);
-    color: var(--bg);
+    background-color: var(--text-main);
+    color: var(--background-body);
     font-family: var(--sans);
     padding: 3em 1em;
     margin-top: 3em;
@@ -86,7 +86,7 @@
   a,
   a:visited,
   a:hover {
-    color: var(--bg);
+    color: var(--background-body);
   }
 
   .stories {
@@ -135,7 +135,7 @@
 
   .links li {
     display: flex;
-    padding: 1em;
+    padding: 0.5em 1em;
   }
 
   .links a {
