@@ -9,7 +9,8 @@ _Please note: do not use or reproduce The Pudding logos or fonts without written
 - [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
 - [Feather Icons](https://github.com/feathericons/feather) for simple/easy svg icons
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs
-- [LayerCake](https://layercake.graphics/) enabled by default for chart development
+- [LayerCake](https://layercake.graphics/) enabled by default for chart
+- [Water.css](https://github.com/kognise/water.css) for default styling
 - Includes csv, json, and svg imports by default
 - Pre-renders HTML on deploy with content that is hydrated on load
 - Configured to make easy deploment to Github Pages
@@ -56,6 +57,8 @@ make github
 ```
 
 ## Style
+
+There are a few stylesheets included by default in `template.html`. Modify `global.css` variables to make changes to Water.css defaults.
 
 You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
 
