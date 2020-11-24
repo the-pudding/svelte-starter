@@ -21,6 +21,12 @@
 	--red: #ff533d;
 	--yellow: #e5e338;
 
+	--bg: var(--white);
+	--fg: var(--off-black);
+	--default: var(--gray-light);
+	--primary: var(--red);
+	--secondary: var(--green);
+
 	/* water.css */
 
 	--body-font: var(--serif);
