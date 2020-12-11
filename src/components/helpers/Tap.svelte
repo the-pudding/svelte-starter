@@ -27,6 +27,7 @@
     height: 100vh;
     z-index: 100;
     z-index: var(--z-overlay);
+    pointer-events: none;
   }
 
   button {
@@ -38,6 +39,7 @@
     outline: none;
     border: none;
     box-shadow: none;
+    pointer-events: auto;
   }
 
   .left,
