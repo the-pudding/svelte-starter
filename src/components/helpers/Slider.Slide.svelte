@@ -4,7 +4,6 @@
 
   $: w = $direction === "horizontal" ? $width : "100%";
   $: h = $direction === "vertical" ? $height : "100%";
-  $: console.log(w, h);
 </script>
 
 <div class="slide" style="width: {w}; height: {h};">
