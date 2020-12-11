@@ -4,17 +4,33 @@
 
   export let debug = false;
   export let showArrows = false;
+  export let enableKeyboard = false;
+  export let sides = ["left", "right"];
+  export let size = "4rem";
   export let arrowSize = "3rem";
   export let arrowStroke = "#000";
   export let arrowStrokeWidth = "2";
   export let arrowPosition = "center"; // start, center, end
-  export let size = "4rem";
-  export let sides = ["left", "right"];
 
   const dispatch = createEventDispatcher();
+  const keyMap = {
+    ArrowLeft: "left",
+    ArrowRight: "right",
+    ArrowUp: "top",
+    ArrowDown: "bottom",
+  };
   const getW = (side) => (["left", "right"].includes(side) ? size : "100%");
   const getH = (side) => (["top", "bottom"].includes(side) ? size : "100%");
+  const onKeyDown = (e) => {
+    const side = keyMap[e.key];
+    if (enableKeyboard && side) {
+      e.preventDefault();
+      dispatch("tap", side);
+    }
+  };
 </script>
+
+<svelte:window on:keydown="{onKeyDown}" />
 
 <section class="svelte-tap" class:debug>
   {#each sides as side}
