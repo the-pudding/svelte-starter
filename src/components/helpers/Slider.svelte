@@ -5,7 +5,7 @@
 
   export let direction = "horizontal";
   export let duration = "500ms";
-  export let timing = "cubic-bezier(0.5, 0, 0.5, 1);";
+  export let timing = "ease";
   export const next = () => move(1);
   export const prev = () => move(-1);
   export const jump = (val) => move(val, true);
@@ -33,7 +33,7 @@
 
   $: sW = `width: ${w};`;
   $: sH = `height: ${h};`;
-  $: sT = `transform: translate(${x}, ${y});`;
+  $: sT = `transform: translate3d(${x}, ${y}, 0);`;
   $: sTD = `transition-duration: ${duration};`;
   $: sTTF = `transition-timing-function: ${timing};`;
   $: customStyle = `${sW} ${sH} ${sT} ${sTD} ${sTTF}`;
