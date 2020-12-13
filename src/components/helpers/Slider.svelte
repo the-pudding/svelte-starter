@@ -6,14 +6,17 @@
   export let direction = "horizontal";
   export let duration = "500ms";
   export let timing = "ease";
+
+  export let count;
   export const next = () => move(1);
   export const prev = () => move(-1);
   export const jump = (val) => move(val, true);
 
+  let children = 0;
   let active = 0;
   let width = 0;
   let height = 0;
-  let children = 0;
+
   let translateEl;
 
   let _direction = writable();
@@ -47,6 +50,7 @@
 
   onMount(() => {
     children = translateEl.children.length;
+    count = children;
   });
 </script>
 
