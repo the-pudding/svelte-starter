@@ -5,27 +5,22 @@
   export let debug = false;
   export let showArrows = false;
   export let enableKeyboard = false;
-  export let sides = ["left", "right"];
-  export let size = "4rem";
-  export let arrowSize = "3rem";
+  export let directions = ["left", "right"];
+  export let size = "64px";
+  export let arrowSize = "48px";
   export let arrowStroke = "#000";
   export let arrowStrokeWidth = "2";
   export let arrowPosition = "center"; // start, center, end
 
   const dispatch = createEventDispatcher();
-  const keyMap = {
-    ArrowLeft: "left",
-    ArrowRight: "right",
-    ArrowUp: "top",
-    ArrowDown: "bottom",
-  };
-  const getW = (side) => (["left", "right"].includes(side) ? size : "100%");
-  const getH = (side) => (["top", "bottom"].includes(side) ? size : "100%");
+  const getW = (dir) => (["left", "right"].includes(dir) ? size : "100%");
+  const getH = (dir) => (["up", "down"].includes(dir) ? size : "100%");
   const onKeyDown = (e) => {
-    const side = keyMap[e.key];
-    if (enableKeyboard && side) {
+    const dir = e.key.replace("Arrow", "").toLowerCase();
+    const hasDir = directions.includes(dir);
+    if (enableKeyboard && hasDir) {
       e.preventDefault();
-      dispatch("tap", side);
+      dispatch("tap", dir);
     }
   };
 </script>
@@ -33,13 +28,13 @@
 <svelte:window on:keydown="{onKeyDown}" />
 
 <section class="svelte-tap" class:debug>
-  {#each sides as side}
+  {#each directions as dir}
     <button
-      on:click="{dispatch('tap', side)}"
-      style="width: {getW(side)}; height: {getH(side)};"
-      class="{side} {arrowPosition}">{#if showArrows}
+      on:click="{dispatch('tap', dir)}"
+      style="width: {getW(dir)}; height: {getH(dir)};"
+      class="{dir} {arrowPosition}">{#if showArrows}
         <span style="font-size: {arrowSize};"><Icon
-            name="chevron-{side}"
+            name="chevron-{dir}"
             stroke="{arrowStroke}"
             strokeWidth="{arrowStrokeWidth}" /></span>
       {/if}</button>
@@ -85,18 +80,18 @@
     align-items: flex-end;
   }
 
-  .top.start,
-  .bottom.start {
+  .up.start,
+  .down.start {
     justify-content: flex-start;
   }
 
-  .top.center,
-  .bottom.center {
+  .up.center,
+  .down.center {
     justify-content: center;
   }
 
-  .top.end,
-  .bottom-end {
+  .up.end,
+  .down-end {
     justify-content: flex-end;
   }
 
@@ -115,18 +110,18 @@
     text-align: right;
   }
 
-  .top,
-  .bottom {
+  .up,
+  .down {
     width: 100%;
     left: 0;
     text-align: center;
   }
 
-  .top {
+  .up {
     top: 0;
   }
 
-  .bottom {
+  .down {
     bottom: 0;
   }
 
@@ -146,12 +141,12 @@
     opacity: 0.5;
   }
 
-  .debug .top {
+  .debug .up {
     background: orange;
     opacity: 0.5;
   }
 
-  .debug .bottom {
+  .debug .down {
     background: orange;
     opacity: 0.5;
   }
