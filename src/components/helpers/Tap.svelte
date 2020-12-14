@@ -4,6 +4,7 @@
 
   export let debug = false;
   export let showArrows = false;
+  export let disable = [];
   export let enableKeyboard = false;
   export let directions = ["left", "right"];
   export let size = "64px";
@@ -13,8 +14,10 @@
   export let arrowPosition = "center"; // start, center, end
 
   const dispatch = createEventDispatcher();
+
   const getW = (dir) => (["left", "right"].includes(dir) ? size : "100%");
   const getH = (dir) => (["up", "down"].includes(dir) ? size : "100%");
+
   const onKeyDown = (e) => {
     const dir = e.key.replace("Arrow", "").toLowerCase();
     const hasDir = directions.includes(dir);
@@ -23,6 +26,10 @@
       dispatch("tap", dir);
     }
   };
+
+  $: visibleArrows = directions.filter((d) =>
+    typeof showArrows === "boolean" ? showArrows : showArrows.includes(d)
+  );
 </script>
 
 <svelte:window on:keydown="{onKeyDown}" />
@@ -32,12 +39,15 @@
     <button
       on:click="{dispatch('tap', dir)}"
       style="width: {getW(dir)}; height: {getH(dir)};"
-      class="{dir} {arrowPosition}">{#if showArrows}
+      class="{dir} {arrowPosition}"
+      disabled="{disable.includes(dir)}">
+      {#if visibleArrows.includes(dir)}
         <span style="font-size: {arrowSize};"><Icon
             name="chevron-{dir}"
             stroke="{arrowStroke}"
             strokeWidth="{arrowStrokeWidth}" /></span>
-      {/if}</button>
+      {/if}
+    </button>
   {/each}
 </section>
 
@@ -63,6 +73,10 @@
     box-shadow: none;
     pointer-events: auto;
     display: flex;
+  }
+
+  button:disabled {
+    opacity: 0.2;
   }
 
   .left.start,

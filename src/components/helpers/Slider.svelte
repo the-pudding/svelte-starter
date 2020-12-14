@@ -8,12 +8,14 @@
   export let timing = "ease";
 
   export let count;
+  export let active = 0;
+
   export const next = () => move(1);
   export const prev = () => move(-1);
   export const jump = (val) => move(val, true);
 
   let children = 0;
-  let active = 0;
+  let index = 0;
   let width = 0;
   let height = 0;
   let isInView = false;
@@ -28,8 +30,9 @@
 
   const move = (val, jump) => {
     if (!isInView) return false;
-    const target = jump ? val : active + val;
-    active = Math.max(0, Math.min(children - 1, target));
+    const target = jump ? val : index + val;
+    index = Math.max(0, Math.min(children - 1, target));
+    active = index;
   };
 
   const onIntersect = (e) => {
@@ -39,8 +42,8 @@
   $: w = direction === "horizontal" ? `${children * width}px` : "100%";
   $: h = direction === "vertical" ? `${children * height}px` : "100%";
 
-  $: x = direction === "horizontal" ? `${active * width * -1}px` : 0;
-  $: y = direction === "vertical" ? `${active * height * -1}px` : 0;
+  $: x = direction === "horizontal" ? `${index * width * -1}px` : 0;
+  $: y = direction === "vertical" ? `${index * height * -1}px` : 0;
 
   $: sW = `width: ${w};`;
   $: sH = `height: ${h};`;
@@ -50,9 +53,9 @@
   $: customStyle = `${sW} ${sH} ${sT} ${sTD} ${sTTF}`;
 
   // context
-  $: $_direction = direction;
-  $: $_width = `${width}px`;
-  $: $_height = `${height}px`;
+  $: _direction.set(direction);
+  $: _width.set(`${width}px`);
+  $: _height.set(`${height}px`);
   $: context = { direction: _direction, width: _width, height: _height };
   $: setContext("Slider", context);
 
