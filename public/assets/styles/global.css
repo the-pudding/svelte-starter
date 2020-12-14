@@ -29,7 +29,7 @@
 
 	/* water.css */
 
-	--body-font: var(--serif);
+	--body-font: var(--sans);
 	--background-body: var(--white);
   --background: var(--off-white);
   --background-alt: var(--off-white);
