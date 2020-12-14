@@ -16,16 +16,24 @@
   let active = 0;
   let width = 0;
   let height = 0;
-
+  let isInView = false;
+  let sliderEl;
   let translateEl;
+  let root;
+  let observer;
 
   let _direction = writable();
   let _width = writable();
   let _height = writable();
 
   const move = (val, jump) => {
+    if (!isInView) return false;
     const target = jump ? val : active + val;
     active = Math.max(0, Math.min(children - 1, target));
+  };
+
+  const onIntersect = (e) => {
+    isInView = e[0].isIntersecting;
   };
 
   $: w = direction === "horizontal" ? `${children * width}px` : "100%";
@@ -51,11 +59,17 @@
   onMount(() => {
     children = translateEl.children.length;
     count = children;
+    observer = new IntersectionObserver(onIntersect, {
+      root: null,
+      rootMargin: "-1px",
+    });
+    observer.observe(sliderEl);
   });
 </script>
 
 <div
   class="slider {direction}"
+  bind:this="{sliderEl}"
   bind:clientWidth="{width}"
   bind:clientHeight="{height}">
   <div class="translate" bind:this="{translateEl}" style="{customStyle}">
@@ -83,11 +97,11 @@
     z-index: 1;
   }
 
-  .horizontal .translate {
+  .horizontal > .translate {
     flex-direction: row;
   }
 
-  .vertical .translate {
+  .vertical > .translate {
     flex-direction: column;
   }
 </style>
