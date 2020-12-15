@@ -40,6 +40,7 @@
 <section class="svelte-tap" class:debug>
   {#each directions as dir}
     <button
+      aria-label="{dir}"
       on:click="{dispatch('tap', dir)}"
       style="width: {getW(dir)}; height: {getH(dir)};"
       class="{dir} {arrowPosition}"
