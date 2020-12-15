@@ -16,8 +16,8 @@
 
   let children = 0;
   let index = 0;
-  let width = 0;
-  let height = 0;
+  let width;
+  let height;
   let isInView = false;
   let sliderEl;
   let translateEl;
