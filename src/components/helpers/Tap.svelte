@@ -15,6 +15,7 @@
   export let arrowPosition = "center"; // start, center, end
 
   const dispatch = createEventDispatcher();
+  let innerHeight;
 
   $: getW = (dir) =>
     ["left", "right"].includes(dir) ? size : full ? "100%" : size;
@@ -35,9 +36,9 @@
   );
 </script>
 
-<svelte:window on:keydown="{onKeyDown}" />
+<svelte:window on:keydown="{onKeyDown}" bind:innerHeight />
 
-<section class="svelte-tap" class:debug>
+<section class:debug style="height: {innerHeight}px;">
   {#each directions as dir}
     <button
       on:click="{dispatch('tap', dir)}"
@@ -62,8 +63,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    z-index: 100;
+    height: 100%;
     z-index: var(--z-overlay);
     pointer-events: none;
   }
