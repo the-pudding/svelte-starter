@@ -3,9 +3,10 @@
   import Icon from "./Icon.svelte";
 
   export let debug = false;
-  export let showArrows = false;
-  export let disable = [];
   export let enableKeyboard = false;
+  export let full = false;
+  export let showArrows = false; // boolean or array of directions
+  export let disable = [];
   export let directions = ["left", "right"];
   export let size = "64px";
   export let arrowSize = "48px";
@@ -15,8 +16,10 @@
 
   const dispatch = createEventDispatcher();
 
-  const getW = (dir) => (["left", "right"].includes(dir) ? size : "100%");
-  const getH = (dir) => (["up", "down"].includes(dir) ? size : "100%");
+  const getW = (dir) =>
+    ["left", "right"].includes(dir) ? size : full ? "100%" : size;
+  const getH = (dir) =>
+    ["up", "down"].includes(dir) ? size : full ? "100%" : size;
 
   const onKeyDown = (e) => {
     const dir = e.key.replace("Arrow", "").toLowerCase();
@@ -40,6 +43,7 @@
       on:click="{dispatch('tap', dir)}"
       style="width: {getW(dir)}; height: {getH(dir)};"
       class="{dir} {arrowPosition}"
+      class:full
       disabled="{disable.includes(dir)}">
       {#if visibleArrows.includes(dir)}
         <span style="font-size: {arrowSize};"><Icon
@@ -77,6 +81,23 @@
 
   button:disabled {
     opacity: 0.2;
+    cursor: not-allowed;
+  }
+
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .left {
+    left: 0;
+    top: 0;
+    /* text-align: left; */
+  }
+
+  .right {
+    right: 0;
+    top: 0;
+    /* text-align: right; */
   }
 
   .left.start,
@@ -86,12 +107,28 @@
 
   .left.center,
   .right.center {
+    top: 50%;
+    transform: translateY(-50%);
     align-items: center;
   }
 
   .left.end,
-  .right-end {
+  .right.end {
+    bottom: 0;
+    top: auto;
     align-items: flex-end;
+  }
+
+  .up {
+    top: 0;
+    left: 0;
+    /* text-align: center; */
+  }
+
+  .down {
+    bottom: 0;
+    left: 0;
+    /* text-align: center; */
   }
 
   .up.start,
@@ -101,42 +138,16 @@
 
   .up.center,
   .down.center {
+    left: 50%;
+    transform: translateX(-50%);
     justify-content: center;
   }
 
   .up.end,
-  .down-end {
-    justify-content: flex-end;
-  }
-
-  .left,
-  .right {
-    height: 100%;
-    top: 0;
-  }
-
-  .left {
-    left: 0;
-    text-align: left;
-  }
-  .right {
+  .down.end {
     right: 0;
-    text-align: right;
-  }
-
-  .up,
-  .down {
-    width: 100%;
-    left: 0;
-    text-align: center;
-  }
-
-  .up {
-    top: 0;
-  }
-
-  .down {
-    bottom: 0;
+    left: auto;
+    justify-content: flex-end;
   }
 
   span {
