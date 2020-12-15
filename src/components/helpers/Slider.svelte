@@ -7,7 +7,7 @@
   export let duration = "500ms";
   export let timing = "ease";
 
-  export let count;
+  export let count = 0;
   export let active = 0;
 
   export const next = () => move(1);
