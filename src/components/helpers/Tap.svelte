@@ -16,12 +16,12 @@
 
   const dispatch = createEventDispatcher();
 
-  const getW = (dir) =>
+  $: getW = (dir) =>
     ["left", "right"].includes(dir) ? size : full ? "100%" : size;
-  const getH = (dir) =>
+  $: getH = (dir) =>
     ["up", "down"].includes(dir) ? size : full ? "100%" : size;
 
-  const onKeyDown = (e) => {
+  $: onKeyDown = (e) => {
     const dir = e.key.replace("Arrow", "").toLowerCase();
     const hasDir = directions.includes(dir);
     if (enableKeyboard && hasDir) {
@@ -40,9 +40,9 @@
 <section class="svelte-tap" class:debug>
   {#each directions as dir}
     <button
-      aria-label="{dir}"
       on:click="{dispatch('tap', dir)}"
       style="width: {getW(dir)}; height: {getH(dir)};"
+      aria-label="{dir}"
       class="{dir} {arrowPosition}"
       class:full
       disabled="{disable.includes(dir)}">
@@ -110,14 +110,12 @@
   .right.center {
     top: 50%;
     transform: translateY(-50%);
-    align-items: center;
   }
 
   .left.end,
   .right.end {
     bottom: 0;
     top: auto;
-    align-items: flex-end;
   }
 
   .up {
@@ -132,22 +130,46 @@
     /* text-align: center; */
   }
 
-  .up.start,
-  .down.start {
-    justify-content: flex-start;
-  }
-
   .up.center,
   .down.center {
     left: 50%;
     transform: translateX(-50%);
-    justify-content: center;
   }
 
   .up.end,
   .down.end {
     right: 0;
     left: auto;
+  }
+
+  /* full positions */
+  .full.left.start,
+  .full.right.start {
+    align-items: flex-start;
+  }
+
+  .full.left.center,
+  .full.right.center {
+    align-items: center;
+  }
+
+  .full.left.end,
+  .full.right.end {
+    align-items: flex-end;
+  }
+
+  .full.up.start,
+  .full.down.start {
+    justify-content: flex-start;
+  }
+
+  .full.up.center,
+  .full.down.center {
+    justify-content: center;
+  }
+
+  .full.up.end,
+  .full.down-end {
     justify-content: flex-end;
   }
 
