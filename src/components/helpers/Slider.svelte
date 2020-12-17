@@ -93,6 +93,7 @@
 
   .translate {
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     height: 100%;
