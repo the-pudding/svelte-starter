@@ -1,0 +1,130 @@
+/*
+			This font software is the property of Commercial Type.
+
+			You may not modify the font software, use it on another website, or install it on a computer.
+
+			License information is available at http://commercialtype.com/eula
+			For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+			Copyright (C) 2017 Schwartzco Inc.
+			License: 1704-GNCLGK
+*/
+
+/*
+********************
+	National
+********************
+*/
+
+@font-face {
+	font-family: 'National 2 Web';
+	src: url('../pudding-fonts/national/National2Web-Regular.woff2') format('woff2'),
+	url('../pudding-fonts/national/National2Web-Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'National 2 Web';
+	src: url('../pudding-fonts/national/National2Web-Bold.woff2') format('woff2'),
+	url('../pudding-fonts/national/National2Web-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+/*
+********************
+	National Narrow
+********************
+*/
+
+/*
+@font-face {
+	font-family: 'National 2 Narrow Web';
+	src: url('../pudding-fonts/national/National2NarrowWeb-Extralight.woff2') format('woff2'),
+	url('../pudding-fonts/national/National2NarrowWeb-Extralight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'National 2 Narrow Web';
+	src: url('../pudding-fonts/national/National2NarrowWeb-Regular.woff2') format('woff2'),
+	url('../pudding-fonts/national/National2NarrowWeb-Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'National 2 Narrow Web';
+	src: url('../pudding-fonts/national/National2NarrowWeb-Bold.woff2') format('woff2'),
+	url('../pudding-fonts/national/National2NarrowWeb-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+/*
+@font-face {
+	font-family: 'National 2 Narrow Web';
+	src: url('../pudding-fonts/national/National2NarrowWeb-Black.woff2') format('woff2'),
+	url('../pudding-fonts/national/National2NarrowWeb-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+*/
+
+/*
+********************
+	Tiempos Text
+********************
+*/
+
+@font-face {
+	font-family: 'Tiempos Text Web';
+	src: url('../pudding-fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2'),
+	url('../pudding-fonts/tiempos/TiemposTextWeb-Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Tiempos Text Web';
+	src: url('../pudding-fonts/tiempos/TiemposTextWeb-Bold.woff2') format('woff2'),
+	url('../pudding-fonts/tiempos/TiemposTextWeb-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+/*
+********************
+	Tiempos Headline
+********************
+*/
+
+/*
+@font-face {
+	font-family: 'Tiempos Headline Web';
+	src: url('../pudding-fonts/tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2'),
+	url('../pudding-fonts/tiempos/TiemposHeadlineWeb-Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+*/

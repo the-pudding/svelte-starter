@@ -21,7 +21,8 @@ export default {
   },
   plugins: [
     svelte({
-      generate: "ssr",
+			compilerOptions: { generate: "ssr" },
+			emitCss: false,
       preprocess
     }),
     resolve({
