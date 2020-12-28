@@ -1,3 +1,12 @@
+<!--
+	Add the css snippet below to your global css file to do a
+	full-screen + mobile friendly slider
+	
+	html, body, main {
+	height: 100%;
+	overflow: hidden;
+}
+-->
 <script>
   import { setContext, onMount } from "svelte";
   import { writable } from "svelte/store";
@@ -54,8 +63,8 @@
 
   // context
   $: _direction.set(direction);
-  $: _width.set(`${width}px`);
-  $: _height.set(`${height}px`);
+  $: _width.set(width);
+  $: _height.set(height);
   $: context = { direction: _direction, width: _width, height: _height };
   $: setContext("Slider", context);
 
@@ -67,6 +76,8 @@
       rootMargin: "-1px",
     });
     observer.observe(sliderEl);
+    height = height;
+    width = width;
   });
 </script>
 

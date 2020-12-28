@@ -2,8 +2,8 @@
   import { getContext } from "svelte";
   const { direction, width, height } = getContext("Slider");
 
-  $: w = $direction === "horizontal" ? $width : "100%";
-  $: h = $direction === "vertical" ? $height : "100%";
+  $: w = $direction === "horizontal" ? `${$width}px` : "100%";
+  $: h = $direction === "vertical" ? `${$height}px` : "100%";
 </script>
 
 <div class="slide" style="width: {w}; height: {h};">
