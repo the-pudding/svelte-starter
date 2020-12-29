@@ -34,8 +34,8 @@
   --border: var(--gray-light);
   --animation-duration: 0.1s;
   --button-hover: var(--gray-light);
-  --scrollbar-thumb: color-mod(var(--button-hover) lightness(-3%));
-  --scrollbar-thumb-hover: color-mod(var(--button-hover) lightness(-10%));
+  --scrollbar-thumb: var(--gray-light);
+  --scrollbar-thumb-hover: var(--gray);
 	--form-placeholder: var(--gray-dark);
 	--form-font: var(--sans);
 	--form-text: var(--gray-dark);
