@@ -2,7 +2,7 @@
 :root {
 	--body-font: serif;	
   --background-body: #fff;
-  --background: #efefef;
+  --background-ui: #f7f7f7;
   --background-alt: #f7f7f7;
   --selection: #9e9e9e;
   --text-main: #363636;
@@ -72,7 +72,7 @@ input,
 select,
 textarea {
   color: var(--form-text);
-  background-color: var(--background);
+  background-color: var(--background-ui);
   font-family: var(--form-font);
   font-size: inherit;
   padding: 0.5em;
@@ -117,7 +117,7 @@ textarea:not([rows]) {
   height: 140px;
 }
 select {
-  background: var(--background) var(--select-arrow) calc(100% - 12px) 50%/12px no-repeat;
+  background: var(--background-ui) var(--select-arrow) calc(100% - 12px) 50%/12px no-repeat;
   padding-right: 32px;
 }
 select::-ms-expand {
@@ -182,7 +182,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   height: 10px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background: var(--background);
+  background: var(--background-ui);
   border-radius: 4px;
 }
 input[type="range"]::-webkit-slider-thumb {
@@ -194,14 +194,14 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -5px;
 }
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: var(--background);
+  background: var(--background-ui);
 }
 input[type="range"]::-moz-range-track {
   width: 100%;
   height: 10px;
   -moz-transition: 0.2s;
   transition: 0.2s;
-  background: var(--background);
+  background: var(--background-ui);
   border-radius: 4px;
 }
 input[type="range"]::-moz-range-thumb {
@@ -221,7 +221,7 @@ input[type="range"]::-ms-track {
 }
 input[type="range"]::-ms-fill-lower,
 input[type="range"]::-ms-fill-upper {
-  background: var(--background);
+  background: var(--background-ui);
   border: 0.2px solid #010101;
   border-radius: 4px;
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
@@ -234,7 +234,7 @@ input[type="range"]::-ms-thumb {
 }
 input[type="range"]:focus::-ms-fill-lower,
 input[type="range"]:focus::-ms-fill-upper {
-  background: var(--background);
+  background: var(--background-ui);
 }
 a {
   color: var(--links);
@@ -282,7 +282,7 @@ tbody tr:nth-child(2n) {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: var(--background-ui);
   border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb {
@@ -319,7 +319,7 @@ details[open] summary {
 }
 summary {
   display: list-item;
-  background-color: var(--background);
+  background-color: var(--background-ui);
   padding: 10px;
   margin: -10px -10px 0;
   cursor: pointer;
