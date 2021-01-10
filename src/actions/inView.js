@@ -1,16 +1,20 @@
 /**
- * This action executes a callback on node entering/exiting the viewport.
- * params: { cb }
+ * This action triggers a custom event on node entering/exiting the viewport.
  * example:
- * <p use:inView={(v) => console.log(v)}>
+ * <p
+ * 	use:inView
+ * 	on:enter={() => console.log("enter")}
+ * 	on:exit={() => console.log("exit")}
+ * >
  */
 
-export default function inView(node, cb) {
+export default function inView(node) {
 	const options = { root: null };
-	const callback = cb ? cb : () => {}; 
-	const onChangeVisibility = (e) => callback(e[0].isIntersecting);
-	const observer = new IntersectionObserver(onChangeVisibility, options);;
-	
+	const handleIntersect = (e) => {
+		const v = e[0].isIntersecting ? "enter" : "exit";
+		node.dispatchEvent(new CustomEvent(v));
+	};
+	const observer = new IntersectionObserver(handleIntersect, options);;
 	observer.observe(node);
 
 	return {
