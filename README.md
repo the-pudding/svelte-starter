@@ -58,7 +58,7 @@ make github
 
 ## Style
 
-There are a few stylesheets included by default in `template.html`. Modify `global.css` variables to make changes to Water.css defaults.
+There are a few stylesheets included by default in `template.html`. Modify `global.css` variables to make changes to `water.css` defaults.
 
 You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
 
@@ -70,6 +70,36 @@ You can use SCSS or another CSS preprocessor by installing the module (eg. `node
 - paste in the ID above into `config.json`
 
 Running `npm run gdoc` at any point (even in new tab while server is running) will pull down the latest, and output a file to `src/data/copy.json` (or customize in the config file).
+
+## Pre-loaded helpers
+
+### Helper Components
+
+Located in `src/components/helpers`.
+
+- `Icon.svelte`: Simple integration with Feather Icons.
+- `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
+- `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
+
+### Pudding Components
+
+Located in `src/components/pudding`.
+
+- `Footer.svelte`: Pudding recirculation and social links.
+- `Header`: Pudding logo.
+
+### Actions
+
+Located in `src/actions`.
+
+- `inView.js`: detect when an element enters or exits the viewport.
+
+### Utils
+
+Located in `src/utils/`.
+
+- `mapToArray.js`: Convenience function to convert maps (generated from d3 group and rollup) to iterable array of objects.
+- `move.js`: transform translate function shorthand.
 
 ## Notes
 
