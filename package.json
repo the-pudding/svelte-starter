@@ -33,7 +33,7 @@
     "build": "rollup -c",
     "dev:rollup": "rollup -c -w",
     "dev:livereload": "rollup -c -w --environment LIVERELOAD",
-    "gdoc": "node scripts/fetch-google-doc.js",
+    "gdoc": "node scripts/fetch-google.js",
     "dev": "npm run dev:rollup",
     "predeploy": "npm run build",
     "deploy": "rollup -c rollup.config-ssr.js",

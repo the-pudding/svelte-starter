@@ -8,7 +8,7 @@ _Please note: do not use or reproduce The Pudding logos or fonts without written
 
 - [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
 - [Feather Icons](https://github.com/feathericons/feather) for simple/easy svg icons
-- [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs
+- [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs and Sheets
 - [LayerCake](https://layercake.graphics/) enabled by default for chart
 - [Water.css](https://github.com/kognise/water.css) for default styling
 - Includes csv, json, and svg imports by default
@@ -62,14 +62,15 @@ There are a few stylesheets included by default in `template.html`. Modify `glob
 
 You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
 
-## Google Docs
+## Google Docs and Sheets
 
-- Create a Google Doc
+- Create a Google Doc or Sheet
 - Click `Share` button -> advanced -> Change... -> to "Anyone with this link"
 - In the address bar, grab the ID - eg. ...com/document/d/**1IiA5a5iCjbjOYvZVgPcjGzMy5PyfCzpPF-LnQdCdFI0**/edit
-- paste in the ID above into `config.json`
+- paste in the ID above into `config.json`, and set the filepath to where you want the file saved
+- If you want to do a Google Sheet, be sure to include the `gid` value in the url as well
 
-Running `npm run gdoc` at any point (even in new tab while server is running) will pull down the latest, and output a file to `src/data/copy.json` (or customize in the config file).
+Running `npm run gdoc` at any point (even in new tab while server is running) will fetch the latest from all Docs and Sheets.
 
 ## Pre-loaded helpers
 
