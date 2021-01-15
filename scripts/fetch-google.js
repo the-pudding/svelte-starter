@@ -17,11 +17,11 @@ const fetchGoogle = ({ id, gid }) => {
 		request(url, (error, response, body) => {
 			if (error) reject(error);
 			else if (response && gid) {
+				resolve(body);
+			} else if (response) {
 				const parsed = archieml.load(body);
 				const str = JSON.stringify(parsed);
 				resolve(str);
-			} else if (response) {
-				resolve(body);
 			} else reject("no response");
 		});
 	});
