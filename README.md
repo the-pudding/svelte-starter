@@ -104,8 +104,7 @@ Located in `src/utils/`.
 
 ### Preset Stores
 
-- prefersReducedMotion
-  This returns a boolean if the user has this CSS media query enabled or not. Usage:
+- `prefersReducedMotion`: this returns a boolean if the user has this CSS media query enabled or not. Usage:
 
 ```svelte
 import { prefersReducedMotion } from "../stores/global.js";
