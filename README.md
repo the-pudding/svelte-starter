@@ -102,6 +102,15 @@ Located in `src/utils/`.
 - `mapToArray.js`: Convenience function to convert maps (generated from d3 group and rollup) to iterable array of objects.
 - `move.js`: transform translate function shorthand.
 
+### Preset Stores
+
+- prefersReducedMotion
+  This returns a boolean if the user has this CSS media query enabled or not. Usage:
+
+```svelte
+import { prefersReducedMotion } from "../stores/global.js";
+```
+
 ## Notes
 
 Any @html tags, e.g., `{@html user}` must be the child of a dom element so they can be properly hydrated.
