@@ -1,15 +1,16 @@
 <svelte:head>
   <title>Svelte Starter</title>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content="" />
+  <meta name="author" content="" />
   <meta name="news_keywords" content="" />
 
   <meta property="og:title" content="" />
   <meta property="og:site_name" content="" />
   <meta property="og:url" content="" />
-  <meta property="og:description" content="description" />
+  <meta property="og:description" content="" />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_US" />
 
