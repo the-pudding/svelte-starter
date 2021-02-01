@@ -1,5 +1,4 @@
 <script>
-  import throttleFn from "lodash.throttle";
   import debounceFn from "lodash.debounce";
   import { onMount } from "svelte";
   import { innerWidth, innerHeight, scrollY } from "../../stores/global.js";
