@@ -1,7 +1,7 @@
 <script>
   import debounceFn from "lodash.debounce";
   import { onMount } from "svelte";
-  import { innerWidth, innerHeight, scrollY } from "../../stores/global.js";
+  import { innerWidth, innerHeight, scrollY } from "../stores/global.js";
 
   export let debounce = 300;
 
