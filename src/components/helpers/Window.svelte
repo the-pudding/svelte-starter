@@ -1,7 +1,7 @@
 <script>
   import debounceFn from "lodash.debounce";
   import { onMount } from "svelte";
-  import { innerWidth, innerHeight, scrollY } from "../../stores/global.js";
+  import { windowWidth, windowHeight, scrollY } from "../../stores/global.js";
 
   export let debounce = 300;
 
@@ -9,8 +9,8 @@
   let lastScrollY = 0;
 
   const onResize = () => {
-    $innerWidth = window.innerWidth;
-    $innerHeight = window.innerHeight;
+    $windowWidth = window.innerWidth;
+    $windowHeight = window.innerHeight;
   };
 
   const updateScrollY = () => {
