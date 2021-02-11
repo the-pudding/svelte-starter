@@ -106,23 +106,17 @@ Located in `src/utils/`.
 
 ### Preset Stores
 
-- `prefersReducedMotion`: returns a boolean if the user has this CSS media query enabled or not. Usage:
+These are located in `src/stores`, to include them do this (replacing `name`):
 
 ```js
-import prefersReducedMotion from "../stores/prefersReducedMotion.js";
+import name from "../stores/name.js";
 ```
+
+- `prefersReducedMotion`: returns a boolean if the user has this CSS media query enabled or not. Usage:
 
 - `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance. Usage:
 
-```js
-import viewport from "../stores/viewport.js";
-```
-
 - `scrollY`: returns an number window vertical scroll position. It is throttled using rAF for performance. Usage:
-
-```js
-import scrollY from "../stores/scrollY.js";
-```
 
 ## Notes
 
