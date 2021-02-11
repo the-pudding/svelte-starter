@@ -105,10 +105,22 @@ Located in `src/utils/`.
 
 ### Preset Stores
 
-- `prefersReducedMotion`: this returns a boolean if the user has this CSS media query enabled or not. Usage:
+- `prefersReducedMotion`: returns a boolean if the user has this CSS media query enabled or not. Usage:
 
-```svelte
-import { prefersReducedMotion } from "../stores/global.js";
+```js
+import prefersReducedMotion from "../stores/prefersReducedMotion.js";
+```
+
+- `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance. Usage:
+
+```js
+import viewport from "../stores/viewport.js";
+```
+
+- `scrollY`: returns an number window vertical scroll position. It is throttled using rAF for performance. Usage:
+
+```js
+import scrollY from "../stores/scrollY.js";
 ```
 
 ## Notes
