@@ -88,13 +88,14 @@ Located in `src/components/helpers`.
 Located in `src/components/pudding`.
 
 - `Footer.svelte`: Pudding recirculation and social links.
-- `Header`: Pudding logo.
+- `Header.svelte`: Pudding logo.
 
 ### Actions
 
 Located in `src/actions`.
 
 - `inView.js`: detect when an element enters or exits the viewport.
+- `css.js`: dynmically change the value of a CSS variable.
 
 ### Utils
 
