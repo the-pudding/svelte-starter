@@ -4,10 +4,12 @@ import debounce from "lodash.debounce";
 export default readable({ width: 0, height: 0 }, (set) => {
 	const onResize = () => set({ width: window.innerWidth, height: window.innerHeight });
 
-	if (window) {	
+	if (typeof window !== "undefined") {	
 		onResize();
 		window.addEventListener('resize', debounce(onResize, 250));
 	}
 	
-	return () => window.removeEventListener('resize', onResize);
+	return () => {
+		if (typeof window !== "undefined") window.removeEventListener('resize', onResize);
+	};
 });

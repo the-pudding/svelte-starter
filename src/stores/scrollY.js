@@ -17,7 +17,9 @@ export default readable(0, (set) => {
 		}
 	};
 
-	if (document) document.addEventListener('scroll', onScroll);
+	if (typeof document !== "undefined") document.addEventListener('scroll', onScroll);
 	
-	return () => document.removeEventListener("scroll", onScroll);
+	return () => {
+		if (typeof document !== "undefined")  document.removeEventListener("scroll", onScroll);
+	};
 });
