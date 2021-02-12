@@ -1,6 +1,6 @@
 {
   "name": "svelte-starter",
-  "version": "2.2.12",
+  "version": "2.2.13",
   "engines": {
     "node": "14.15.0"
   },
