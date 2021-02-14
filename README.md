@@ -112,11 +112,13 @@ These are located in `src/stores`, to include them do this (replacing `name`):
 import name from "../stores/name.js";
 ```
 
-- `prefersReducedMotion`: returns a boolean if the user has this CSS media query enabled or not. Usage:
+- `prefersReducedMotion`: returns a boolean if the user has this CSS media query enabled or not.
 
-- `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance. Usage:
+- `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance.
 
-- `scrollY`: returns an number window vertical scroll position. It is throttled using rAF for performance. Usage:
+- `scrollY`: returns an number window vertical scroll position. It is throttled using rAF for performance.
+
+- `elapsed`: returns an number that represents the milliseconds elapsed since the timer was first instantiated.
 
 ## Notes
 
