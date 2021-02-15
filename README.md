@@ -120,6 +120,27 @@ import name from "../stores/name.js";
 
 - `elapsed`: returns an number that represents the milliseconds elapsed since the timer was first instantiated.
 
+### Utils
+
+`transformSvg.js`: this custom transition lets you apply an svg transform property with the in/out svelte transition. Parameters (with defaults):
+
+```js
+{
+	target: "", // string: transform properties [required]
+	delay: 0, // number: ms
+	duration: 250, // number: in ms
+	easing: linear, // function: svelte easing function
+	relative: false, // boolean: adds target onto pre-existing transform
+	opacity: false // boolean: to fade in/out as well
+}
+```
+
+**Usage**
+
+```svelte
+<g out:transformSvg={{ target: "translate(50, 50)" }}>
+```
+
 ## Notes
 
 Any @html tags, e.g., `{@html user}` must be the child of a dom element so they can be properly hydrated.

@@ -13,6 +13,7 @@
     "archieml": "^0.4.2",
     "autoprefixer": "^10.1.0",
     "compression": "^1.7.4",
+    "d3-interpolate": "^2.0.1",
     "feather-icons": "^4.28.0",
     "layercake": "^4.0.3",
     "lodash.debounce": "^4.0.8",
