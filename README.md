@@ -118,7 +118,7 @@ import name from "../stores/name.js";
 
 - `scrollY`: returns an number window vertical scroll position. It is throttled using rAF for performance.
 
-- `timer`: returns an object { timer, elapsed }. Timer has 4 methods (start, stop, toggle, reset) and elapsed is a store that is the number of ms.
+- `timer`: returns an object { timer, elapsed }. `timer` has 5 methods (start, stop, toggle, set, reset) and `elapsed` is a store that is the number of ms.
 
 ### Utils
 

@@ -14,24 +14,27 @@ const tick = (timestamp) => {
 
 const timer = {
 	start() {
-		if (typeof window === "undefined")  return;
+		if (typeof window === "undefined") return;
 		else if (!req) {
 			prev = null;
 			req = window.requestAnimationFrame(tick);
 		}
 	},
 	stop() {
-		if (typeof window === "undefined")  return;
+		if (typeof window === "undefined") return;
 		else if (req) {
 			window.cancelAnimationFrame(req);
 			req = null;
 		}
 	},
 	toggle() {
-		req ? timer.stop() : timer.start();	
+		req ? timer.stop() : timer.start();
+	},
+	set(val) {
+		if (typeof val === "number") elapsed.set(val);
 	},
 	reset() {
-		elapsed.set(0);
+		timer.set(0);
 	}
 };
 
