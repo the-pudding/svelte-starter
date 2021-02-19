@@ -1,30 +1,32 @@
 const fs = require("fs");
 const archieml = require("archieml");
-const request = require("request");
+const fetch = require('node-fetch');
 
 const CWD = process.cwd();
 const CONFIG_PATH = `${CWD}/config.json`;
 const CONFIG = JSON.parse(fs.readFileSync(CONFIG_PATH, "utf8"));
 const { google } = CONFIG;
 
-const fetchGoogle = ({ id, gid }) => {
-	return new Promise((resolve, reject) => {
-		console.log(`fetching...${id}`);
-		const base= "https://docs.google.com";
-		const post = gid ? `spreadsheets/u/1/d/${id}/export?format=json&id=${id}&gid=${gid}` : `document/d/${id}/export?format=txt`;
-		const url = `${base}/${post}`;
+const fetchGoogle = async ({ id, gid }) => {
+	console.log(`fetching...${id}`);
+	
+	const base= "https://docs.google.com";
+	const post = gid ? `spreadsheets/u/1/d/${id}/export?format=csv&id=${id}&gid=${gid}` : `document/d/${id}/export?format=txt`;
+	const url = `${base}/${post}`;
 
-		request(url, (error, response, body) => {
-			if (error) reject(error);
-			else if (response && gid) {
-				resolve(body);
-			} else if (response) {
-				const parsed = archieml.load(body);
-				const str = JSON.stringify(parsed);
-				resolve(str);
-			} else reject("no response");
-		});
-	});
+	try {		
+		const response = await fetch(url);
+		const text = await response.text();
+		
+		if (gid) return text;
+		
+		const parsed = archieml.load(text);
+		const str = JSON.stringify(parsed);
+		return str;
+
+	} catch (err) {
+		throw new Error(err);
+	}
 };
 
 (async () => {
