@@ -1,18 +1,46 @@
 <script>
-  // Import the getContext function from svelte
-  import { getContext } from "svelte";
+  import { LayerCake, ScaledSvg, Html } from "layercake";
+  import Dots from "./Scatter.Dots.svelte";
+  import Labels from "./Scatter.Labels.svelte";
 
-  // Access the context using the 'LayerCake' keyword
-  // Grab some helpful functions
-  const { data, x, xScale, y, yScale } = getContext("LayerCake");
+  const points = [
+    { x: 0, y: 1, text: "A" },
+    { x: 10, y: 5, text: "B" },
+    { x: 15, y: 10, text: "C" },
+  ];
 
-  export let fill = "#000";
-  export let r = 5;
+  const fixedAspectRatio = 1;
 </script>
 
-<g>
-  {#each $data as d}
-    <circle cx="{$xScale($x(d))}" cy="{$yScale($y(d))}" fill="{fill}" r="{r}">
-    </circle>
-  {/each}
-</g>
+<div class="chart-container">
+  <figure style="padding-bottom: {100 / fixedAspectRatio}%">
+    <LayerCake
+      data="{points}"
+      x="x"
+      y="y"
+      position="absolute"
+      ssr="{true}"
+      percentRange="{true}"
+      fixedAspectRatio="{fixedAspectRatio}"
+    >
+      <ScaledSvg>
+        <Dots r="{4}" scaled="{false}" />
+      </ScaledSvg>
+      <Html>
+        <Labels />
+      </Html>
+    </LayerCake>
+  </figure>
+</div>
+
+<style>
+  .chart-container {
+    width: 50%;
+    max-width: 480px;
+  }
+
+  figure {
+    position: relative;
+    width: 100%;
+  }
+</style>

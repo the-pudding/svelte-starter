@@ -1,18 +1,9 @@
 <script>
   import { onMount } from "svelte";
-  import { LayerCake, Svg } from "layercake";
   import Scatter from "./Scatter.svelte";
   import Icon from "../helpers/Icon.svelte";
   import sampleData from "../../data/demo/sample.csv";
   import copyData from "../../data/demo/copy.json";
-
-  const points = [
-    { x: 0, y: 1 },
-    { x: 10, y: 5 },
-    { x: 15, y: 10 },
-  ];
-  const r = 6;
-  const padding = { top: r * 2, right: r * 2, bottom: r * 2, left: r * 2 };
 </script>
 
 <section id="demo">
@@ -57,15 +48,9 @@
   </div>
 
   <div>
-    <p>A chart using Layercake</p>
+    <p>A server-side rendered chart using Layercake</p>
     <!-- chart using Layercake -->
-    <figure>
-      <LayerCake data="{points}" x="x" y="y" padding="{padding}">
-        <Svg>
-          <Scatter r="{r}" />
-        </Svg>
-      </LayerCake>
-    </figure>
+    <Scatter />
   </div>
 
   <div>
@@ -108,12 +93,6 @@
 
   img {
     width: 20rem;
-  }
-
-  figure {
-    position: relative;
-    width: 20rem;
-    height: 20rem;
   }
 
   td:nth-child(2),
