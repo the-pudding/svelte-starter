@@ -12,10 +12,7 @@
 
 <g>
   {#each $data as d}
-    <circle
-      cx="{$xScale($x(d))}"
-      cy="{$yScale($y(d))}"
-      fill="{fill}"
-      r="{r}"></circle>
+    <circle cx="{$xScale($x(d))}" cy="{$yScale($y(d))}" fill="{fill}" r="{r}">
+    </circle>
   {/each}
 </g>

@@ -24,8 +24,7 @@
   <div>
     <p>
       Hello svelter! Here is an inline svg icon:
-      <!-- icon from tabler (see styling in global.css -->
-      <!-- {@html moodSmile} -->
+      <!-- icon from tabler (see styling in global.css) -->
       <Icon name="feather" />
     </p>
   </div>
@@ -67,6 +66,7 @@
         </Svg>
       </LayerCake>
     </figure>
+
     <div>
       <h1>Heading 1</h1>
       <h2>Heading 2</h2>
@@ -75,15 +75,9 @@
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
       <p>
-        This is a paragraph with a
-        <strong>strong</strong>
-        tag and an
-        <em>em</em>
-        tag. And here is a
-        <mark>mark</mark>
-        tag. Oh and a
-        <a href="#demo">link</a>
-        tag.
+        This is a paragraph with a <strong>strong</strong> tag and an
+        <em>em</em> tag. And here is a <mark>mark</mark> tag. Oh and a
+        <a href="#demo">link</a> tag.
       </p>
     </div>
 
