@@ -112,7 +112,7 @@ These are located in `src/stores`, to include them do this (replacing `name`):
 import name from "../stores/name.js";
 ```
 
-- `prefersReducedMotion`: returns a boolean if the user has this CSS media query enabled or not.
+- `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.
 
 - `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance.
 
