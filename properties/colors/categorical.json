@@ -1,0 +1,25 @@
+{
+	"categorical": {
+		"blue": {
+			"value": "#4477AA"
+		},
+		"red": {
+			"value": "#EE6677"
+		},
+		"green": {
+			"value": "#228833"
+		},
+		"yellow": {
+			"value": "#CCBB44"
+		},
+		"cyan": {
+			"value": "#66CCEE"
+		},
+		"purple": {
+			"value": "#AA3377"
+		},
+		"gray": {
+			"value": "#BBBBBB"
+		}
+	}
+}

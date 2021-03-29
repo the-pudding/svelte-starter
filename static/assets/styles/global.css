@@ -1,0 +1,180 @@
+/* colors defined in variables.css */
+:root {
+	/* font */
+	--sans: "National 2 Web", Helvetica, Arial, sans-serif;
+	--serif: "Tiempos Text Web", Georgia, Times, serif;
+	--mono: Menlo, Consolas, Monaco, "Courier New", monospace;
+	
+	/* z-index */
+	--z-bottom: -100;
+  --z-middle: 0;
+  --z-top: 100;
+	--z-overlay: 1000;
+
+	/* presets */
+	--font-body: var(--sans);
+	--font-form: var(--sans);
+	--background-body: var(--base-white);
+  --background-form: var(--base-off-white);
+	--color-body: var(--base-off-black);
+	--color-placeholder: var(--base-gray-dark);
+  --color-link: var(--base-purple);
+  --color-focus: var(--base-gray);
+	--color-border: var(--base-gray-light);
+	--color-selection: var(--base-gray);
+  --color-highlight: var(--base-yellow);
+}
+
+body {
+	background-color: var(--background-body);
+  color: var(--color-body);
+	line-height: 1.4;
+	font-family: var(--font-body);
+	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
+	text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 1rem 0;
+}
+
+mark {
+  background-color: var(--color-highlight);
+  padding: 0 0.25em;
+}
+
+a {
+  color: var(--color-link);
+}
+
+img,
+video {
+	display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+select,
+textarea,
+input[type="submit"],
+input[type="button"] {
+	appearance: none;
+  background-color: var(--background-form);
+  border: none;
+  border-radius: 4px;
+  color: var(--color-form);
+  font-family: var(--font-form);
+  font-size: inherit;
+  outline: none;
+  padding: 0.5em;
+}
+
+button,
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"],
+input[type="submit"],
+select {
+  cursor: pointer;
+}
+
+input[type="button"],
+input[type="range"],
+input[type="submit"],
+select {
+  display: inline-block;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background: var(--background-form);
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px var(--color-focus);
+}
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption,
+td,
+th {
+  text-align: left;
+}
+td,
+th {
+  padding: 0.25em;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+thead {
+  border-bottom: 1px solid var(--color-border);
+}
+
+tfoot {
+  border-top: 1px solid var(--color-border);
+}
+
+::-moz-placeholder {
+  color: var(--color-placeholder);
+}
+
+:-ms-input-placeholder {
+  color: var(--color-placeholder);
+}
+
+::-ms-input-placeholder {
+  color: var(--color-placeholder);
+}
+
+::placeholder {
+  color: var(--color-placeholder);
+}
+
+::-moz-selection {
+  background-color: var(--color-selection);
+}
+::selection {
+  background-color: var(--color-selection);
+}
+
+.skip-to-main {
+	border: none;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+}
+
+.skip-to-main:focus {
+	width: auto;
+	height: auto;
+	padding: 0.5em;
+	z-index: var(--z-overlay);
+}

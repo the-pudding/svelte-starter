@@ -1,19 +1,19 @@
 # Svelte Starter
 
-This [starter template](https://github.com/the-pudding/svelte-starter) aims for fast and easy web development with HMR, and pre-rendered HTML for optimal static hosting.
+This [starter template](https://github.com/the-pudding/svelte-starter) aims for fast and easy web development speficially for data-driven and visual stories. It is an opinionated template built on top of [SvelteKit](https://kit.svelte.dev/).
 
-_Please note: do not use or reproduce The Pudding logos or fonts without written permission._
+_Please Note: do not use or reproduce The Pudding logos or fonts without written permission._
+
+_Prettier Formatting: Disable any text editor Prettier extensions to take advantage of the built-in rules._
 
 #### Features
 
-- [HMR](https://github.com/rixo/svelte-hmr) for lightning fast development
 - [Feather Icons](https://github.com/feathericons/feather) for simple/easy svg icons
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs and Sheets
-- [LayerCake](https://layercake.graphics/) enabled by default for chart
-- [Water.css](https://github.com/kognise/water.css) for default styling
+- [LayerCake](https://layercake.graphics/) enabled by default for chart making
+- [Style Dictionary](https://amzn.github.io/style-dictionary/) for CSS/JS style parity
 - Includes csv, json, and svg imports by default
-- Pre-renders HTML on deploy with content that is hydrated on load
-- Configured to make easy deploment to Github Pages
+- Static-hosted builds by default
 
 ## Quickstart
 
@@ -40,15 +40,15 @@ To start the dev server:
 npm run dev
 ```
 
-Modify content in `src` and `public/assets`.
+Modify content in `src` and `static/assets`.
 
 ## Deploy
 
 ```bash
-npm run deploy
+npm run build
 ```
 
-This generates a directory called `ssr` with the server-side rendered static-hostable app.
+This generates a directory called `build` with the server-side rendered static-hostable app.
 
 If deploying to github pages:
 
@@ -58,58 +58,58 @@ make github
 
 ## Style
 
-There are a few stylesheets included by default in `template.html`. Modify `global.css` variables to make changes to `water.css` defaults.
+There are a few stylesheets included by default in `static/assets/styles`. Put anything global in `global.css`. For variable parity in both CSS and JS, modify files in the `properties` folder using the [Style Dictionary](https://amzn.github.io/style-dictionary/) API.
 
-You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in the rollup config files.
+You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in `svelte.config.cjs`.
 
 ## Google Docs and Sheets
 
 - Create a Google Doc or Sheet
 - Click `Share` button -> advanced -> Change... -> to "Anyone with this link"
 - In the address bar, grab the ID - eg. ...com/document/d/**1IiA5a5iCjbjOYvZVgPcjGzMy5PyfCzpPF-LnQdCdFI0**/edit
-- paste in the ID above into `config.json`, and set the filepath to where you want the file saved
+- paste in the ID above into `google.config.cjs`, and set the filepath to where you want the file saved
 - If you want to do a Google Sheet, be sure to include the `gid` value in the url as well
 
 Running `npm run gdoc` at any point (even in new tab while server is running) will fetch the latest from all Docs and Sheets.
 
 ## Pre-loaded helpers
 
+### Components
+
+Located in `src/lib/components`.
+
+- `Footer.svelte`: Pudding recirculation and social links.
+- `Header.svelte`: Pudding logo.
+
 ### Helper Components
 
-Located in `src/components/helpers`.
+Located in `src/lib/components/helpers`.
 
 - `Window.svelte`: A wrapper around svelte:window that automatically debounces resize and throttles scroll, storing `innerHeight`, `innerWidth`, and `scrollY` as global stores.
 - `Icon.svelte`: Simple integration with Feather Icons.
 - `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
 - `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
 
-### Pudding Components
-
-Located in `src/components/pudding`.
-
-- `Footer.svelte`: Pudding recirculation and social links.
-- `Header.svelte`: Pudding logo.
-
 ### Actions
 
-Located in `src/actions`.
+Located in `src/lib/actions`.
 
 - `inView.js`: detect when an element enters or exits the viewport.
 - `css.js`: dynmically change the value of a CSS variable.
 
 ### Utils
 
-Located in `src/utils/`.
+Located in `src/lib/utils/`.
 
 - `mapToArray.js`: Convenience function to convert maps (generated from d3 group and rollup) to iterable array of objects.
 - `move.js`: transform translate function shorthand.
 
-### Preset Stores
+### Stores
 
-These are located in `src/stores`, to include them do this (replacing `name`):
+These are located in `src/lib/stores`. You can put custom ones in `src/lib/stores/misc.js` or create unique files for more complex ones. To include them do this (replacing `name`):
 
 ```js
-import name from "../stores/name.js";
+import name from "$lib/stores/name.js";
 ```
 
 - `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.

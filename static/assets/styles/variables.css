@@ -1,0 +1,26 @@
+/**
+ * Do not edit directly
+ * Generated on Mon, 29 Mar 2021 15:26:24 GMT
+ */
+
+:root {
+  --base-black: #000000;
+  --base-off-black: #282828;
+  --base-gray-dark: #5b5b5b;
+  --base-gray-medium:  #949494;
+  --base-gray-light: #c9c9c9;
+  --base-off-white: #f0f0f0;
+  --base-white:  #fff;
+  --base-purple:  #a239ca;
+  --base-blue:  #4717f6;
+  --base-green:  #34a29e;
+  --base-red:  #ff533d;
+  --base-yellow:  #e5e338;
+  --categorical-blue: #4477AA;
+  --categorical-red: #EE6677;
+  --categorical-green: #228833;
+  --categorical-yellow: #CCBB44;
+  --categorical-cyan: #66CCEE;
+  --categorical-purple: #AA3377;
+  --categorical-gray: #BBBBBB;
+}
