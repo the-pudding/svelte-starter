@@ -29,7 +29,6 @@ Then in your local repo:
 
 ```bash
 npm install
-npm run build
 ```
 
 ## Development
