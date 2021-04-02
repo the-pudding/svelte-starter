@@ -1,0 +1,31 @@
+@import "variables.css";
+@import "normalize.css";
+@import "font.css";
+@import "reset.css";
+
+/* colors defined in variables.css */
+:root {
+	/* font */
+	--sans: "National 2 Web", Helvetica, Arial, sans-serif;
+	--serif: "Tiempos Text Web", Georgia, Times, serif;
+	--mono: Menlo, Consolas, Monaco, "Courier New", monospace;
+	
+	/* z-index */
+	--z-bottom: -100;
+  --z-middle: 0;
+  --z-top: 100;
+	--z-overlay: 1000;
+
+	/* presets */
+	--font-body: var(--sans);
+	--font-form: var(--sans);
+	--background-body: var(--base-white);
+  --background-form: var(--base-off-white);
+	--color-body: var(--base-off-black);
+	--color-placeholder: var(--base-gray-dark);
+  --color-link: var(--base-purple);
+  --color-focus: var(--base-red);
+	--color-border: var(--base-gray-light);
+	--color-selection: var(--base-gray);
+  --color-highlight: var(--base-yellow);
+}

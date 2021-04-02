@@ -4,7 +4,7 @@ const StyleDictionary = require("style-dictionary").extend({
 	platforms: {
 		css: {
 			transformGroup: "css",
-			buildPath: `${CWD}/static/assets/styles/`,
+			buildPath: `${CWD}/src/styles/`,
 			files: [{
 				format: "css/variables",
 				destination: "variables.css"

@@ -1,29 +1,3 @@
-/* colors defined in variables.css */
-:root {
-	/* font */
-	--sans: "National 2 Web", Helvetica, Arial, sans-serif;
-	--serif: "Tiempos Text Web", Georgia, Times, serif;
-	--mono: Menlo, Consolas, Monaco, "Courier New", monospace;
-	
-	/* z-index */
-	--z-bottom: -100;
-  --z-middle: 0;
-  --z-top: 100;
-	--z-overlay: 1000;
-
-	/* presets */
-	--font-body: var(--sans);
-	--font-form: var(--sans);
-	--background-body: var(--base-white);
-  --background-form: var(--base-off-white);
-	--color-body: var(--base-off-black);
-	--color-placeholder: var(--base-gray-dark);
-  --color-link: var(--base-purple);
-  --color-focus: var(--base-gray);
-	--color-border: var(--base-gray-light);
-	--color-selection: var(--base-gray);
-  --color-highlight: var(--base-yellow);
-}
 
 body {
 	background-color: var(--background-body);
@@ -126,6 +100,7 @@ td,
 th {
   text-align: left;
 }
+
 td,
 th {
   padding: 0.25em;
@@ -164,6 +139,7 @@ tfoot {
   background-color: var(--color-selection);
 }
 
+
 .skip-to-main {
 	border: none;
 	width: 1px;
@@ -177,4 +153,14 @@ tfoot {
 	height: auto;
 	padding: 0.5em;
 	z-index: var(--z-overlay);
+}
+
+.sr-only {
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
 }

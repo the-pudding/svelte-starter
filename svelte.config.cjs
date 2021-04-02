@@ -1,9 +1,9 @@
+const fs = require("fs");
 const node = require("@sveltejs/adapter-node");
 const static = require("@sveltejs/adapter-static");
-const sveltePreprocess = require("svelte-preprocess");
 const svg = require("vite-plugin-svgstring");
 const dsv = require("@rollup/plugin-dsv");
-const liveReload = require("vite-plugin-live-reload").default;
+const sveltePreprocess = require("svelte-preprocess");
 const pkg = require("./package.json");
 
 const preprocess = sveltePreprocess({
@@ -23,8 +23,7 @@ module.exports = {
 			},
 			plugins: [
 				dsv(),
-				svg(),
-				liveReload(['static/**/*'])
+				svg()
 			]
 		}
 	}

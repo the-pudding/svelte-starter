@@ -57,7 +57,7 @@ make github
 
 ## Style
 
-There are a few stylesheets included by default in `static/assets/styles`. Put anything global in `global.css`. For variable parity in both CSS and JS, modify files in the `properties` folder using the [Style Dictionary](https://amzn.github.io/style-dictionary/) API.
+There are a few stylesheets included by default in `src/styles`. Put anything global in `app.css`. For variable parity in both CSS and JS, modify files in the `properties` folder using the [Style Dictionary](https://amzn.github.io/style-dictionary/) API.
 
 You can use SCSS or another CSS preprocessor by installing the module (eg. `node-sass`) and including the property in the svelte-preprocess in `svelte.config.cjs`.
 
