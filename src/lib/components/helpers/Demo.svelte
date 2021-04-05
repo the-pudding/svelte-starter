@@ -21,27 +21,27 @@
 
 <div>
   <section>
-    <h2>Button Set = {buttonSetValue}</h2>
+    <h2>Button Set <span>{buttonSetValue}</span></h2>
     <ButtonSet legend={"Choose"} options={buttonSetOptions} bind:value={buttonSetValue} />
   </section>
 
   <section>
-    <h2>Range = {rangeValue}</h2>
+    <h2>Range <span>{rangeValue}</span></h2>
     <Range min={0} max={10} step={1} showTicks={true} bind:value={rangeValue} />
   </section>
 
   <section>
-    <h2>Select = {selectValue}</h2>
+    <h2>Select <span>{selectValue}</span></h2>
     <Select label={"Select something"} options={selectOptions} bind:value={selectValue} />
   </section>
 
   <section>
-    <h2>Toggle (inner) = {toggleValueInner}</h2>
-    <Toggle bind:value={toggleValueInner} label="Enable" style="inner" />
+    <h2>Toggle (inner) <span>{toggleValueInner}</span></h2>
+    <Toggle label="Enable" style="inner" bind:value={toggleValueInner} />
   </section>
   <section>
-    <h2>Toggle (slider) = {toggleValueSlider}</h2>
-    <Toggle bind:value={toggleValueSlider} label="Enable" style="slider" />
+    <h2>Toggle (slider) <span>{toggleValueSlider}</span></h2>
+    <Toggle label="Enable" style="slider" bind:value={toggleValueSlider} />
   </section>
 </div>
 
@@ -57,5 +57,10 @@
 
   h2 {
     font-weight: bold;
+  }
+
+  span {
+    background: var(--color-highlight);
+    padding: 0 0.5em;
   }
 </style>

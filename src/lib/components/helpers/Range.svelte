@@ -26,11 +26,10 @@
 
 <style>
   .range {
-    --thumb-width: 20px;
-    --tick-height: 8px;
+    --thumb-width: 24px;
     --tick-font-size: 12px;
     position: relative;
-    margin-bottom: calc(var(--tick-height) + var(--tick-font-size));
+    margin-bottom: calc(var(--thumb-width) * 2);
   }
 
   input[type="range"] {
@@ -42,15 +41,22 @@
     margin: 0;
     background: transparent;
     position: relative;
+    outline: none;
   }
 
   input[type="range"]:focus {
     box-shadow: 0 0 4px 0 var(--color-focus, #999);
   }
 
+  input[type="range"]:focus::-webkit-slider-thumb,
+  input[type="range"]:focus::-moz-range-thumb,
+  input[type="range"]:focus::-ms-thumb {
+    box-shadow: 0 0 4px 0 var(--color-focus, #999);
+  }
+
   input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
-    height: calc(var(--thumb-width) / 2);
+    height: calc(var(--thumb-width) / 4);
     background: var(--base-gray-light);
     border-radius: 4px;
   }
@@ -60,8 +66,8 @@
     width: var(--thumb-width);
     border-radius: 50%;
     background: var(--base-off-black);
-    -webkit-appearance: none;
-    margin-top: -5px;
+    appearance: none;
+    margin-top: calc(var(--thumb-width) / -3);
   }
 
   input[type="range"]:focus::-webkit-slider-runnable-track {
@@ -70,7 +76,7 @@
 
   input[type="range"]::-moz-range-track {
     width: 100%;
-    height: calc(var(--thumb-width) / 2);
+    height: calc(var(--thumb-width) / 4);
     background: var(--base-gray-light);
     border-radius: 4px;
   }
@@ -85,7 +91,7 @@
 
   input[type="range"]::-ms-track {
     width: 100%;
-    height: calc(var(--thumb-width) / 2);
+    height: calc(var(--thumb-width) / 4);
     background: transparent;
     border-color: transparent;
     border-width: 16px 0;
@@ -134,7 +140,7 @@
     width: 1px;
     background: transparent;
     color: var(--base-gray);
-    padding-top: 0.75em;
+    padding-top: calc(var(--thumb-width) / 2);
     position: relative;
   }
 
@@ -145,7 +151,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 0.5em;
+    height: calc(var(--thumb-width) / 3);
     background: var(--base-gray-light);
   }
 
