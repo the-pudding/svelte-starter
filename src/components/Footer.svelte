@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import wordmark from "$lib/svg/wordmark.svg";
+  import wordmark from "$svg/wordmark.svg";
 
   let localURL;
   let stories = [];
@@ -35,7 +35,10 @@
     {#each stories as { hed, url, image }}
       <div class="story">
         <a href="https://pudding.cool/{url}">
-          <img src="https://pudding.cool/common/assets/thumbnails/640/{image}.jpg" alt={hed} />
+          <img
+            src="https://pudding.cool/common/assets/thumbnails/640/{image}.jpg"
+            alt="thumbnail"
+          />
           <span>{hed}</span>
         </a>
       </div>

@@ -1,5 +1,5 @@
 <script>
-  import wordmark from "$lib/svg/wordmark.svg";
+  import wordmark from "$svg/wordmark.svg";
 </script>
 
 <header>

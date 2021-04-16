@@ -108,7 +108,7 @@ Located in `src/lib/utils/`.
 These are located in `src/lib/stores`. You can put custom ones in `src/lib/stores/misc.js` or create unique files for more complex ones. To include them do this (replacing `name`):
 
 ```js
-import name from "$lib/stores/name.js";
+import name from "$stores/name.js";
 ```
 
 - `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.

@@ -1,8 +1,8 @@
 <script>
-  import ButtonSet from "$lib/components/helpers/ButtonSet.svelte";
-  import Range from "$lib/components/helpers/Range.svelte";
-  import Select from "$lib/components/helpers/Select.svelte";
-  import Toggle from "$lib/components/helpers/Toggle.svelte";
+  import ButtonSet from "$components/helpers/ButtonSet.svelte";
+  import Range from "$components/helpers/Range.svelte";
+  import Select from "$components/helpers/Select.svelte";
+  import Toggle from "$components/helpers/Toggle.svelte";
 
   const buttonSetOptions = [{ value: "one" }, { value: "two" }, { value: "three" }];
   const selectOptions = [

@@ -6,9 +6,27 @@
 				".svelte/dev/runtime/app/*",
 				".svelte/build/runtime/app/*"
 			],
-			"$lib/*": [
-				"src/lib/*"
-			]
+			"$actions/*": [
+				"src/actions/*"
+			],
+			"$components/*": [
+				"src/components/*"
+			],
+			"$data/*": [
+				"src/data/*"
+			],
+			"$stores/*": [
+				"src/stores/*"
+			],
+			"$styles/*": [
+				"src/styles/*"
+			],
+			"$svg/*": [
+				"src/svg/*"
+			],
+			"$utils/*": [
+				"src/utils/*"
+			],
 		}
 	},
 	"include": [
