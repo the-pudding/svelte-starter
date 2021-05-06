@@ -1,11 +1,11 @@
 module.exports = [
 	{
 		"id": "1352iFuTSDDFPNAXBbOaEXkF8mCdjPu6B43hpUF2P3C4",
-		"filepath": "src/lib/data/doc.json"
+		"filepath": "src/data/doc.json"
 	},
 	{
 		"id": "1te65h_nywgXVAzvV-9E5fmHGblcKvctf_cNZgeam9Tk",
 		"gid": "0",
-		"filepath": "src/lib/data/sheet.csv"
+		"filepath": "src/data/sheet.csv"
 	}
 ]
