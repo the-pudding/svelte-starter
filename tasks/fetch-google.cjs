@@ -3,7 +3,7 @@ const CWD = process.cwd();
 const fs = require("fs");
 const archieml = require("archieml");
 const fetch = require("node-fetch");
-const docs = require(`${CWD}/google.config.cjs`)
+const docs = require(`${CWD}/google.config.cjs`);
 
 const fetchGoogle = async ({ id, gid }) => {
 	console.log(`fetching...${id}`);
