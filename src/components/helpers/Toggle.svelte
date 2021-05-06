@@ -13,7 +13,6 @@
     const state = target.getAttribute("aria-checked");
     checked = state === "true" ? false : true;
     value = checked ? options[0] : options[1];
-    console.log(value);
   };
 </script>
 
