@@ -26,6 +26,6 @@
   --color-link: var(--base-purple);
   --color-focus: var(--base-red);
 	--color-border: var(--base-gray-light);
-	--color-selection: var(--base-gray);
+	--color-selection: var(--base-gray-light);
   --color-highlight: var(--base-yellow);
 }
