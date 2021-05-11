@@ -7,7 +7,7 @@
   export let value = options.length ? options[0].value : "";
 
   const id = `legend-${Math.floor(Math.random() * 1000000)}`;
-  const makeSlug = (str = "") => str.toLowerCase().replace(/\W/g, "");
+  const makeSlug = (str = "") => `${str}`.toLowerCase().replace(/\W/g, "");
 
   $: optionsWithSlug = options.map((d) => ({ ...d, val: d.value, slug: makeSlug(d.value) }));
   $: isTop = legendPosition === "top";
