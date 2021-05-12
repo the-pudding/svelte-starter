@@ -18,7 +18,7 @@
     "layercake": "^4.0.4",
     "lodash.debounce": "^4.0.8",
     "node-fetch": "^2.6.1",
-    "postcss": "^8.2.7",
+    "postcss": "^8.2.10",
     "rollup": "^2.40.0",
     "rollup-plugin-execute": "^1.1.1",
     "rollup-plugin-hot": "^0.1.1",
