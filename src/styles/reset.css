@@ -149,6 +149,8 @@ tfoot {
 }
 
 .skip-to-main:focus {
+	background-color: var(--base-off-white);
+	color: var(--base-off-black);
 	width: auto;
 	height: auto;
 	padding: 0.5em;
