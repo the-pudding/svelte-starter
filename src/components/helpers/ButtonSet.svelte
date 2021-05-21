@@ -21,7 +21,7 @@
     role="radiogroup"
     aria-labelledby={`label-${id}`}
   >
-    {#if legend}<div class="legend" id="label-{id}">{legend}</div>{/if}
+    {#if legend}<div class="legend" id="group-{id}">{legend}</div>{/if}
     <div class="options">
       {#each optionsWithSlug as option}
         <div class="option">
