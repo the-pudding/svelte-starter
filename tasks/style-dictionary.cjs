@@ -11,7 +11,7 @@ const StyleDictionary = require("style-dictionary").extend({
 			}]
 		},
 		json: {
-			buildPath: `${CWD}/src/lib/data/`,
+			buildPath: `${CWD}/src/data/`,
 			files: [{
 				format: "json/nested",
 				destination: "variables.json"
