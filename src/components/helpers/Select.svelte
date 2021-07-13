@@ -11,7 +11,7 @@
   {#if label}
     <label for={id}>{label}</label>
   {/if}
-  <select {id} bind:value>
+  <select {id} bind:value {disabled}>
     {#each options as option}
       <option>{option.label || option.value}</option>
     {/each}
