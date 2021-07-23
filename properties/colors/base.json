@@ -10,7 +10,7 @@
 			"value": "#5b5b5b"
 		},
 		"gray-medium": {
-			"value": " #949494"
+			"value": "#949494"
 		},
 		"gray-light": {
 			"value": "#c9c9c9"
@@ -19,22 +19,22 @@
 			"value": "#f0f0f0"
 		},
 		"white": {
-			"value": " #fff"
+			"value": "#fff"
 		},
 		"purple": {
-			"value": " #a239ca"
+			"value": "#a239ca"
 		},
 		"blue": {
-			"value": " #4717f6"
+			"value": "#4717f6"
 		},
 		"green": {
-			"value": " #34a29e"
+			"value": "#34a29e"
 		},
 		"red": {
-			"value": " #ff533d"
+			"value": "#ff533d"
 		},
 		"yellow": {
-			"value": " #e5e338"
+			"value": "#e5e338"
 		}
 	}
 }
