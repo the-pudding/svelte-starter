@@ -43,7 +43,7 @@ input[type="button"] {
 	appearance: none;
   background-color: var(--background-form);
   border: none;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   color: var(--color-form);
   font-family: var(--font-form);
   font-size: inherit;

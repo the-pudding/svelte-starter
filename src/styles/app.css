@@ -17,6 +17,7 @@
 	--z-overlay: 1000;
 
 	/* presets */
+	--border-radius: 4px;
 	--font-body: var(--sans);
 	--font-form: var(--sans);
 	--background-body: var(--base-white);
@@ -25,7 +26,9 @@
 	--color-placeholder: var(--base-gray-dark);
   --color-link: var(--base-purple);
   --color-focus: var(--base-red);
+	--color-form: var(--base-off-black);
 	--color-border: var(--base-gray-light);
 	--color-selection: var(--base-gray-light);
   --color-highlight: var(--base-yellow);
+	
 }
