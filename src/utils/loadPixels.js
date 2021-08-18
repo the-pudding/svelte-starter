@@ -37,6 +37,6 @@ export default function loadPixels(src) {
 			const imageData = ctx.getImageData(0, 0, img.width, img.height);
 			const pixels = getPixels(imageData);
 			resolve(pixels);
-		});
+		}).catch(reject);
 	});
 }
