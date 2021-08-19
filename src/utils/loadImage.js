@@ -6,5 +6,3 @@ export default function loadImage(url) {
 		img.src = url;
 	});
 }
-
-export default loadImage;
