@@ -121,18 +121,21 @@ import name from "$stores/name.js";
 
 ### Utils
 
-`transformSvg.js`: this custom transition lets you apply an svg transform property with the in/out svelte transition. Parameters (with defaults):
+`checkOverlap.js`: Label overlapping detection. Loops through selection of nodes and adds a class to the ones that are overlapping. Once one is hidden it ignores it.
 
-```js
-{
-	target: "", // string: transform properties [required]
-	delay: 0, // number: ms
-	duration: 250, // number: in ms
-	easing: linear, // function: svelte easing function
-	relative: false, // boolean: adds target onto pre-existing transform
-	opacity: false // boolean: to fade in/out as well
-}
-```
+`csvDownload.js`: Converts a flat array of data to CSV content ready to be used as an `href` value for download.
+
+`loadImage.js`: Loads an image.
+
+`loadPixels.js`: Loads the pixel data of an image via an offscreen canvas.
+
+`mapToArray.js`: Convenience function to convert a map to an array.
+
+`translate.js`: Convenience function for transform translate css.
+
+`transformSvg.js`: Custom transition lets you apply an svg transform property with the in/out svelte transition. Parameters (with defaults):
+
+`urlParams.js`: Get and set url parameters.
 
 **Usage**
 
