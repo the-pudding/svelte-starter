@@ -26,7 +26,17 @@
     localURL = window.location.href;
     const response = await fetch(url);
     const data = await response.json();
-    stories = data.filter((d) => d.url !== localURL).slice(0, 4);
+    const story = data.find((d) => localURL.includes(d.url));
+    const topic = story ? story.topic : "culture";
+    const others = data.filter((d) => !localURL.includes(d.url));
+
+    const diff = data.filter((d) => d.topic !== topic);
+    const same = data.filter((d) => d.topic === topic);
+
+    stories.push(...diff.slice(0, 2));
+    stories.push(same[0]);
+    stories.push(same[Math.ceil(Math.random() * (same.length - 1))]);
+    stories = stories;
   });
 </script>
 
