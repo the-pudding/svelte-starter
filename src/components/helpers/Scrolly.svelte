@@ -19,7 +19,7 @@
   export let top = 0;
   export let bottom = 0;
   export let increments = 100;
-  export let value = 0;
+  export let value = undefined;
 
   const steps = [];
   const threshold = [];
@@ -44,7 +44,8 @@
         maxIndex = i;
       }
     }
-    value = maxIndex;
+
+    if (maxRatio > 0) value = maxIndex;
   };
 
   const createObserver = (node, index) => {
