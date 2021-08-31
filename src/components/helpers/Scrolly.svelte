@@ -11,9 +11,6 @@
    * optional params with defaults
    * <Scrolly root={null} top={0} bottom={0} increments={100}>
    */
-
-  // TODO
-  // * resize / reobserver
   import { onMount } from "svelte";
   export let root = null;
   export let top = 0;
