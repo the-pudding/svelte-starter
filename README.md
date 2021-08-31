@@ -84,10 +84,13 @@ Located in `src/lib/components`.
 
 Located in `src/lib/components/helpers`.
 
-- `Window.svelte`: A wrapper around svelte:window that automatically debounces resize and throttles scroll, storing `innerHeight`, `innerWidth`, and `scrollY` as global stores.
 - `Icon.svelte`: Simple integration with Feather Icons.
 - `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
+- `Scrolly.svelte`: Scrollytelling
 - `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
+- `ButtonSet.svelte`: Accessible button group inputs
+- `Toggle.svelte`: Accessible toggle inputs
+- `Range.svelte`: Customizable range slider
 
 ### Actions
 

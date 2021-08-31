@@ -3,6 +3,7 @@
   import Range from "$components/helpers/Range.svelte";
   import Select from "$components/helpers/Select.svelte";
   import Toggle from "$components/helpers/Toggle.svelte";
+  import Scrolly from "$components/helpers/Scrolly.svelte";
 
   const buttonSetOptions = [{ value: "one" }, { value: "two" }, { value: "three" }];
   const selectOptions = [
@@ -17,6 +18,7 @@
   let rangeValue;
   let toggleValueInner;
   let toggleValueSlider;
+  let scrollValue;
 </script>
 
 <div>
@@ -43,6 +45,19 @@
     <h2>Toggle (slider) <span>{toggleValueSlider}</span></h2>
     <Toggle label="Enable" style="slider" bind:value={toggleValueSlider} />
   </section>
+
+  <section>
+    <h2 style="position: sticky; top: 1em;">Scrolly <span>{scrollValue}</span></h2>
+    <div class="spacer" />
+    <Scrolly bind:value={scrollValue}>
+      {#each [0, 1, 2] as text, i}
+        <div class="step" class:active={scrollValue === i}>
+          <p>{text}</p>
+        </div>
+      {/each}
+    </Scrolly>
+    <div class="spacer" />
+  </section>
 </div>
 
 <style>
@@ -52,7 +67,7 @@
   }
 
   section {
-    margin: 2em auto;
+    margin: 4em auto;
   }
 
   h2 {
@@ -62,5 +77,14 @@
   span {
     background: var(--color-highlight);
     padding: 0 0.5em;
+  }
+
+  .spacer {
+    height: 75vh;
+  }
+
+  .step {
+    height: 80vh;
+    background: var(--base-off-white);
   }
 </style>

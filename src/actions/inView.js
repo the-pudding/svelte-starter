@@ -7,19 +7,28 @@
  * 	on:exit={() => console.log("exit")}
  * >
  * 
- * optional params { root, top, bottom }
+ * optional params { root, top, bottom, progress }
  * top and bottom are numbers
- * use:inView={ bottom: 100 } // 100 pixels from bottom of viewport
+ * use:inView={{ bottom: 100 }} // 100 pixels from bottom of viewport
+ * 
+ * progress is a boolean for incremental updates
+ * use:inView={{ progres: true }}
  */
 
 export default function inView(node, params = {}) {
 	let observer;
 
 	const handleIntersect = (e) => {
-		const v = e[0].isIntersecting ? "enter" : "exit";
+		const intersecting = e[0].isIntersecting;
+		const v = intersecting ? "enter" : "exit";
 		node.dispatchEvent(new CustomEvent(v));
+		if (params.progress && intersecting) {
+			const ratio = e[0].intersectionRatio;
+			const detail = { ratio };
+			node.dispatchEvent(new CustomEvent("progress", { detail }));
+		}
 	};
-	
+
 	const setObserver = ({ root, top, bottom }) => {
 		const marginTop = top ? top * -1 : 0;
 		const marginBottom = bottom ? bottom * -1 : 0;
