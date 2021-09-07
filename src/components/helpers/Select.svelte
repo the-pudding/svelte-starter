@@ -37,9 +37,9 @@
     font-family: inherit;
     font-size: 1em;
     cursor: pointer;
-    background: var(--base-white);
-    color: var(--base-off-black);
-    border: 2px solid var(--base-off-black);
+    background: var(--color-white);
+    color: var(--color-off-black);
+    border: 2px solid var(--color-off-black);
     border-radius: 4px;
     padding: 0.5em;
     appearance: none;
@@ -59,7 +59,7 @@
     width: 1em;
     height: 1em;
     z-index: 1;
-    background: var(--base-off-black);
+    background: var(--color-off-black);
     clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
     border-radius: 4px;
     transform-origin: center center;
@@ -68,7 +68,7 @@
   }
 
   select:hover {
-    background: var(--base-off-white);
+    background: var(--color-off-white);
   }
 
   select:focus {
@@ -77,6 +77,6 @@
 
   .select--disabled {
     cursor: not-allowed;
-    background-color: var(--base-gray-light);
+    background-color: var(--color-gray-light);
   }
 </style>

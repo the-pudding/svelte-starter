@@ -1,5 +1,5 @@
 {
-	"base": {
+	"color": {
 		"black": {
 			"value": "#000000"
 		},
@@ -19,7 +19,7 @@
 			"value": "#f0f0f0"
 		},
 		"white": {
-			"value": "#fff"
+			"value": "#ffffff"
 		},
 		"purple": {
 			"value": "#a239ca"

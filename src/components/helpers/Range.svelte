@@ -57,7 +57,7 @@
   input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: calc(var(--thumb-width) / 4);
-    background: var(--base-gray-light);
+    background: var(--color-gray-light);
     border-radius: 4px;
   }
 
@@ -65,19 +65,19 @@
     height: var(--thumb-width);
     width: var(--thumb-width);
     border-radius: 50%;
-    background: var(--base-off-black);
+    background: var(--color-off-black);
     appearance: none;
     margin-top: calc(var(--thumb-width) / -3);
   }
 
   input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: var(--base-gray-light);
+    background: var(--color-gray-light);
   }
 
   input[type="range"]::-moz-range-track {
     width: 100%;
     height: calc(var(--thumb-width) / 4);
-    background: var(--base-gray-light);
+    background: var(--color-gray-light);
     border-radius: 4px;
   }
 
@@ -86,7 +86,7 @@
     height: var(--thumb-width);
     width: var(--thumb-width);
     border-radius: 50%;
-    background: var(--base-off-black);
+    background: var(--color-off-black);
   }
 
   input[type="range"]::-ms-track {
@@ -100,7 +100,7 @@
 
   input[type="range"]::-ms-fill-lower,
   input[type="range"]::-ms-fill-upper {
-    background: var(--base-gray-light);
+    background: var(--color-gray-light);
     border: 0.2px solid #010101;
     border-radius: 4px;
     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
@@ -110,12 +110,12 @@
     height: var(--thumb-width);
     width: var(--thumb-width);
     border-radius: 50%;
-    background: var(--base-off-black);
+    background: var(--color-off-black);
   }
 
   input[type="range"]:focus::-ms-fill-lower,
   input[type="range"]:focus::-ms-fill-upper {
-    background: var(--base-gray-light);
+    background: var(--color-gray-light);
   }
 
   .ticks {
@@ -139,7 +139,7 @@
     text-align: center;
     width: 1px;
     background: transparent;
-    color: var(--base-gray);
+    color: var(--color-gray);
     padding-top: calc(var(--thumb-width) / 2);
     position: relative;
   }
@@ -152,7 +152,7 @@
     left: 0;
     width: 100%;
     height: calc(var(--thumb-width) / 3);
-    background: var(--base-gray-light);
+    background: var(--color-gray-light);
   }
 
   .tick:first-of-type {

@@ -1,5 +1,14 @@
 {
-  "base": {
+  "category": {
+    "blue": "#4477AA",
+    "red": "#EE6677",
+    "green": "#228833",
+    "yellow": "#CCBB44",
+    "cyan": "#66CCEE",
+    "purple": "#AA3377",
+    "gray": "#BBBBBB"
+  },
+  "color": {
     "black": "#000000",
     "off-black": "#282828",
     "gray-dark": "#5b5b5b",
@@ -12,14 +21,5 @@
     "green": "#34a29e",
     "red": "#ff533d",
     "yellow": "#e5e338"
-  },
-  "categorical": {
-    "blue": "#4477AA",
-    "red": "#EE6677",
-    "green": "#228833",
-    "yellow": "#CCBB44",
-    "cyan": "#66CCEE",
-    "purple": "#AA3377",
-    "gray": "#BBBBBB"
   }
 }

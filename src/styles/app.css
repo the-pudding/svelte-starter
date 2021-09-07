@@ -20,15 +20,15 @@
 	--border-radius: 4px;
 	--font-body: var(--sans);
 	--font-form: var(--sans);
-	--background-body: var(--base-white);
-  --background-form: var(--base-off-white);
-	--color-body: var(--base-off-black);
-	--color-placeholder: var(--base-gray-dark);
-  --color-link: var(--base-purple);
-  --color-focus: var(--base-red);
-	--color-form: var(--base-off-black);
-	--color-border: var(--base-gray-light);
-	--color-selection: var(--base-gray-light);
-  --color-highlight: var(--base-yellow);
+	--background-body: var(--color-white);
+  --background-form: var(--color-off-white);
+	--color-body: var(--color-off-black);
+	--color-placeholder: var(--color-gray-dark);
+  --color-link: var(--color-purple);
+  --color-focus: var(--color-red);
+	--color-form: var(--color-off-black);
+	--color-border: var(--color-gray-light);
+	--color-selection: var(--color-gray-light);
+  --color-highlight: var(--color-yellow);
 	
 }
