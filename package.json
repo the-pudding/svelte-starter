@@ -20,7 +20,7 @@
 		"feather-icons": "4.28.0",
 		"layercake": "5.0.0",
 		"lodash.debounce": "4.0.8",
-		"node-fetch": "3.0.0",
+		"node-fetch": "2.6.2",
 		"postcss": "8.3.6",
 		"prettier": "2.3.2",
 		"prettier-plugin-svelte": "2.4.0",
