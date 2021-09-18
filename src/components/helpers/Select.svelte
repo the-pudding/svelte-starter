@@ -75,7 +75,7 @@
     box-shadow: 0 0 4px 0 var(--color-focus);
   }
 
-  .select--disabled {
+  .select:disabled {
     cursor: not-allowed;
     background-color: var(--color-gray-light);
   }

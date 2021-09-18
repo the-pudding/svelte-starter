@@ -27,9 +27,7 @@ npx degit the-pudding/svelte-starter my-project
 
 Then in your local repo:
 
-```bash
-npm install
-```
+`npm install` or `pnpm install`
 
 ## Development
 
