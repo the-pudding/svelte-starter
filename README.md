@@ -10,10 +10,9 @@ _Prettier Formatting: Disable any text editor Prettier extensions to take advant
 
 - [Feather Icons](https://github.com/feathericons/feather) for simple/easy svg icons
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs and Sheets
-- [LayerCake](https://layercake.graphics/) enabled by default for chart making
 - [Style Dictionary](https://amzn.github.io/style-dictionary/) for CSS/JS style parity
-- Includes csv, json, and svg imports by default
-- Static-hosted builds by default
+- CSV, JSON, and SVG imports by default
+- SSR static-hosted builds
 
 ## Quickstart
 
@@ -41,6 +40,7 @@ Modify content in `src` and `static/assets`.
 
 ## Deploy
 
+If you are hosting the project on a subdirectory, set it in `package.json` under the `pudding.subdirectory` property. Example: `https://pudding.cool/2021/01/test` then put `"subdirectory": "/2021/01/test"`.
 ```bash
 npm run build
 ```

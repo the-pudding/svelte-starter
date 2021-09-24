@@ -2,8 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@rollup/plugin-dsv': 2.0.2
-  '@sveltejs/adapter-static': 1.0.0-next.19
-  '@sveltejs/kit': 1.0.0-next.171
+  '@sveltejs/adapter-static': 1.0.0-next.20
+  '@sveltejs/kit': 1.0.0-next.173
   archieml: 0.4.2
   autoprefixer: 10.3.5
   d3: 7.0.3
@@ -22,8 +22,8 @@ specifiers:
 
 devDependencies:
   '@rollup/plugin-dsv': 2.0.2
-  '@sveltejs/adapter-static': 1.0.0-next.19
-  '@sveltejs/kit': 1.0.0-next.171_svelte@3.43.0
+  '@sveltejs/adapter-static': 1.0.0-next.20
+  '@sveltejs/kit': 1.0.0-next.173_svelte@3.43.0
   archieml: 0.4.2
   autoprefixer: 10.3.5_postcss@8.3.7
   d3: 7.0.3
@@ -72,16 +72,16 @@ packages:
       picomatch: 2.3.0
     dev: true
 
-  /@sveltejs/adapter-static/1.0.0-next.19:
-    resolution: {integrity: sha512-uZNJNVGCdiLo1XnMbezlAUsNSzB36oqtXvaUiDmy+Lv0jKU7ZukDQnJ0zWAatdqXl9ETlG4YyTWI/i7E8nmLpQ==}
+  /@sveltejs/adapter-static/1.0.0-next.20:
+    resolution: {integrity: sha512-vutVoloX35E6QnnrNofToOWn/er/Li2yoR15NbTPZ26Gp3M6A2ckQJNMJrDbBA5XZsktNIXchIVGaADnKIJrow==}
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.171_svelte@3.43.0:
-    resolution: {integrity: sha512-lDdEc6eVc8ILuQavHw/HKK7rQs3LMPp1gxieoChvSJGix/GGEaxaOQlUH0JyoLridqzQo39z6XM0giwWLQtGfA==}
+  /@sveltejs/kit/1.0.0-next.173_svelte@3.43.0:
+    resolution: {integrity: sha512-gOnRwCw9O+dXfpUe8GO9PEe20TWiIpgIDjG3zabCjMUV2XLpOsvPCO9j65xCPce00RljQGBuwn+NTYKteg2jvw==}
     engines: {node: ^12.20 || >=14.13}
     hasBin: true
     peerDependencies:
-      svelte: ^3.39.0
+      svelte: ^3.43.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.24_svelte@3.43.0+vite@2.5.8
       cheap-watch: 1.0.4
@@ -677,6 +677,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
