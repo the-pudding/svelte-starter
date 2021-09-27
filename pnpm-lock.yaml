@@ -8,7 +8,6 @@ specifiers:
   autoprefixer: 10.3.5
   d3: 7.0.3
   feather-icons: 4.28.0
-  layercake: 5.0.0
   lodash.debounce: 4.0.8
   node-fetch: 2.6.2
   postcss: 8.3.7
@@ -28,7 +27,6 @@ devDependencies:
   autoprefixer: 10.3.5_postcss@8.3.7
   d3: 7.0.3
   feather-icons: 4.28.0
-  layercake: 5.0.0_svelte@3.43.0
   lodash.debounce: 4.0.8
   node-fetch: 2.6.2
   postcss: 8.3.7
@@ -289,12 +287,6 @@ packages:
     requiresBuild: true
     dev: true
 
-  /d3-array/2.12.1:
-    resolution: {integrity: sha512-B0ErZK/66mHtEsR1TkPEEkwdy+WDesimkM5gpZr5Dsg54BiTA5RXtYW5qTLIAcekaS9xfZrzBLF/OAkB3Qn1YQ==}
-    dependencies:
-      internmap: 1.0.1
-    dev: true
-
   /d3-array/3.0.2:
     resolution: {integrity: sha512-nTN4OC6ufZueotlexbxBd2z8xmG1eIfhvP2m1auH2ONps0L+AZn1r0JWuzMXZ6XgOj1VBOp7GGZmEs9NUFEBbA==}
     engines: {node: '>=12'}
@@ -323,10 +315,6 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       d3-path: 3.0.1
-    dev: true
-
-  /d3-color/2.0.0:
-    resolution: {integrity: sha512-SPXi0TSKPD4g9tw0NMZFnR95XVgUZiBH+uUTqQuDu1OsE2zomHU7ho0FISciaPvosimixwHFl3WHLGabv6dDgQ==}
     dev: true
 
   /d3-color/3.0.1:
@@ -401,10 +389,6 @@ packages:
       d3-timer: 3.0.1
     dev: true
 
-  /d3-format/2.0.0:
-    resolution: {integrity: sha512-Ab3S6XuE/Q+flY96HXT0jOXcM4EAClYFnRGY5zsjRGNy6qCYrQsMffs7cV5Q9xejb35zxW5hf/guKw34kvIKsA==}
-    dev: true
-
   /d3-format/3.0.1:
     resolution: {integrity: sha512-hdL7+HBIohpgfolhBxr1KX47VMD6+vVD/oEFrxk5yhmzV2prk99EkFKYpXuhVkFpTgHdJ6/4bYcjdLPPXV4tIA==}
     engines: {node: '>=12'}
@@ -420,12 +404,6 @@ packages:
   /d3-hierarchy/3.0.1:
     resolution: {integrity: sha512-RlLTaofEoOrMK1JoXYIGhKTkJFI/6rFrYPgxy6QlZo2BcVc4HGTqEU0rPpzuMq5T/5XcMtAzv1XiLA3zRTfygw==}
     engines: {node: '>=12'}
-    dev: true
-
-  /d3-interpolate/2.0.1:
-    resolution: {integrity: sha512-c5UhwwTs/yybcmTpAVqwSFl6vrQ8JZJoT5F7xNFK9pymv5C0Ymcc9/LIJHtYIggg/yS9YHw8i8O8tgb9pupjeQ==}
-    dependencies:
-      d3-color: 2.0.0
     dev: true
 
   /d3-interpolate/3.0.1:
@@ -463,16 +441,6 @@ packages:
       d3-interpolate: 3.0.1
     dev: true
 
-  /d3-scale/3.3.0:
-    resolution: {integrity: sha512-1JGp44NQCt5d1g+Yy+GeOnZP7xHo0ii8zsQp6PGzd+C1/dl0KGsp9A7Mxwp+1D1o4unbTTxVdU/ZOIEBoeZPbQ==}
-    dependencies:
-      d3-array: 2.12.1
-      d3-format: 2.0.0
-      d3-interpolate: 2.0.1
-      d3-time: 2.1.1
-      d3-time-format: 3.0.0
-    dev: true
-
   /d3-scale/4.0.0:
     resolution: {integrity: sha512-foHQYKpWQcyndH1CGoHdUC4PECxTxonzwwBXGT8qu+Drb1FIc6ON6dG2P5f4hRRMkLiIKeWK7iFtdznDUrnuPQ==}
     engines: {node: '>=12'}
@@ -496,23 +464,11 @@ packages:
       d3-path: 3.0.1
     dev: true
 
-  /d3-time-format/3.0.0:
-    resolution: {integrity: sha512-UXJh6EKsHBTjopVqZBhFysQcoXSv/5yLONZvkQ5Kk3qbwiUYkdX17Xa1PT6U1ZWXGGfB1ey5L8dKMlFq2DO0Ag==}
-    dependencies:
-      d3-time: 2.1.1
-    dev: true
-
   /d3-time-format/4.0.0:
     resolution: {integrity: sha512-nzaCwlj+ZVBIlFuVOT1RmU+6xb/7D5IcnhHzHQcBgS/aTa5K9fWZNN5LCXA27LgF5WxoSNJqKBbLcGMtM6Ca6A==}
     engines: {node: '>=12'}
     dependencies:
       d3-time: 3.0.0
-    dev: true
-
-  /d3-time/2.1.1:
-    resolution: {integrity: sha512-/eIQe/eR4kCQwq7yxi7z4c6qEXf2IYGcjoWB5OOQy4Tq9Uv39/947qlDcN2TLkiTzQWzvnsuYPB9TrWaNfipKQ==}
-    dependencies:
-      d3-array: 2.12.1
     dev: true
 
   /d3-time/3.0.0:
@@ -744,10 +700,6 @@ packages:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
     dev: true
 
-  /internmap/1.0.1:
-    resolution: {integrity: sha512-lDB5YccMydFBtasVtxnZ3MRBHuaoE8GKsppq+EchKL2U4nK/DmEpPHNH8MZe5HkMtpSiTSOZwfN0tzYjO/lJEw==}
-    dev: true
-
   /internmap/2.0.1:
     resolution: {integrity: sha512-Ujwccrj9FkGqjbY3iVoxD1VV+KdZZeENx0rphrtzmRXbFvkFO88L80BL/zeSIguX/7T+y8k04xqtgWgS5vxwxw==}
     engines: {node: '>=12'}
@@ -776,15 +728,6 @@ packages:
   /kleur/4.1.4:
     resolution: {integrity: sha512-8QADVssbrFjivHWQU7KkMgptGTl6WAcSdlbBPY4uNF+mWr6DGcKrvY2w4FQJoXch7+fKMjj0dRrL75vk3k23OA==}
     engines: {node: '>=6'}
-    dev: true
-
-  /layercake/5.0.0_svelte@3.43.0:
-    resolution: {integrity: sha512-eQy96e9BFslROxU4ntriXwn1CA17b5khySNshgEjF+qGxMWQGM2Tl4jLH1qvlBvfvzssQXTMgIb5awyHTk/9Yw==}
-    peerDependencies:
-      svelte: ^3.16.7
-    dependencies:
-      d3-scale: 3.3.0
-      svelte: 3.43.0
     dev: true
 
   /lodash.debounce/4.0.8:
