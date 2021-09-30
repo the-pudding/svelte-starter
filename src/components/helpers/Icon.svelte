@@ -4,10 +4,10 @@
 
   export let name;
   export let direction = "n";
-  export let strokeWidth;
-  export let stroke;
   export let width = "1em";
   export let height = "1em";
+  export let stroke = undefined;
+  export let strokeWidth = undefined;
 
   $: icon = feather.icons[name];
   $: rotation = directions.indexOf(direction) * 45;
