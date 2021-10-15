@@ -12,8 +12,8 @@
 	},
 	"devDependencies": {
 		"@rollup/plugin-dsv": "2.0.2",
-		"@sveltejs/adapter-static": "1.0.0-next.20",
-		"@sveltejs/kit": "1.0.0-next.173",
+		"@sveltejs/adapter-static": "1.0.0-next.21",
+		"@sveltejs/kit": "1.0.0-next.184",
 		"archieml": "0.4.2",
 		"autoprefixer": "10.3.5",
 		"d3": "7.0.3",

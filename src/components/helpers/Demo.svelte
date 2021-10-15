@@ -50,7 +50,7 @@
     <h2 style="position: sticky; top: 1em;">Scrolly <span>{scrollValue}</span></h2>
     <div class="spacer" />
     <Scrolly bind:value={scrollValue}>
-      {#each [0, 1, 2] as text, i}
+      {#each [0, 1, 2, 3, 4] as text, i}
         <div class="step" class:active={scrollValue === i}>
           <p>{text}</p>
         </div>
