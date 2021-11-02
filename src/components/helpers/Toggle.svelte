@@ -4,7 +4,7 @@
   export let options = ["on", "off"];
   export let value = options[0];
 
-  let checked = true;
+  let checked = value === options[0];
 
   const id = `toggle-${Math.floor(Math.random() * 1000000)}`;
 
