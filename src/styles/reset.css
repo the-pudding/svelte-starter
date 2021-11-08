@@ -1,7 +1,7 @@
 
 body {
-	background-color: var(--background-body);
-  color: var(--color-body);
+	background-color: var(--color-bg);
+  color: var(--color-fg);
 	line-height: 1.4;
 	font-family: var(--font-body);
 	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
@@ -41,10 +41,10 @@ textarea,
 input[type="submit"],
 input[type="button"] {
 	appearance: none;
-  background-color: var(--background-form);
+  background-color: var(--color-form-bg);
   border: none;
   border-radius: var(--border-radius);
-  color: var(--color-form);
+  color: var(--color-form-fg);
   font-family: var(--font-form);
   font-size: inherit;
   outline: none;
@@ -71,7 +71,7 @@ select {
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background: var(--background-form);
+  background: var(--color-form-bg);
 }
 
 button:focus,
