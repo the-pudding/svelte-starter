@@ -18,8 +18,8 @@
 
 	/* presets */
 	--border-radius: 4px;
-	--font-body: var(--mono);
-	--font-form: var(--mono);
+	--font-body: var(--sans);
+	--font-form: var(--sans);
 	--color-bg: var(--color-white);
 	--color-fg: var(--color-off-black);
 	--color-placeholder: var(--color-gray-dark);
