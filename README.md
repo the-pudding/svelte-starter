@@ -16,9 +16,8 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 
 ## Quickstart
 
-1. Just click the `Use this template` button above.
-
-2. In your local repo run `pnpm install` or `npm install`
+* Click the green `Use this template` button above.
+* In your local repo run `pnpm install` or `npm install`
 
 Alternatively:
 
