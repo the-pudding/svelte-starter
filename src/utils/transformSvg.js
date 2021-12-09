@@ -1,3 +1,7 @@
+/* Usage
+<g out:transformSvg={{ target: "translate(50, 50)" }}>
+*/
+
 import { linear } from "svelte/easing";
 import { interpolateTransformSvg } from "d3";
 
