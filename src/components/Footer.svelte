@@ -26,7 +26,7 @@
     localURL = window.location.href;
     const response = await fetch(url);
     const data = await response.json();
-    stories = data.filter((d) => !localURL.includes(d.url));
+    stories = data.filter((d) => !localURL.includes(d.url)).slice(0, 4);
   });
 </script>
 
