@@ -1,5 +1,7 @@
+import StyleDictionary from "style-dictionary";
 const CWD = process.cwd();
-const StyleDictionary = require("style-dictionary").extend({
+
+StyleDictionary.extend({
 	source: [`${CWD}/properties/**/*.json`],
 	platforms: {
 		css: {
@@ -18,6 +20,4 @@ const StyleDictionary = require("style-dictionary").extend({
 			}]
 		}
 	}
-});
-
-StyleDictionary.buildAllPlatforms();
+}).buildAllPlatforms();

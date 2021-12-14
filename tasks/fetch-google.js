@@ -1,9 +1,9 @@
-const CWD = process.cwd();
+import fs from "fs";
+import archieml from "archieml";
+import fetch from "node-fetch";
+import docs from "../google.config.js";
 
-const fs = require("fs");
-const archieml = require("archieml");
-const fetch = require("node-fetch");
-const docs = require(`${CWD}/google.config.cjs`);
+const CWD = process.cwd();
 
 const fetchGoogle = async ({ id, gid }) => {
 	console.log(`fetching...${id}`);
