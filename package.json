@@ -12,8 +12,8 @@
 	},
 	"devDependencies": {
 		"@rollup/plugin-dsv": "^2.0.2",
-		"@sveltejs/adapter-static": "^1.0.0-next.22",
-		"@sveltejs/kit": "^1.0.0-next.202",
+		"@sveltejs/adapter-static": "^1.0.0-next.23",
+		"@sveltejs/kit": "^1.0.0-next.203",
 		"archieml": "^0.5.0",
 		"autoprefixer": "^10.4.0",
 		"d3": "^7.2.1",
@@ -24,9 +24,9 @@
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.1",
 		"rollup-plugin-svg": "^2.0.0",
-		"style-dictionary": "^3.0.3",
+		"style-dictionary": "^3.1.1",
 		"svelte": "^3.44.3",
-		"svelte-preprocess": "^4.10.0",
+		"svelte-preprocess": "^4.10.1",
 		"vite-plugin-svgstring": "^1.0.0"
 	},
 	"type": "module",
