@@ -1,6 +1,6 @@
 {
 	"name": "svelte-starter",
-	"version": "3.0.1",
+	"version": "3.0.2",
 	"scripts": {
 		"gdoc": "node tasks/fetch-google.js",
 		"style": "node tasks/style-dictionary.js",
@@ -12,10 +12,10 @@
 	},
 	"devDependencies": {
 		"@rollup/plugin-dsv": "^2.0.2",
-		"@sveltejs/adapter-static": "^1.0.0-next.23",
-		"@sveltejs/kit": "^1.0.0-next.203",
+		"@sveltejs/adapter-static": "^1.0.0-next.24",
+		"@sveltejs/kit": "^1.0.0-next.208",
 		"archieml": "^0.5.0",
-		"autoprefixer": "^10.4.0",
+		"autoprefixer": "^10.4.1",
 		"d3": "^7.2.1",
 		"feather-icons": "^4.28.0",
 		"lodash.debounce": "^4.0.8",
