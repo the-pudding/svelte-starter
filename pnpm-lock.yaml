@@ -1,9 +1,9 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@rollup/plugin-dsv': ^2.0.2
+  '@rollup/plugin-dsv': ^2.0.3
   '@sveltejs/adapter-static': ^1.0.0-next.24
-  '@sveltejs/kit': ^1.0.0-next.208
+  '@sveltejs/kit': ^1.0.0-next.212
   archieml: ^0.5.0
   autoprefixer: ^10.4.1
   d3: ^7.2.1
@@ -20,9 +20,9 @@ specifiers:
   vite-plugin-svgstring: ^1.0.0
 
 devDependencies:
-  '@rollup/plugin-dsv': 2.0.2
+  '@rollup/plugin-dsv': 2.0.3
   '@sveltejs/adapter-static': 1.0.0-next.24
-  '@sveltejs/kit': 1.0.0-next.208_svelte@3.44.3
+  '@sveltejs/kit': 1.0.0-next.212_svelte@3.44.3
   archieml: 0.5.0
   autoprefixer: 10.4.1_postcss@8.4.5
   d3: 7.2.1
@@ -40,8 +40,8 @@ devDependencies:
 
 packages:
 
-  /@rollup/plugin-dsv/2.0.2:
-    resolution: {integrity: sha512-QBf2ijAXiIVZNTuiTZ9xrqrye3AQv5UjDmgy3D04mLXrJSvqtzd61ILtJ+KFnk6YxTlfg3Mm8JyrWn8gZje7Zg==}
+  /@rollup/plugin-dsv/2.0.3:
+    resolution: {integrity: sha512-x2lqNepgPZUwRgNzEK8oTpoN6Y7NEQQl1PHp4gltXuxeJGlu3oyxVuw5gY5+T/LMUyQ9Nvlw6xu/rOC7v9kxPg==}
     dependencies:
       '@rollup/pluginutils': 3.1.0
       '@types/d3-dsv': 1.2.1
@@ -76,15 +76,14 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.208_svelte@3.44.3:
-    resolution: {integrity: sha512-4iHhkne7WvJPLRh/WNnm0NgbLpYz95aju44RkdpfMTyZMC9IMnKidHG/mPC7PPNh3OxQdWGuxjAe383rzJrHPQ==}
+  /@sveltejs/kit/1.0.0-next.212_svelte@3.44.3:
+    resolution: {integrity: sha512-hjpk/Rqrl6hhNf1Qsx6EDvL3Cm9JvmvW/Z1FRYVhGg1xin/JQkPgFzTU27NBSYhtK1t4buLmlO1tqdMvurs9Fg==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.32_svelte@3.44.3+vite@2.7.2
-      cheap-watch: 1.0.4
       sade: 1.7.4
       svelte: 3.44.3
       vite: 2.7.2
@@ -237,11 +236,6 @@ packages:
       sentence-case: 3.0.4
       snake-case: 3.0.4
       tslib: 2.3.1
-    dev: true
-
-  /cheap-watch/1.0.4:
-    resolution: {integrity: sha512-QR/9FrtRL5fjfUJBhAKCdi0lSRQ3rVRRum3GF9wDKp2TJbEIMGhUEr2yU8lORzm9Isdjx7/k9S0DFDx+z5VGtw==}
-    engines: {node: '>=8'}
     dev: true
 
   /classnames/2.3.1:
