@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@rollup/plugin-dsv': ^2.0.3
   '@sveltejs/adapter-static': ^1.0.0-next.24
-  '@sveltejs/kit': ^1.0.0-next.212
+  '@sveltejs/kit': ^1.0.0-next.215
   archieml: ^0.5.0
   autoprefixer: ^10.4.1
   d3: ^7.2.1
@@ -22,7 +22,7 @@ specifiers:
 devDependencies:
   '@rollup/plugin-dsv': 2.0.3
   '@sveltejs/adapter-static': 1.0.0-next.24
-  '@sveltejs/kit': 1.0.0-next.212_svelte@3.44.3
+  '@sveltejs/kit': 1.0.0-next.215_svelte@3.44.3
   archieml: 0.5.0
   autoprefixer: 10.4.1_postcss@8.4.5
   d3: 7.2.1
@@ -76,8 +76,8 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.212_svelte@3.44.3:
-    resolution: {integrity: sha512-hjpk/Rqrl6hhNf1Qsx6EDvL3Cm9JvmvW/Z1FRYVhGg1xin/JQkPgFzTU27NBSYhtK1t4buLmlO1tqdMvurs9Fg==}
+  /@sveltejs/kit/1.0.0-next.215_svelte@3.44.3:
+    resolution: {integrity: sha512-3y6NFKacahEjgAuGNgs49t2Jf708syKEf6A7uf0dXoQXq3giF+/O1XDF4f+I2g/39iiOtkJMW10tyvIiRG22Hw==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
