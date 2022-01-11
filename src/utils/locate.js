@@ -21,21 +21,21 @@ const TEST_DATA = {
 
 const MAX_TIME = 4000;
 
-function lookup(test = false) {
+async function lookup(test) {
 	if (test) return Promise.resolve(TEST_DATA);
-	const url = `https://ipinfo.io?token=6f0f9c88db028a`;
-	return new Promise((resolve, reject) => {
-		fetch(url).then((response) => {
-			if (response.ok) response.json().then(resolve).catch(reject);
-			else reject(new Error(response.status));
-		});
-	});
+	try {
+		const request = await fetch("https://ipinfo.io/json?token=6f0f9c88db028a");
+		const json = await request.json();
+		return json;
+	} catch (err) {
+		throw new Error(err);
+	}
 }
 
-function init() {
+function init(test = false) {
 	return new Promise((resolve, reject) => {
 		const timeout = setTimeout(() => reject(new Error('timeout')), MAX_TIME);
-		lookup()
+		lookup(test)
 			.then((data) => {
 				clearTimeout(timeout);
 				resolve(data);
