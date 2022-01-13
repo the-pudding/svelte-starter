@@ -57,7 +57,7 @@
   input[type="range"]::-webkit-slider-runnable-track {
     width: 100%;
     height: calc(var(--thumb-width) / 4);
-    background: var(--color-gray-light);
+    background: var(--color-gray-300);
     border-radius: 4px;
   }
 
@@ -65,28 +65,28 @@
     height: var(--thumb-width);
     width: var(--thumb-width);
     border-radius: 50%;
-    background: var(--color-off-black);
+    background: var(--color-gray-900);
     appearance: none;
     margin-top: calc(var(--thumb-width) / -3);
   }
 
   input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: var(--color-gray-light);
+    background: var(--color-gray-300);
   }
 
   input[type="range"]::-moz-range-track {
     width: 100%;
     height: calc(var(--thumb-width) / 4);
-    background: var(--color-gray-light);
+    background: var(--color-gray-300);
     border-radius: 4px;
   }
 
   input[type="range"]::-moz-range-thumb {
-    box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+    box-shadow: 1px 1px 1px var(--color-black), 0 0 1px var(--color-black);
     height: var(--thumb-width);
     width: var(--thumb-width);
     border-radius: 50%;
-    background: var(--color-off-black);
+    background: var(--color-gray-900);
   }
 
   input[type="range"]::-ms-track {
@@ -100,22 +100,22 @@
 
   input[type="range"]::-ms-fill-lower,
   input[type="range"]::-ms-fill-upper {
-    background: var(--color-gray-light);
-    border: 0.2px solid #010101;
+    background: var(--color-gray-300);
+    border: 0.2px solid var(--color-black);
     border-radius: 4px;
-    box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
+    box-shadow: 1px 1px 1px var(--color-black), 0 0 1px var(--color-black);
   }
 
   input[type="range"]::-ms-thumb {
     height: var(--thumb-width);
     width: var(--thumb-width);
     border-radius: 50%;
-    background: var(--color-off-black);
+    background: var(--color-gray-900);
   }
 
   input[type="range"]:focus::-ms-fill-lower,
   input[type="range"]:focus::-ms-fill-upper {
-    background: var(--color-gray-light);
+    background: var(--color-gray-300);
   }
 
   .ticks {
@@ -152,7 +152,7 @@
     left: 0;
     width: 100%;
     height: calc(var(--thumb-width) / 3);
-    background: var(--color-gray-light);
+    background: var(--color-gray-300);
   }
 
   .tick:first-of-type {

@@ -38,8 +38,8 @@
     font-size: 1em;
     cursor: pointer;
     background: var(--color-white);
-    color: var(--color-off-black);
-    border: 2px solid var(--color-off-black);
+    color: var(--color-gray-900);
+    border: 2px solid var(--color-gray-900);
     border-radius: 4px;
     padding: 0.5em;
     appearance: none;
@@ -59,7 +59,7 @@
     width: 1em;
     height: 1em;
     z-index: 1;
-    background: var(--color-off-black);
+    background: var(--color-gray-900);
     clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
     border-radius: 4px;
     transform-origin: center center;
@@ -68,7 +68,7 @@
   }
 
   select:hover {
-    background: var(--color-off-white);
+    background: var(--color-gray-100);
   }
 
   select:focus {
@@ -77,6 +77,6 @@
 
   .select:disabled {
     cursor: not-allowed;
-    background-color: var(--color-gray-light);
+    background-color: var(--color-gray-300);
   }
 </style>

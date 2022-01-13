@@ -85,6 +85,6 @@
 
   .step {
     height: 80vh;
-    background: var(--color-off-white);
+    background: var(--color-gray-100);
   }
 </style>

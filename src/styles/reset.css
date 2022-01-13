@@ -149,7 +149,7 @@ tfoot {
 }
 
 .skip-to-main:focus {
-	background-color: var(--color-off-black);
+	background-color: var(--color-gray-900);
 	color: var(--color-white);
 	width: auto;
 	height: auto;
