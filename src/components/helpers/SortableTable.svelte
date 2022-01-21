@@ -1,9 +1,9 @@
 <script>
-  export let rows = []; // [{ className }]
+  export let rows = []; // [{ class, style }]
   export let columns = []; // [{ label, prop, sort = true, type = "text" }];
 
   $: th = columns.map((d) => ({ ...d, dir: undefined }));
-  $: tr = rows.map((d) => ({ ...d }));
+  $: tr = rows.map((d) => ({ ...d, style: d.style || "", class: d.class || "" }));
 
   const sortFn = {
     asc: (a, b) => (a == null || b == null ? NaN : a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN),
@@ -45,7 +45,9 @@
     {#each tr as r}
       <tr>
         {#each columns as { prop, type }}
-          <td class:is-number={type === "number"}>{@html r[prop]}</td>
+          <td style={r.style} class={r.class} class:is-number={type === "number"}>
+            {@html r[prop]}
+          </td>
         {/each}
       </tr>
     {/each}
