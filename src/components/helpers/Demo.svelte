@@ -4,6 +4,7 @@
   import Select from "$components/helpers/Select.svelte";
   import Toggle from "$components/helpers/Toggle.svelte";
   import Scrolly from "$components/helpers/Scrolly.svelte";
+  import SortTable from "$components/helpers/SortTable.svelte";
 
   const buttonSetOptions = [{ value: "one" }, { value: "two" }, { value: "three" }];
   const selectOptions = [
@@ -11,6 +12,18 @@
     { value: "nickel" },
     { value: "dime" },
     { value: "quarter" }
+  ];
+
+  const tableColumns = [
+    { label: "Coin", prop: "name", sort: true, type: "text" },
+    { label: "Cents", prop: "value", sort: true, type: "number" }
+  ];
+
+  const tableRows = [
+    { name: "penny", value: 1 },
+    { name: "nickel", value: 5 },
+    { name: "dime", value: 10, style: "background: black; color: white;" },
+    { name: "quarter", value: 25 }
   ];
 
   let buttonSetValue;
@@ -22,22 +35,22 @@
 </script>
 
 <div>
-  <section>
+  <section id="buttonset">
     <h2>Button Set <span>{buttonSetValue}</span></h2>
     <ButtonSet legend={"Choose"} options={buttonSetOptions} bind:value={buttonSetValue} />
   </section>
 
-  <section>
+  <section id="range">
     <h2>Range <span>{rangeValue}</span></h2>
     <Range min={0} max={10} step={1} showTicks={true} bind:value={rangeValue} />
   </section>
 
-  <section>
+  <section id="select">
     <h2>Select <span>{selectValue}</span></h2>
     <Select label={"Select something"} options={selectOptions} bind:value={selectValue} />
   </section>
 
-  <section>
+  <section id="toggle">
     <h2>Toggle (inner) <span>{toggleValueInner}</span></h2>
     <Toggle label="Enable" style="inner" bind:value={toggleValueInner} />
   </section>
@@ -46,7 +59,7 @@
     <Toggle label="Enable" style="slider" bind:value={toggleValueSlider} />
   </section>
 
-  <section>
+  <section id="scrolly">
     <h2 style="position: sticky; top: 1em;">Scrolly <span>{scrollValue}</span></h2>
     <div class="spacer" />
     <Scrolly bind:value={scrollValue}>
@@ -57,6 +70,11 @@
       {/each}
     </Scrolly>
     <div class="spacer" />
+  </section>
+
+  <section id="table">
+    <h2>Sortable Table</h2>
+    <SortTable rows={tableRows} columns={tableColumns} />
   </section>
 </div>
 
