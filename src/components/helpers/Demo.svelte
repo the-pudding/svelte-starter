@@ -22,7 +22,7 @@
   const tableRows = [
     { name: "penny", value: 1 },
     { name: "nickel", value: 5 },
-    { name: "dime", value: 10, style: "background: black; color: white;" },
+    { name: "dime", value: 10, style: "background: var(--color-highlight);" },
     { name: "quarter", value: 25 }
   ];
 
@@ -59,6 +59,11 @@
     <Toggle label="Enable" style="slider" bind:value={toggleValueSlider} />
   </section>
 
+  <section id="table">
+    <h2>Sortable Table</h2>
+    <SortTable rows={tableRows} columns={tableColumns} />
+  </section>
+
   <section id="scrolly">
     <h2 style="position: sticky; top: 1em;">Scrolly <span>{scrollValue}</span></h2>
     <div class="spacer" />
@@ -70,11 +75,6 @@
       {/each}
     </Scrolly>
     <div class="spacer" />
-  </section>
-
-  <section id="table">
-    <h2>Sortable Table</h2>
-    <SortTable rows={tableRows} columns={tableColumns} />
   </section>
 </div>
 
