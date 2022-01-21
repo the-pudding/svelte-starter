@@ -67,6 +67,7 @@
   th {
     vertical-align: bottom;
     line-height: 1.2;
+    font-weight: normal;
   }
 
   th.is-number,
@@ -75,9 +76,14 @@
   }
 
   th button {
+    font-weight: inherit;
+    color: inherit;
     padding: 0;
     margin: 0;
     background: transparent;
+    border: none;
+    border-radius: 0;
+    appearance: none;
   }
 
   th.is-sortable button:after {
