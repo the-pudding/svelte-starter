@@ -1,8 +1,8 @@
 <script>
   export let rows = []; // [{ class, style }]
-  export let columns = []; // [{ label, prop, sort = true, type = "text", dir = undefined }];
+  export let columns = []; // [{ label, prop, sort = true, type = "text", dir = undefined, sortFn: undefined }];
 
-  $: th = columns.map((d) => ({ sort: true, type: "text", dir: undefined, ...d }));
+  $: th = columns.map((d) => ({ sort: true, type: "text", ...d }));
   $: tr = rows.map((d) => ({ ...d, style: d.style || "", class: d.class || "" }));
 
   const sortFn = {
@@ -12,12 +12,15 @@
 
   const onClick = ({ prop, i }) => {
     const newDir = th[i].dir === "asc" ? "desc" : "asc";
+    const customSort = th[i].sortFn;
 
     th.forEach((d) => (d.dir = undefined));
     th[i].dir = newDir;
     th = [...th];
 
-    tr.sort((a, b) => sortFn[newDir](a[prop], b[prop]));
+    tr.sort((a, b) =>
+      customSort ? customSort(a, b, sortFn[newDir]) : sortFn[newDir](a[prop], b[prop])
+    );
     tr = [...tr];
   };
 </script>
