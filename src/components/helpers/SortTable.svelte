@@ -64,15 +64,20 @@
     table-layout: auto;
   }
 
-  th {
+  th.is-number,
+  td.is-number {
+    text-align: right;
+  }
+
+  th,
+  td {
     vertical-align: bottom;
     line-height: 1.2;
     font-weight: normal;
   }
 
-  th.is-number,
-  td.is-number {
-    text-align: right;
+  td {
+    border-top: 1px solid currentColor;
   }
 
   th button {
