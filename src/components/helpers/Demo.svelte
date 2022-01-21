@@ -65,7 +65,7 @@
   </section>
 
   <section id="scrolly">
-    <h2 style="position: sticky; top: 1em;">Scrolly <span>{scrollValue}</span></h2>
+    <h2 style="position: sticky; top: 4em;">Scrolly <span>{scrollValue}</span></h2>
     <div class="spacer" />
     <Scrolly bind:value={scrollValue}>
       {#each [0, 1, 2, 3, 4] as text, i}
@@ -85,7 +85,8 @@
   }
 
   section {
-    margin: 4em auto;
+    margin: 2em auto;
+    padding-top: 4em;
   }
 
   h2 {
