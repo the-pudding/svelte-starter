@@ -1,8 +1,8 @@
 <script>
   export let rows = []; // [{ class, style }]
-  export let columns = []; // [{ label, prop, sort = true, type = "text" }];
+  export let columns = []; // [{ label, prop, sort = true, type = "text", dir = undefined }];
 
-  $: th = columns.map((d) => ({ ...d, dir: undefined }));
+  $: th = columns.map((d) => ({ sort: true, type: "text", dir: undefined, ...d }));
   $: tr = rows.map((d) => ({ ...d, style: d.style || "", class: d.class || "" }));
 
   const sortFn = {
