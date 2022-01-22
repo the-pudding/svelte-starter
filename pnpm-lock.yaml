@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@rollup/plugin-dsv': ^2.0.3
   '@sveltejs/adapter-static': 1.0.0-next.26
-  '@sveltejs/kit': 1.0.0-next.230
+  '@sveltejs/kit': 1.0.0-next.240
   archieml: ^0.5.0
   autoprefixer: ^10.4.2
   d3: ^7.3.0
@@ -22,7 +22,7 @@ specifiers:
 devDependencies:
   '@rollup/plugin-dsv': 2.0.3
   '@sveltejs/adapter-static': 1.0.0-next.26
-  '@sveltejs/kit': 1.0.0-next.230_svelte@3.46.2
+  '@sveltejs/kit': 1.0.0-next.240_svelte@3.46.2
   archieml: 0.5.0
   autoprefixer: 10.4.2_postcss@8.4.5
   d3: 7.3.0
@@ -76,14 +76,14 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.230_svelte@3.46.2:
-    resolution: {integrity: sha512-97i5KK7oDqgzm8rSQTqXsscTt1ajkjlamidaxtADL183NiYWi1kqkOt+mskYU+RverGUuHTNl/8yg5p5ZEZm1A==}
+  /@sveltejs/kit/1.0.0-next.240_svelte@3.46.2:
+    resolution: {integrity: sha512-cHdxdSKAdCuty2lYlRHXE4rJZuKd4wur9U63JtPwysTaReMEJl+s9J/LVvyBzaLW/13x8vm/kKqx+DDcI0udlA==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.34_svelte@3.46.2+vite@2.7.13
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.35_svelte@3.46.2+vite@2.7.13
       sade: 1.8.1
       svelte: 3.46.2
       vite: 2.7.13
@@ -95,8 +95,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.34_svelte@3.46.2+vite@2.7.13:
-    resolution: {integrity: sha512-qZH2jndijrdkvevgbO7OH3iQsviM5Kz7h5APiNP4yEMZTrwq9bifzYvco6BprwtPvLb5wYlRVFZUOdusY6AovQ==}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.35_svelte@3.46.2+vite@2.7.13:
+    resolution: {integrity: sha512-PuhI+1L6xqn5gc6jiK4mHmeS8kf3c1E+IaAsJclHbZTNiPQdC5SiTM3cV0FAA4zhwHmXV6pjt8rRHRx8ouFv3g==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5
@@ -110,7 +110,6 @@ packages:
       debug: 4.3.3
       kleur: 4.1.4
       magic-string: 0.25.7
-      require-relative: 0.8.7
       svelte: 3.46.2
       svelte-hmr: 0.14.9_svelte@3.46.2
       vite: 2.7.13
@@ -184,7 +183,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001301
-      electron-to-chromium: 1.4.49
+      electron-to-chromium: 1.4.51
       escalade: 3.1.1
       node-releases: 2.0.1
       picocolors: 1.0.0
@@ -576,8 +575,8 @@ packages:
       tslib: 2.3.1
     dev: true
 
-  /electron-to-chromium/1.4.49:
-    resolution: {integrity: sha512-k/0t1TRfonHIp8TJKfjBu2cKj8MqYTiEpOhci+q7CVEE5xnCQnx1pTa+V8b/sdhe4S3PR4p4iceEQWhGrKQORQ==}
+  /electron-to-chromium/1.4.51:
+    resolution: {integrity: sha512-JNEmcYl3mk1tGQmy0EvL5eik/CKSBuzAyGP0QFdG6LIgxQe3II0BL1m2zKc2MZMf3uGqHWE1TFddJML0RpjSHQ==}
     dev: true
 
   /es6-promise/3.3.1:
@@ -1074,10 +1073,6 @@ packages:
     hasBin: true
     dev: true
 
-  /require-relative/0.8.7:
-    resolution: {integrity: sha1-eZlTn8ngR6N5KPoZb44VY9q9Nt4=}
-    dev: true
-
   /resolve/1.21.1:
     resolution: {integrity: sha512-lfEImVbnolPuaSZuLQ52cAxPBHeI77sPwCOWRdy12UG/CNa8an7oBHH1R+Fp1/mUqSJi4c8TIP6FOIPSZAUrEQ==}
     hasBin: true
@@ -1111,8 +1106,8 @@ packages:
       minimatch: 3.0.4
     dev: true
 
-  /rollup/2.65.0:
-    resolution: {integrity: sha512-ohZVYrhtVMTqqeqH26sngfMiyGDg6gCUReOsoflXvYpzUkDHp8sVG8F9FQxjs72OfnLWpXP2nNNqQ9I0vkRovA==}
+  /rollup/2.66.0:
+    resolution: {integrity: sha512-L6mKOkdyP8HK5kKJXaiWG7KZDumPJjuo1P+cfyHOJPNNTK3Moe7zCH5+fy7v8pVmHXtlxorzaBjvkBMB23s98g==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -1336,7 +1331,7 @@ packages:
       esbuild: 0.13.15
       postcss: 8.4.5
       resolve: 1.21.1
-      rollup: 2.65.0
+      rollup: 2.66.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
