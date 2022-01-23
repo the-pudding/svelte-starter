@@ -8,7 +8,7 @@
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 1em;
+    padding: 1.25em;
     background: pink;
     color: black;
     font-family: monospace;
