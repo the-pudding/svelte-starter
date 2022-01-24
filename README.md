@@ -67,6 +67,9 @@ For variable parity in both CSS and JS, modify files in the `properties` folder 
 
 Run `npm run style` to regenerate the style dictionary.
 
+### Fonts ⚠️
+SvelteKit still hasn't resolved an issue with fonts with subdirectory-hosted projects. The simplest solution right now is to point to an absolute hosted font. If you need it to be local/relative to the project, ask Russell.
+
 
 ## Google Docs and Sheets
 
@@ -102,12 +105,14 @@ import Example from "$components/helpers/Example.svelte";
 ```
 
 * `ButtonSet.svelte`: Accessible button group inputs
-* `Icon.svelte`: Simple integration with Feather Icons.
+* `Icon.svelte`: Simple integration with Feather Icons
 * `Range.svelte`: Customizable range slider
 * `Scrolly.svelte`: Scrollytelling
-* `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
-* `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
+* `SortTable.svelte`: Sortable semantic table with customizable props
+* `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories
+* `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider
 * `Toggle.svelte`: Accessible toggle inputs
+* `WIP.svelte`: A sticky banner saying this project is a WIP
 
 ### Actions
 
