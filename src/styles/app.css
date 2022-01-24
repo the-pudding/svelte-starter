@@ -18,7 +18,7 @@
 
 	/* presets */
 	--border-radius: 4px;
-	--font-body: var(--sans);
+	--font-body: var(--serif);
 	--font-form: var(--sans);
 	--color-bg: var(--color-white);
 	--color-fg: var(--color-gray-900);
