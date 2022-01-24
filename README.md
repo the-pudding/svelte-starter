@@ -15,15 +15,15 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 - SSR static-hosted builds by default
 
 ## Quickstart
-
+#### From Scratch
 * Click the green `Use this template` button above.
+* Alternatively: `npx degit the-pudding/svelte-starter my-project`
+
+#### Pre-existing Project
+* clone the repo
+
+#### Installation
 * In your local repo run `pnpm install` or `npm install`
-
-Alternatively:
-
-```bash
-npx degit the-pudding/svelte-starter my-project
-```
 
 ## Development
 
