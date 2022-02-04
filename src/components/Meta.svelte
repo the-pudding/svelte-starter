@@ -2,16 +2,15 @@
   export let title = "Title TK";
   export let description = "Description TK";
   export let url = "https://pudding.cool";
+  export let keywords = "";
+  export let preloadFont = [];
 </script>
 
 <svelte:head>
   <title>{title}</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="description" content={description} />
   <meta name="author" content="The Pudding" />
-  <meta name="news_keywords" content="" />
+  <meta name="news_keywords" content={keywords} />
 
   <meta property="og:title" content={title} />
   <meta property="og:site_name" content="The Pudding" />
@@ -35,4 +34,8 @@
   <meta name="robots" content="max-image-preview:large" />
 
   <link rel="canonical" href="{url}/" />
+
+  {#each preloadFont as href}
+    <link rel="preload" {href} as="font" type="font/woff2" crossorigin />
+  {/each}
 </svelte:head>

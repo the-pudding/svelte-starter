@@ -22,7 +22,6 @@ const config = {
 	preprocess,
 	kit: {
 		adapter: adapterStatic(),
-		target: "#svelte",
 		vite: {
 			resolve: {
 				alias: {
