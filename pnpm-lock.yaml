@@ -3,7 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@rollup/plugin-dsv': ^2.0.3
   '@sveltejs/adapter-static': 1.0.0-next.28
-  '@sveltejs/kit': 1.0.0-next.269
+  '@sveltejs/kit': 1.0.0-next.266
   archieml: ^0.5.0
   autoprefixer: ^10.4.2
   d3: ^7.3.0
@@ -22,7 +22,7 @@ specifiers:
 devDependencies:
   '@rollup/plugin-dsv': 2.0.3
   '@sveltejs/adapter-static': 1.0.0-next.28
-  '@sveltejs/kit': 1.0.0-next.269_svelte@3.46.4
+  '@sveltejs/kit': 1.0.0-next.266_svelte@3.46.4
   archieml: 0.5.0
   autoprefixer: 10.4.2_postcss@8.4.6
   d3: 7.3.0
@@ -76,17 +76,17 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.269_svelte@3.46.4:
-    resolution: {integrity: sha512-Z6BqG/vo1IYPy2mW5r0mHHY5JsOAWrbBQuJFfG2aANxWQSIfWhZ/U35Ndk4Un4SlOT0QIgmeSz6qB8nJvuclbQ==}
+  /@sveltejs/kit/1.0.0-next.266_svelte@3.46.4:
+    resolution: {integrity: sha512-nlc+ECltLIadY12K+DerDLtgKRBe/ri+R5e2iWFIovetk31heU92nd1k24DL+FMcNo7B0Ik4XxurHCV2eoft3g==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.46.4+vite@2.8.2
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.46.4+vite@2.8.3
       sade: 1.8.1
       svelte: 3.46.4
-      vite: 2.8.2
+      vite: 2.8.3
     transitivePeerDependencies:
       - diff-match-patch
       - less
@@ -95,7 +95,7 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.37_svelte@3.46.4+vite@2.8.2:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.37_svelte@3.46.4+vite@2.8.3:
     resolution: {integrity: sha512-EdSXw2rXeOahNrQfMJVZxa/NxZxW1a0TiBI3s+pVxnxU14hEQtnkLtdbTFhnceu22gJpNPFSIJRcIwRBBDQIeA==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
@@ -112,7 +112,7 @@ packages:
       magic-string: 0.25.7
       svelte: 3.46.4
       svelte-hmr: 0.14.9_svelte@3.46.4
-      vite: 2.8.2
+      vite: 2.8.3
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -855,7 +855,7 @@ packages:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.1.1
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true
@@ -975,8 +975,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /minimatch/3.1.1:
-    resolution: {integrity: sha512-reLxBcKUPNBnc/sVtAbxgRVFSegoGeLaSjmphNhcwcolhYLRgtJscn5mRl6YRZNQv40Y7P6JM2YhSIsbL9OB5A==}
+  /minimatch/3.1.2:
+    resolution: {integrity: sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==}
     dependencies:
       brace-expansion: 1.1.11
     dev: true
@@ -1141,7 +1141,7 @@ packages:
     resolution: {integrity: sha1-HhVud4+UtyVb+hs9AXi+j1xVJAg=}
     dependencies:
       estree-walker: 0.2.1
-      minimatch: 3.1.1
+      minimatch: 3.1.2
     dev: true
 
   /rollup/2.67.2:
@@ -1350,8 +1350,8 @@ packages:
     resolution: {integrity: sha512-dQeQBJVu+nTUrBTWIfgjXX1YHD/SxKVjpI77scXMCHUa8mbOmWHWNdzSJ3ZeOB3XMZCvggezKBEIm59SjmvRiQ==}
     dev: true
 
-  /vite/2.8.2:
-    resolution: {integrity: sha512-zawfykcPVPYva4KusIWORNLr324Qx86/3NpfQSIOJdjnL5pYhwDoImLYMOh4lFLcP/7//tNuWM2vx2F5OSVC9w==}
+  /vite/2.8.3:
+    resolution: {integrity: sha512-967klrEiG7HEsN7fQYYVETs5495Iu6GpI7YyxoO5yVTJCRxjV8HhWgNWKgrbazjoOB9DQuztL53/nUoNqHNsWg==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
