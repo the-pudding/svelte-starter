@@ -1,45 +1,36 @@
 let hasStorage;
 
-const checkStorage = (type) => {
+const isReady = () => {
+	if (hasStorage !== undefined) return hasStorage;
+
 	try {
-		const storage = window[type];
+		const storage = window["localStorage"];
 		const x = '__storage_test__';
 		storage.setItem(x, x);
 		storage.removeItem(x);
-		return true;
+		hasStorage = true;
 	} catch (e) {
-		return false;
+		hasStorage = false;
 	}
 };
 
 const remove = (key) => {
-	if (!hasStorage) return;
+	if (!isReady()) return;
 	localStorage.removeItem(key);
 };
 
 const set = (key, value) => {
-	if (!hasStorage) return;
+	if (!isReady()) return;
 	localStorage.set(key, JSON.stringify(value));
 };
 
 const get = (key) => {
-	if (!hasStorage) return;
+	if (!isReady()) return;
 	return JSON.parse(localStorage.get(key));
 };
 
-const clear = (items = []) => {
-	items.forEach(remove);
-};
-
-const setup = (reset) => {
-	hasStorage = checkStorage("localStorage");
-	if (reset) clear(reset);
-};
-
 export default {
-	setup,
 	set,
 	get,
 	remove,
-	clear
 };
