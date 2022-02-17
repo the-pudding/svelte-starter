@@ -123,7 +123,7 @@ Located in `src/lib/actions`.
 import example from "$actions/action.js";
 ```
 
-* `css.js`: dynmically change the value of a CSS variable.
+* `focusTrap.js`: Enable a keyboard focus trap for modals and menus.
 * `inView.js`: detect when an element enters or exits the viewport.
 
 ### Stores
