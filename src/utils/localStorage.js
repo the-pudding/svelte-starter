@@ -21,12 +21,12 @@ const remove = (key) => {
 
 const set = (key, value) => {
 	if (!isReady()) return;
-	localStorage.set(key, JSON.stringify(value));
+	localStorage.setItem(key, JSON.stringify(value));
 };
 
 const get = (key) => {
 	if (!isReady()) return;
-	return JSON.parse(localStorage.get(key));
+	return JSON.parse(localStorage.getItem(key));
 };
 
 export default {
