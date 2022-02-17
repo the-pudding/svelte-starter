@@ -154,6 +154,7 @@ import name from "$utils/name.js";
 * `csvDownload.js`: Converts a flat array of data to CSV content ready to be used as an `href` value for download.
 * `loadImage.js`: Loads an image.
 * `loadPixels.js`: Loads the pixel data of an image via an offscreen canvas.
+* `localStorage.js`: Read and write to local storage.
 * `mapToArray.js`: Convenience function to convert a map to an array.
 * `move.js`: transform translate function shorthand.
 * `transformSvg.js`: Custom transition lets you apply an svg transform property with the in/out svelte transition. Parameters (with defaults):
