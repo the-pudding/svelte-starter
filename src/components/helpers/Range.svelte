@@ -5,6 +5,7 @@
   export let step = 1;
   export let showTicks = false;
   export let value = min;
+  export let label = "";
 
   const getDecimalCount = (value) => {
     if (Math.floor(value) === value) return 0;
@@ -21,7 +22,7 @@
       <span class="tick">{format(`.${decimals}f`)(tick)}</span>
     {/each}
   </div>
-  <input type="range" {min} {max} {step} bind:value />
+  <input type="range" aria-label={label} {min} {max} {step} bind:value />
 </div>
 
 <style>
