@@ -6,9 +6,9 @@ import dsv from "@rollup/plugin-dsv";
 import sveltePreprocess from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
 
-const { svelteStarter } = JSON.parse(fs.readFileSync("package.json", "utf8"));
+const { subdirectory } = JSON.parse(fs.readFileSync("package.json", "utf8"));
 const dev = process.env.NODE_ENV === "development";
-const dir = svelteStarter ? svelteStarter.subdirectory : "";
+const dir = subdirectory || "";
 const prefix = dir.startsWith("/") ? "" : "/";
 const base = dev || !dir ? "" : `${prefix}${dir}`;
 

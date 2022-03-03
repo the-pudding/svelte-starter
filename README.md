@@ -54,8 +54,8 @@ If you are hosting the project on a subdirectory, set it in `package.json`.
 For example, if you are deploying to `https://domain.com/2021/01/test`:
 
 ```json
-"svelteStarter": {
-  "subdirectory": "/2021/01/test"
+"subdirectory": {
+  "path": "/2021/01/test"
 }
 ```
 
