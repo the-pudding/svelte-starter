@@ -6,7 +6,7 @@ import dsv from "@rollup/plugin-dsv";
 import sveltePreprocess from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
 
-const { subdirectory } = JSON.parse(readFileSync("package.json", "utf8"));
+const { version, subdirectory } = JSON.parse(readFileSync("package.json", "utf8"));
 const dev = process.env.NODE_ENV === "development";
 const dir = subdirectory || "";
 const prefix = dir.startsWith("/") ? "" : "/";
@@ -25,6 +25,7 @@ const config = {
 		prerender: { default: true },
 		files: { lib: "./src" },
 		vite: {
+			define: { __VERSION__: JSON.stringify(version) },
 			resolve: {
 				alias: {
 					"$actions": path.resolve("./src/actions"),
