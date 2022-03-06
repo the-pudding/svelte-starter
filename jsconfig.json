@@ -2,6 +2,12 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
+			"$lib": [
+				"src"
+			],
+			"$lib/*": [
+				"src/*"
+			],
 			"$actions/*": [
 				"src/actions/*"
 			],
@@ -31,5 +37,6 @@
 	],
 	"exclude": [
 		"tasks/*.js"
-	]
+	],
+	"extends": "./.svelte-kit/tsconfig.json"
 }

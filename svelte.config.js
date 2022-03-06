@@ -22,6 +22,8 @@ const config = {
 	preprocess,
 	kit: {
 		adapter: adapterStatic(),
+		prerender: { default: true },
+		files: { lib: "./src" },
 		vite: {
 			resolve: {
 				alias: {
