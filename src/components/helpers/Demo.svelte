@@ -35,6 +35,11 @@
 </script>
 
 <div>
+  <section id="image">
+    <h2>Image</h2>
+    <img src="assets/test.jpg" alt="cat" />
+  </section>
+
   <section id="buttonset">
     <h2>Button Set <span>{buttonSetValue}</span></h2>
     <ButtonSet legend={"Choose"} options={buttonSetOptions} bind:value={buttonSetValue} />
@@ -105,5 +110,9 @@
   .step {
     height: 80vh;
     background: var(--color-gray-100);
+  }
+
+  #image img {
+    width: 120px;
   }
 </style>

@@ -24,6 +24,7 @@ const config = {
 		adapter: adapterStatic(),
 		prerender: { default: true },
 		files: { lib: "./src" },
+		trailingSlash: "always",
 		vite: {
 			define: { __VERSION__: JSON.stringify(version) },
 			resolve: {
