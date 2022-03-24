@@ -21,7 +21,7 @@ const timer = {
 		}
 	},
 	stop() {
-		if (browser && !req) {
+		if (browser && req) {
 			window.cancelAnimationFrame(req);
 			req = null;
 		}
