@@ -33,7 +33,7 @@ const timer = {
 		if (typeof val === "number") elapsed.set(val);
 	},
 	reset() {
-		timer.set(0);
+		elapsed.set(0);
 	}
 };
 
