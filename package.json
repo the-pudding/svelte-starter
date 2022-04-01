@@ -18,6 +18,7 @@
 		"autoprefixer": "^10.4.2",
 		"d3": "^7.3.0",
 		"feather-icons": "^4.28.0",
+		"layercake": "^6.1.0",
 		"lodash.debounce": "^4.0.8",
 		"node-fetch": "^3.2.3",
 		"postcss": "^8.4.8",

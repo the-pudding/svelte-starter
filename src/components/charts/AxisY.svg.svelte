@@ -47,14 +47,10 @@
     stroke: var(--color-gray-300);
   }
   .tick .gridline {
-    stroke-dasharray: 2;
+    stroke-dasharray: 4px 4px;
   }
 
   .tick text {
     fill: var(--color-gray-600);
-  }
-
-  .tick.tick-0 line {
-    stroke-dasharray: 0;
   }
 </style>

@@ -8,6 +8,7 @@ specifiers:
   autoprefixer: ^10.4.2
   d3: ^7.3.0
   feather-icons: ^4.28.0
+  layercake: ^6.1.0
   lodash.debounce: ^4.0.8
   node-fetch: ^3.2.3
   postcss: ^8.4.8
@@ -27,6 +28,7 @@ devDependencies:
   autoprefixer: 10.4.2_postcss@8.4.8
   d3: 7.3.0
   feather-icons: 4.28.0
+  layercake: 6.1.0
   lodash.debounce: 4.0.8
   node-fetch: 3.2.3
   postcss: 8.4.8
@@ -960,6 +962,12 @@ packages:
   /kleur/4.1.4:
     resolution: {integrity: sha512-8QADVssbrFjivHWQU7KkMgptGTl6WAcSdlbBPY4uNF+mWr6DGcKrvY2w4FQJoXch7+fKMjj0dRrL75vk3k23OA==}
     engines: {node: '>=6'}
+    dev: true
+
+  /layercake/6.1.0:
+    resolution: {integrity: sha512-KOZspI231Ranm/SrEG3Id5Fws0S9rU8GHuM86RmW7LVUvOVtWMeWiEnY+GufWv6PWmP4lxsSkZFxhpXeLt0kzg==}
+    dependencies:
+      d3-scale: 4.0.2
     dev: true
 
   /lodash.debounce/4.0.8:
