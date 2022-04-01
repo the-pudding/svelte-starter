@@ -40,8 +40,4 @@
     background: var(--color-highlight);
     padding: 0 0.5em;
   }
-
-  #demo-image img {
-    width: 120px;
-  }
 </style>
