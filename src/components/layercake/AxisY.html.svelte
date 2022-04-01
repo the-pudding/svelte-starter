@@ -56,10 +56,12 @@
   .text {
     position: absolute;
   }
+
   .axis {
     width: 100%;
     height: 100%;
   }
+
   .tick {
     font-size: 12px;
     width: 100%;
@@ -67,10 +69,10 @@
   }
 
   .gridline {
-    border-top: 1px dashed #aaa;
+    border-top: 1px dashed var(--color-gray-300);
   }
   .tick-mark {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid var(--color-gray-300);
   }
 
   .baseline.gridline {
@@ -78,6 +80,6 @@
   }
 
   .tick .text {
-    color: #666;
+    color: var(--color-gray-600);
   }
 </style>

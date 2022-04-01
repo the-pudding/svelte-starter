@@ -44,28 +44,28 @@
   .baseline {
     position: absolute;
   }
+
   .axis {
     width: 100%;
     height: 100%;
   }
+
   .tick {
     font-size: 0.725em;
     font-weight: 200;
   }
 
   .gridline {
-    border-left: 1px dashed #aaa;
+    border-left: 1px dashed var(--color-gray-300);
   }
 
   .tick-mark {
-    border-left: 1px solid #aaa;
-  }
-  .baseline {
-    border-top: 1px solid #aaa;
+    border-left: 1px solid var(--color-gray-300);
+    border-top: 1px solid var(--color-gray-300);
   }
 
   .tick .text {
-    color: #666;
+    color: var(--color-gray-600);
     position: relative;
     white-space: nowrap;
     transform: translateX(-50%);

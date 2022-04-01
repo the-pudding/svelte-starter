@@ -55,18 +55,19 @@
 
   line,
   .tick line {
-    stroke: #aaa;
+    stroke: var(--color-gray-300);
     stroke-dasharray: 2;
   }
 
   .tick text {
-    fill: #666;
+    fill: var(--color-gray-600);
   }
 
   .tick .tick-mark,
   .baseline {
     stroke-dasharray: 0;
   }
+
   /* This looks slightly better */
   .axis.snapTicks .tick:last-child text {
     transform: translateX(3px);

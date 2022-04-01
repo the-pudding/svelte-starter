@@ -44,14 +44,14 @@
   }
 
   .tick line {
-    stroke: #aaa;
+    stroke: var(--color-gray-300);
   }
   .tick .gridline {
     stroke-dasharray: 2;
   }
 
   .tick text {
-    fill: #666;
+    fill: var(--color-gray-600);
   }
 
   .tick.tick-0 line {
