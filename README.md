@@ -93,6 +93,7 @@ import Example from "$components/Example.svelte";
 ```
 
 * `Footer.svelte`: Pudding recirculation and social links.
+* `Header.svelte`: Pudding masthead.
 * `Header.svelte`: Pudding logo.
 
 ### Helper Components
@@ -113,6 +114,15 @@ import Example from "$components/helpers/Example.svelte";
 * `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider
 * `Toggle.svelte`: Accessible toggle inputs
 * `WIP.svelte`: A sticky banner saying this project is a WIP
+
+### Chart Components
+
+Starter templates for various chart types to be used with [LayerCake](https://layercake.graphics/). Located in `src/lib/components/charts`.
+
+```js
+// Usage
+import Example from "$components/charts/Example.svelte";
+```
 
 ### Actions
 
@@ -147,7 +157,7 @@ Located in `src/lib/utils/`.
 
 ```js
 // Usage
-import name from "$utils/name.js";
+import example from "$utils/example.js";
 ```
 
 * `checkOverlap.js`: Label overlapping detection. Loops through selection of nodes and adds a class to the ones that are overlapping. Once one is hidden it ignores it.
