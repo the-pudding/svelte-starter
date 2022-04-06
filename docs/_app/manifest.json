@@ -1,54 +1,69 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-6997275a.js",
+    "file": "start-4b1f9fcc.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_vendor-1d7c4ff2.js"
+      "_index-03160450.js",
+      "_index-a08aaf9d.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/index.svelte",
+      "src/routes/test.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-c63f8da4.js",
+    "file": "pages/__layout.svelte-3eaa9830.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-1d7c4ff2.js"
+      "_index-03160450.js"
     ],
     "css": [
       "assets/pages/__layout.svelte-7c44fd6f.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-986cdb79.js",
+    "file": "error.svelte-9ba6aed8.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-1d7c4ff2.js"
+      "_index-03160450.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-2bf84100.js",
+    "file": "pages/index.svelte-7d245f4d.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_vendor-1d7c4ff2.js"
+      "_index-03160450.js",
+      "_index-a08aaf9d.js"
     ],
     "css": [
-      "assets/pages/index.svelte-6e4e406f.css"
+      "assets/pages/index.svelte-3aaeff49.css"
     ]
   },
-  "_vendor-1d7c4ff2.js": {
-    "file": "chunks/vendor-1d7c4ff2.js",
-    "css": [
-      "assets/vendor-4f457570.css"
+  "src/routes/test.svelte": {
+    "file": "pages/test.svelte-4fd2aaf6.js",
+    "src": "src/routes/test.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-03160450.js"
+    ]
+  },
+  "_index-03160450.js": {
+    "file": "chunks/index-03160450.js"
+  },
+  "_index-a08aaf9d.js": {
+    "file": "chunks/index-a08aaf9d.js",
+    "imports": [
+      "_index-03160450.js"
     ]
   }
 }
