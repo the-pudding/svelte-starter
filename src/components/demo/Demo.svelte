@@ -1,4 +1,5 @@
 <script>
+  import DemoLink from "$components/demo/Demo.Link.svelte";
   import DemoImg from "$components/demo/Demo.Img.svelte";
   import DemoButtonSet from "$components/demo/Demo.ButtonSet.svelte";
   import DemoRange from "$components/demo/Demo.Range.svelte";
@@ -10,6 +11,7 @@
 </script>
 
 <div id="demo">
+  <DemoLink />
   <DemoImg />
   <DemoButtonSet />
   <DemoRange />
