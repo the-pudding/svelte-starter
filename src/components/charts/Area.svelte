@@ -1,6 +1,6 @@
 <script>
   import { getContext } from "svelte";
-  import { area, curveLinear } from "d3-shape";
+  import { area, curveLinear } from "d3";
 
   const { data, xGet, yGet, yScale } = getContext("LayerCake");
 

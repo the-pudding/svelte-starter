@@ -1,7 +1,7 @@
 <script>
   import { getContext, createEventDispatcher } from "svelte";
   import { uniques } from "layercake";
-  import { Delaunay } from "d3-delaunay";
+  import { Delaunay } from "d3";
 
   const { data, xGet, yGet, width, height } = getContext("LayerCake");
 
