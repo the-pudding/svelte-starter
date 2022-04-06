@@ -9,8 +9,8 @@
     width: 100%;
     text-align: center;
     padding: 1.25em;
-    background: pink;
-    color: black;
+    background: var(--color-fg);
+    color: var(--color-fg);
     font-family: monospace;
     font-size: 16px;
   }
