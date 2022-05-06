@@ -13,7 +13,7 @@
 	"devDependencies": {
 		"@rollup/plugin-dsv": "^2.0.3",
 		"@sveltejs/adapter-static": "1.0.0-next.29",
-		"@sveltejs/kit": "1.0.0-next.310",
+		"@sveltejs/kit": "1.0.0-next.326",
 		"archieml": "^0.5.0",
 		"autoprefixer": "^10.4.7",
 		"d3": "^7.4.4",
@@ -24,6 +24,7 @@
 		"postcss": "^8.4.13",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.7.0",
+		"rollup": "^2.72.0",
 		"rollup-plugin-svg": "^2.0.0",
 		"style-dictionary": "^3.1.1",
 		"svelte": "^3.48.0",
