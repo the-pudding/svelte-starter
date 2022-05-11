@@ -22,7 +22,7 @@ const config = {
 	preprocess,
 	kit: {
 		adapter: adapterStatic(),
-		prerender: { default: true, entries: [] },
+		prerender: { default: true },
 		files: { lib: "./src" },
 		trailingSlash: "always",
 		vite: {
