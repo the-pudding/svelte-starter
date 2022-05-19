@@ -2,10 +2,13 @@ import { browser } from '$app/env';
 import { readable } from "svelte/store";
 
 const queries = {
-	"sm": "(min-width: 640px)",
-	"md": "(min-width: 768px)",
-	"lg": "(min-width: 1024px)",
-	"xl": "(min-width: 1280px)",
+	"20rem": "(min-width: 20rem)",
+	"30rem": "(min-width: 30rem)",
+	"40rem": "(min-width: 40rem)",
+	"50rem": "(min-width: 50rem)",
+	"60rem": "(min-width: 60rem)",
+	"70rem": "(min-width: 70rem)",
+	"80rem": "(min-width: 80rem)",
 	"reducedMotion": "(prefers-reduced-motion: reduce)"
 };
 
