@@ -1,0 +1,49 @@
+{
+	"": {
+		"12px": {
+			"value": "0.75rem"
+		},
+		"14px": {
+			"value": "0.875rem"
+		},
+		"16px": {
+			"value": "1rem"
+		},
+		"18px": {
+			"value": "1.125rem"
+		},
+		"20px": {
+			"value": "1.25rem"
+		},
+		"22px": {
+			"value": "1.375rem"
+		},
+		"24px": {
+			"value": "1.5rem"
+		},
+		"28px": {
+			"value": "1.75rem"
+		},
+		"32px": {
+			"value": "2rem"
+		},
+		"36px": {
+			"value": "2.25rem"
+		},
+		"40px": {
+			"value": "2.5rem"
+		},
+		"44px": {
+			"value": "2.75rem"
+		},
+		"48px": {
+			"value": "3rem"
+		},
+		"56px": {
+			"value": "3.5rem"
+		},
+		"64px": {
+			"value": "4rem"
+		}
+	}
+}

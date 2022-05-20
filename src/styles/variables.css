@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Thu, 13 Jan 2022 17:26:20 GMT
+ * Generated on Fri, 20 May 2022 10:20:19 GMT
  */
 
 :root {
@@ -29,4 +29,19 @@
   --color-green: #34a29e;
   --color-red: #ff533d;
   --color-yellow: #e5e338;
+  --12px: 0.75rem;
+  --14px: 0.875rem;
+  --16px: 1rem;
+  --18px: 1.125rem;
+  --20px: 1.25rem;
+  --22px: 1.375rem;
+  --24px: 1.5rem;
+  --28px: 1.75rem;
+  --32px: 2rem;
+  --36px: 2.25rem;
+  --40px: 2.5rem;
+  --44px: 2.75rem;
+  --48px: 3rem;
+  --56px: 3.5rem;
+  --64px: 4rem;
 }
