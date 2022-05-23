@@ -1,7 +1,7 @@
 <script>
   import { getContext } from "svelte";
   import canTab from "$actions/canTab.js";
-  const { dir, cur, w, h } = getContext("Slider");
+  const { dir, cur, w, h, count } = getContext("Slider");
 
   export let index;
 
@@ -11,18 +11,21 @@
   $: disable = !visible;
 </script>
 
-<section
+<div
   class="slide"
   class:visible
   style:width
   style:height
+  role="group"
+  aria-label="slide {index + 1} of {$count}"
+  aria-current={visible}
   use:canTab={{ disable }}
 >
   <slot />
-</section>
+</div>
 
 <style>
-  section {
+  .slide {
     position: relative;
     width: 100%;
     height: 100%;

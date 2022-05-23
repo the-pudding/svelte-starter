@@ -52,6 +52,7 @@ Usage:
   let _width = writable();
   let _height = writable();
   let _current = writable();
+  let _count = writable();
 
   const move = (val, jump) => {
     if (!isInView) return false;
@@ -86,13 +87,15 @@ Usage:
     dir: _direction,
     cur: _current,
     w: _width,
-    h: _height
+    h: _height,
+    count: _count
   };
   $: setContext("Slider", context);
 
   onMount(() => {
     children = translateEl.children.length;
     count = children;
+    _count.set(count);
     observer = new IntersectionObserver(onIntersect, {
       root: null,
       rootMargin: "-1px"
@@ -103,19 +106,20 @@ Usage:
   });
 </script>
 
-<div
+<section
+  aria-label="carousel"
   class="slider {direction}"
   bind:this={sliderEl}
   bind:clientWidth={width}
   bind:clientHeight={height}
 >
-  <div class="translate" bind:this={translateEl} style={customStyle}>
+  <div class="slides" bind:this={translateEl} style={customStyle}>
     <slot />
   </div>
-</div>
+</section>
 
 <style>
-  .slider {
+  section {
     position: relative;
     width: 100%;
     height: 100%;
@@ -125,7 +129,7 @@ Usage:
     overflow: hidden;
   }
 
-  .translate {
+  .slides {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -135,11 +139,11 @@ Usage:
     z-index: 1;
   }
 
-  .horizontal > .translate {
+  .horizontal > .slides {
     flex-direction: row;
   }
 
-  .vertical > .translate {
+  .vertical > .slides {
     flex-direction: column;
   }
 </style>
