@@ -5,12 +5,14 @@ import svg from "vite-plugin-svgstring";
 import dsv from "@rollup/plugin-dsv";
 import sveltePreprocess from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
+import { timeFormat } from "d3";
 
 const { version, subdirectory } = JSON.parse(readFileSync("package.json", "utf8"));
 const dev = process.env.NODE_ENV === "development";
 const dir = subdirectory || "";
 const prefix = dir.startsWith("/") ? "" : "/";
 const base = dev || !dir ? "" : `${prefix}${dir}`;
+const timestamp = timeFormat("%Y-%m-%d-%H:%M")(new Date());
 
 const preprocess = sveltePreprocess({
 	postcss: {
@@ -26,7 +28,10 @@ const config = {
 		files: { lib: "./src" },
 		trailingSlash: "always",
 		vite: {
-			define: { __VERSION__: JSON.stringify(version) },
+			define: {
+				__VERSION__: JSON.stringify(version),
+				__TIMESTAMP__: JSON.stringify(timestamp)
+			},
 			resolve: {
 				alias: {
 					"$actions": path.resolve("./src/actions"),
