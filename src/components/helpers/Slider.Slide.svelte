@@ -1,17 +1,28 @@
 <script>
   import { getContext } from "svelte";
-  const { direction, width, height } = getContext("Slider");
+  import canTab from "$actions/canTab.js";
+  const { dir, cur, w, h } = getContext("Slider");
 
-  $: w = $direction === "horizontal" ? `${$width}px` : "100%";
-  $: h = $direction === "vertical" ? `${$height}px` : "100%";
+  export let index;
+
+  $: width = $dir === "horizontal" ? `${$w}px` : "100%";
+  $: height = $dir === "vertical" ? `${$h}px` : "100%";
+  $: visible = index === $cur;
+  $: disable = !visible;
 </script>
 
-<div class="slide" style="width: {w}; height: {h};">
+<section
+  class="slide"
+  class:visible
+  style:width
+  style:height
+  use:canTab={{ disable }}
+>
   <slot />
-</div>
+</section>
 
 <style>
-  .slide {
+  section {
     position: relative;
     width: 100%;
     height: 100%;
