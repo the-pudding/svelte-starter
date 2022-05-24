@@ -1,23 +1,38 @@
 <!--
-	Add the css snippet below to your global css file to do a
-	full-screen + mobile friendly slider
+Add the css snippet below to your global css file to do a 
+full-screen + mobile friendly slider
 	
-	html, body, main {
+html, body, main {
 	height: 100%;
 	overflow: hidden;
 }
+
+Usage:
+<script>
+	import Slider from "$components/helpers/Slider.svelte";
+	import Slide from "$components/helpers/Slider.Slide.svelte";
+
+	let sliderEl; // component binding
+
+	sliderEl.next(); // navigation call
+</script>
+
+<Slider bind:this={sliderEl}>
+	<Slide>
+		<p>content</p>
+	</Slide>
+</Slider>
 -->
 <script>
   import { setContext, onMount } from "svelte";
   import { writable } from "svelte/store";
-  import Slide from "$components/helpers/Slider.Slide.svelte";
 
   export let direction = "horizontal";
   export let duration = "500ms";
   export let timing = "ease";
 
   export let count = 0;
-  export let active = 0;
+  export let current = 0;
 
   export const next = () => move(1);
   export const prev = () => move(-1);
@@ -36,12 +51,14 @@
   let _direction = writable();
   let _width = writable();
   let _height = writable();
+  let _current = writable();
+  let _count = writable();
 
   const move = (val, jump) => {
     if (!isInView) return false;
     const target = jump ? val : index + val;
     index = Math.max(0, Math.min(children - 1, target));
-    active = index;
+    current = index;
   };
 
   const onIntersect = (e) => {
@@ -65,12 +82,20 @@
   $: _direction.set(direction);
   $: _width.set(width);
   $: _height.set(height);
-  $: context = { direction: _direction, width: _width, height: _height };
+  $: _current.set(current);
+  $: context = {
+    dir: _direction,
+    cur: _current,
+    w: _width,
+    h: _height,
+    count: _count
+  };
   $: setContext("Slider", context);
 
   onMount(() => {
     children = translateEl.children.length;
     count = children;
+    _count.set(count);
     observer = new IntersectionObserver(onIntersect, {
       root: null,
       rootMargin: "-1px"
@@ -81,19 +106,20 @@
   });
 </script>
 
-<div
+<section
+  aria-label="carousel"
   class="slider {direction}"
   bind:this={sliderEl}
   bind:clientWidth={width}
   bind:clientHeight={height}
 >
-  <div class="translate" bind:this={translateEl} style={customStyle}>
+  <div class="slides" bind:this={translateEl} style={customStyle}>
     <slot />
   </div>
-</div>
+</section>
 
 <style>
-  .slider {
+  section {
     position: relative;
     width: 100%;
     height: 100%;
@@ -103,7 +129,7 @@
     overflow: hidden;
   }
 
-  .translate {
+  .slides {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -113,11 +139,11 @@
     z-index: 1;
   }
 
-  .horizontal > .translate {
+  .horizontal > .slides {
     flex-direction: row;
   }
 
-  .vertical > .translate {
+  .vertical > .slides {
     flex-direction: column;
   }
 </style>

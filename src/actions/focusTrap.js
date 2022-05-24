@@ -21,14 +21,14 @@ export default function focusTrap(node, params) {
 	};
 
 	const add = () => {
-		firstFocusable.addEventListener("keydown", moveFocusToBottom);
-		lastFocusable.addEventListener("keydown", moveFocusToTop);
+		if (firstFocusable) firstFocusable.addEventListener("keydown", moveFocusToBottom);
+		if (lastFocusable) lastFocusable.addEventListener("keydown", moveFocusToTop);
 		active = true;
 	};
 
 	const remove = () => {
-		firstFocusable.removeEventListener("keydown", moveFocusToBottom);
-		lastFocusable.removeEventListener("keydown", moveFocusToTop);
+		if (firstFocusable) firstFocusable.removeEventListener("keydown", moveFocusToBottom);
+		if (lastFocusable) lastFocusable.removeEventListener("keydown", moveFocusToTop);
 		active = false;
 	};
 
