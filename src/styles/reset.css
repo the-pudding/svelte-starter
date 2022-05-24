@@ -22,7 +22,7 @@ p {
 
 mark {
   background-color: var(--color-highlight);
-  padding: 0 0.25rem;
+  padding: 0 4px;
 }
 
 a {

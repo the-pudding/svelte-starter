@@ -1,21 +1,4 @@
-/*
-			This font software is the property of Commercial Type.
-
-			You may not modify the font software, use it on another website, or install it on a computer.
-
-			License information is available at http://commercialtype.com/eula
-			For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
-
-			Copyright (C) 2017 Schwartzco Inc.
-			License: 1704-GNCLGK
-*/
-
-/*
-********************
-	National
-********************
-*/
-
+/* National */
 @font-face {
 	font-family: 'National 2 Web';
 	src: url('https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2') format('woff2');
@@ -34,13 +17,7 @@
 	font-display: swap;
 }
 
-/*
-********************
-	National Narrow
-********************
-*/
-
-/*
+/* National Narrow */
 @font-face {
 	font-family: 'National 2 Narrow Web';
 	src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Extralight.woff2') format('woff2');
@@ -68,23 +45,7 @@
 	font-display: swap;
 }
 
-/*
-@font-face {
-	font-family: 'National 2 Narrow Web';
-	src: url('https://pudding.cool/assets/fonts/national/National2NarrowWeb-Black.woff2') format('woff2');
-	font-weight: 900;
-	font-style: normal;
-	font-stretch: normal;
-	font-display: swap;
-}
-*/
-
-/*
-********************
-	Tiempos Text
-********************
-*/
-
+/* Tiempos Text */
 @font-face {
 	font-family: 'Tiempos Text Web';
 	src: url('https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2') format('woff2');
@@ -102,20 +63,3 @@
 	font-stretch: normal;
 	font-display: swap;
 }
-
-/*
-********************
-	Tiempos Headline
-********************
-*/
-
-/*
-@font-face {
-	font-family: 'Tiempos Headline Web';
-	src: url('https://pudding.cool/assets/fonts/tiempos/TiemposHeadlineWeb-Regular.woff2') format('woff2');
-	font-weight: 500;
-	font-style: normal;
-	font-stretch: normal;
-	font-display: swap;
-}
-*/

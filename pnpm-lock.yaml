@@ -2,8 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@rollup/plugin-dsv': ^2.0.3
-  '@sveltejs/adapter-static': 1.0.0-next.30
-  '@sveltejs/kit': 1.0.0-next.336
+  '@sveltejs/adapter-static': 1.0.0-next.32
+  '@sveltejs/kit': 1.0.0-next.343
   archieml: ^0.5.0
   autoprefixer: ^10.4.7
   d3: ^7.4.4
@@ -23,8 +23,8 @@ specifiers:
 
 devDependencies:
   '@rollup/plugin-dsv': 2.0.3_rollup@2.74.1
-  '@sveltejs/adapter-static': 1.0.0-next.30
-  '@sveltejs/kit': 1.0.0-next.336_svelte@3.48.0
+  '@sveltejs/adapter-static': 1.0.0-next.32
+  '@sveltejs/kit': 1.0.0-next.343_svelte@3.48.0
   archieml: 0.5.0
   autoprefixer: 10.4.7_postcss@8.4.14
   d3: 7.4.4
@@ -75,14 +75,14 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-static/1.0.0-next.30:
-    resolution: {integrity: sha512-xJPOXuj4T/lw9pZpMQAoN68TgrOPp/zOldvSFA+A5CIhb8yLXkgxOWh6UDUrbVxM1NjOdt8lwPdZfdkh5FL2Fg==}
+  /@sveltejs/adapter-static/1.0.0-next.32:
+    resolution: {integrity: sha512-kpYlghqxVWbrIdbzoiQTe1kSq9/+xlAkcd8eXTAGGPCBPYTUa0bkxt1NEfoNC+h7a+KlFoLMTi9W0AxnrNuiIQ==}
     dependencies:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.336_svelte@3.48.0:
-    resolution: {integrity: sha512-DfERqclfwI8Gdx8/p5qIU3vwEOQfWqC8+BXR12bNykbXFM1k8koDplRDpmGzcsXyhslf83j+RmchnkifbNLjsw==}
+  /@sveltejs/kit/1.0.0-next.343_svelte@3.48.0:
+    resolution: {integrity: sha512-M+K2To/QdEBl8OZS1V7JzsV9zZUNJRAay1ZVtDnlC75UgHECHhu72E5BtJWFXtINezQaMgGl62LuAGHItQxPlA==}
     engines: {node: '>=16'}
     hasBin: true
     peerDependencies:
@@ -173,7 +173,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.20.3
-      caniuse-lite: 1.0.30001341
+      caniuse-lite: 1.0.30001342
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -209,10 +209,10 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001341
+      caniuse-lite: 1.0.30001342
       electron-to-chromium: 1.4.137
       escalade: 3.1.1
-      node-releases: 2.0.4
+      node-releases: 2.0.5
       picocolors: 1.0.0
     dev: true
 
@@ -227,8 +227,8 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /caniuse-lite/1.0.30001341:
-    resolution: {integrity: sha512-2SodVrFFtvGENGCv0ChVJIDQ0KPaS1cg7/qtfMaICgeMolDdo/Z2OD32F0Aq9yl6F4YFwGPBS5AaPqNYiW4PoA==}
+  /caniuse-lite/1.0.30001342:
+    resolution: {integrity: sha512-bn6sOCu7L7jcbBbyNhLg0qzXdJ/PMbybZTH/BA6Roet9wxYRm6Tr9D0s0uhLkOZ6MSG+QU6txUgdpr3MXIVqjA==}
     dev: true
 
   /capital-case/1.0.4:
@@ -320,8 +320,8 @@ packages:
       upper-case: 2.0.2
     dev: true
 
-  /core-js/3.22.5:
-    resolution: {integrity: sha512-VP/xYuvJ0MJWRAobcmQ8F2H6Bsn+s7zqAAjFaHGBMc5AQm7zaelhD1LGduFn2EehEcQcU+br6t+fwbpQ5d1ZWA==}
+  /core-js/3.22.7:
+    resolution: {integrity: sha512-Jt8SReuDKVNZnZEzyEQT5eK6T2RRCXkfTq7Lo09kpm+fHjgGewSbNjV+Wt4yZMhPDdzz2x1ulI5z/w4nxpBseg==}
     requiresBuild: true
     dev: true
 
@@ -859,7 +859,7 @@ packages:
     resolution: {integrity: sha512-Y7VqN9FYb8KdaSF0qD1081HCkm0v4Eq/fpfQYQnubpqi0hXx14k+gF9iqtRys1SIcTEi97xDi/fmsPFZ8xo0GQ==}
     dependencies:
       classnames: 2.3.1
-      core-js: 3.22.5
+      core-js: 3.22.7
     dev: true
 
   /fetch-blob/3.1.5:
@@ -1136,8 +1136,8 @@ packages:
       formdata-polyfill: 4.0.10
     dev: true
 
-  /node-releases/2.0.4:
-    resolution: {integrity: sha512-gbMzqQtTtDz/00jQzZ21PQzdI9PyLYqUSvD0p3naOhX4odFji0ZxYdnVwPTxmSwkmxhcFImpozceidSG+AgoPQ==}
+  /node-releases/2.0.5:
+    resolution: {integrity: sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q==}
     dev: true
 
   /normalize-path/3.0.0:
