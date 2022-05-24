@@ -13,6 +13,7 @@
 </script>
 
 <div id="demo">
+  <h1>Demo</h1>
   <DemoLink />
   <DemoImg />
   <DemoButtonSet />
@@ -28,22 +29,18 @@
 
 <style>
   #demo {
-    max-width: 40em;
-    padding: 1rem;
+    max-width: 40rem;
+    padding: 16px;
     margin: 0 auto;
   }
 
   :global(#demo section) {
-    margin: 2em auto;
-    padding-top: 4em;
-  }
-
-  :global(#demo h2) {
-    font-weight: bold;
+    margin: 32px auto;
+    padding-top: 32px;
   }
 
   :global(#demo h2 span) {
     background: var(--color-highlight);
-    padding: 0 0.5em;
+    padding: 0 8px;
   }
 </style>

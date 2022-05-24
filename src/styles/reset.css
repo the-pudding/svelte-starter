@@ -17,7 +17,7 @@ h4,
 h5,
 h6,
 p {
-	margin: 1rem 0;
+	margin: 16px 0;
 }
 
 mark {
@@ -40,6 +40,7 @@ button,
 select,
 textarea,
 input[type="submit"],
+input[type="reset"],
 input[type="button"] {
 	-webkit-appearance: none;
 	appearance: none;
@@ -59,6 +60,7 @@ input[type="checkbox"],
 input[type="radio"],
 input[type="range"],
 input[type="submit"],
+input[type="reset"],
 select {
   cursor: pointer;
 }
@@ -66,13 +68,15 @@ select {
 input[type="button"],
 input[type="range"],
 input[type="submit"],
+input[type="reset"],
 select {
   display: inline-block;
 }
 
 button:hover,
 input[type="button"]:hover,
-input[type="submit"]:hover {
+input[type="submit"]:hover,
+input[type="reset"]:hover {
   background: var(--color-form-bg);
 }
 
@@ -105,7 +109,7 @@ th {
 
 td,
 th {
-  padding: 8px;
+  padding: 8px 0;
   vertical-align: top;
   word-wrap: break-word;
 }
