@@ -94,7 +94,6 @@ import Example from "$components/Example.svelte";
 
 * `Footer.svelte`: Pudding recirculation and social links.
 * `Header.svelte`: Pudding masthead.
-* `Header.svelte`: Pudding logo.
 
 ### Helper Components
 
@@ -105,15 +104,15 @@ Located in `src/lib/components/helpers`.
 import Example from "$components/helpers/Example.svelte";
 ```
 
-* `ButtonSet.svelte`: Accessible button group inputs
-* `Icon.svelte`: Simple integration with Feather Icons
-* `Range.svelte`: Customizable range slider
-* `Scrolly.svelte`: Scrollytelling
-* `SortTable.svelte`: Sortable semantic table with customizable props
-* `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories
-* `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider
-* `Toggle.svelte`: Accessible toggle inputs
-* `WIP.svelte`: A sticky banner saying this project is a WIP
+* `ButtonSet.svelte`: Accessible button group inputs.
+* `Icon.svelte`: Simple integration with Feather Icons.
+* `Range.svelte`: Customizable range slider.
+* `Scrolly.svelte`: Scrollytelling.
+* `SortTable.svelte`: Sortable semantic table with customizable props.
+* `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
+* `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
+* `Toggle.svelte`: Accessible toggle inputs.
+* `WIP.svelte`: A sticky banner saying this project is a WIP.
 
 ### Chart Components
 
@@ -135,6 +134,7 @@ import example from "$actions/action.js";
 
 * `focusTrap.js`: Enable a keyboard focus trap for modals and menus.
 * `inView.js`: detect when an element enters or exits the viewport.
+* `canTab.js`: enable/disable tabbing on child elements.
 
 ### Stores
 
@@ -148,7 +148,7 @@ import { example } from "$stores/misc.js";
 
 * `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.
 * `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance.
-* `scrollY`: returns an number window vertical scroll position. It is throttled using rAF for performance.
+* `scrollY`: returns a number of window vertical scroll position. It is throttled using rAF for performance.
 * `timer`: returns an object { timer, elapsed }. `timer` has 5 methods (start, stop, toggle, set, reset) and `elapsed` is a store that is the number of ms.
 
 ### Utils
