@@ -17,19 +17,23 @@
 	--z-overlay: 1000;
 
 	/* presets */
-	--border-radius: 4px;
+	--border-radius: 2px;
 	--font-body: var(--serif);
 	--font-form: var(--sans);
 	--color-bg: var(--color-white);
 	--color-fg: var(--color-gray-900);
-	--color-placeholder: var(--color-gray-500);
+	--color-primary: var(--color-black);
   --color-link: var(--color-purple);
   --color-focus: var(--color-red);
-  --color-form-bg: var(--color-gray-300);
-	--color-form-fg: var(--color-gray-900);
+  --color-highlight: var(--color-yellow);
 	--color-border: var(--color-gray-300);
 	--color-selection: var(--color-gray-300);
-  --color-highlight: var(--color-yellow);
+	--color-button-bg: var(--color-gray-300);
+	--color-button-fg: var(--color-gray-900);
+	--color-button-hover: var(--color-gray-400);
+	--color-input-bg: var(--color-gray-50);
+	--color-input-fg: var(--color-gray-900);
+	--color-placeholder: var(--color-gray-500);
 	
 }
 

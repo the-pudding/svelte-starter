@@ -36,18 +36,30 @@ video {
   height: auto;
 }
 
+input, textarea {
+	-webkit-appearance: none;
+	appearance: none;
+  background-color: var(--color-input-bg);
+  color: var(--color-input-fg);
+  border-radius: var(--border-radius);
+  border: none;
+  font-family: var(--font-form);
+  font-size: inherit;
+  outline: 1px solid var(--color-border);
+  padding: 8px;
+}
+
 button,
 select,
-textarea,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	-webkit-appearance: none;
 	appearance: none;
-  background-color: var(--color-form-bg);
-  border: none;
+  background-color: var(--color-button-bg);
+  color: var(--color-button-fg);
   border-radius: var(--border-radius);
-  color: var(--color-form-fg);
+  border: none;
   font-family: var(--font-form);
   font-size: inherit;
   outline: none;
@@ -77,7 +89,31 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background: var(--color-form-bg);
+  background: var(--color-button-hover);
+}
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled,
+input[type="reset"]:disabled {
+  opacity: 0.5;
+	cursor: not-allowed;
+}
+
+button:disabled:hover,
+input[type="button"]:disabled:hover,
+input[type="submit"]:disabled:hover,
+input[type="reset"]:disabled:hover {
+  opacity: 0.5;
+	cursor: not-allowed;
+	background: var(--color-button-bg);
+}
+
+input[type="range"] {
+	-webkit-appearance: auto;
+	appearance: auto;
+	padding: 0;
+	outline: none;
 }
 
 button:focus,
@@ -151,6 +187,10 @@ select {
   background-position: right 8px center;
   background-repeat: no-repeat;
   background-size: auto 50%;
+}
+
+ol, ul {
+	padding-left: 16px;
 }
 
 .skip-to-main {
