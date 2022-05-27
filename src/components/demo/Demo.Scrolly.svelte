@@ -4,11 +4,12 @@
 </script>
 
 <section id="scrolly">
-  <h2 style="position: sticky; top: 4em;">Scrolly <span>{value}</span></h2>
+  <h2>Scrolly <span>{value}</span></h2>
   <div class="spacer" />
   <Scrolly bind:value>
     {#each [0, 1, 2, 3, 4] as text, i}
-      <div class="step" class:active={value === i}>
+      {@const active = value === i}
+      <div class="step" class:active>
         <p>{text}</p>
       </div>
     {/each}
@@ -17,6 +18,11 @@
 </section>
 
 <style>
+  h2 {
+    position: sticky;
+    top: 4em;
+  }
+
   .spacer {
     height: 75vh;
   }
