@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { base } from "$app/paths";
   import { copy } from "svelte-copy";
   export let id = "";
   export let family = "";
@@ -18,9 +19,8 @@
   $: fontSize = `${size}px`;
 
   onMount(async () => {
-    // await import(`./demo-fonts/${id}.css`);
-    // source = (await import(`/assets/demo-fonts/${id}.css?raw`)).default;
-    const response = await fetch(`/assets/demo-fonts/${id}.css`);
+    const url = `${base}/assets/demo-fonts/${id}.css`;
+    const response = await fetch(url);
     source = await response.text();
   });
 </script>
