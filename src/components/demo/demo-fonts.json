@@ -57,7 +57,7 @@
 		{
 			"id": "national",
 			"family": "National 2 Web",
-			"type": "serif"
+			"type": "sans-serif"
 		},
 		{
 			"id": "publico",
@@ -68,11 +68,6 @@
 			"id": "recoleta",
 			"family": "Recoleta",
 			"type": "serif"
-		},
-		{
-			"id": "roboto",
-			"family": "Roboto",
-			"type": "sans-serif"
 		},
 		{
 			"id": "rubik",

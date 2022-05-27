@@ -23,7 +23,7 @@
   });
 </script>
 
-<div style:font-family={family}>
+<div style="font-family: '{family}';">
   <h3>{family}</h3>
   <p style:font-size={fontSize}>The quick brown fox jumps over the lazy dog.</p>
   <details>
@@ -40,7 +40,7 @@
 </div>
 
 <style>
-  h2 {
+  h3 {
     margin-top: 0;
   }
 
