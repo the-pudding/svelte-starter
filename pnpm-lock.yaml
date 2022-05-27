@@ -18,6 +18,7 @@ specifiers:
   rollup-plugin-svg: ^2.0.0
   style-dictionary: ^3.1.1
   svelte: ^3.48.0
+  svelte-copy: ^1.2.4
   svelte-preprocess: ^4.10.6
   vite-plugin-svgstring: ^1.0.0
 
@@ -39,6 +40,7 @@ devDependencies:
   rollup-plugin-svg: 2.0.0
   style-dictionary: 3.7.0
   svelte: 3.48.0
+  svelte-copy: 1.2.4
   svelte-preprocess: 4.10.6_s3dopqgs4h45owyu2kxaf6kyfu
   vite-plugin-svgstring: 1.0.0
 
@@ -1363,6 +1365,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /svelte-copy/1.2.4:
+    resolution: {integrity: sha512-fzayMfIK2zD4RzFXsqDg/XfkbRY5p+llCZwHqayxnxfUaE2bf5/DaLi7+pUbtEZNDPb0dzUUweu9jQJpsxRFAw==}
     dev: true
 
   /svelte-hmr/0.14.11_svelte@3.48.0:

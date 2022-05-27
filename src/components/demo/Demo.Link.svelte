@@ -1,4 +1,5 @@
 <section id="demo-link">
   <h2>Link</h2>
-  <a href="elements">See default element styles page</a>
+  <p><a href="demo-elements">Default element styles demo</a></p>
+  <p><a href="demo-fonts">Pudding-hosted font previews</a></p>
 </section>
