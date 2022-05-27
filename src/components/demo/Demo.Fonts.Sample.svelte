@@ -9,6 +9,8 @@
   let source = "";
   let copied = "";
 
+  const url = `${base}/assets/demo-fonts/${id}.css`;
+
   const onCopy = () => {
     copied = "Copied!";
     setTimeout(() => {
@@ -19,14 +21,13 @@
   $: fontSize = `${size}px`;
 
   onMount(async () => {
-    const url = `${base}/assets/demo-fonts/${id}.css`;
     const response = await fetch(url);
     source = await response.text();
   });
 </script>
 
 <svelte:head>
-  <link rel="external stylesheet" href="/assets/demo-fonts/{id}.css" />
+  <link rel="external stylesheet" href={url} />
 </svelte:head>
 
 <div style="font-family: '{family}';">
