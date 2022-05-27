@@ -9,7 +9,7 @@
   let source = "";
   let copied = "";
 
-  const url = `${base}/assets/demo-fonts/${id}.css`;
+  const url = `${base}/assets/demo/fonts/${id}.css`;
 
   const onCopy = () => {
     copied = "Copied!";
