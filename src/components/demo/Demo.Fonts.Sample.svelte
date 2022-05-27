@@ -18,10 +18,16 @@
   $: fontSize = `${size}px`;
 
   onMount(async () => {
-    await import(`./demo-fonts/${id}.css`);
-    source = (await import(`./demo-fonts/${id}.css?raw`)).default;
+    // await import(`./demo-fonts/${id}.css`);
+    // source = (await import(`/assets/demo-fonts/${id}.css?raw`)).default;
+    const response = await fetch(`/assets/demo-fonts/${id}.css`);
+    source = await response.text();
   });
 </script>
+
+<svelte:head>
+  <link rel="external stylesheet" href="/assets/demo-fonts/{id}.css" />
+</svelte:head>
 
 <div style="font-family: '{family}';">
   <h3>{family}</h3>
@@ -29,7 +35,7 @@
   <details>
     <summary>CSS Snippet</summary>
     <code>
-      {@html source}
+      {source}
     </code>
   </details>
   <p>
