@@ -2,9 +2,11 @@
   import { onMount } from "svelte";
   import { base } from "$app/paths";
   import { copy } from "svelte-copy";
+
   export let id = "";
   export let family = "";
   export let size = 16;
+  export let text;
 
   let source = "";
   let copied = "";
@@ -32,7 +34,7 @@
 
 <div style="font-family: '{family}';">
   <h3>{family}</h3>
-  <p style:font-size={fontSize}>The quick brown fox jumps over the lazy dog.</p>
+  <p style:font-size={fontSize}>{text}</p>
   <details>
     <summary>CSS Snippet</summary>
     <code>

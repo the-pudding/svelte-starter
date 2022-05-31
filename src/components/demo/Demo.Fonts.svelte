@@ -3,6 +3,7 @@
   import Sample from "$components/demo/Demo.Fonts.Sample.svelte";
   import fontData from "$components/demo/demo-fonts.json";
   let size = 18;
+  let text = "The quick brown fox jumps over the lazy dog.";
 
   const grouped = groups(fontData, (d) => d.type);
   grouped.sort((a, b) => descending(a[1].length, b[1].length));
@@ -16,6 +17,8 @@
   <form>
     <label for="size">font-size: {size}px</label>
     <input id="size" type="range" min="12" max="48" bind:value={size} />
+    <label for="text">text sample</label>
+    <input id="text" type="text" maxlength="100" bind:value={text} />
   </form>
 </div>
 
@@ -24,7 +27,7 @@
     <h2>{type}</h2>
     <section>
       {#each fonts as { family, id }}
-        <Sample {id} {family} {size} />
+        <Sample {id} {family} {size} {text} />
       {/each}
     </section>
   {/each}
@@ -48,5 +51,6 @@
 
   label {
     display: block;
+    margin-bottom: 8px;
   }
 </style>
