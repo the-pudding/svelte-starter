@@ -44,6 +44,18 @@
 		},
 		"64px": {
 			"value": "4rem"
+		},
+		"80px": {
+			"value": "5rem"
+		},
+		"96px": {
+			"value": "6rem"
+		},
+		"112px": {
+			"value": "7rem"
+		},
+		"128px": {
+			"value": "8rem"
 		}
 	}
 }
