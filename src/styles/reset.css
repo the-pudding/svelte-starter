@@ -1,9 +1,9 @@
 
 body {
-	background-color: var(--color-bg);
-  color: var(--color-fg);
+	background-color: var(--color-bg, black);
+  color: var(--color-fg, white);
 	line-height: 1.4;
-	font-family: var(--font-body);
+	font-family: var(--font-body, serif);
 	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
 	text-rendering: optimizeLegibility;
   word-wrap: break-word;
@@ -21,12 +21,12 @@ p {
 }
 
 mark {
-  background-color: var(--color-highlight);
+  background-color: var(--color-highlight, yellow);
   padding: 0 4px;
 }
 
 a {
-  color: var(--color-link);
+  color: var(--color-link, blue);
 }
 
 img,
@@ -39,13 +39,13 @@ video {
 input, textarea {
 	-webkit-appearance: none;
 	appearance: none;
-  background-color: var(--color-input-bg);
-  color: var(--color-input-fg);
-  border-radius: var(--border-radius);
+  background-color: var(--color-input-bg, white);
+  color: var(--color-input-fg, black);
+  border-radius: var(--border-radius, gray);
   border: none;
-  font-family: var(--font-form);
+  font-family: var(--font-form, sans-serif);
   font-size: inherit;
-  outline: 1px solid var(--color-border);
+  outline: 1px solid var(--color-border, ray);
   padding: 8px;
 }
 
@@ -56,11 +56,11 @@ input[type="reset"],
 input[type="button"] {
 	-webkit-appearance: none;
 	appearance: none;
-  background-color: var(--color-button-bg);
-  color: var(--color-button-fg);
-  border-radius: var(--border-radius);
+  background-color: var(--color-button-bg, lightgray);
+  color: var(--color-button-fg, black);
+  border-radius: var(--border-radius, 0);
   border: none;
-  font-family: var(--font-form);
+  font-family: var(--font-form, sans-serif);
   font-size: inherit;
   outline: none;
   padding: 8px;
@@ -89,7 +89,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background: var(--color-button-hover);
+  background: var(--color-button-hover, lightgray);
 }
 
 button:disabled,
@@ -106,7 +106,7 @@ input[type="submit"]:disabled:hover,
 input[type="reset"]:disabled:hover {
   opacity: 0.5;
 	cursor: not-allowed;
-	background: var(--color-button-bg);
+	background: var(--color-button-bg, lightgray);
 }
 
 input[type="range"] {
@@ -120,7 +120,7 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  box-shadow: 0 0 0 2px var(--color-focus);
+  box-shadow: 0 0 0 2px var(--color-focus, yellow);
 }
 
 button:disabled,
@@ -151,34 +151,34 @@ th {
 }
 
 thead {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border, lightgray);
 }
 
 tfoot {
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border, lightgray);
 }
 
 ::-moz-placeholder {
-  color: var(--color-placeholder);
+  color: var(--color-placeholder, gray);
 }
 
 :-ms-input-placeholder {
-  color: var(--color-placeholder);
+  color: var(--color-placeholder, gray);
 }
 
 ::-ms-input-placeholder {
-  color: var(--color-placeholder);
+  color: var(--color-placeholder, gray);
 }
 
 ::placeholder {
-  color: var(--color-placeholder);
+  color: var(--color-placeholder, gray);
 }
 
 ::-moz-selection {
-  background-color: var(--color-selection);
+  background-color: var(--color-selection, lightgray);
 }
 ::selection {
-  background-color: var(--color-selection);
+  background-color: var(--color-selection, lightgray);
 }
 
 select {
@@ -202,12 +202,12 @@ ol, ul {
 }
 
 .skip-to-main:focus {
-	background-color: var(--color-gray-900);
-	color: var(--color-white);
+	background-color: var(--color-gray-900, black);
+	color: var(--color-white, white);
 	width: auto;
 	height: auto;
 	padding: 8px;
-	z-index: var(--z-overlay);
+	z-index: var(--z-overlay, 1000);
 }
 
 .sr-only {
