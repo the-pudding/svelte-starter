@@ -165,6 +165,7 @@ import example from "$utils/example.js";
 * `localStorage.js`: Read and write to local storage.
 * `mapToArray.js`: Convenience function to convert a map to an array.
 * `move.js`: transform translate function shorthand.
+* `previous.js`: keep track of the previous value of a store.
 * `transformSvg.js`: Custom transition lets you apply an svg transform property with the in/out svelte transition. Parameters (with defaults):
 * `translate.js`: Convenience function for transform translate css.
 * `urlParams.js`: Get and set url parameters.
