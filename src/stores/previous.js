@@ -1,12 +1,11 @@
-import { readable } from 'svelte/store';
+import { derived } from 'svelte/store';
 
 export default previous = (store) => {
-	let previous = null;
+	let p = null;
 
-	return readable(null, set => {
-		return store.subscribe(current => {
-			set(previous);
-			previous = current;
-		});
+	return derived(store, current => {
+		const previous = p;
+		p = current;
+		return previous;
 	});
 };
