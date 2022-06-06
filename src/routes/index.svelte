@@ -3,7 +3,7 @@
   import { browser } from "$app/env";
   import Meta from "$components/Meta.svelte";
   import App from "$components/App.svelte";
-  import copy from "$data/doc.json";
+  import copy from "$data/copy.json";
   import version from "$utils/version.js";
 
   version();
