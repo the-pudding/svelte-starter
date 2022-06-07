@@ -53,6 +53,7 @@
 		--color-input-bg: var(--color-gray-800);
 		--color-input-fg: var(--color-gray-100);
 		--color-placeholder: var(--color-gray-400);
+		--color-text-outline: var(--color-bg);
 	}
 }
 

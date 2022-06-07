@@ -219,3 +219,21 @@ ol, ul {
 	white-space: nowrap; 
 	width: 1px;
 }
+
+.text-outline {
+	text-shadow: -1px -1px 1px var(--color-text-outline, white),
+		-1px 0px 1px var(--color-text-outline, white),
+		-1px 1px 1px var(--color-text-outline, white),
+		-1px -1px 0px var(--color-text-outline, white),
+		-1px 0px 0px var(--color-text-outline, white),
+		0px -1px 1px var(--color-text-outline, white),
+		0px -1px 0px var(--color-text-outline, white),
+		0px 1px 0px var(--color-text-outline, white),
+		0px 1px 1px var(--color-text-outline, white),
+		1px -1px 1px var(--color-text-outline, white),
+		1px -1px 0px var(--color-text-outline, white),
+		1px 0px 0px var(--color-text-outline, white),
+		1px 1px 0px var(--color-text-outline, white),
+		1px 1px 1px var(--color-text-outline, white), 
+		1px 0px 1px var(--color-text-outline, white);     
+}
