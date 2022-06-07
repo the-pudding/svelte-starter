@@ -1,7 +1,7 @@
 
 body {
-	background-color: var(--color-bg, black);
-  color: var(--color-fg, white);
+	background-color: var(--color-bg, white);
+  color: var(--color-fg, black);
 	line-height: 1.4;
 	font-family: var(--font-body, serif);
 	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
@@ -21,7 +21,7 @@ p {
 }
 
 mark {
-  background-color: var(--color-highlight, yellow);
+  background-color: var(--color-mark, yellow);
   padding: 0 4px;
 }
 
@@ -39,7 +39,7 @@ video {
 input, textarea {
 	-webkit-appearance: none;
 	appearance: none;
-  background-color: var(--color-input-bg, white);
+  background-color: var(--color-input-bg, whitesmoke);
   color: var(--color-input-fg, black);
   border-radius: var(--border-radius, gray);
   border: none;
@@ -120,7 +120,7 @@ button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  box-shadow: 0 0 0 2px var(--color-focus, yellow);
+  box-shadow: 0 0 0 2px var(--color-focus, red);
 }
 
 button:disabled,
