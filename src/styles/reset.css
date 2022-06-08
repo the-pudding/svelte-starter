@@ -51,6 +51,7 @@ input, textarea {
 
 button,
 select,
+a[aria-role="button"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -67,6 +68,7 @@ input[type="button"] {
 }
 
 button,
+a[aria-role="button"],
 input[type="button"],
 input[type="checkbox"],
 input[type="radio"],
@@ -85,28 +87,13 @@ select {
   display: inline-block;
 }
 
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-  background: var(--color-button-hover, lightgray);
-}
-
 button:disabled,
+a[aria-role="button"]:disabled,
 input[type="button"]:disabled,
 input[type="submit"]:disabled,
 input[type="reset"]:disabled {
   opacity: 0.5;
 	cursor: not-allowed;
-}
-
-button:disabled:hover,
-input[type="button"]:disabled:hover,
-input[type="submit"]:disabled:hover,
-input[type="reset"]:disabled:hover {
-  opacity: 0.5;
-	cursor: not-allowed;
-	background: var(--color-button-bg, lightgray);
 }
 
 input[type="range"] {
@@ -117,6 +104,7 @@ input[type="range"] {
 }
 
 button:focus,
+a[aria-role="button"]:focus,
 input:focus,
 select:focus,
 textarea:focus {
@@ -124,6 +112,7 @@ textarea:focus {
 }
 
 button:disabled,
+a[aria-role="button"]:disabled,
 input:disabled,
 select:disabled,
 textarea:disabled {
@@ -236,4 +225,25 @@ ol, ul {
 		1px 1px 0px var(--color-text-outline, white),
 		1px 1px 1px var(--color-text-outline, white), 
 		1px 0px 1px var(--color-text-outline, white);     
+}
+
+/* desktop (mouse-enabled device) */
+@media (hover: hover) and (pointer: fine) {
+	button:hover,
+	a[aria-role="button"]:hover,
+	input[type="button"]:hover,
+	input[type="submit"]:hover,
+	input[type="reset"]:hover {
+		background: var(--color-button-hover, lightgray);
+	}	
+
+	button:disabled:hover,
+	a[aria-role="button"]:disabled:hover,
+	input[type="button"]:disabled:hover,
+	input[type="submit"]:disabled:hover,
+	input[type="reset"]:disabled:hover {
+		opacity: 0.5;
+		cursor: not-allowed;
+		background: var(--color-button-bg, lightgray);
+	}
 }
