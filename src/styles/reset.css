@@ -65,6 +65,7 @@ input[type="button"] {
   font-size: inherit;
   outline: none;
   padding: 8px;
+	text-decoration: none;
 }
 
 button,
