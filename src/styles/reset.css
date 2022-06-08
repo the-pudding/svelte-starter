@@ -51,7 +51,7 @@ input, textarea {
 
 button,
 select,
-a[aria-role="button"],
+a[role="button"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
@@ -68,7 +68,7 @@ input[type="button"] {
 }
 
 button,
-a[aria-role="button"],
+a[role="button"],
 input[type="button"],
 input[type="checkbox"],
 input[type="radio"],
@@ -88,7 +88,7 @@ select {
 }
 
 button:disabled,
-a[aria-role="button"]:disabled,
+a[role="button"]:disabled,
 input[type="button"]:disabled,
 input[type="submit"]:disabled,
 input[type="reset"]:disabled {
@@ -104,7 +104,7 @@ input[type="range"] {
 }
 
 button:focus,
-a[aria-role="button"]:focus,
+a[role="button"]:focus,
 input:focus,
 select:focus,
 textarea:focus {
@@ -112,7 +112,7 @@ textarea:focus {
 }
 
 button:disabled,
-a[aria-role="button"]:disabled,
+a[role="button"]:disabled,
 input:disabled,
 select:disabled,
 textarea:disabled {
@@ -230,7 +230,7 @@ ol, ul {
 /* desktop (mouse-enabled device) */
 @media (hover: hover) and (pointer: fine) {
 	button:hover,
-	a[aria-role="button"]:hover,
+	a[role="button"]:hover,
 	input[type="button"]:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover {
@@ -238,7 +238,7 @@ ol, ul {
 	}	
 
 	button:disabled:hover,
-	a[aria-role="button"]:disabled:hover,
+	a[role="button"]:disabled:hover,
 	input[type="button"]:disabled:hover,
 	input[type="submit"]:disabled:hover,
 	input[type="reset"]:disabled:hover {
