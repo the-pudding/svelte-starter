@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-ec23b868.js",
+    "file": "start-0dbf5c66.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -25,7 +25,7 @@
       "_index-bf4467d3.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-0b71d250.css"
+      "assets/pages/__layout.svelte-e840ff5d.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
@@ -50,7 +50,7 @@
     ]
   },
   "src/routes/demo-fonts.svelte": {
-    "file": "pages/demo-fonts.svelte-57409daa.js",
+    "file": "pages/demo-fonts.svelte-63dc0d30.js",
     "src": "src/routes/demo-fonts.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -60,11 +60,11 @@
       "_paths-396f020f.js"
     ],
     "css": [
-      "assets/pages/demo-fonts.svelte-5001b857.css"
+      "assets/pages/demo-fonts.svelte-dc28e159.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-f118081c.js",
+    "file": "pages/index.svelte-b94cd719.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,

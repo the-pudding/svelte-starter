@@ -57,7 +57,7 @@
     width: calc(25em - 4px);
     padding: 16px;
     background: var(--color-input-bg);
-    color: var(--color-input-bg);
+    color: var(--color-input-fg);
     margin: 2px;
     display: flex;
     flex-direction: column;
