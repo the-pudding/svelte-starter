@@ -178,3 +178,7 @@ import example from "$utils/example.js";
 
 * Any @html tags, e.g., `{@html user}` must be the child of a dom element so they can be properly hydrated.
 * Putting asset paths in CSS doesn't work without some hacks for subdirectory hosted projects
+
+## Tips
+
+If you are working with data from a spreadsheet (that lives as a csv file in `src/data`), you can keep the sheet as-is and preserve the working sheet, then use `routes/index.js` do you clean/parse just what you need to use in the browser optimize the front-end payload. 
