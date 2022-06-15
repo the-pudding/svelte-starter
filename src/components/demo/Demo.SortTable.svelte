@@ -9,7 +9,7 @@
   const rows = [
     { name: "penny", value: 1 },
     { name: "nickel", value: 5 },
-    { name: "dime", value: 10, style: "background: var(--color-highlight);" },
+    { name: "dime", value: 10, style: "background: var(--color-mark);" },
     { name: "quarter", value: 25 }
   ];
 </script>

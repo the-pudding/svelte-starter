@@ -40,7 +40,7 @@
   }
 
   :global(#demo h2 span) {
-    background: var(--color-highlight);
+    background: var(--color-mark);
     padding: 0 8px;
   }
 </style>
