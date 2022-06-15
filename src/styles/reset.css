@@ -27,13 +27,10 @@ mark {
 
 a {
   color: var(--color-link, blue);
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
 }
 
-a:focus-visible {
-	-webkit-appearance: none;
-	appearance: none;
-	outline: none;
-}
 
 img,
 video {
@@ -116,7 +113,17 @@ a[role="button"]:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  box-shadow: 0 0 0 1px var(--color-focus, red);
+  outline: 2px solid var(--color-focus);
+	outline-offset: 2px;
+}
+
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible),
+a[role="button"]:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+  outline: 2px solid transparent;
 }
 
 button:disabled,
