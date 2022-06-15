@@ -17,6 +17,7 @@
 
   .wordmark a {
     border: none;
+    display: block;
     color: var(--color-fg);
   }
 

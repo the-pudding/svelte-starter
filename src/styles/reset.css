@@ -29,6 +29,12 @@ a {
   color: var(--color-link, blue);
 }
 
+a:focus-visible {
+	-webkit-appearance: none;
+	appearance: none;
+	outline: none;
+}
+
 img,
 video {
 	display: block;
@@ -105,11 +111,12 @@ input[type="range"] {
 }
 
 button:focus,
+a:focus,
 a[role="button"]:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  box-shadow: 0 0 0 2px var(--color-focus, red);
+  box-shadow: 0 0 0 1px var(--color-focus, red);
 }
 
 button:disabled,
@@ -211,21 +218,16 @@ ol, ul {
 }
 
 .text-outline {
-	text-shadow: -1px -1px 1px var(--color-text-outline, white),
-		-1px 0px 1px var(--color-text-outline, white),
-		-1px 1px 1px var(--color-text-outline, white),
-		-1px -1px 0px var(--color-text-outline, white),
-		-1px 0px 0px var(--color-text-outline, white),
-		0px -1px 1px var(--color-text-outline, white),
-		0px -1px 0px var(--color-text-outline, white),
-		0px 1px 0px var(--color-text-outline, white),
-		0px 1px 1px var(--color-text-outline, white),
-		1px -1px 1px var(--color-text-outline, white),
-		1px -1px 0px var(--color-text-outline, white),
-		1px 0px 0px var(--color-text-outline, white),
-		1px 1px 0px var(--color-text-outline, white),
-		1px 1px 1px var(--color-text-outline, white), 
-		1px 0px 1px var(--color-text-outline, white);     
+	--stroke-width: 1px;
+	--stroke-width-n: calc(var(--stroke-width) * -1);
+	text-shadow: var(--stroke-width-n) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
+		0 var(--stroke-width-n) 0 var(--color-text-outline, #fff),
+		var(--stroke-width) var(--stroke-width-n) 0 var(--color-text-outline, #fff),
+		var(--stroke-width) 0 0 var(--color-text-outline, #fff),
+		var(--stroke-width) var(--stroke-width) 0 var(--color-text-outline, #fff),
+		0 var(--stroke-width) 0 var(--color-text-outline, #fff),
+		var(--stroke-width-n) var(--stroke-width) 0 var(--color-text-outline, #fff),
+		var(--stroke-width-n) 0 0 var(--color-text-outline, #fff); 
 }
 
 /* desktop (mouse-enabled device) */
