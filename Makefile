@@ -8,6 +8,9 @@ github:
 	git commit -m "update github pages"
 	git push
 
+netlify: 
+	make github
+
 # aws-sync:
 # 	aws s3 sync build s3://pudding.cool/year/month/name --delete --cache-control 'max-age=31536000'
 
