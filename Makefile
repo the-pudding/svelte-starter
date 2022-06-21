@@ -1,4 +1,4 @@
-PHONY: github pudding
+PHONY: github netlify pudding
 
 github:
 	rm -rf docs
@@ -9,8 +9,10 @@ github:
 	git push
 
 netlify: 
-	make github
-
+	rm -rf netlify
+	mkdir netlify
+	cp -r build netlify/subdirectory
+	
 # aws-sync:
 # 	aws s3 sync build s3://pudding.cool/year/month/name --delete --cache-control 'max-age=31536000'
 

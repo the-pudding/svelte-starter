@@ -1,0 +1,95 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-2f888177.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-bf4467d3.js",
+      "_index-dcf377fe.js",
+      "_paths-396f020f.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/demo/elements.svelte",
+      "src/routes/demo/fonts.svelte",
+      "src/routes/index.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-23b414ce.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-bf4467d3.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-89286013.css"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-329dc2a1.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-bf4467d3.js"
+    ]
+  },
+  "src/routes/demo/elements.svelte": {
+    "file": "pages/demo/elements.svelte-b0b3bc69.js",
+    "src": "src/routes/demo/elements.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-bf4467d3.js"
+    ],
+    "css": [
+      "assets/pages/demo/elements.svelte-12dc59ab.css"
+    ]
+  },
+  "src/routes/demo/fonts.svelte": {
+    "file": "pages/demo/fonts.svelte-640a1fb5.js",
+    "src": "src/routes/demo/fonts.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-bf4467d3.js",
+      "_transform-cd6bc136.js",
+      "_paths-396f020f.js"
+    ],
+    "css": [
+      "assets/pages/demo/fonts.svelte-5f3560ad.css"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-42132587.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-bf4467d3.js",
+      "_transform-cd6bc136.js",
+      "_index-dcf377fe.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-275ee5b8.css"
+    ]
+  },
+  "_index-bf4467d3.js": {
+    "file": "chunks/index-bf4467d3.js"
+  },
+  "_index-dcf377fe.js": {
+    "file": "chunks/index-dcf377fe.js",
+    "imports": [
+      "_index-bf4467d3.js"
+    ]
+  },
+  "_paths-396f020f.js": {
+    "file": "chunks/paths-396f020f.js"
+  },
+  "_transform-cd6bc136.js": {
+    "file": "chunks/transform-cd6bc136.js"
+  }
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="content-security-policy" content=""><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/atkinson.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/atlas.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/baloo-bhai.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/inter.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/metropolis.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/national.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/rubik.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/canela.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/computer-modern.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/lyon.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/publico.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/recoleta.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/tiempos.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/cozette.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/jamboree.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/jersey.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/spacemono.css" data-svelte="svelte-1uevrx3">
+	<link rel="stylesheet" href="/svelte-starter/_app/immutable/assets/pages/__layout.svelte-89286013.css">
+	<link rel="stylesheet" href="/svelte-starter/_app/immutable/assets/pages/demo/fonts.svelte-5f3560ad.css">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/start-2f888177.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-bf4467d3.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-dcf377fe.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/paths-396f020f.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/pages/__layout.svelte-23b414ce.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/pages/demo/fonts.svelte-640a1fb5.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/transform-cd6bc136.js">
+</head>
+
+<body>
+	<a href="#content" class="skip-to-main">Skip to main content</a>
+	<div>
+
+
+<header><div class="wordmark svelte-1f524sp"><a href="https://pudding.cool" aria-label="The Pudding" class="svelte-1f524sp"><!-- HTML_TAG_START --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.6 50"><path class="st0" d="M150.1 9.5c1.5 0 2.8 1.3 2.8 2.8s-1.3 2.8-2.8 2.8-2.8-1.3-2.8-2.8 1.3-2.8 2.8-2.8zM147.2 17.3h5.6v18.2h-5.6V17.3zM77.1 9.5h-8.9v26h5.6v-8.1h3.3c4.9 0 8.9-4 8.9-8.9s-3.9-9-8.9-9zm0 12.3h-3.3v-6.6h3.3c1.8 0 3.3 1.5 3.3 3.3s-1.4 3.3-3.3 3.3zM105.7 17.6h-5.6v8.9c0 1.8-1.5 3.3-3.3 3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0 4.9 4 8.9 8.9 8.9s8.9-4 8.9-8.9v-8.9zM164.1 17.6c-4.9 0-8.9 4-8.9 8.9v8.9h5.6v-8.9c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3v8.9h5.6v-8.9c0-4.9-4-8.9-8.9-8.9zM119.7 16.2v1.4h-3.3c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h8.9V9.5l-5.6 3.3v3.4zm.1 8.4V29.8h-3.3c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3v1.4zM139.3 16.2v1.4H136c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h8.9V9.5l-5.6 3.3v3.4zm.1 8.4V29.8H136c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3v1.4h.1zM183.7 17.6c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h3.3v5.1c0 1.8-1.5 3.3-3.3 3.3s-3.3-1.5-3.3-3.3V38l-5.6 3.3c.4 4.5 4.2 8.1 8.9 8.1 4.9 0 8.9-4 8.9-8.9V17.6h-8.9zm3.3 5.8V30h-3.3c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3zM28.6 17.6c-1.2 0-2.3.2-3.3.6V9.5l-5.6 3.3v22.6h5.6v-8.9c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3v8.9h5.6v-8.9c0-4.9-4-8.9-8.9-8.9zM17.8 9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5zM48.3 30.2c-.4 0-1.2-.1-1.8-.4l5.2-2.1 5.6-2.3-1-2.3-.1-.2c-.1-.3-.3-.6-.5-1-.1-.1-.1-.2-.2-.3 0 0 0-.1-.1-.1l-.1-.1-.1-.1c-1.6-2.2-4-3.5-6.7-3.7h-.6c-4.9 0-8.9 4-8.9 8.9 0 .4 0 .9.1 1.4V28.2c0 .3.1.5.2.8v.2c.1.3.2.7.4 1v.2c.1.3.3.5.4.8 0 .1.1.1.1.2.1.2.3.4.4.6v.1s0 .1.1.1l.1.1c1.7 2.1 4.4 3.4 7.2 3.4h6.1v-5.2c.4-.3-3.5-.3-5.8-.3zm7.9-7.3zm-11.6 2.8l-.2.1c.2-1.9 1.8-3.5 3.7-3.5.9 0 1.8.4 2.4.9L46.2 25l-1.6.7z"/></svg><!-- HTML_TAG_END --></a></div>
+</header>
+<main id="content"><div id="info" class="svelte-4m0s58"><h1>Hosted Fonts on The Pudding</h1>
+  <p><em>Do not use fonts hosted by The Pudding without written permission.</em></p>
+  <form><label for="size" class="svelte-4m0s58">font-size: 18px</label>
+    <input id="size" type="range" min="12" max="48" value="18">
+    <label for="text" class="svelte-4m0s58">text sample</label>
+    <input id="text" type="text" maxlength="100" value="The quick brown fox jumps over the lazy dog."></form></div>
+
+<article class="svelte-4m0s58"><h2>sans-serif</h2>
+    <section class="svelte-4m0s58">
+
+<div style="font-family: 'Atkinson';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Atkinson</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Atlas Grotesk';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Atlas Grotesk</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Baloo Bhai';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Baloo Bhai</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Inter';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Inter</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Metropolis';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Metropolis</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'National 2 Web';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">National 2 Web</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Rubik';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Rubik</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+    </section><h2>serif</h2>
+    <section class="svelte-4m0s58">
+
+<div style="font-family: 'Canela';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Canela</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Computer Modern';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Computer Modern</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Lyon Display';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Lyon Display</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Publico Text';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Publico Text</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Recoleta';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Recoleta</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Tiempos Text';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Tiempos Text</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+    </section><h2>other</h2>
+    <section class="svelte-4m0s58">
+
+<div style="font-family: 'Cozette';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Cozette</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Jamboree';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Jamboree</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+
+<div style="font-family: 'Jersey M54';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Jersey M54</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+    </section><h2>mono</h2>
+    <section class="svelte-4m0s58">
+
+<div style="font-family: 'Space Mono';" class="svelte-19ry7n"><h3 class="svelte-19ry7n">Space Mono</h3>
+  <p style="font-size: 18px;">The quick brown fox jumps over the lazy dog.</p>
+  <details class="svelte-19ry7n"><summary class="svelte-19ry7n">CSS Snippet</summary>
+    <code class="svelte-19ry7n"></code></details>
+  <p><button class="svelte-19ry7n">Copy CSS to Clipboard</button><span class="svelte-19ry7n"></span></p>
+</div>
+    </section>
+</article></main>
+
+
+		<script type="module" data-sveltekit-hydrate="10ukpm3">
+		import { start } from "/svelte-starter/_app/immutable/start-2f888177.js";
+		start({
+			target: document.querySelector('[data-sveltekit-hydrate="10ukpm3"]').parentNode,
+			paths: {"base":"/svelte-starter","assets":"/svelte-starter"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "always",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [0, 3],
+				params: {},
+				routeId: "demo/fonts"
+			}
+		});
+	</script></div>
+</body>
+
+</html>
