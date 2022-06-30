@@ -9,11 +9,11 @@
 	--sans: "National 2 Web", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 	--serif: "Tiempos Text Web", Iowan Old Style, Times New Roman, Times, serif;
 	--mono: Menlo, Consolas, Monaco, monospace;
-	
+
 	/* z-index */
 	--z-bottom: -100;
-  --z-middle: 0;
-  --z-top: 100;
+	--z-middle: 0;
+	--z-top: 100;
 	--z-overlay: 1000;
 
 	/* presets (used in reset.css) */
@@ -23,9 +23,9 @@
 	--color-bg: var(--color-white);
 	--color-fg: var(--color-gray-900);
 	--color-primary: var(--color-black);
-  --color-link: var(--color-black);
-  --color-focus: var(--color-red);
-  --color-mark: var(--color-yellow);
+	--color-link: var(--color-black);
+	--color-focus: var(--color-red);
+	--color-mark: var(--color-yellow);
 	--color-selection: var(--color-gray-300);
 	--color-border: var(--color-gray-300);
 	--color-button-bg: var(--color-gray-300);
