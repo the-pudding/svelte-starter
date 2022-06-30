@@ -1,12 +1,12 @@
 
 body {
 	background-color: var(--color-bg, white);
-  color: var(--color-fg, black);
+	color: var(--color-fg, black);
 	line-height: 1.4;
 	font-family: var(--font-body, serif);
 	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
 	text-rendering: optimizeLegibility;
-  word-wrap: break-word;
+	word-wrap: break-word;
 	-webkit-tap-highlight-color: transparent;
 }
 
@@ -21,12 +21,12 @@ p {
 }
 
 mark {
-  background-color: var(--color-mark, yellow);
-  padding: 0 4px;
+	background-color: var(--color-mark, yellow);
+	padding: 0 4px;
 }
 
 a {
-  color: var(--color-link, blue);
+	color: var(--color-link, blue);
 	text-decoration: none;
 	border-bottom: 1px solid currentColor;
 }
@@ -35,21 +35,21 @@ a {
 img,
 video {
 	display: block;
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 input, textarea {
 	-webkit-appearance: none;
 	appearance: none;
-  background-color: var(--color-input-bg, whitesmoke);
-  color: var(--color-input-fg, black);
-  border-radius: var(--border-radius, 0);
-  border: none;
-  font-family: var(--font-form, sans-serif);
-  font-size: inherit;
-  outline: 1px solid var(--color-border, ray);
-  padding: 8px;
+	background-color: var(--color-input-bg, whitesmoke);
+	color: var(--color-input-fg, black);
+	border-radius: var(--border-radius, 0);
+	border: none;
+	font-family: var(--font-form, sans-serif);
+	font-size: inherit;
+	outline: 1px solid var(--color-border, ray);
+	padding: 8px;
 }
 
 button,
@@ -60,14 +60,14 @@ input[type="reset"],
 input[type="button"] {
 	-webkit-appearance: none;
 	appearance: none;
-  background-color: var(--color-button-bg, lightgray);
-  color: var(--color-button-fg, black);
-  border-radius: var(--border-radius, 0);
-  border: none;
-  font-family: var(--font-form, sans-serif);
-  font-size: inherit;
-  outline: none;
-  padding: 8px;
+	background-color: var(--color-button-bg, lightgray);
+	color: var(--color-button-fg, black);
+	border-radius: var(--border-radius, 0);
+	border: none;
+	font-family: var(--font-form, sans-serif);
+	font-size: inherit;
+	outline: none;
+	padding: 8px;
 	text-decoration: none;
 }
 
@@ -80,7 +80,7 @@ input[type="range"],
 input[type="submit"],
 input[type="reset"],
 select {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 input[type="button"],
@@ -88,7 +88,7 @@ input[type="range"],
 input[type="submit"],
 input[type="reset"],
 select {
-  display: inline-block;
+	display: inline-block;
 }
 
 button:disabled,
@@ -96,7 +96,7 @@ a[role="button"]:disabled,
 input[type="button"]:disabled,
 input[type="submit"]:disabled,
 input[type="reset"]:disabled {
-  opacity: 0.5;
+	opacity: 0.5;
 	cursor: not-allowed;
 }
 
@@ -113,7 +113,7 @@ a[role="button"]:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  outline: 2px solid var(--color-focus);
+	outline: 2px solid var(--color-focus);
 	outline-offset: 2px;
 }
 
@@ -123,7 +123,7 @@ a[role="button"]:focus:not(:focus-visible),
 input:focus:not(:focus-visible),
 select:focus:not(:focus-visible),
 textarea:focus:not(:focus-visible) {
-  outline: 2px solid transparent;
+	outline: 2px solid transparent;
 }
 
 button:disabled,
@@ -131,66 +131,66 @@ a[role="button"]:disabled,
 input:disabled,
 select:disabled,
 textarea:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
+	cursor: not-allowed;
+	opacity: 0.5;
 }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed;
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
 }
 
 table caption,
 td,
 th {
-  text-align: left;
+	text-align: left;
 }
 
 td,
 th {
-  padding: 8px 0;
-  vertical-align: top;
-  word-wrap: break-word;
+	padding: 8px 0;
+	vertical-align: top;
+	word-wrap: break-word;
 }
 
 thead {
-  border-bottom: 1px solid var(--color-border, lightgray);
+	border-bottom: 1px solid var(--color-border, lightgray);
 }
 
 tfoot {
-  border-top: 1px solid var(--color-border, lightgray);
+	border-top: 1px solid var(--color-border, lightgray);
 }
 
 ::-moz-placeholder {
-  color: var(--color-placeholder, gray);
+	color: var(--color-placeholder, gray);
 }
 
 :-ms-input-placeholder {
-  color: var(--color-placeholder, gray);
+	color: var(--color-placeholder, gray);
 }
 
 ::-ms-input-placeholder {
-  color: var(--color-placeholder, gray);
+	color: var(--color-placeholder, gray);
 }
 
 ::placeholder {
-  color: var(--color-placeholder, gray);
+	color: var(--color-placeholder, gray);
 }
 
 ::-moz-selection {
-  background-color: var(--color-selection, lightgray);
+	background-color: var(--color-selection, lightgray);
 }
 ::selection {
-  background-color: var(--color-selection, lightgray);
+	background-color: var(--color-selection, lightgray);
 }
 
 select {
 	padding-right: 24px;
 	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20448%22%20enable-background%3D%22new%200%200%20256%20448%22%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E.arrow%7Bfill%3A%23424242%3B%7D%3C%2Fstyle%3E%3Cpath%20class%3D%22arrow%22%20d%3D%22M255.9%20168c0-4.2-1.6-7.9-4.8-11.2-3.2-3.2-6.9-4.8-11.2-4.8H16c-4.2%200-7.9%201.6-11.2%204.8S0%20163.8%200%20168c0%204.4%201.6%208.2%204.8%2011.4l112%20112c3.1%203.1%206.8%204.6%2011.2%204.6%204.4%200%208.2-1.5%2011.4-4.6l112-112c3-3.2%204.5-7%204.5-11.4z%22%2F%3E%3C%2Fsvg%3E%0A");
-  background-position: right 8px center;
-  background-repeat: no-repeat;
-  background-size: auto 50%;
+	background-position: right 8px center;
+	background-repeat: no-repeat;
+	background-size: auto 50%;
 }
 
 ol, ul {
