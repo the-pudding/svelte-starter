@@ -34,6 +34,9 @@
 	--color-input-bg: var(--color-gray-50);
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
+
+	/* 1 second duration */
+	--1s: 0s;
 }
 
 /* dark theme */
@@ -81,8 +84,8 @@ h6 {
 	font-size: var(--20px, 20px);
 }
 
-@media screen and (prefers-reduced-motion: reduce) {
+@media screen and (prefers-reduced-motion: no-preference) {
 	:root {
-		--1s: 0s;
+		--1s: 1s;
 	}
 }
