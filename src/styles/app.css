@@ -80,3 +80,9 @@ h5 {
 h6 {
 	font-size: var(--20px, 20px);
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+	:root {
+		--1s: 0s;
+	}
+}
