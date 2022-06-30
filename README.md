@@ -31,6 +31,8 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 npm run dev
 ```
 
+Change the `dev` command in `package.json` to `svelte-kit dev --host` to test on your local network on a different device.
+
 ## Deploy
 ```bash
 npm run build
