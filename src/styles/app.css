@@ -35,8 +35,8 @@
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
 
-	/* 1 second duration */
-	--1s: 0s;
+	/* "1" second duration */
+	--1s: 1ms;
 }
 
 /* dark theme */
@@ -57,6 +57,12 @@
 		--color-input-fg: var(--color-gray-100);
 		--color-placeholder: var(--color-gray-400);
 		--color-text-outline: var(--color-bg);
+	}
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+	:root {
+		--1s: 1s;
 	}
 }
 
@@ -82,10 +88,4 @@ h5 {
 
 h6 {
 	font-size: var(--20px, 20px);
-}
-
-@media screen and (prefers-reduced-motion: no-preference) {
-	:root {
-		--1s: 1s;
-	}
 }
