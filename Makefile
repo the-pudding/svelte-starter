@@ -7,11 +7,6 @@ github:
 	git add -A
 	git commit -m "update github pages"
 	git push
-
-netlify: 
-	rm -rf netlify
-	mkdir netlify
-	cp -r build netlify/subdirectory
 	
 # aws-sync:
 # 	aws s3 sync build s3://pudding.cool/year/month/name --delete --cache-control 'max-age=31536000'
