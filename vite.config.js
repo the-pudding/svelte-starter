@@ -13,6 +13,9 @@ const config = {
 		__VERSION__: JSON.stringify(version),
 		__TIMESTAMP__: JSON.stringify(timestamp)
 	},
+	server: {
+		port: 3000
+	},
 	plugins: [
 		sveltekit(),
 		dsv(),
