@@ -5,5 +5,4 @@ node_modules
 build
 functions
 package-lock.json
-pnpm-lock.yaml
 .env

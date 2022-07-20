@@ -1,24 +1,24 @@
 {
 	"name": "svelte-starter",
-	"version": "3.0.42",
+	"version": "3.1.0",
 	"scripts": {
 		"gdoc": "node tasks/fetch-google.js",
 		"style": "node tasks/style-dictionary.js",
-		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"start": "svelte-kit start",
-		"lint": "prettier --check .",
-		"format": "prettier --write ."
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"lint": "prettier --check --plugin-search-dir=. .",
+		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
 		"@rollup/plugin-dsv": "^2.0.3",
-		"@sveltejs/adapter-static": "1.0.0-next.34",
-		"@sveltejs/kit": "1.0.0-next.350",
+		"@sveltejs/adapter-static": "1.0.0-next.38",
+		"@sveltejs/kit": "1.0.0-next.386",
 		"archieml": "^0.5.0",
 		"autoprefixer": "^10.4.7",
 		"d3": "^7.4.4",
 		"feather-icons": "^4.28.0",
-		"layercake": "^6.1.0",
+		"layercake": "^7.0.0",
 		"lodash.debounce": "^4.0.8",
 		"node-fetch": "^3.2.6",
 		"postcss": "^8.4.13",
@@ -30,6 +30,7 @@
 		"svelte": "^3.48.0",
 		"svelte-copy": "^1.2.4",
 		"svelte-preprocess": "^4.10.7",
+		"vite": "^3.0.2",
 		"vite-plugin-svgstring": "^1.0.0"
 	},
 	"type": "module",
