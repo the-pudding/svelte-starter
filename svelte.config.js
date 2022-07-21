@@ -9,7 +9,6 @@ const dir = subdirectory || "";
 const prefix = dir.startsWith("/") ? "" : "/";
 const base = dev || !dir ? "" : `${prefix}${dir}`;
 
-
 const preprocess = sveltePreprocess({
 	postcss: {
 		plugins: [autoprefixer]
@@ -21,12 +20,11 @@ const config = {
 	kit: {
 		adapter: adapterStatic(),
 		prerender: { default: true },
-		files: { lib: "./src" },
 		trailingSlash: "always",
-	},
-	paths: {
-		base
-	},
+		paths: {
+			base
+		},
+	}
 };
 
 export default config;
