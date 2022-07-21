@@ -8,7 +8,7 @@ const dev = process.env.NODE_ENV === "development";
 const dir = subdirectory || "";
 const prefix = dir.startsWith("/") ? "" : "/";
 const base = dev || !dir ? "" : `${prefix}${dir}`;
-console.log({ base });
+
 const preprocess = sveltePreprocess({
 	postcss: {
 		plugins: [autoprefixer]
