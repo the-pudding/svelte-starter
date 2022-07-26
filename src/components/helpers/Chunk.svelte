@@ -3,6 +3,7 @@
 	export let max = text.length;
 	export let space = true;
 	export let tag = "span";
+	export let className = "";
 
 	$: regex = new RegExp(`[\\s\\S]{1,${max}}(?!\\S)`, "g");
 	$: chunks = text
@@ -14,7 +15,9 @@
 </script>
 
 {#each chunks as chunk}
-	<svelte:element this={tag} class="chunk">{@html chunk}</svelte:element>
+	<svelte:element this={tag} class="chunk {className}"
+		>{@html chunk}</svelte:element
+	>
 {/each}
 
 <style>
