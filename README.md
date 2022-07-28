@@ -110,6 +110,7 @@ import Example from "$components/helpers/Example.svelte";
 
 * `ButtonSet.svelte`: Accessible button group inputs.
 * `Chunk.svelte`: Split text into smaller dom element chunks.
+* `Countdown.svelte`: Countdown timer text.
 * `Icon.svelte`: Simple integration with Feather Icons.
 * `MotionToggle.svelte`: A toggle button to enable/disable front-end user motion preference.
 * `Range.svelte`: Customizable range slider.
