@@ -18,7 +18,7 @@
 		},
 		{ name: "patreon", url: "https://patreon.com/thepudding/" },
 		{ name: "privacy", url: "https://pudding.cool/privacy/" },
-		{ name: "newsletter", url: "http://eepurl.com/czym6f" },
+		{ name: "newsletter", url: "https://thepuddingmail.substack.com" },
 		{ name: "rss", url: "https://pudding.cool/feed/index.xml" }
 	];
 
