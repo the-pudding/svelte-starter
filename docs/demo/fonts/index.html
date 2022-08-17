@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="content-security-policy" content=""><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/atkinson.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/atlas.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/baloo-bhai.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/inter.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/metropolis.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/national.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/rubik.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/canela.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/computer-modern.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/lyon.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/publico.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/recoleta.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/tiempos.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/cozette.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/jamboree.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/jersey.css" data-svelte="svelte-1uevrx3"><link rel="external stylesheet" href="/svelte-starter/assets/demo/fonts/spacemono.css" data-svelte="svelte-1uevrx3">
-	<link rel="stylesheet" href="/svelte-starter/_app/immutable/assets/__layout-372f5a27.css">
-	<link rel="stylesheet" href="/svelte-starter/_app/immutable/assets/fonts-694798f8.css">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/start-2e03a7aa.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-28d08bf6.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-a1af739a.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/paths-b9644fda.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/pages/__layout.svelte-8744c43e.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/pages/demo/fonts.svelte-716e92c0.js">
+	<link href="/svelte-starter/_app/immutable/assets/+layout-372f5a27.css" rel="stylesheet">
+	<link href="/svelte-starter/_app/immutable/assets/+page-694798f8.css" rel="stylesheet">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/start-d062400e.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-49d77421.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-de6d0488.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/paths-493f1962.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/components/pages/_layout.svelte-1390f590.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/components/pages/demo/fonts/_page.svelte-cc8057ea.js">
 	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/transform-60486a82.js">
 </head>
 
@@ -163,23 +163,26 @@
 
 
 		<script type="module" data-sveltekit-hydrate="1xc4nl7">
-		import { start } from "/svelte-starter/_app/immutable/start-2e03a7aa.js";
+		import { set_public_env, start } from "/svelte-starter/_app/immutable/start-d062400e.js";
+
+		set_public_env({});
+
 		start({
 			target: document.querySelector('[data-sveltekit-hydrate="1xc4nl7"]').parentNode,
 			paths: {"base":"/svelte-starter","assets":"/svelte-starter"},
-			session: {},
 			route: true,
 			spa: false,
 			trailing_slash: "always",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 3],
+				node_ids: [0, 4],
 				params: {},
 				routeId: "demo/fonts"
 			}
 		});
-	</script></div>
+	</script>
+	</div>
 </body>
 
 </html>

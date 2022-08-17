@@ -6,14 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/svelte-starter/_app/immutable/assets/__layout-372f5a27.css">
-	<link rel="stylesheet" href="/svelte-starter/_app/immutable/assets/elements-83b17d31.css">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/start-2e03a7aa.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-28d08bf6.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-a1af739a.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/paths-b9644fda.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/pages/__layout.svelte-8744c43e.js">
-	<link rel="modulepreload" href="/svelte-starter/_app/immutable/pages/demo/elements.svelte-6f7e8e1b.js">
+	<link href="/svelte-starter/_app/immutable/assets/+layout-372f5a27.css" rel="stylesheet">
+	<link href="/svelte-starter/_app/immutable/assets/+page-83b17d31.css" rel="stylesheet">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/start-d062400e.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-49d77421.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-de6d0488.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/paths-493f1962.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/components/pages/_layout.svelte-1390f590.js">
+	<link rel="modulepreload" href="/svelte-starter/_app/immutable/components/pages/demo/elements/_page.svelte-c7c0ce37.js">
 </head>
 
 <body>
@@ -209,23 +209,26 @@
 
 
 		<script type="module" data-sveltekit-hydrate="1ynblcg">
-		import { start } from "/svelte-starter/_app/immutable/start-2e03a7aa.js";
+		import { set_public_env, start } from "/svelte-starter/_app/immutable/start-d062400e.js";
+
+		set_public_env({});
+
 		start({
 			target: document.querySelector('[data-sveltekit-hydrate="1ynblcg"]').parentNode,
 			paths: {"base":"/svelte-starter","assets":"/svelte-starter"},
-			session: {},
 			route: true,
 			spa: false,
 			trailing_slash: "always",
 			hydrate: {
 				status: 200,
 				error: null,
-				nodes: [0, 2],
+				node_ids: [0, 3],
 				params: {},
 				routeId: "demo/elements"
 			}
 		});
-	</script></div>
+	</script>
+	</div>
 </body>
 
 </html>
