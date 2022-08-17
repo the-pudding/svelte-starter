@@ -17,6 +17,9 @@
 			"$data/*": [
 				"src/data/*"
 			],
+			"$routes/*": [
+				"src/routes/*"
+			],
 			"$stores/*": [
 				"src/stores/*"
 			],

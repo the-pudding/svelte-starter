@@ -74,7 +74,6 @@ Run `npm run style` to regenerate the style dictionary.
 ### Fonts ⚠️
 SvelteKit still hasn't resolved an issue with fonts with subdirectory-hosted projects. The simplest solution right now is to point to an absolute hosted font. If you need it to be local/relative to the project, ask Russell.
 
-
 ## Google Docs and Sheets
 
 * Create a Google Doc or Sheet
@@ -84,6 +83,15 @@ SvelteKit still hasn't resolved an issue with fonts with subdirectory-hosted pro
 * If you want to do a Google Sheet, be sure to include the `gid` value in the url as well
 
 Running `npm run gdoc` at any point (even in new tab while server is running) will fetch the latest from all Docs and Sheets.
+
+## Structural Overview
+
+### Pages
+The `src/routes` directory contains pages for your app. For a single-page app (most cases) you don't have to modify anything in here. `+page.svelte` represents the root page, think of it as the `index.html` file. It is prepopulated with a few things like metadata and font preloading. It also includes a blank slate component `Index.svelte`. This is the file you want to really start in for your app.
+
+### Embedding Data
+For smaller datasets, it is often great to embed the data into the HTML file. If you want to use data as-is, you can use normal import syntax (e.g., `import data from "$data/file.csv"`). If you are working with data but you want to preserve the original or clean/parse just what you need to use in the browser to optimize the front-end payload, you can load it via `+page.server.js`, do some work on it, and return just what you need. This is passed automatically to `+page.svelte` and accessible in any component with `getContext("data")`.
+
 
 ## Pre-loaded helpers
 
@@ -185,7 +193,3 @@ import example from "$utils/example.js";
 
 * Any @html tags, e.g., `{@html user}` must be the child of a dom element so they can be properly hydrated.
 * Putting asset paths in CSS doesn't work without some hacks for subdirectory hosted projects
-
-## Tips
-
-If you are working with data from a spreadsheet (that lives as a csv file in `src/data`), you can keep the sheet as-is and preserve the working sheet, then use `routes/index.js` do you clean/parse just what you need to use in the browser optimize the front-end payload. 
