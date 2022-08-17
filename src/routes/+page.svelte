@@ -17,10 +17,9 @@
 		"https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2"
 	];
 
-	console.log("hi", data.data);
 	const { title, description, url, keywords } = copy;
 	setContext("copy", copy);
-	setContext("data", data);
+	setContext("data", data.data);
 </script>
 
 <Meta {title} {description} {url} {preloadFont} {keywords} />
