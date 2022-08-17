@@ -1,13 +1,10 @@
 <script>
+	import { createEventDispatcher } from "svelte";
+	export let caption = "";
 	export let rows = []; // [{ class, style }]
 	export let columns = []; // [{ label, prop, sort = true, type = "text", dir = undefined, sortFn: undefined }];
 
-	$: th = columns.map((d) => ({ sort: true, type: "text", ...d }));
-	$: tr = rows.map((d) => ({
-		...d,
-		style: d.style || "",
-		class: d.class || ""
-	}));
+	const dispatch = createEventDispatcher();
 
 	const sortFn = {
 		asc: (a, b) =>
@@ -16,8 +13,9 @@
 			a == null || b == null ? NaN : b < a ? -1 : b > a ? 1 : b >= a ? 0 : NaN
 	};
 
-	const onClick = ({ prop, i }) => {
-		const newDir = th[i].dir === "asc" ? "desc" : "asc";
+	const onSort = ({ prop, i, same }) => {
+		const dir = th[i].dir;
+		const newDir = same ? dir : dir === "asc" ? "desc" : "asc";
 		const customSort = th[i].sortFn;
 
 		th.forEach((d) => (d.dir = undefined));
@@ -31,9 +29,27 @@
 		);
 		tr = [...tr];
 	};
+
+	const autoSort = () => {
+		const match = th.find((d) => d.dir);
+		if (match) {
+			const { prop, i } = match;
+			const same = true;
+			onSort({ prop, i, same });
+		}
+	};
+
+	$: th = columns.map((d, i) => ({ sort: true, type: "text", ...d, i }));
+	$: tr = rows.map((d) => ({
+		...d,
+		style: d.style || "",
+		class: d.class || ""
+	}));
+	$: autoSort(tr);
 </script>
 
 <table>
+	<caption>{caption}</caption>
 	<thead>
 		<tr>
 			{#each th as { label, prop, type, sort, dir }, i}
@@ -44,7 +60,7 @@
 					class:is-desc={dir === "desc"}
 				>
 					{#if sort}
-						<button on:click={() => onClick({ prop, i })}>{label}</button>
+						<button on:click={() => onSort({ prop, i })}>{label}</button>
 					{:else}
 						{label}
 					{/if}
@@ -54,7 +70,7 @@
 	</thead>
 	<tbody>
 		{#each tr as r}
-			<tr>
+			<tr on:click={() => dispatch("chart", r)}>
 				{#each columns as { prop, type }}
 					<td
 						style={r.style}
@@ -120,5 +136,9 @@
 	th.is-sortable.is-desc button:after {
 		content: "▼";
 		visibility: visible;
+	}
+
+	tr {
+		cursor: pointer;
 	}
 </style>
