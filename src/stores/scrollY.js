@@ -1,4 +1,4 @@
-import { browser } from '$app/env';
+import { browser } from "$app/env";
 import { readable } from "svelte/store";
 
 export default readable(0, (set) => {
@@ -18,7 +18,7 @@ export default readable(0, (set) => {
 		}
 	};
 
-	if (browser) document.addEventListener('scroll', onScroll);
+	if (browser) document.addEventListener("scroll", onScroll);
 
 	return () => {
 		if (browser) document.removeEventListener("scroll", onScroll);

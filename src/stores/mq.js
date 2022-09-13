@@ -1,4 +1,4 @@
-import { browser } from '$app/env';
+import { browser } from "$app/env";
 import { readable } from "svelte/store";
 
 const queries = {
@@ -14,7 +14,7 @@ const queries = {
 };
 
 function calculateMedia(mqls) {
-	const media = { classNames: '' };
+	const media = { classNames: "" };
 	const mediaClasses = [];
 	for (let name in mqls) {
 		media[name] = mqls[name].matches;

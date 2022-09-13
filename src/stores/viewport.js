@@ -1,4 +1,4 @@
-import { browser } from '$app/env';
+import { browser } from "$app/env";
 import { readable } from "svelte/store";
 import debounce from "lodash.debounce";
 
@@ -7,10 +7,10 @@ export default readable({ width: 0, height: 0 }, (set) => {
 
 	if (browser) {
 		onResize();
-		window.addEventListener('resize', debounce(onResize, 250));
+		window.addEventListener("resize", debounce(onResize, 250));
 	}
 
 	return () => {
-		if (browser) window.removeEventListener('resize', onResize);
+		if (browser) window.removeEventListener("resize", onResize);
 	};
 });

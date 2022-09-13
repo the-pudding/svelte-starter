@@ -1,4 +1,4 @@
-import { derived } from 'svelte/store';
+import { derived } from "svelte/store";
 
 export default previous = (store) => {
 	let p = null;
