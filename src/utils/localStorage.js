@@ -38,6 +38,7 @@ const get = (key) => {
 		return JSON.parse(localStorage.getItem(key));
 	} catch (err) {
 		console.log(err);
+		return undefined;
 	}
 };
 
