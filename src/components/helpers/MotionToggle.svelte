@@ -2,7 +2,7 @@
 	<MotionToggle bind:value />
  -->
 <script>
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
 	import Icon from "$components/helpers/Icon.svelte";
 	import reducedMotion from "$stores/reducedMotion.js";
 	import mq from "$stores/mq.js";

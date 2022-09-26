@@ -1,4 +1,4 @@
-import { browser } from "$app/env";
+import { browser } from "$app/environment";
 import { readable } from "svelte/store";
 
 const queries = {

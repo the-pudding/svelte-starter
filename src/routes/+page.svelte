@@ -1,6 +1,6 @@
 <script>
 	import { setContext } from "svelte";
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
 	import Meta from "$components/Meta.svelte";
 	import Index from "$routes/Index.svelte";
 	import copy from "$data/copy.json";
