@@ -24,7 +24,12 @@ const config = {
 		paths: {
 			base
 		},
-	}
+	},
+	vitePlugin: {
+		experimental: {
+			inspector: { holdMode: true },
+		}
+	},
 };
 
 export default config;
