@@ -179,7 +179,9 @@ import example from "$utils/example.js";
 
 * `checkOverlap.js`: Label overlapping detection. Loops through selection of nodes and adds a class to the ones that are overlapping. Once one is hidden it ignores it.
 * `csvDownload.js`: Converts a flat array of data to CSV content ready to be used as an `href` value for download.
+* `loadCsv.js`: Loads and parses a CSV file.
 * `loadImage.js`: Loads an image.
+* `loadJson.js`: Loads and parses a JSON file.
 * `loadPixels.js`: Loads the pixel data of an image via an offscreen canvas.
 * `localStorage.js`: Read and write to local storage.
 * `mapToArray.js`: Convenience function to convert a map to an array.
