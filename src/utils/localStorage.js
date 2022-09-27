@@ -11,6 +11,8 @@ const isReady = () => {
 		hasStorage = true;
 	} catch (e) {
 		hasStorage = false;
+	} finally {
+		return hasStorage;
 	}
 };
 
