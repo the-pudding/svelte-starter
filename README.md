@@ -8,7 +8,7 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 
 ### Features
 
-- [Feather Icons](https://github.com/feathericons/feather) for simple/easy svg icons
+- [Lucide Icons](https://lucide.dev/) for simple/easy svg icons
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs and Sheets
 - [Style Dictionary](https://amzn.github.io/style-dictionary/) for CSS/JS style parity
 - CSV, JSON, and SVG imports
@@ -119,7 +119,7 @@ import Example from "$components/helpers/Example.svelte";
 * `ButtonSet.svelte`: Accessible button group inputs.
 * `Chunk.svelte`: Split text into smaller dom element chunks.
 * `Countdown.svelte`: Countdown timer text.
-* `Icon.svelte`: Simple integration with Feather Icons.
+* `Icon.svelte`: Simple integration with Lucide Icons.
 * `MotionToggle.svelte`: A toggle button to enable/disable front-end user motion preference.
 * `Range.svelte`: Customizable range slider.
 * `Scrolly.svelte`: Scrollytelling.

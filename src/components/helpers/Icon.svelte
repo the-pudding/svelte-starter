@@ -1,38 +1,38 @@
 <script>
-	import feather from "feather-icons";
+	import { onMount } from "svelte";
 	export const directions = ["n", "ne", "e", "se", "s", "sw", "w", "nw"];
 
 	export let name;
 	export let direction = "n";
-	export let width = "1em";
-	export let height = "1em";
-	export let stroke = undefined;
+	export let size = "1em"; // can be a number of a css value
+	export let color = undefined;
 	export let strokeWidth = undefined;
 
-	$: icon = feather.icons[name];
+	let Component;
+
+	const nameToComponent = (str) => {
+		const camel = str.replace(/[^a-zA-Z0-9]+(.)/g, (m, c) => c.toUpperCase());
+		const upper = str.charAt(0).toUpperCase();
+		const sliced = camel.slice(1);
+		return `${upper}${sliced}`;
+	};
+
 	$: rotation = directions.indexOf(direction) * 45;
-	$: if (icon) {
-		if (stroke) icon.attrs["stroke"] = stroke;
-		if (strokeWidth) icon.attrs["stroke-width"] = strokeWidth;
-	}
+
+	onMount(async () => {
+		const key = nameToComponent(name);
+		Component = (await import("lucide-svelte"))[key];
+	});
 </script>
 
-{#if icon}
-	<svg
-		{...icon.attrs}
-		style="width: {width}; height: {height}; transform: rotate({rotation}deg);"
-	>
-		<g>
-			{@html icon.contents}
-		</g>
-	</svg>
+{#if Component}
+	<span class="icon" style="transform: rotate({rotation}deg);">
+		<svelte:component this={Component} {size} {color} {strokeWidth} />
+	</span>
 {/if}
 
 <style>
-	svg {
-		width: 1em;
-		height: 1em;
-		overflow: visible;
-		transform-origin: 50% 50%;
+	span {
+		display: inline-block;
 	}
 </style>
