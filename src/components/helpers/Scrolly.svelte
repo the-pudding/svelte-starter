@@ -70,7 +70,7 @@
 		for (let i = 0; i < increments + 1; i++) {
 			threshold.push(i / increments);
 		}
-		nodes = container.querySelectorAll(":scope > *");
+		nodes = container.querySelectorAll(":scope > *:not(iframe)");
 		update();
 	});
 </script>
