@@ -160,7 +160,7 @@
 		<article id="text--inline">
 			<h2>Inline elements</h2>
 			<div>
-				<a href="#!">This is a text link</a>.<br />
+				<a href="./">This is a text link</a>.<br />
 				<strong>Strong is used to indicate strong importance.</strong><br />
 				<em>This text has added emphasis.</em><br />
 				The <b>b element</b> is stylistically different text from normal text,

@@ -20,7 +20,6 @@ const config = {
 	preprocess,
 	kit: {
 		adapter: adapterStatic(),
-		trailingSlash: "always",
 		paths: {
 			base
 		},
