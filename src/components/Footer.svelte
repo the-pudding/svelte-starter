@@ -103,6 +103,7 @@
 		display: block;
 		font-weight: 700;
 		text-decoration: none;
+		border: none;
 	}
 
 	.story span {
