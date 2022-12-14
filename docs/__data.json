@@ -1,1 +1,1 @@
-{"type":"data","nodes":[{"data":null},{"data":{"data":["a","b","c"]}}]}
+{"type":"data","nodes":[null,{"type":"data","data":[{"data":1},[2,3,4],"a","b","c"],"uses":{}}]}
