@@ -1,7 +1,15 @@
 // params = { disable: false }
 
 export default function focusTrap(node, params) {
-	const elements = ["a", "button", "input", "textarea", "select", "details", "[tabindex]:not([tabindex='-1'])"];
+	const elements = [
+		"a",
+		"button",
+		"input",
+		"textarea",
+		"select",
+		"details",
+		"[tabindex]:not([tabindex='-1'])"
+	];
 	let firstFocusable;
 	let lastFocusable;
 	let active;
@@ -21,20 +29,24 @@ export default function focusTrap(node, params) {
 	};
 
 	const add = () => {
-		if (firstFocusable) firstFocusable.addEventListener("keydown", moveFocusToBottom);
-		if (lastFocusable) lastFocusable.addEventListener("keydown", moveFocusToTop);
+		if (firstFocusable)
+			firstFocusable.addEventListener("keydown", moveFocusToBottom);
+		if (lastFocusable)
+			lastFocusable.addEventListener("keydown", moveFocusToTop);
 		active = true;
 	};
 
 	const remove = () => {
-		if (firstFocusable) firstFocusable.removeEventListener("keydown", moveFocusToBottom);
-		if (lastFocusable) lastFocusable.removeEventListener("keydown", moveFocusToTop);
+		if (firstFocusable)
+			firstFocusable.removeEventListener("keydown", moveFocusToBottom);
+		if (lastFocusable)
+			lastFocusable.removeEventListener("keydown", moveFocusToTop);
 		active = false;
 	};
 
 	const setup = (p) => {
 		if (active && p && p.disable) remove();
-		else if (!active && !p || (p && !p.disable)) add();
+		else if ((!active && !p) || (p && !p.disable)) add();
 	};
 
 	const query = elements.join(", ");

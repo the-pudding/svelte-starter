@@ -18,6 +18,6 @@ export default function transform(node, params) {
 			const transform = interpolator(u);
 			node.setAttribute("transform", transform);
 		},
-		css: (t) => params.opacity ? `opacity: ${t}` : null
+		css: (t) => (params.opacity ? `opacity: ${t}` : null)
 	};
 }

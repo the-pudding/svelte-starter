@@ -5,7 +5,7 @@ const isReady = () => {
 
 	try {
 		const storage = window["localStorage"];
-		const x = '__storage_test__';
+		const x = "__storage_test__";
 		storage.setItem(x, x);
 		storage.removeItem(x);
 		hasStorage = true;
@@ -47,5 +47,5 @@ const get = (key) => {
 export default {
 	set,
 	get,
-	remove,
+	remove
 };

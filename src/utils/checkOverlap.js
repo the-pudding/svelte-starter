@@ -11,7 +11,7 @@ const isOverlapping = (nodes) => {
 	return !!matches;
 };
 
-export default function checkOverlap({ elements, reverse: false }) {
+export default function checkOverlap({ elements, reverse }) {
 	const labels = [...elements];
 	if (reverse) players.reverse();
 	labels.forEach((el, i) => {

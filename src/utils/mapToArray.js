@@ -1,3 +1,3 @@
 export default function mapToArray(map) {
-	return Array.from(map, ([key, value]) => ({key, value}));
+	return Array.from(map, ([key, value]) => ({ key, value }));
 }

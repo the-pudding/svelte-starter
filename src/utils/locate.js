@@ -16,8 +16,8 @@ const TEST_DATA = {
 	org: "AS11351 Charter Communications Inc",
 	postal: "01238",
 	region: "Massachusetts",
-	timezone: "America/New_York",
-}
+	timezone: "America/New_York"
+};
 
 const MAX_TIME = 4000;
 
@@ -34,7 +34,7 @@ async function lookup(test) {
 
 function init(test = false) {
 	return new Promise((resolve, reject) => {
-		const timeout = setTimeout(() => reject(new Error('timeout')), MAX_TIME);
+		const timeout = setTimeout(() => reject(new Error("timeout")), MAX_TIME);
 		lookup(test)
 			.then((data) => {
 				clearTimeout(timeout);
