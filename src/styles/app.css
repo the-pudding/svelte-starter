@@ -40,7 +40,9 @@
 }
 
 /* dark theme */
-@media screen and (prefers-color-scheme:dark) {
+/* this is a starting place for dark mode - test before deploying */
+
+/* @media screen and (prefers-color-scheme:dark) {
 	:root {
 		--color-bg: var(--color-gray-900);
 		--color-fg: var(--color-gray-100);
@@ -58,7 +60,7 @@
 		--color-placeholder: var(--color-gray-400);
 		--color-text-outline: var(--color-bg);
 	}
-}
+} */
 
 @media screen and (prefers-reduced-motion: no-preference) {
 	:root {
