@@ -147,9 +147,10 @@ Located in `src/lib/actions`.
 import example from "$actions/action.js";
 ```
 
+* `canTab.js`: enable/disable tabbing on child elements.
 * `focusTrap.js`: Enable a keyboard focus trap for modals and menus.
 * `inView.js`: detect when an element enters or exits the viewport.
-* `canTab.js`: enable/disable tabbing on child elements.
+* `resize.js`: detect when an element is resized.
 
 ### Stores
 
