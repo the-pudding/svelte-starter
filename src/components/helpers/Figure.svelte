@@ -57,7 +57,7 @@ Pass style prop directives to set dimensions (defaults are all "auto")
 	>
 		<slot />
 	</div>
-	{#if caption}<figcaption>{@html caption}</figcaption>{/if}
+	<slot name="figcaption" />
 </figure>
 
 <style>
