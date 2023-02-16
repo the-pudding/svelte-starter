@@ -97,7 +97,7 @@ For smaller datasets, it is often great to embed the data into the HTML file. If
 
 ### Components
 
-Located in `src/lib/components`.
+Located in `src/components`.
 
 ```js
 // Usage
@@ -109,7 +109,7 @@ import Example from "$components/Example.svelte";
 
 ### Helper Components
 
-Located in `src/lib/components/helpers`.
+Located in `src/components/helpers`.
 
 ```js
 // Usage
@@ -120,6 +120,7 @@ import Example from "$components/helpers/Example.svelte";
 * `Chunk.svelte`: Split text into smaller dom element chunks.
 * `Countdown.svelte`: Countdown timer text.
 * `Icon.svelte`: Simple integration with Lucide Icons.
+* `Figure.svelte`: A barebones chart figure component to handle slots.
 * `MotionToggle.svelte`: A toggle button to enable/disable front-end user motion preference.
 * `Range.svelte`: Customizable range slider.
 * `Scrolly.svelte`: Scrollytelling.
@@ -129,18 +130,18 @@ import Example from "$components/helpers/Example.svelte";
 * `Toggle.svelte`: Accessible toggle inputs.
 * `WIP.svelte`: A sticky banner saying this project is a WIP.
 
-### Chart Components
+### Layercake Chart Components
 
-Starter templates for various chart types to be used with [LayerCake](https://layercake.graphics/). Located in `src/lib/components/charts`.
+Starter templates for various chart types to be used with [LayerCake](https://layercake.graphics/). Located in `src/components/layercake`.
 
 ```js
 // Usage
-import Example from "$components/charts/Example.svelte";
+import Example from "$components/layercake/Example.svelte";
 ```
 
 ### Actions
 
-Located in `src/lib/actions`.
+Located in `src/actions`.
 
 ```js
 // Usage
@@ -154,7 +155,7 @@ import example from "$actions/action.js";
 
 ### Stores
 
-These are located in `src/lib/stores`. You can put custom ones in `src/lib/stores/misc.js` or create unique files for more complex ones.
+These are located in `src/stores`. You can put custom ones in `src/stores/misc.js` or create unique files for more complex ones.
 
 ```js
 // Usage
@@ -171,7 +172,7 @@ import { example } from "$stores/misc.js";
 
 ### Utils
 
-Located in `src/lib/utils/`.
+Located in `src/utils/`.
 
 ```js
 // Usage
