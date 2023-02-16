@@ -14,7 +14,6 @@ Pass style prop directives to set dimensions (defaults are all "auto")
 	import { browser } from "$app/environment";
 	import resize from "$actions/resize.js";
 
-	export let caption;
 	export let debounce = 250;
 	export let exclude = "height";
 	export let custom = {};
