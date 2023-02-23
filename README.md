@@ -149,6 +149,7 @@ import example from "$actions/action.js";
 ```
 
 * `canTab.js`: enable/disable tabbing on child elements.
+* `checkOverlap.js`: Label overlapping detection. Loops through selection of nodes and adds a class to the ones that are overlapping. Once one is hidden it ignores it.
 * `focusTrap.js`: Enable a keyboard focus trap for modals and menus.
 * `inView.js`: detect when an element enters or exits the viewport.
 * `resize.js`: detect when an element is resized.
@@ -178,8 +179,6 @@ Located in `src/utils/`.
 // Usage
 import example from "$utils/example.js";
 ```
-
-* `checkOverlap.js`: Label overlapping detection. Loops through selection of nodes and adds a class to the ones that are overlapping. Once one is hidden it ignores it.
 * `csvDownload.js`: Converts a flat array of data to CSV content ready to be used as an `href` value for download.
 * `loadCsv.js`: Loads and parses a CSV file.
 * `loadImage.js`: Loads an image.
