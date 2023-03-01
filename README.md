@@ -127,6 +127,7 @@ import Example from "$components/helpers/Example.svelte";
 * `SortTable.svelte`: Sortable semantic table with customizable props.
 * `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
 * `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
+* `Tip.svelte`: Button that links to Strip payment link.
 * `Toggle.svelte`: Accessible toggle inputs.
 * `WIP.svelte`: A sticky banner saying this project is a WIP.
 
