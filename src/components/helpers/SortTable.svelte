@@ -103,6 +103,7 @@
 		vertical-align: bottom;
 		line-height: 1.2;
 		font-weight: normal;
+		padding: 8px;
 	}
 
 	td {
