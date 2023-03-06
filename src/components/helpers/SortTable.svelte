@@ -2,7 +2,7 @@
 	import { createEventDispatcher } from "svelte";
 	export let caption = "";
 	export let rows = []; // [{ class, style }]
-	export let columns = []; // [{ label, prop, sort = true, type = "text", dir = undefined, sortFn: undefined }];
+	export let columns = []; // [{ label, prop, sort = true, type = "text", dir = undefined, sortFn: undefined, formatFn }];
 
 	const dispatch = createEventDispatcher();
 
@@ -71,13 +71,14 @@
 	<tbody>
 		{#each tr as r}
 			<tr on:click={() => dispatch("chart", r)}>
-				{#each columns as { prop, type }}
+				{#each columns as { prop, type, formatFn = (d) => d }}
+					{@const value = formatFn(r[prop])}
 					<td
 						style={r.style}
 						class={r.class}
 						class:is-number={type === "number"}
 					>
-						{@html r[prop]}
+						{@html value}
 					</td>
 				{/each}
 			</tr>
