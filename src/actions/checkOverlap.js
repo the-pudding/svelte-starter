@@ -15,6 +15,7 @@ const isOverlapping = (nodes) => {
 	const { top, left, right, bottom } = root.getBoundingClientRect();
 	const a = [left, top, right, bottom];
 	const matches = nodes.slice(1).find((node) => {
+		if (node.classList.contains("is-overlap")) return false;
 		const r = node.getBoundingClientRect();
 		const b = [r.left, r.top, r.right, r.bottom];
 		return intersects(a, b);
@@ -23,14 +24,13 @@ const isOverlapping = (nodes) => {
 	return !!matches;
 };
 
-export default function overlap(node, params = {}) {
+export default function checkOverlap(node, params = {}) {
 	function check({ reverse, query }) {
 		const elements = [
 			...node.querySelectorAll(query || ":scope > *:not(iframe)")
 		];
 		if (reverse) elements.reverse();
 		elements.forEach((el, i) => {
-			// const order = elements.length - i - 1;
 			const overlap = isOverlapping(elements.slice(i));
 			if (overlap) el.classList.add("is-overlap");
 			else el.classList.remove("is-overlap");
