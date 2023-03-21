@@ -1,34 +1,29 @@
 <script>
-	import { getContext, tick } from "svelte";
+	import { getContext } from "svelte";
 
-	import { geoPath, geoAlbersUsa } from "d3";
-
-	export let features;
-	export let fill;
-	export let stroke;
+	export let features = [];
+	export let fill = undefined;
+	export let stroke = undefined;
 	export let strokeWidth = 0.5;
-	export let radius = 5;
-	export let projection = geoAlbersUsa();
 
 	const { width, height, custom } = getContext("Figure");
-
-	$: projectionFn = projection.fitSize(
-		[$width, $height],
-		$custom.projectionObject
-	);
-	$: pathFn = geoPath().projection(projectionFn).pointRadius(radius);
 </script>
 
-{#if features && $width}
-	<svg width={$width} height={$height}>
-		{#each features as feature}
-			<path
-				style:stroke
-				style:stroke-width="{strokeWidth}px"
-				class="place-path"
-				fill={feature.properties.fill || fill}
-				d={pathFn(feature)}
-			/>
-		{/each}
-	</svg>
-{/if}
+<g class="g-map-points">
+	{#each features as feature}
+		{@const className = feature.properties.className}
+		<path
+			class={className}
+			style:stroke
+			style:stroke-width="{strokeWidth}px"
+			fill={feature.properties.fill || fill}
+			d={$custom.pathFn(feature)}
+		/>
+	{/each}
+</g>
+
+<style>
+	.g-map-points {
+		pointer-events: none;
+	}
+</style>

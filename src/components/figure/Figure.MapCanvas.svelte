@@ -3,9 +3,8 @@
 
 	import { geoPath, geoAlbersUsa } from "d3";
 
-	export let mode = "svg"; // canvas
 	export let features;
-	export let fill;
+	export let fill = "none";
 	export let stroke;
 	export let strokeWidth = 0.5;
 	export let projection = geoAlbersUsa();
@@ -15,9 +14,8 @@
 	let canvasEl;
 
 	$: ctx = canvasEl?.getContext("2d");
-	$: mult = mode === "canvas" ? $dpr : 1;
-	$: contextWidth = $width * mult;
-	$: contextHeight = $height * mult;
+	$: contextWidth = $width * $dpr;
+	$: contextHeight = $height * $dpr;
 
 	$: projectionFn = projection.fitSize(
 		[contextWidth, contextHeight],
@@ -25,7 +23,7 @@
 	);
 	$: pathFn = geoPath().projection(projectionFn);
 
-	$: if (mode === "canvas" && pathFn && contextWidth) render();
+	$: if (pathFn && contextWidth && features) render();
 
 	function drawPath({ path, strokeStyle, fillStyle }) {
 		ctx.beginPath();
@@ -60,19 +58,4 @@
 	}
 </script>
 
-{#if mode === "svg"}
-	{#if features && contextWidth}
-		<svg width={contextWidth} height={contextHeight}>
-			{#each features as feature}
-				<path
-					style:stroke
-					style:stroke-width="{strokeWidth}px"
-					style:fill={feature.properties.fill || "none"}
-					d={pathFn(feature)}
-				/>
-			{/each}
-		</svg>
-	{/if}
-{:else if mode === "canvas"}
-	<canvas width={contextWidth} height={contextHeight} bind:this={canvasEl} />
-{/if}
+<canvas width={contextWidth} height={contextHeight} bind:this={canvasEl} />

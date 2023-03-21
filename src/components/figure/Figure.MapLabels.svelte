@@ -1,7 +1,7 @@
 <script>
-	import { getContext, tick } from "svelte";
-
-	import { geoAlbersUsa } from "d3";
+	import { getContext } from "svelte";
+	import checkOverlap from "$actions/checkOverlap.js";
+	import keepWithinBox from "$actions/keepWithinBox.js";
 
 	export let features;
 	export let fill = "#000";
@@ -9,22 +9,23 @@
 	export let offsetX = 0;
 	export let offsetY = 0;
 	export let strokeWidth = 1;
-	export let projection = geoAlbersUsa();
 
 	const { width, height, custom } = getContext("Figure");
-
-	$: projectionFn = projection.fitSize(
-		[$width, $height],
-		$custom.projectionObject
-	);
 </script>
 
-{#if features && $width}
-	<svg width={$width} height={$height}>
-		{#each features as feature}
-			{@const [x, y] = projectionFn(feature.geometry.coordinates)}
-			{@const transform = `translate(${x}, ${y})`}
-			<g {transform}>
+<g
+	class="g-map-labels"
+	use:checkOverlap={{ query: "text.stroke", reverse: true }}
+>
+	{#each features as feature}
+		{@const coords = $custom.projectionFn(feature.geometry.coordinates)}
+		{@const hasCoords = coords}
+		{@const x = hasCoords ? coords[0] : 0}
+		{@const y = hasCoords ? coords[1] : 0}
+		{@const transform = `translate(${x}, ${y})`}
+		{@const className = feature.properties.className}
+		{#if hasCoords}
+			<g {transform} class={className} use:keepWithinBox={{ width: $width }}>
 				{#each [0, 1] as i}
 					{@const isStroke = i === 0 && stroke !== "none"}
 					{@const isRender = isStroke || i > 0}
@@ -32,8 +33,9 @@
 						<text
 							x={offsetX}
 							y={offsetY}
+							class:stroke={isStroke}
 							text-anchor="middle"
-							aligment-baseline="middle"
+							alignment-baseline="baseline"
 							style:stroke={isStroke ? stroke : "none"}
 							style:stroke-width="{strokeWidth}px"
 							style:fill={isStroke ? "none" : feature.properties.fill || fill}
@@ -42,6 +44,25 @@
 					{/if}
 				{/each}
 			</g>
-		{/each}
-	</svg>
-{/if}
+		{/if}
+	{/each}
+</g>
+
+<style>
+	.g-map-labels {
+		pointer-events: none;
+	}
+
+	:global(.is-overlap, .is-overlap + text) {
+		display: none;
+	}
+
+	:global(.is-overlap + text) {
+		display: none;
+	}
+
+	text {
+		letter-spacing: 0.02em;
+		transform: translate(0, -12px);
+	}
+</style>

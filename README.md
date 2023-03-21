@@ -152,6 +152,7 @@ import example from "$actions/action.js";
 * `canTab.js`: enable/disable tabbing on child elements.
 * `checkOverlap.js`: Label overlapping detection. Loops through selection of nodes and adds a class to the ones that are overlapping. Once one is hidden it ignores it.
 * `focusTrap.js`: Enable a keyboard focus trap for modals and menus.
+* `keepWithinBox.js`: Offsets and element left/right to stay within parent.
 * `inView.js`: detect when an element enters or exits the viewport.
 * `resize.js`: detect when an element is resized.
 
