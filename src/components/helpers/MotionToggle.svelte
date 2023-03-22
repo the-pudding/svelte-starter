@@ -2,23 +2,21 @@
 	<MotionToggle bind:value />
  -->
 <script>
+	import { PlayCircle, PauseCircle } from "lucide-svelte";
 	import { browser } from "$app/environment";
-	import Icon from "$components/helpers/Icon.svelte";
 	import reducedMotion from "$stores/reducedMotion.js";
 	import mq from "$stores/mq.js";
 
-	export let strokeWidth = "2px";
+	export let color = "currentColor";
+	export let strokeWidth = "2";
 	export let showLabel = false;
 	export let value = "on";
-
-	export let name = "play-circle";
 
 	const onToggle = () => {
 		value = value === "on" ? "off" : "on";
 	};
 
 	$: value = $mq.reducedMotion || value;
-	$: name = value === "on" ? "play-circle" : "pause-circle";
 	$: aria = value === "on" ? "disable" : "enable";
 	$: cssVar = value === "on" ? "1s" : "0s";
 	$: reducedMotion.set(value === "off");
@@ -41,7 +39,11 @@
 			<span />
 		</div>
 		<div class="icon">
-			<Icon {strokeWidth} {name} />
+			{#if value === "on"}
+				<PlayCircle {color} {strokeWidth} />
+			{:else}
+				<PauseCircle {color} {strokeWidth} />
+			{/if}
 		</div>
 	</button>
 </div>

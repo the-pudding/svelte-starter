@@ -1,5 +1,7 @@
 <script>
 	import { onMount } from "svelte";
+	import inView from "$actions/inView.js";
+	import { shareVisible } from "$stores/misc.js";
 	import wordmark from "$svg/wordmark.svg";
 
 	let localURL;
@@ -30,11 +32,18 @@
 	});
 </script>
 
-<footer>
+<footer
+	use:inView
+	on:enter={() => ($shareVisible = false)}
+	on:exit={() => ($shareVisible = true)}
+>
 	<section class="stories">
 		{#each stories as { hed, url, image }}
+			{@const href = url.startsWith("http")
+				? url
+				: `https://pudding.cool/${url}`}
 			<div class="story">
-				<a href="https://pudding.cool/{url}">
+				<a {href}>
 					<img
 						src="https://pudding.cool/common/assets/thumbnails/640/{image}.jpg"
 						alt="thumbnail"
@@ -101,7 +110,7 @@
 
 	.story a {
 		display: block;
-		font-weight: 700;
+		font-weight: 900;
 		text-decoration: none;
 		border: none;
 	}

@@ -1,11 +1,11 @@
 <script>
-	import Icon from "$components/helpers/Icon.svelte";
+	import { DollarSign } from "lucide-svelte";
 	export let text = "Tip";
 	export let href;
 </script>
 
 <a class="tip-button" {href} target="_blank" rel="noreferrer" role="button"
-	>{text} <span><Icon stroke="white" name="dollar-sign" /></span>
+	>{text} <span><DollarSign color="currentColor" /></span>
 </a>
 
 <style>
@@ -32,14 +32,6 @@
 		justify-content: center;
 		align-items: center;
 		margin-left: 8px;
-	}
-
-	:global(.tip-button svg) {
-		display: inline-block;
-	}
-
-	:global(.tip-button svg line) {
-		stroke: currentColor;
-		stroke-dasharray: 0 0;
+		padding: 2px;
 	}
 </style>

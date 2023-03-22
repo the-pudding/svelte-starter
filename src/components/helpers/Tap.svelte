@@ -1,6 +1,6 @@
 <script>
+	import { ChevronLeft, ChevronRight } from "lucide-svelte";
 	import { createEventDispatcher } from "svelte";
-	import Icon from "$components/helpers/Icon.svelte";
 
 	export let debug = false;
 	export let enableKeyboard = false;
@@ -49,13 +49,13 @@
 			disabled={disable.includes(dir)}
 		>
 			{#if visibleArrows.includes(dir)}
-				<span style="font-size: {arrowSize};"
-					><Icon
-						name="chevron-{dir}"
-						stroke={arrowStroke}
-						strokeWidth={arrowStrokeWidth}
-					/></span
-				>
+				<span style="font-size: {arrowSize};">
+					{#if dir === "left"}
+						<ChevronLeft color={arrowStroke} strokeWidth={arrowStrokeWidth} />
+					{:else if dir === "right"}
+						<ChevronRight color={arrowStroke} strokeWidth={arrowStrokeWidth} />
+					{/if}
+				</span>
 			{/if}
 		</button>
 	{/each}
