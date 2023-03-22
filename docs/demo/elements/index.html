@@ -6,17 +6,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="content-security-policy" content="">
-		<link href="/svelte-starter/_app/immutable/assets/_layout-372f5a27.css" rel="stylesheet">
-		<link href="/svelte-starter/_app/immutable/assets/_page-83b17d31.css" rel="stylesheet">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/start-7acef8c0.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-e2074c99.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/singletons-2ccf04f5.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/index-95526f17.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/paths-b4419565.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/components/pages/_layout.svelte-a338f935.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/modules/pages/_layout.js-5612100c.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/chunks/_layout-79cb23d1.js">
-		<link rel="modulepreload" href="/svelte-starter/_app/immutable/components/pages/demo/elements/_page.svelte-0a06677f.js">
+		<link href="../../_app/immutable/assets/_layout.9e9c57cd.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/_page.83b17d31.css" rel="stylesheet">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.b90d002e.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.66ff5c4e.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons.605895f5.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.2daca800.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.b8ff9134.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.f9c817b3.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/_layout.svelte.54ae7ec5.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/_layout.js.822e9be0.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/_layout.79cb23d1.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/demo-elements-page.svelte.952ee810.js">
 </head>
 
 <body>
@@ -211,22 +212,32 @@
 </div></main>
 
 
-		<script type="module" data-sveltekit-hydrate="1s31qnn">
-			import { start } from "/svelte-starter/_app/immutable/start-7acef8c0.js";
+			
+			<script>
+				{
+					__sveltekit_1bfkzne = {
+						env: {},
+						assets: "/svelte-starter",
+						base: new URL("../..", location).pathname.slice(0, -1),
+						element: document.currentScript.parentElement
+					};
 
-			start({
-				env: {},
-				paths: {"base":"/svelte-starter","assets":"/svelte-starter"},
-				target: document.querySelector('[data-sveltekit-hydrate="1s31qnn"]').parentNode,
-				version: "1673550738943",
-				hydrate: {
-					node_ids: [0, 3],
-					data: [null,null],
-					form: null
+					const data = [null,null];
+
+					Promise.all([
+						import("../../_app/immutable/entry/start.b90d002e.js"),
+						import("../../_app/immutable/entry/app.f9c817b3.js")
+					]).then(([kit, app]) => {
+						kit.start(app, __sveltekit_1bfkzne.element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
 				}
-			});
-		</script>
-	</div>
+			</script>
+		</div>
 </body>
 
 </html>
