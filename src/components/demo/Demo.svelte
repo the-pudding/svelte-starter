@@ -9,6 +9,7 @@
 	import DemoLayerCake from "$components/demo/Demo.LayerCake.svelte";
 	import DemoSvelteElement from "$components/demo/Demo.SvelteElement.svelte";
 	import DemoSvelteComponent from "$components/demo/Demo.SvelteComponent.svelte";
+	import DemoFigure from "$components/demo/Demo.Figure.svelte";
 	import DemoTip from "$components/demo/Demo.Tip.svelte";
 	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
 </script>
@@ -26,6 +27,7 @@
 	<DemoSvelteElement />
 	<DemoSvelteComponent />
 	<DemoTip />
+	<DemoFigure />
 	<DemoScrolly />
 </div>
 

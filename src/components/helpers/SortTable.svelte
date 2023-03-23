@@ -4,7 +4,7 @@
 	export let rows = []; // [{ class, style }]
 	export let columns = []; // [{ label, prop, sort = true, type = "text", dir = undefined, sortFn: undefined, formatFn }];
 	export let scrollable = false; // allow for scrollable + sticky header (requires --height);
-	export let mobile = true; // toggle to responsive table
+	export let mobile = false; // toggle to responsive table
 	export let filter = undefined; // the prop name that can be searched/filtered
 
 	const dispatch = createEventDispatcher();

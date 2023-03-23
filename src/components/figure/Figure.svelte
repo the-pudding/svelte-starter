@@ -5,8 +5,16 @@ Usage:
 	</Figure>
 
 Pass style prop directives to set dimensions (defaults are all "auto")
-	<Figure aspect-ratio="1"></Figure> 
-	<Figure height="500px"></Figure>
+--aspect-ratio
+--width
+--height
+
+example: <Figure --aspect-ratio="1"></Figure> 
+
+Props: 
+	debounce: number (default 250) - debounce resize event time in ms
+	exclude: string (default "height") - exclude width or height from triggering resize event
+	custom: object (default {}) - custom data store to pass to children components
 -->
 <script>
 	import { writable } from "svelte/store";
