@@ -181,6 +181,7 @@ Located in `src/utils/`.
 import example from "$utils/example.js";
 ```
 * `csvDownload.js`: Converts a flat array of data to CSV content ready to be used as an `href` value for download.
+* `generateId.js`: Generate an alphanumeric id.
 * `loadCsv.js`: Loads and parses a CSV file.
 * `loadImage.js`: Loads an image.
 * `loadJson.js`: Loads and parses a JSON file.
