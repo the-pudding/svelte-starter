@@ -1,4 +1,4 @@
-PHONY: github netlify pudding
+PHONY: github pudding
 
 github:
 	rm -rf docs
