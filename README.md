@@ -71,8 +71,8 @@ Run `npm run style` to regenerate the style dictionary.
 * `.sr-only`: makes content invisible available for screen reader
 * `.text-outline`: adds a psuedo stroke to text element
 
-### Fonts ⚠️
-SvelteKit still hasn't resolved an issue with fonts with subdirectory-hosted projects. The simplest solution right now is to point to an absolute hosted font. If you need it to be local/relative to the project, ask Russell.
+### Custom Fonts
+For locally hosted fonts, simply add the font to the `static/assets` folder and include a reference in `src/styles/font.css`, making sure the url starts with `"assets/..."`.
 
 ## Google Docs and Sheets
 
