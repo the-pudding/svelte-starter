@@ -1,7 +1,6 @@
 <script>
 	import { onMount } from "svelte";
 	import inView from "$actions/inView.js";
-	import { shareVisible } from "$stores/misc.js";
 	import wordmark from "$svg/wordmark.svg";
 
 	let localURL;
@@ -32,11 +31,7 @@
 	});
 </script>
 
-<footer
-	use:inView
-	on:enter={() => ($shareVisible = false)}
-	on:exit={() => ($shareVisible = true)}
->
+<footer>
 	<section class="stories">
 		{#each stories as { hed, url, image }}
 			{@const href = url.startsWith("http")
