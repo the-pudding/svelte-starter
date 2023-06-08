@@ -37,5 +37,5 @@
 		"node": ">= 18.12.0"
 	},
 	"browserslist": "> 0.5%, last 4 versions, not ie <= 11, not ie_mob <= 11",
-	"subdirectory": "svelte-starter"
+	"subdirectory": ""
 }
