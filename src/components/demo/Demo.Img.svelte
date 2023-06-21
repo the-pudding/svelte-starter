@@ -14,7 +14,7 @@
 	div {
 		width: 128px;
 		height: 128px;
-		background: url("assets/demo/test.jpg");
+		background: url("/assets/demo/test.jpg");
 		background-size: cover;
 		background-position: center center;
 	}
