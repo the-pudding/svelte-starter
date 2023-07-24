@@ -6,44 +6,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
-		<link href="../../_app/immutable/assets/0.9e9c57cd.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/0.27c8a67e.css" rel="stylesheet">
 		<link href="../../_app/immutable/assets/3.83b17d31.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../_app/immutable/entry/start.bd7aa974.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/index.21f7b835.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons.2da175c5.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/index.8e9bd556.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.fb651fb4.js">
-		<link rel="modulepreload" href="../../_app/immutable/entry/app.161277b5.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/0.4d499133.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/3.7df1017e.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/start.f0507df9.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/scheduler.22d55f23.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/singletons.470837ba.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.d4642350.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.27db1576.js">
+		<link rel="modulepreload" href="../../_app/immutable/entry/app.c63758d3.js">
+		<link rel="modulepreload" href="../../_app/immutable/chunks/index.6b271cb1.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/0.0e535377.js">
+		<link rel="modulepreload" href="../../_app/immutable/nodes/3.293523ac.js">
 </head>
 
 <body>
 	<a href="#content" class="skip-to-main">Skip to main content</a>
-	<div>
-
-
-<header><div class="wordmark svelte-twiail"><a href="https://pudding.cool" aria-label="The Pudding" target="_self" class="svelte-twiail"><!-- HTML_TAG_START --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.6 50"><path class="st0" d="M150.1 9.5c1.5 0 2.8 1.3 2.8 2.8s-1.3 2.8-2.8 2.8-2.8-1.3-2.8-2.8 1.3-2.8 2.8-2.8zM147.2 17.3h5.6v18.2h-5.6V17.3zM77.1 9.5h-8.9v26h5.6v-8.1h3.3c4.9 0 8.9-4 8.9-8.9s-3.9-9-8.9-9zm0 12.3h-3.3v-6.6h3.3c1.8 0 3.3 1.5 3.3 3.3s-1.4 3.3-3.3 3.3zM105.7 17.6h-5.6v8.9c0 1.8-1.5 3.3-3.3 3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0 4.9 4 8.9 8.9 8.9s8.9-4 8.9-8.9v-8.9zM164.1 17.6c-4.9 0-8.9 4-8.9 8.9v8.9h5.6v-8.9c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3v8.9h5.6v-8.9c0-4.9-4-8.9-8.9-8.9zM119.7 16.2v1.4h-3.3c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h8.9V9.5l-5.6 3.3v3.4zm.1 8.4V29.8h-3.3c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3v1.4zM139.3 16.2v1.4H136c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h8.9V9.5l-5.6 3.3v3.4zm.1 8.4V29.8H136c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3v1.4h.1zM183.7 17.6c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h3.3v5.1c0 1.8-1.5 3.3-3.3 3.3s-3.3-1.5-3.3-3.3V38l-5.6 3.3c.4 4.5 4.2 8.1 8.9 8.1 4.9 0 8.9-4 8.9-8.9V17.6h-8.9zm3.3 5.8V30h-3.3c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3zM28.6 17.6c-1.2 0-2.3.2-3.3.6V9.5l-5.6 3.3v22.6h5.6v-8.9c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3v8.9h5.6v-8.9c0-4.9-4-8.9-8.9-8.9zM17.8 9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5zM48.3 30.2c-.4 0-1.2-.1-1.8-.4l5.2-2.1 5.6-2.3-1-2.3-.1-.2c-.1-.3-.3-.6-.5-1-.1-.1-.1-.2-.2-.3 0 0 0-.1-.1-.1l-.1-.1-.1-.1c-1.6-2.2-4-3.5-6.7-3.7h-.6c-4.9 0-8.9 4-8.9 8.9 0 .4 0 .9.1 1.4V28.2c0 .3.1.5.2.8v.2c.1.3.2.7.4 1v.2c.1.3.3.5.4.8 0 .1.1.1.1.2.1.2.3.4.4.6v.1s0 .1.1.1l.1.1c1.7 2.1 4.4 3.4 7.2 3.4h6.1v-5.2c.4-.3-3.5-.3-5.8-.3zm7.9-7.3zm-11.6 2.8l-.2.1c.2-1.9 1.8-3.5 3.7-3.5.9 0 1.8.4 2.4.9L46.2 25l-1.6.7z"/></svg><!-- HTML_TAG_END --></a></div>
-</header>
-<main id="content"><div class="wrapper svelte-p95kjz"><h1>Default Element Styles</h1>
-	<section id="text"><article id="text--headings" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Headings</h2>
-			<div><h1>Heading 1</h1>
-				<h2>Heading 2</h2>
-				<h3>Heading 3</h3>
-				<h4>Heading 4</h4>
-				<h5>Heading 5</h5>
-				<h6>Heading 6</h6></div></article>
-		<article id="text--paragraphs" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Paragraphs</h2>
-			<div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra
+	<div>  <header><div class="wordmark svelte-twiail"><a href="https://pudding.cool" aria-label="The Pudding" target="_self" class="svelte-twiail"><!-- HTML_TAG_START --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.6 50"><path class="st0" d="M150.1 9.5c1.5 0 2.8 1.3 2.8 2.8s-1.3 2.8-2.8 2.8-2.8-1.3-2.8-2.8 1.3-2.8 2.8-2.8zM147.2 17.3h5.6v18.2h-5.6V17.3zM77.1 9.5h-8.9v26h5.6v-8.1h3.3c4.9 0 8.9-4 8.9-8.9s-3.9-9-8.9-9zm0 12.3h-3.3v-6.6h3.3c1.8 0 3.3 1.5 3.3 3.3s-1.4 3.3-3.3 3.3zM105.7 17.6h-5.6v8.9c0 1.8-1.5 3.3-3.3 3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0 4.9 4 8.9 8.9 8.9s8.9-4 8.9-8.9v-8.9zM164.1 17.6c-4.9 0-8.9 4-8.9 8.9v8.9h5.6v-8.9c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3v8.9h5.6v-8.9c0-4.9-4-8.9-8.9-8.9zM119.7 16.2v1.4h-3.3c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h8.9V9.5l-5.6 3.3v3.4zm.1 8.4V29.8h-3.3c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3v1.4zM139.3 16.2v1.4H136c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h8.9V9.5l-5.6 3.3v3.4zm.1 8.4V29.8H136c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3v1.4h.1zM183.7 17.6c-4.9 0-8.9 4-8.9 8.9s4 8.9 8.9 8.9h3.3v5.1c0 1.8-1.5 3.3-3.3 3.3s-3.3-1.5-3.3-3.3V38l-5.6 3.3c.4 4.5 4.2 8.1 8.9 8.1 4.9 0 8.9-4 8.9-8.9V17.6h-8.9zm3.3 5.8V30h-3.3c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3h3.3zM28.6 17.6c-1.2 0-2.3.2-3.3.6V9.5l-5.6 3.3v22.6h5.6v-8.9c0-1.8 1.5-3.3 3.3-3.3s3.3 1.5 3.3 3.3v8.9h5.6v-8.9c0-4.9-4-8.9-8.9-8.9zM17.8 9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5zM48.3 30.2c-.4 0-1.2-.1-1.8-.4l5.2-2.1 5.6-2.3-1-2.3-.1-.2c-.1-.3-.3-.6-.5-1-.1-.1-.1-.2-.2-.3 0 0 0-.1-.1-.1l-.1-.1-.1-.1c-1.6-2.2-4-3.5-6.7-3.7h-.6c-4.9 0-8.9 4-8.9 8.9 0 .4 0 .9.1 1.4V28.2c0 .3.1.5.2.8v.2c.1.3.2.7.4 1v.2c.1.3.3.5.4.8 0 .1.1.1.1.2.1.2.3.4.4.6v.1s0 .1.1.1l.1.1c1.7 2.1 4.4 3.4 7.2 3.4h6.1v-5.2c.4-.3-3.5-.3-5.8-.3zm7.9-7.3zm-11.6 2.8l-.2.1c.2-1.9 1.8-3.5 3.7-3.5.9 0 1.8.4 2.4.9L46.2 25l-1.6.7z"/></svg><!-- HTML_TAG_END --></a></div> </header> <main id="content"><div class="wrapper svelte-p95kjz"><h1 data-svelte-h="svelte-1fo3fq5">Default Element Styles</h1> <section id="text" data-svelte-h="svelte-dn40j"><article id="text--headings" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Headings</h2> <div><h1>Heading 1</h1> <h2>Heading 2</h2> <h3>Heading 3</h3> <h4>Heading 4</h4> <h5>Heading 5</h5> <h6>Heading 6</h6></div></article> <article id="text--paragraphs" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Paragraphs</h2> <div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra
 					viverra nisl, vel maximus turpis ornare a. Ut scelerisque lectus sed
 					odio dictum scelerisque vitae quis nisi. Nulla facilisi. Phasellus
 					vehicula convallis nisl, id suscipit dui semper at. In eu iaculis
 					lorem. In vehicula sed mauris et suscipit. Vivamus pellentesque non
 					massa sit amet ornare. Integer placerat est vitae nisl molestie, eget
-					rhoncus erat vulputate. Proin ornare massa eget bibendum faucibus.
-				</p></div></article>
-		<article id="text--blockquotes" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Blockquotes</h2>
-			<div><blockquote><p>Etiam porttitor egestas elit, at venenatis neque accumsan eu. Nulla
+					rhoncus erat vulputate. Proin ornare massa eget bibendum faucibus.</p></div></article> <article id="text--blockquotes" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Blockquotes</h2> <div><blockquote><p>Etiam porttitor egestas elit, at venenatis neque accumsan eu. Nulla
 						viverra odio nisi, quis commodo tellus tristique non. Proin ac ante
 						at orci euismod eleifend. Quisque nisi sapien, dapibus in venenatis
 						sit amet, posuere non purus. In sit amet metus erat. Pellentesque
@@ -51,169 +35,36 @@
 						sagittis, dolor eu bibendum lacinia, orci ex bibendum risus, at
 						tincidunt augue lacus eleifend diam. Nulla facilisis velit ut est
 						auctor sollicitudin. Morbi eget lectus a lacus maximus molestie in
-						ut lorem.
-					</p>
-					<p>Vestibulum ut erat sapien. Duis eros est, tempus a rutrum eu,
+						ut lorem.</p> <p>Vestibulum ut erat sapien. Duis eros est, tempus a rutrum eu,
 						rhoncus at ante. Vestibulum congue vel nunc et dapibus. Ut tristique
 						facilisis orci ac pretium. Nunc et sodales turpis. Nulla pretium
 						augue vitae faucibus tempor. Aliquam convallis mollis feugiat. Ut
 						non pellentesque sem. Suspendisse interdum, neque at hendrerit
 						varius, enim neque imperdiet enim, pellentesque efficitur leo orci
-						non erat.
-					</p>
-					<cite>Said no one, ever.</cite></blockquote></div></article>
-		<article id="text--lists" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Lists</h2>
-			<div><h3>Definition list</h3>
-				<dl><dt>Definition List Title</dt><dd>This is a definition list division.</dd></dl>
-				<h3>Ordered List</h3>
-				<ol><li>List Item 1</li>
-					<li>List Item 2</li>
-					<li>List Item 3
-						<ol><li>Nested Ordered List Item 3.1</li>
-							<li>Nested Ordered List Item 3.2</li>
-							<li>Nested Ordered List Item 3.3</li></ol></li>
-					<li>List Item 4
-						<ul><li>Nested Unordered List Item 4.1</li>
-							<li>Nested Unordered List Item 4.2</li>
-							<li>Nested Unordered List Item 4.3</li></ul></li></ol>
-				<h3>Unordered List</h3>
-				<ul><li>List Item 1</li>
-					<li>List Item 2</li>
-					<li>List Item 3
-						<ol><li>Nested Ordered List Item 3.1</li>
-							<li>Nested Ordered List Item 3.2</li>
-							<li>Nested Ordered List Item 3.3</li></ol></li>
-					<li>List Item 4
-						<ul><li>Nested Unordered List Item 4.1</li>
-							<li>Nested Unordered List Item 4.2</li>
-							<li>Nested Unordered List Item 4.3</li></ul></li></ul></div></article>
-		<article id="text--hr" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Horizontal rules</h2>
-			<div><hr></div></article>
-		<article id="text--tables" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Tabular data</h2>
-			<table><caption>Table Caption</caption>
-				<thead><tr><th>Table Heading 1</th>
-						<th>Table Heading 2</th>
-						<th>Table Heading 3</th>
-						<th>Table Heading 4</th>
-						<th>Table Heading 5</th></tr></thead>
-				<tbody><tr><td>Table Cell 1</td>
-						<td>Table Cell 2</td>
-						<td>Table Cell 3</td>
-						<td>Table Cell 4</td>
-						<td>Table Cell 5</td></tr>
-					<tr><td>Table Cell 1</td>
-						<td>Table Cell 2</td>
-						<td>Table Cell 3</td>
-						<td>Table Cell 4</td>
-						<td>Table Cell 5</td></tr>
-					<tr><td>Table Cell 1</td>
-						<td>Table Cell 2</td>
-						<td>Table Cell 3</td>
-						<td>Table Cell 4</td>
-						<td>Table Cell 5</td></tr>
-					<tr><td>Table Cell 1</td>
-						<td>Table Cell 2</td>
-						<td>Table Cell 3</td>
-						<td>Table Cell 4</td>
-						<td>Table Cell 5</td></tr></tbody></table></article>
-		<article id="text--inline" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Inline elements</h2>
-			<div><a href="./">This is a text link</a>.<br>
-				<strong>Strong is used to indicate strong importance.</strong><br>
-				<em>This text has added emphasis.</em><br>
+						non erat.</p> <cite>Said no one, ever.</cite></blockquote></div></article> <article id="text--lists" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Lists</h2> <div><h3>Definition list</h3> <dl><dt>Definition List Title</dt><dd>This is a definition list division.</dd></dl> <h3>Ordered List</h3> <ol><li>List Item 1</li> <li>List Item 2</li> <li>List Item 3
+						<ol><li>Nested Ordered List Item 3.1</li> <li>Nested Ordered List Item 3.2</li> <li>Nested Ordered List Item 3.3</li></ol></li> <li>List Item 4
+						<ul><li>Nested Unordered List Item 4.1</li> <li>Nested Unordered List Item 4.2</li> <li>Nested Unordered List Item 4.3</li></ul></li></ol> <h3>Unordered List</h3> <ul><li>List Item 1</li> <li>List Item 2</li> <li>List Item 3
+						<ol><li>Nested Ordered List Item 3.1</li> <li>Nested Ordered List Item 3.2</li> <li>Nested Ordered List Item 3.3</li></ol></li> <li>List Item 4
+						<ul><li>Nested Unordered List Item 4.1</li> <li>Nested Unordered List Item 4.2</li> <li>Nested Unordered List Item 4.3</li></ul></li></ul></div></article> <article id="text--hr" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Horizontal rules</h2> <div><hr></div></article> <article id="text--tables" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Tabular data</h2> <table><caption>Table Caption</caption> <thead><tr><th>Table Heading 1</th> <th>Table Heading 2</th> <th>Table Heading 3</th> <th>Table Heading 4</th> <th>Table Heading 5</th></tr></thead> <tbody><tr><td>Table Cell 1</td> <td>Table Cell 2</td> <td>Table Cell 3</td> <td>Table Cell 4</td> <td>Table Cell 5</td></tr> <tr><td>Table Cell 1</td> <td>Table Cell 2</td> <td>Table Cell 3</td> <td>Table Cell 4</td> <td>Table Cell 5</td></tr> <tr><td>Table Cell 1</td> <td>Table Cell 2</td> <td>Table Cell 3</td> <td>Table Cell 4</td> <td>Table Cell 5</td></tr> <tr><td>Table Cell 1</td> <td>Table Cell 2</td> <td>Table Cell 3</td> <td>Table Cell 4</td> <td>Table Cell 5</td></tr></tbody></table></article> <article id="text--inline" class="svelte-p95kjz"><h2 class="svelte-p95kjz">Inline elements</h2> <div><a href="./">This is a text link</a>.<br> <strong>Strong is used to indicate strong importance.</strong><br> <em>This text has added emphasis.</em><br>
 				The <b>b element</b> is stylistically different text from normal text,
 				without any special importance.<br>
 				The <i>i element</i> is text that is offset from the normal text.<br>
 				The <u>u element</u> is text with an unarticulated, though explicitly
-				rendered, non-textual annotation.<br>
-				<del>This text is deleted</del> and <ins>This text is inserted</ins>.<br>
-				<s>This text has a strikethrough</s>.<br>
+				rendered, non-textual annotation.<br> <del>This text is deleted</del> and <ins>This text is inserted</ins>.<br> <s>This text has a strikethrough</s>.<br>
 				Superscript<sup>®</sup>.<br>
-				Subscript for things like H<sub>2</sub>O.<br>
-				<small>This small text is small for for fine print, etc.</small><br>
-				Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr><br>
-				<q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q><br>
-				<cite>This is a citation.</cite><br>
+				Subscript for things like H<sub>2</sub>O.<br> <small>This small text is small for for fine print, etc.</small><br>
+				Abbreviation: <abbr title="HyperText Markup Language">HTML</abbr><br> <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q><br> <cite>This is a citation.</cite><br>
 				The <dfn>dfn element</dfn> indicates a definition.<br>
 				The <mark>mark element</mark> indicates a highlight.<br>
 				The <var>variable element</var>, such as <var>x</var> = <var>y</var>.<br>
 				The time element:
-				<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time><br></div></article></section>
-
-	<section id="forms"><h2>Form elements</h2>
-		<form><fieldset id="forms--input"><legend>Input fields</legend>
-				<p><label for="input--text">Text Input</label>
-					<input id="input--text" type="text" placeholder="Text Input"></p>
-				<p><label for="input--password">Password</label>
-					<input id="input--password" type="password" placeholder="Type your Password"></p>
-				<p><label for="input--webaddress">Web Address</label>
-					<input id="input--webaddress" type="url" placeholder="http://yoursite.com"></p>
-				<p><label for="input--emailaddress">Email Address</label>
-					<input id="input--emailaddress" type="email" placeholder="name@email.com"></p>
-				<p><label for="input--phone">Phone Number</label>
-					<input id="input--phone" type="tel" placeholder="(999) 999-9999"></p>
-				<p><label for="input--search">Search</label>
-					<input id="input--search" type="search" placeholder="Enter Search Term"></p>
-				<p><label for="input--text2">Number Input</label>
-					<input id="input--text2" type="number" placeholder="Enter a Number"></p>
-				<p><label for="input--text3" class="error">Error</label>
-					<input id="input--text3" class="is-error" type="text" placeholder="Text Input"></p>
-				<p><label for="input--text4" class="valid">Valid</label>
-					<input id="input--text4" class="is-valid" type="text" placeholder="Text Input"></p></fieldset>
-
-			<fieldset id="forms--select"><legend>Select menus</legend>
-				<p><label for="select">Select</label>
-					<select id="select"><optgroup label="Option Group"><option value="Option One">Option One</option><option value="Option Two">Option Two</option><option value="Option Three">Option Three</option></optgroup></select></p></fieldset>
-
-			<fieldset id="forms--checkbox"><legend>Checkboxes</legend>
-				<ul class="list list--bare"><li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
-					<li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
-					<li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li></ul></fieldset>
-
-			<fieldset id="forms--radio"><legend>Radio buttons</legend>
-				<ul class="list list--bare"><li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li>
-					<li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option
-							2</label></li>
-					<li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option
-							3</label></li></ul></fieldset>
-
-			<fieldset id="forms--textareas"><legend>Textareas</legend>
-				<p><label for="textarea">Textarea</label>
-					<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea></p></fieldset>
-
-			<fieldset id="forms--html5"><legend>HTML5 inputs</legend>
-				<p><label for="ic">Color input</label>
-					<input type="color" id="ic" value="#000000"></p>
-				<p><label for="in">Number input</label>
-					<input type="number" id="in" min="0" max="10" value="5"></p>
-				<p><label for="ir">Range input</label>
-					<input type="range" id="ir" value="10"></p>
-				<p><label for="idd">Date input</label>
-					<input type="date" id="idd" value="1970-01-01"></p>
-				<p><label for="idm">Month input</label>
-					<input type="month" id="idm" value="1970-01"></p>
-				<p><label for="idw">Week input</label>
-					<input type="week" id="idw" value="1970-W01"></p>
-				<p><label for="idt">Datetime input</label>
-					<input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></p>
-				<p><label for="idtl">Datetime-local input</label>
-					<input type="datetime-local" id="idtl" value="1970-01-01T00:00"></p></fieldset>
-
-			<fieldset id="forms--action"><legend>Action buttons</legend>
-				<p><input type="submit" value="<input type=submit>">
-					<input type="button" value="<input type=button>">
-					<input type="reset" value="<input type=reset>">
-					<input type="submit" value="<input disabled>" disabled="true"></p>
-				<p><button type="submit">&lt;button type=submit&gt;</button>
-					<button type="button">&lt;button type=button&gt;</button>
-					<button type="reset">&lt;button type=reset&gt;</button>
-					<button type="button" disabled="true">&lt;button disabled&gt;</button></p></fieldset></form></section>
-</div></main>
-
-
+				<time datetime="2013-04-06T12:32+00:00">2 weeks ago</time><br></div></article></section> <section id="forms"><h2 data-svelte-h="svelte-kz9iaz">Form elements</h2> <form><fieldset id="forms--input" data-svelte-h="svelte-kenk8p"><legend>Input fields</legend> <p><label for="input--text">Text Input</label> <input id="input--text" type="text" placeholder="Text Input"></p> <p><label for="input--password">Password</label> <input id="input--password" type="password" placeholder="Type your Password"></p> <p><label for="input--webaddress">Web Address</label> <input id="input--webaddress" type="url" placeholder="http://yoursite.com"></p> <p><label for="input--emailaddress">Email Address</label> <input id="input--emailaddress" type="email" placeholder="name@email.com"></p> <p><label for="input--phone">Phone Number</label> <input id="input--phone" type="tel" placeholder="(999) 999-9999"></p> <p><label for="input--search">Search</label> <input id="input--search" type="search" placeholder="Enter Search Term"></p> <p><label for="input--text2">Number Input</label> <input id="input--text2" type="number" placeholder="Enter a Number"></p> <p><label for="input--text3" class="error">Error</label> <input id="input--text3" class="is-error" type="text" placeholder="Text Input"></p> <p><label for="input--text4" class="valid">Valid</label> <input id="input--text4" class="is-valid" type="text" placeholder="Text Input"></p></fieldset> <fieldset id="forms--select"><legend data-svelte-h="svelte-1fu9lso">Select menus</legend> <p><label for="select" data-svelte-h="svelte-r1thhe">Select</label> <select id="select"><optgroup label="Option Group"><option value="Option One" data-svelte-h="svelte-1j6lw4l">Option One</option><option value="Option Two" data-svelte-h="svelte-w9qigz">Option Two</option><option value="Option Three" data-svelte-h="svelte-4r9hc9">Option Three</option></optgroup></select></p></fieldset> <fieldset id="forms--checkbox" data-svelte-h="svelte-1kvyi7v"><legend>Checkboxes</legend> <ul class="list list--bare"><li><label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li> <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li> <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li></ul></fieldset> <fieldset id="forms--radio" data-svelte-h="svelte-8pf50y"><legend>Radio buttons</legend> <ul class="list list--bare"><li><label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked"> Option 1</label></li> <li><label for="radio2"><input id="radio2" name="radio" type="radio" class="radio"> Option
+							2</label></li> <li><label for="radio3"><input id="radio3" name="radio" type="radio" class="radio"> Option
+							3</label></li></ul></fieldset> <fieldset id="forms--textareas" data-svelte-h="svelte-1d19v2n"><legend>Textareas</legend> <p><label for="textarea">Textarea</label> <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea></p></fieldset> <fieldset id="forms--html5" data-svelte-h="svelte-1nlncai"><legend>HTML5 inputs</legend> <p><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></p> <p><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></p> <p><label for="ir">Range input</label> <input type="range" id="ir" value="10"></p> <p><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></p> <p><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></p> <p><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></p> <p><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></p> <p><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></p></fieldset> <fieldset id="forms--action" data-svelte-h="svelte-qmp368"><legend>Action buttons</legend> <p><input type="submit" value="<input type=submit>"> <input type="button" value="<input type=button>"> <input type="reset" value="<input type=reset>"> <input type="submit" value="<input disabled>" disabled="true"></p> <p><button type="submit">&lt;button type=submit&gt;</button> <button type="button">&lt;button type=button&gt;</button> <button type="reset">&lt;button type=reset&gt;</button> <button type="button" disabled="true">&lt;button disabled&gt;</button></p></fieldset></form></section> </div></main> 
 			
 			<script>
 				{
-					__sveltekit_1guj5yq = {
+					__sveltekit_1eg7e5y = {
 						base: new URL("../..", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -223,8 +74,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../../_app/immutable/entry/start.bd7aa974.js"),
-						import("../../_app/immutable/entry/app.161277b5.js")
+						import("../../_app/immutable/entry/start.f0507df9.js"),
+						import("../../_app/immutable/entry/app.c63758d3.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 3],
