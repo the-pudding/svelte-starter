@@ -171,6 +171,7 @@ Located in `src/utils/`.
 // Usage
 import example from "$utils/example.js";
 ```
+* `checkScrollDir.js`: Gets the user's scroll direction ("up" or "down")
 * `csvDownload.js`: Converts a flat array of data to CSV content ready to be used as an `href` value for download.
 * `generateId.js`: Generate an alphanumeric id.
 * `loadCsv.js`: Loads and parses a CSV file.
