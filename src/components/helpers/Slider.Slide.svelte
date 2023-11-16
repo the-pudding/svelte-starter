@@ -12,6 +12,7 @@
 </script>
 
 <div
+	id="slide-{index}"
 	class="slide"
 	class:visible
 	style:width
