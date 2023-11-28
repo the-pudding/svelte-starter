@@ -1,5 +1,5 @@
 <script>
-	import { DollarSign } from "lucide-svelte";
+	import DollarSign from "lucide-svelte/icons/dollar-sign";
 	export let text = "Tip";
 	export let href;
 </script>

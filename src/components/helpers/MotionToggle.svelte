@@ -2,7 +2,8 @@
 	<MotionToggle bind:value />
  -->
 <script>
-	import { PlayCircle, PauseCircle } from "lucide-svelte";
+	import PlayCircle from "lucide-svelte/icons/play-circle";
+	import PauseCircle from "lucide-svelte/icons/pause-circle";
 	import { browser } from "$app/environment";
 	import reducedMotion from "$stores/reducedMotion.js";
 	import mq from "$stores/mq.js";
