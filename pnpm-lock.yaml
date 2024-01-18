@@ -9,11 +9,14 @@ devDependencies:
     specifier: ^3.0.4
     version: 3.0.4(rollup@4.9.5)
   '@sveltejs/adapter-static':
-    specifier: 3.0.1
+    specifier: ^3.0.1
     version: 3.0.1(@sveltejs/kit@2.3.5)
   '@sveltejs/kit':
-    specifier: 2.3.5
+    specifier: ^2.3.5
     version: 2.3.5(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.9)(vite@5.0.11)
+  '@sveltejs/vite-plugin-svelte':
+    specifier: 3.0.1
+    version: 3.0.1(svelte@4.2.9)(vite@5.0.11)
   archieml:
     specifier: ^0.5.0
     version: 0.5.0
