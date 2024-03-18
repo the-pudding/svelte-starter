@@ -114,6 +114,7 @@ import Example from "$components/helpers/Example.svelte";
 * `MotionToggle.svelte`: A toggle button to enable/disable front-end user motion preference.
 * `Range.svelte`: Customizable range slider.
 * `Scrolly.svelte`: Scrollytelling.
+* `ShareLink.svelte`: Button to share link natively/copy to clipboard.
 * `SortTable.svelte`: Sortable semantic table with customizable props.
 * `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
 * `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
