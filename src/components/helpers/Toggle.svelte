@@ -2,9 +2,9 @@
 	export let label;
 	export let style = "inner";
 	export let options = ["on", "off"];
-	export let value = options[0];
+	export let value;
 
-	let checked = value === options[0];
+	$: checked = value === options[0].value;
 
 	const id = `toggle-${Math.floor(Math.random() * 1000000)}`;
 
@@ -12,7 +12,7 @@
 		const target = event.target;
 		const state = target.getAttribute("aria-checked");
 		checked = state === "true" ? false : true;
-		value = checked ? options[0] : options[1];
+		value = checked ? options[0].value : options[1].value;
 	};
 </script>
 
@@ -25,8 +25,8 @@
 		on:click={handleClick}
 	>
 		{#if style === "inner"}
-			<span>{options[0]}</span>
-			<span>{options[1]}</span>
+			<span>{options[0].text}</span>
+			<span>{options[1].text}</span>
 		{/if}
 	</button>
 </div>
