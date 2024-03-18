@@ -9,8 +9,9 @@ const queries = {
 	"60rem": "(min-width: 60rem)",
 	"70rem": "(min-width: 70rem)",
 	"80rem": "(min-width: 80rem)",
-	"reducedMotion": "(prefers-reduced-motion: reduce)",
-	"desktop": "(hover: hover) and (pointer: fine)"
+	reducedMotion: "(prefers-reduced-motion: reduce)",
+	colorSchemeDark: "(prefers-color-scheme: dark)",
+	desktop: "(hover: hover) and (pointer: fine)"
 };
 
 function calculateMedia(mqls) {
