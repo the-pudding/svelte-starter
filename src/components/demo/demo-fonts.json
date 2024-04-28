@@ -1,87 +1,92 @@
-	[
-		{
-			"id": "atkinson",
-			"family": "Atkinson",
-			"type": "sans-serif"
-		},
-		{
-			"id": "atlas",
-			"family": "Atlas Grotesk",
-			"type": "sans-serif"
-		},
-		{
-			"id": "baloo-bhai",
-			"family": "Baloo Bhai",
-			"type": "sans-serif"
-		},
-		{
-			"id": "canela",
-			"family": "Canela",
-			"type": "serif"
-		},
-		{
-			"id": "computer-modern",
-			"family": "Computer Modern",
-			"type": "serif"
-		},
-		{
-			"id": "cozette",
-			"family": "Cozette",
-			"type": "other"
-		},
-		{
-			"id": "inter",
-			"family": "Inter",
-			"type": "sans-serif"
-		},
-		{
-			"id": "jamboree",
-			"family": "Jamboree",
-			"type": "other"
-		},
-		{
-			"id": "jersey",
-			"family": "Jersey M54",
-			"type": "other"
-		},
-		{
-			"id": "lyon",
-			"family": "Lyon Display",
-			"type": "serif"
-		},
-		{
-			"id": "metropolis",
-			"family": "Metropolis",
-			"type": "sans-serif"
-		},
-		{
-			"id": "national",
-			"family": "National 2 Web",
-			"type": "sans-serif"
-		},
-		{
-			"id": "publico",
-			"family": "Publico Text",
-			"type": "serif"
-		},
-		{
-			"id": "recoleta",
-			"family": "Recoleta",
-			"type": "serif"
-		},
-		{
-			"id": "rubik",
-			"family": "Rubik",
-			"type": "sans-serif"
-		},
-		{
-			"id": "spacemono",
-			"family": "Space Mono",
-			"type": "mono"
-		},
-		{
-			"id": "tiempos",
-			"family": "Tiempos Text",
-			"type": "serif"
-		}
-	]
+[
+	{
+		"id": "atkinson",
+		"family": "Atkinson",
+		"type": "sans-serif"
+	},
+	{
+		"id": "atlas",
+		"family": "Atlas Grotesk",
+		"type": "sans-serif"
+	},
+	{
+		"id": "baloo-bhai",
+		"family": "Baloo Bhai",
+		"type": "sans-serif"
+	},
+	{
+		"id": "canela",
+		"family": "Canela",
+		"type": "serif"
+	},
+	{
+		"id": "computer-modern",
+		"family": "Computer Modern",
+		"type": "serif"
+	},
+	{
+		"id": "cozette",
+		"family": "Cozette",
+		"type": "other"
+	},
+	{
+		"id": "inter",
+		"family": "Inter",
+		"type": "sans-serif"
+	},
+	{
+		"id": "jamboree",
+		"family": "Jamboree",
+		"type": "other"
+	},
+	{
+		"id": "jersey",
+		"family": "Jersey M54",
+		"type": "other"
+	},
+	{
+		"id": "lyon",
+		"family": "Lyon Display",
+		"type": "serif"
+	},
+	{
+		"id": "metropolis",
+		"family": "Metropolis",
+		"type": "sans-serif"
+	},
+	{
+		"id": "national",
+		"family": "National 2 Web",
+		"type": "sans-serif"
+	},
+	{
+		"id": "publico",
+		"family": "Publico Text",
+		"type": "serif"
+	},
+	{
+		"id": "recoleta",
+		"family": "Recoleta",
+		"type": "serif"
+	},
+	{
+		"id": "rubik",
+		"family": "Rubik",
+		"type": "sans-serif"
+	},
+	{
+		"id": "inconsolata",
+		"family": "Inconsolata",
+		"type": "mono"
+	},
+	{
+		"id": "spacemono",
+		"family": "Space Mono",
+		"type": "mono"
+	},
+	{
+		"id": "tiempos",
+		"family": "Tiempos Text",
+		"type": "serif"
+	}
+]
