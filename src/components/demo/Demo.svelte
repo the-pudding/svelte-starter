@@ -6,7 +6,7 @@
 	import DemoSelect from "$components/demo/Demo.Select.svelte";
 	import DemoToggle from "$components/demo/Demo.Toggle.svelte";
 	import DemoSortTable from "$components/demo/Demo.SortTable.svelte";
-	import DemoLayerCake from "$components/demo/Demo.LayerCake.svelte";
+	// import DemoLayerCake from "$components/demo/Demo.LayerCake.svelte";
 	import DemoSvelteElement from "$components/demo/Demo.SvelteElement.svelte";
 	import DemoSvelteComponent from "$components/demo/Demo.SvelteComponent.svelte";
 	import DemoFigure from "$components/demo/Demo.Figure.svelte";
@@ -18,12 +18,12 @@
 	<h1>Demo</h1>
 	<DemoLink />
 	<DemoImg />
-	<DemoButtonSet />
-	<DemoRange />
-	<DemoSelect />
-	<DemoToggle />
-	<DemoSortTable />
-	<DemoLayerCake />
+	<!-- <DemoButtonSet /> -->
+	<!-- <DemoRange /> -->
+	<!-- <DemoSelect /> -->
+	<!-- <DemoToggle /> -->
+	<!-- <DemoSortTable /> -->
+	<!-- <DemoLayerCake /> -->
 	<DemoSvelteElement />
 	<DemoSvelteComponent />
 	<DemoTip />

@@ -1,7 +1,6 @@
-/* National */
 @font-face {
-	font-family: "National 2 Web";
-	src: url("https://pudding.cool/assets/fonts/national/National2Web-Regular.woff2") format("woff2");
+	font-family: "Atlas Grotesk";
+	src: url("https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Regular-Web.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
 	font-stretch: normal;
@@ -9,17 +8,16 @@
 }
 
 @font-face {
-	font-family: "National 2 Web";
-	src: url("https://pudding.cool/assets/fonts/national/National2Web-Bold.woff2") format("woff2");
+	font-family: "Atlas Grotesk";
+	src: url("https://pudding.cool/assets/fonts/atlas/AtlasGrotesk-Bold-Web.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
 	font-display: swap;
 }
 
-/* Tiempos Text */
 @font-face {
-	font-family: "Tiempos Text Web";
+	font-family: "Tiempos Text";
 	src: url("https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Regular.woff2") format("woff2");
 	font-weight: 400;
 	font-style: normal;
@@ -28,7 +26,7 @@
 }
 
 @font-face {
-	font-family: "Tiempos Text Web";
+	font-family: "Tiempos Text";
 	src: url("https://pudding.cool/assets/fonts/tiempos/TiemposTextWeb-Bold.woff2") format("woff2");
 	font-weight: 700;
 	font-style: normal;

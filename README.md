@@ -123,9 +123,15 @@ import Example from "$components/helpers/Example.svelte";
 * `Toggle.svelte`: Accessible toggle inputs.
 * `WIP.svelte`: A sticky banner saying this project is a WIP.
 
+### Headless Components
+
+[bits UI](https://www.bits-ui.com/docs/introduction) comes pre-installed. It is recommended to use these for any UI components.
+
 ### Layercake Chart Components
 
 Starter templates for various chart types to be used with [LayerCake](https://layercake.graphics/). Located in `src/components/layercake`.
+
+*Note:* You must install the module `layercake` first.
 
 ```js
 // Usage
