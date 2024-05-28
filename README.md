@@ -194,3 +194,19 @@ import example from "$utils/example.js";
 * `translate.js`: Convenience function for transform translate css.
 * `urlParams.js`: Get and set url parameters.
 
+## Tips
+
+### Image asset paths
+For `img` tags, use relative paths:
+
+```html
+<img src="assets/demo/test.jpg" alt="cat" />
+```
+
+For CSS background images, use absolute paths:
+
+```css
+background: url("/assets/demo/test.jpg");
+```
+
+View example code in the preloaded demo.
