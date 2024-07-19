@@ -1,4 +1,5 @@
 <script>
+	// shadow, plain, line, bubble
 	import wordmark from "$svg/wordmark-shadow.svg";
 </script>
 
