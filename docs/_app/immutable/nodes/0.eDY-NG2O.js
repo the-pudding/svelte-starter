@@ -1,29 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
-		<link href="../../_app/immutable/assets/0.BHTdSFrO.css" rel="stylesheet">
-		<link href="../../_app/immutable/assets/5.BMf-RGIR.css" rel="stylesheet">
-		<link rel="modulepreload" href="../../_app/immutable/entry/start.C-tmjArg.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/entry.QAgDeb16.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/scheduler.XHF0m71J.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/index.7PtJxCfh.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/paths.BT9FVO0_.js">
-		<link rel="modulepreload" href="../../_app/immutable/entry/app.BLiaY7jk.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/index.-mklun6F.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/0.eDY-NG2O.js">
-		<link rel="modulepreload" href="../../_app/immutable/nodes/5.C0O1iGFh.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/each.D6YF6ztN.js">
-		<link rel="modulepreload" href="../../_app/immutable/chunks/Icon.CrdZHELw.js">
-</head>
-
-<body>
-	<a href="#content" class="skip-to-main">Skip to main content</a>
-	<div>  <header><div class="wordmark svelte-1h2hjst"><a href="https://pudding.cool" aria-label="The Pudding" target="_self" class="svelte-1h2hjst"><!-- HTML_TAG_START --><svg width="201" height="49" viewBox="0 0 201 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+import{s as Z,e as f,X as H,c as d,a as c,Y as g,d as o,m as h,i as u,f as m,n as p,M as $,j as v,l as b,R as L,S as k,T as y}from"../chunks/scheduler.XHF0m71J.js";import{S as V,i as w,c as E,a as S,m as j,t as _,b as M,d as T}from"../chunks/index.-mklun6F.js";const A=!0,D="always",B=Object.freeze(Object.defineProperty({__proto__:null,prerender:A,trailingSlash:D},Symbol.toStringTag,{value:"Module"})),I=`<svg width="201" height="49" viewBox="0 0 201 49" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M135.14 20.83V20.7C135.35 15.87 130.62 16.21 130.96 20.9C130.65 25.56 135.54 25.46 135.14 20.83Z" fill="black"/>
 <path d="M115.78 20.76V20.63C115.66 19.64 115.61 18.26 114.72 17.59C113.88 16.96 112.53 17.28 112.11 18.18C111.23 19.94 110.95 24.19 113.74 24.3C115.53 24.4 115.84 21.9 115.78 20.76Z" fill="black"/>
 <path d="M74.11 12.16C72.84 12.45 72.54 14.46 72.59 15.47V15.59C72.65 16.63 72.88 18.49 74.24 18.65C77.26 19.15 77.15 11.69 74.11 12.17V12.16Z" fill="black"/>
@@ -43,33 +18,4 @@
 <path d="M122.75 18.46C122.65 14.89 122.55 10.74 122.35 7.08999C122.28 6.32999 122.09 5.47999 121.44 5.04999C120.95 4.71999 120.32 4.63999 119.72 4.60999C118.25 4.59999 116.32 4.40999 115.74 5.60999C115.3 6.44999 115.47 7.49999 115.2 8.37999C114.89 9.60999 113.76 9.99999 112.59 10.19C111.08 10.43 109.59 11.03 108.4 12.03C101.79 17.1 104.32 39.06 114.53 29.96C115.42 29.19 116.56 29.25 117.12 30.36C117.53 31.14 118.15 31.77 119.07 31.88C120.84 32.18 122.73 31.86 122.85 30.03C123.07 26.25 122.78 22.39 122.76 18.64V18.46H122.75ZM113.73 24.3C110.93 24.19 111.22 19.94 112.1 18.18C112.53 17.29 113.87 16.96 114.71 17.59C115.6 18.26 115.66 19.65 115.77 20.63V20.76C115.83 21.9 115.53 24.4 113.73 24.3Z" fill="white"/>
 <path d="M103.33 20.62C103.33 18.48 103.3 15.97 103.26 13.62C103.24 12.83 103.24 11.93 102.79 11.27C102.24 10.41 100.97 10.4 99.83 10.41C98.71 10.46 97.18 10.23 96.31 10.88C95.72 11.34 95.62 12.19 95.59 12.92C95.54 15.6 95.65 18.33 95.56 21.01C95.51 21.81 95.34 22.9 94.53 23.23C91.74 24 93.24 14.68 92.88 12.85C92.94 10.49 91.02 10.33 88.94 10.43C86.58 10.33 85.08 10.66 85.25 13.43C85.25 18.45 84.39 23.68 85.77 28.5C86.46 31.71 90.33 33.38 93.13 31.65C94.13 31.14 94.93 30.01 96.08 29.89C96.59 29.86 97.03 30.19 97.44 30.63C98.16 31.52 99.05 32.01 100.2 31.99C102.04 32.15 103.39 31.45 103.36 29.57C103.43 26.64 103.32 23.7 103.33 20.8V20.62Z" fill="white"/>
 </svg>
-<!-- HTML_TAG_END --></a></div> </header> <main id="content"><div class="chapters svelte-s3rw5i"> <div class="chapter svelte-s3rw5i active"><span class="text svelte-s3rw5i">1<span class="title svelte-s3rw5i">— Intro</span></span>  <div class="block svelte-s3rw5i active"></div> </div> <div class="chapter svelte-s3rw5i"><span class="text svelte-s3rw5i">2<span class="title svelte-s3rw5i">— Middle</span></span> <div class="block svelte-s3rw5i"></div> </div> <div class="chapter svelte-s3rw5i"><span class="text svelte-s3rw5i">3<span class="title svelte-s3rw5i">— Outro</span></span> <div class="block svelte-s3rw5i"></div> </div> </div> <article class="svelte-1myyodm">  <section aria-label="carousel" class="slider horizontal svelte-1ceqw5z"><div class="slides svelte-1ceqw5z" style="width: NaNpx; height: 100%; transform: translate3d(NaNpx, 0, 0); transition-duration: 0; transition-timing-function: ease;"><div id="slide-0" class="slide svelte-1h814z3 visible" role="group" aria-label="slide 1 of undefined" aria-current="true" style="width: undefinedpx; height: 100%;"><h1 class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->title<!-- HTML_TAG_END --> </h1><p class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->welcome<!-- HTML_TAG_END --> </p>  </div><div id="slide-1" class="slide svelte-1h814z3" role="group" aria-label="slide 2 of undefined" aria-current="false" style="width: undefinedpx; height: 100%;"><p class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->the quick brown<!-- HTML_TAG_END --> </p><p class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->the quick brown<!-- HTML_TAG_END --> </p><p class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->the quick brown<!-- HTML_TAG_END --> </p>  </div><div id="slide-2" class="slide svelte-1h814z3" role="group" aria-label="slide 3 of undefined" aria-current="false" style="width: undefinedpx; height: 100%;"><p class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->fox jumps over<!-- HTML_TAG_END --> </p><p class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->fox jumps over<!-- HTML_TAG_END --> </p>  </div><div id="slide-3" class="slide svelte-1h814z3" role="group" aria-label="slide 4 of undefined" aria-current="false" style="width: undefinedpx; height: 100%;"><p class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->the lazy dog<!-- HTML_TAG_END --> </p>  </div><div id="slide-4" class="slide svelte-1h814z3" role="group" aria-label="slide 5 of undefined" aria-current="false" style="width: undefinedpx; height: 100%;"><h2 class="slide-content svelte-1myyodm"><!-- HTML_TAG_START -->the end.<!-- HTML_TAG_END --> </h2>  </div></div> </section></article> <figure style="--offset: undefinedpx; --buffer: 2rem" class="svelte-4vfsg0">visual goes here
-</figure>  <section style="height: undefinedpx;" class="svelte-jjzds"><button style="width: 100%; height: 100%;" aria-label="right" class="right center svelte-jjzds full" > </button> </section></main> 
-			
-			<script>
-				{
-					__sveltekit_4fdnsh = {
-						base: new URL("../..", location).pathname.slice(0, -1)
-					};
-
-					const element = document.currentScript.parentElement;
-
-					const data = [null,null];
-
-					Promise.all([
-						import("../../_app/immutable/entry/start.C-tmjArg.js"),
-						import("../../_app/immutable/entry/app.BLiaY7jk.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element, {
-							node_ids: [0, 5],
-							data,
-							form: null,
-							error: null
-						});
-					});
-				}
-			</script>
-		</div>
-</body>
-
-</html>
+`;function O(r){let t,s,e,l;return{c(){t=f("header"),s=f("div"),e=f("a"),l=new H(!1),this.h()},l(i){t=d(i,"HEADER",{});var a=c(t);s=d(a,"DIV",{class:!0});var C=c(s);e=d(C,"A",{href:!0,"aria-label":!0,target:!0,class:!0});var n=c(e);l=g(n,!1),n.forEach(o),C.forEach(o),a.forEach(o),this.h()},h(){l.a=null,h(e,"href","https://pudding.cool"),h(e,"aria-label","The Pudding"),h(e,"target","_self"),h(e,"class","svelte-1h2hjst"),h(s,"class","wordmark svelte-1h2hjst")},m(i,a){u(i,t,a),m(t,s),m(s,e),l.m(I,e)},p,i:p,o:p,d(i){i&&o(t)}}}class P extends V{constructor(t){super(),w(this,t,null,O,Z,{})}}function R(r){let t,s,e,l;t=new P({});const i=r[1].default,a=$(i,r,r[0],null);return{c(){E(t.$$.fragment),s=v(),e=f("main"),a&&a.c(),this.h()},l(C){S(t.$$.fragment,C),s=b(C),e=d(C,"MAIN",{id:!0});var n=c(e);a&&a.l(n),n.forEach(o),this.h()},h(){h(e,"id","content")},m(C,n){j(t,C,n),u(C,s,n),u(C,e,n),a&&a.m(e,null),l=!0},p(C,[n]){a&&a.p&&(!l||n&1)&&L(a,i,C,C[0],l?y(i,C[0],n,null):k(C[0]),null)},i(C){l||(_(t.$$.fragment,C),_(a,C),l=!0)},o(C){M(t.$$.fragment,C),M(a,C),l=!1},d(C){C&&(o(s),o(e)),T(t,C),a&&a.d(C)}}}function q(r,t,s){let{$$slots:e={},$$scope:l}=t;return r.$$set=i=>{"$$scope"in i&&s(0,l=i.$$scope)},[l,e]}class N extends V{constructor(t){super(),w(this,t,q,R,Z,{})}}export{N as component,B as universal};
