@@ -13,9 +13,10 @@
 
 <style>
 	.wordmark {
-		max-width: 10em;
+		max-width: 14em;
 		margin: 0 auto;
-		padding: 1em 0;
+		padding: 32px 0;
+		transform: rotate(-4deg);
 	}
 
 	.wordmark a {
