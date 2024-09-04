@@ -23,7 +23,7 @@
 				{:else if type === "text"}
 					<p>{@html value}</p>
 				{:else}
-					<svelte:element this={type} {...value.attributes}
+					<svelte:element this={type} {...value}
 						>{#if typeof value === "string"}{@html value}{/if}</svelte:element
 					>
 				{/if}
