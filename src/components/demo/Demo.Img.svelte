@@ -3,7 +3,7 @@
 	<p>img tag</p>
 	<img src="assets/demo/test.jpg" alt="cat" />
 	<p>background image</p>
-	<div />
+	<div class="bg"></div>
 </section>
 
 <style>
@@ -11,7 +11,7 @@
 		width: 128px;
 	}
 
-	div {
+	.bg {
 		width: 128px;
 		height: 128px;
 		background: url("/assets/demo/test.jpg");
