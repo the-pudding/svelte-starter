@@ -1,0 +1,19 @@
+[body]
+
+section: intro
+[.+content]
+h4: An h4 element with no attributes
+
+Some random text here, followed by an img tag.
+
+{.img}
+src: assets/demo/test.jpg
+alt: A cat
+{}
+
+{.Test}
+label: I’m a custom component!
+value: 50
+{}
+
+[]

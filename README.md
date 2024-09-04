@@ -109,10 +109,10 @@ import Example from "$components/helpers/Example.svelte";
 
 * `ButtonSet.svelte`: Accessible button group inputs.
 * `Chunk.svelte`: Split text into smaller dom element chunks.
-* `CMS.svelte`: Rendering template for Google Docs-driven CMS.
 * `Countdown.svelte`: Countdown timer text.
 * `DarkModeToggle.svelte`: A toggle button for dark mode.
 * `Figure.svelte`: A barebones chart figure component to handle slots.
+* `MicroCMS.svelte`: Rendering template for Google Docs-driven CMS.
 * `MotionToggle.svelte`: A toggle button to enable/disable front-end user motion preference.
 * `Range.svelte`: Customizable range slider.
 * `Scrolly.svelte`: Scrollytelling.
