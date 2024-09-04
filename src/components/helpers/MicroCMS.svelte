@@ -6,7 +6,7 @@
 </script>
 
 {#each body as { section, content }}
-	{@const id = section.toLowerCase()}
+	{@const id = section.toLowerCase().replace(/[^a-z0-9]/g, "")}
 	{@const component = components[section]}
 	<section {id}>
 		{#if component}
