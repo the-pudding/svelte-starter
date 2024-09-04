@@ -1,7 +1,7 @@
 <section id="demo-image">
 	<h2>Image</h2>
 	<p>img tag</p>
-	<img src="assets/demo/test.jpg" alt="cat" />
+	<img src="../assets/demo/test.jpg" alt="cat" />
 	<p>background image</p>
 	<div />
 </section>
