@@ -1,23 +1,13 @@
-
 body {
 	background-color: var(--color-bg, white);
 	color: var(--color-fg, black);
-	line-height: 1.4;
 	font-family: var(--font-body, serif);
+	line-height: 1.5;
 	font-feature-settings: 'kern' 1, 'onum' 0, 'liga' 0, 'tnum' 1;
 	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
 	word-wrap: break-word;
 	-webkit-tap-highlight-color: transparent;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	margin: 16px 0;
 }
 
 mark {
@@ -31,23 +21,30 @@ a {
 }
 
 
-img,
-video {
-	display: block;
-	max-width: 100%;
-	height: auto;
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
 
-input, textarea {
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+	margin: 16px 0;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), textarea {
 	-webkit-appearance: none;
 	appearance: none;
-	background-color: var(--color-input-bg, whitesmoke);
+	background-color: var(--color-input-bg, lightgray);
 	color: var(--color-input-fg, black);
 	border-radius: var(--border-radius, 0);
 	border: none;
 	font-family: var(--font-form, sans-serif);
 	font-size: inherit;
-	outline: 1px solid var(--color-border, ray);
+	outline: 1px solid var(--color-border, gray);
 	padding: 8px;
 }
 

@@ -1,7 +1,7 @@
 @import "variables.css";
 @import "normalize.css";
 @import "font.css";
-@import "reset.css";
+@import "pudding-reset.css";
 
 /* colors defined in variables.css */
 :root {
@@ -70,6 +70,7 @@
 
 h1 {
 	font-size: var(--48px, 48px);
+	
 }
 
 h2 {
@@ -90,4 +91,8 @@ h5 {
 
 h6 {
 	font-size: var(--20px, 20px);
+}
+
+p {
+	font-size: var(--16px, 16px);
 }
