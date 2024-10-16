@@ -1,4 +1,5 @@
-<script>
+<!-- TODO: wait for svelte5 support -->
+<!-- <script>
 	import { copy } from "svelte-copy";
 
 	export let buttonText = "Share";
@@ -29,4 +30,4 @@
 
 <button use:copy={url} on:svelte-copy={onCopy} class:notified>
 	{notified ? notifyText : buttonText}
-</button>
+</button> -->

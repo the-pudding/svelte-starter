@@ -6,7 +6,7 @@
 	import copy from "$data/copy.json";
 	import version from "$utils/version.js";
 
-	export let data;
+	let { data } = $props();
 
 	version();
 

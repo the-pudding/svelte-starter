@@ -2,8 +2,8 @@
 	import { groups, descending } from "d3";
 	import Sample from "$components/demo/Demo.Fonts.Sample.svelte";
 	import fontData from "$components/demo/demo-fonts.json";
-	let size = 18;
-	let text = "The quick brown fox jumps over the lazy dog.";
+	let { size = 18, text = "The quick brown fox jumps over the lazy dog." } =
+		$props();
 
 	const grouped = groups(fontData, (d) => d.type);
 	grouped.sort((a, b) => descending(a[1].length, b[1].length));

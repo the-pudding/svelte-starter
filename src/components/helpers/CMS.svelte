@@ -1,31 +1,30 @@
 <script>
-	// an object of components that map to section names (e.g., { "Hero": Hero }) where Hero is a Svelte component
-	export let components = {};
-	// an array of objects that contain a section name and content (either an array of object)
-	export let body = [];
+	// components: an object of components that map to section names (e.g., { "Hero": Hero }) where Hero is a Svelte component
+	// body: an array of objects that contain a {section, content} obj
+	let { components, body } = $props();
 </script>
 
 {#each body as { section, content }}
-	{@const id = section.toLowerCase()}
-	{@const component = components[section]}
+	<!-- replace all non alpha numeric characters with "" -->
+	{@const id = section.toLowerCase().replace(/[^a-z0-9]/g, "")}
+	{@const C = components[section]}
 	<section {id}>
-		{#if component}
-			<svelte:component this={component} {...content}></svelte:component>
+		{#if C}
+			<C {...content} />
 		{:else}
 			{#each content as { type, value }}
-				{@const component = components[value?.name]}
-				{#if type === "component"}
-					{#if component}
-						<svelte:component this={component} {...value}></svelte:component>
-					{:else}
-						<p>Missing component: {value?.name}</p>
-					{/if}
+				{@const C = components[type]}
+				{@const isString = typeof value === "string"}
+				{#if C}
+					<C {...value} />
 				{:else if type === "text"}
 					<p>{@html value}</p>
+				{:else if isString}
+					<svelte:element this={type}>
+						{@html value}
+					</svelte:element>
 				{:else}
-					<svelte:element this={type} {...value.attributes}
-						>{#if typeof value === "string"}{@html value}{/if}</svelte:element
-					>
+					<svelte:element this={type} {...value}></svelte:element>
 				{/if}
 			{/each}
 		{/if}

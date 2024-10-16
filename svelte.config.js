@@ -12,7 +12,7 @@ const preprocess = sveltePreprocess({
 
 const config = {
 	compilerOptions: {
-		runes: false
+		runes: true
 	},
 	preprocess,
 	kit: {

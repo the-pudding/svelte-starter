@@ -18,6 +18,7 @@
 <section id="demo-component">
 	<h2>Dynamic Svelte Component</h2>
 	{#each data as d}
-		<svelte:component this={components[d.component]} {...d} />
+		{@const C = components[d.component]}
+		<C {...d} />
 	{/each}
 </section>

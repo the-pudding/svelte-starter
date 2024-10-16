@@ -1,11 +1,11 @@
 <script>
 	import Scrolly from "$components/helpers/Scrolly.svelte";
-	let value;
+	let value = $state();
 </script>
 
 <section id="scrolly">
-	<h2>Scrolly <span>{value}</span></h2>
-	<div class="spacer" />
+	<h2>Scrolly <span>{value || "-"}</span></h2>
+	<div class="spacer"></div>
 	<Scrolly bind:value>
 		{#each [0, 1, 2, 3, 4] as text, i}
 			{@const active = value === i}
@@ -14,7 +14,7 @@
 			</div>
 		{/each}
 	</Scrolly>
-	<div class="spacer" />
+	<div class="spacer"></div>
 </section>
 
 <style>

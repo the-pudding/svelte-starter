@@ -1,9 +1,11 @@
 <script>
-	export let title = "Title TK";
-	export let description = "Description TK";
-	export let url = "https://pudding.cool";
-	export let keywords = "";
-	export let preloadFont = [];
+	let {
+		title = "Title TK",
+		description = "Description TK",
+		url = "https://pudding.cool",
+		keywords = "",
+		preloadFont = []
+	} = $props();
 </script>
 
 <svelte:head>
