@@ -5,13 +5,20 @@
 	import DemoSvelteComponent from "$components/demo/Demo.SvelteComponent.svelte";
 	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
 	import DemoMicroCMS from "$components/demo/Demo.MicroCMS.svelte";
+	import DemoSvelte5 from "$components/demo/Demo.Svelte5.svelte";
 	// import DemoFigure from "$components/demo/Demo.Figure.svelte";
 	// import DemoTip from "$components/demo/Demo.Tip.svelte";
 	// import DemoLayerCake from "$components/demo/Demo.LayerCake.svelte";
+	let value = $state(0);
+
+	function onRandom(v) {
+		console.log(v);
+	}
 </script>
 
 <div id="demo">
 	<h1>Demo</h1>
+	<DemoSvelte5 bind:value random={onRandom} />
 	<DemoLink />
 	<DemoImg />
 	<DemoSvelteElement />

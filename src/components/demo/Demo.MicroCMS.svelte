@@ -5,8 +5,6 @@
 
 	const { body } = copy;
 	const components = { Test };
-
-	console.log({ components, body });
 </script>
 
 <section id="cms">
