@@ -1,5 +1,4 @@
 import { browser } from "$app/environment";
-import { readable } from "svelte/store";
 import debounce from "lodash.debounce";
 
 const getWidth = () => {
@@ -19,15 +18,31 @@ const getHeight = () => {
 	return 0;
 };
 
-export default readable({ width: 0, height: 0 }, (set) => {
-	const onResize = () => set({ width: getWidth(), height: getHeight() });
+export default function createViewport() {
+	let width = $state(0);
+	let height = $state(0);
+
+	const onResize = () => {
+		width = getWidth();
+		height = getHeight();
+	};
 
 	if (browser) {
 		onResize();
 		window.addEventListener("resize", debounce(onResize, 250));
 	}
 
-	return () => {
-		if (browser) window.removeEventListener("resize", onResize);
+	// TODO how?
+	// return () => {
+	// 	if (browser) window.removeEventListener("resize", onResize);
+	// };
+
+	return {
+		get width() {
+			return width;
+		},
+		get height() {
+			return height;
+		}
 	};
-});
+}
