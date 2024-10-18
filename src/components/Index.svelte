@@ -4,8 +4,6 @@
 
 	// const copy = getContext("copy");
 	// const data = getContext("data");
-
-	let test = $state(0);
 </script>
 
 <!-- <Footer /> -->
