@@ -1,0 +1,1 @@
+const t={title:"Title TK",description:"Description tk."},e=[{section:"intro",content:[{type:"h4",value:"An h4 element with no attributes"},{type:"text",value:"Some random text here, followed by an img tag."},{type:"img",value:{src:"../assets/demo/test.jpg",alt:"A cat"}},{type:"Test",value:{label:"I’m a custom component!",value:"50"}}]}],o={meta:t,body:e};export{o as c};

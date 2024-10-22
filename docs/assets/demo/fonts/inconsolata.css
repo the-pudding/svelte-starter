@@ -1,0 +1,53 @@
+@font-face {
+	font-family: "Inconsolata";
+	src: url("https://pudding.cool/assets/fonts/inconsolata/inconsolata-v32-latin-regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("https://pudding.cool/assets/fonts/inconsolata/inconsolata-v32-latin-300.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("https://pudding.cool/assets/fonts/inconsolata/inconsolata-v32-latin-500.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("https://pudding.cool/assets/fonts/inconsolata/inconsolata-v32-latin-600.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("https://pudding.cool/assets/fonts/inconsolata/inconsolata-v32-latin-700.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inconsolata";
+	src: url("https://pudding.cool/assets/fonts/inconsolata/inconsolata-v32-latin-800.woff2") format("woff2");
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
