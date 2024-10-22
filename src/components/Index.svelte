@@ -6,4 +6,4 @@
 	// const data = getContext("data");
 </script>
 
-<!-- <FooterFancy /> -->
+<!-- <FooterFancy/> -->

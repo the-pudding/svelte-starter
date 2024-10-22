@@ -1,17 +1,18 @@
 <!-- usage
-<Footer --footer-bg="#fff" storyRecirculation={false}> 
+<Footer --footer-bg="#fff" topics={true} recent={true}> 
 -->
 <script>
 	import { onMount } from "svelte";
+	import { shuffle } from "d3";
 	import logo from "$svg/main-logo.svg";
 	import arrow from "$svg/arrow-footer.svg";
 
 	let localURL;
-	let stories = $state([]);
+	let storiesRecent = $state([]);
+	let storiesTopics = $state([]);
 	let storyCount = $state(0);
-	let dataFiltered;
 
-	let { storyRecirculation = true } = $props();
+	let { topics = true, recent = true } = $props();
 
 	const v = Date.now();
 	const url = `https://pudding.cool/assets/data/stories.json?v=${v}`;
@@ -41,40 +42,41 @@
 	onMount(async () => {
 		localURL = window.location.href;
 
-		if (storyRecirculation) {
+		if (topics || recent) {
 			const response = await fetch(url);
 			const data = await response.json();
 
-			dataFiltered = data.filter((d) => !localURL.includes(d.url));
+			const filtered = data.filter((d) => !localURL.includes(d.url));
+
 			storyCount = data.length;
-			stories = dataFiltered.slice(0, 4);
+			storiesRecent = recent ? filtered.slice(0, 4) : [];
+			storiesTopics = topics
+				? shuffle(filtered.filter((d) => d.short)).slice(0, 3)
+				: [];
 		}
 	});
 </script>
 
 <footer>
-	<div class="footer-wrapper">
-		{#if storyRecirculation}
-			<p class="stories-title">
+	<div>
+		{#if storiesTopics.length}
+			<section class="topics">
 				We’ve published <strong>{storyCount}</strong> awesome stories on topics
 				such as
-				<a href="https://pudding.cool/2021/10/judge-my-music/" target="_blank"
-					>Spotify</a
-				>,
-				<a href="https://pudding.cool/2018/04/birthday-paradox/" target="_blank"
-					>birthdays</a
-				>,
-				<a href="https://pudding.cool/2021/07/rickrolling/" target="_blank"
-					>rickrolling</a
-				>, and more.
-			</p>
+				{#each storiesTopics as { short, url }, i}
+					<a href={url} target="_blank" rel="noreferrer">{short}</a>,
+				{/each}
+				and more.
+			</section>
+		{/if}
 
-			<section class="stories">
+		{#if storiesRecent.length}
+			<section class="recent">
 				<div
 					class="stories-wrapper"
-					style="min-width: {stories.length * (300 + 20) + 30}px;"
+					style="min-width: {storiesRecent.length * (300 + 20) + 30}px;"
 				>
-					{#each stories as { date, bgColor, fgColor, tease, url, image }}
+					{#each storiesRecent as { date, bgColor, fgColor, tease, url, image }}
 						{@const href = url.startsWith("http")
 							? url
 							: `https://pudding.cool/${url}`}
@@ -102,7 +104,8 @@
 				</div>
 			</section>
 		{/if}
-
+	</div>
+	<div class="footer-wrapper">
 		<div class="section section-stickers">
 			<div class="row" style="margin-bottom:0;">
 				<div class="sticker-col">
@@ -194,6 +197,7 @@
 		width: 100%;
 		margin: 0 auto;
 	}
+
 	.row {
 		display: flex;
 		margin-bottom: 30px;
@@ -201,23 +205,19 @@
 		flex-wrap: wrap;
 	}
 
-	.stories-title {
+	section.topics {
 		font-size: 18px;
 		text-align: center;
 		max-width: 600px;
 		margin: 0 auto;
 		width: calc(100% - 50px);
-		font-family: "Atlas Typewriter";
+		font-family: var(--mono);
 		margin-bottom: 50px;
-	}
-
-	.stories-title .bold {
-		font-weight: 600;
 	}
 
 	.row-label {
 		width: 50%;
-		font-family: "Atlas Typewriter", monospace;
+		font-family: var(--mono);
 		text-transform: uppercase;
 		font-size: 12px;
 		padding-top: 5px;
@@ -332,7 +332,7 @@
 		padding-top: 50px;
 		color: var(--color-black);
 		font-family: var(--sans);
-		z-index: 100000;
+		z-index: var(--z-top);
 		position: relative;
 	}
 
@@ -342,7 +342,7 @@
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		text-rendering: optimizeLegibility;
-		font-size: 16px;
+		font-size: var(--16px);
 	}
 
 	a,
@@ -363,9 +363,9 @@
 		padding-bottom: 50px;
 	}
 
-	.stories {
+	section.recent {
 		margin: 0 auto;
-		overflow: scroll;
+		overflow-x: scroll;
 		width: 100%;
 		margin-bottom: 100px;
 	}
@@ -376,8 +376,8 @@
 	}
 
 	.story-date {
-		font-family: "Atlas Typewriter";
-		font-size: 12px;
+		font-family: var(--mono);
+		font-size: var(--12px);
 		-webkit-font-smoothing: antialiased;
 	}
 
@@ -418,7 +418,7 @@
 	.story-hed {
 		margin: 0;
 		font-family: var(--serif);
-		font-size: 14px;
+		font-size: var(--14px);
 		-webkit-font-smoothing: auto;
 		line-height: 1.3;
 	}
@@ -489,16 +489,16 @@
 		aspect-ratio: 1;
 		background-repeat: no-repeat;
 		background-size: contain;
-		z-index: -1;
+		z-index: var(--z-bottom);
 		pointer-events: none;
 	}
 
 	a.privacy {
 		margin-top: 120px;
 		color: rgba(0, 0, 0, 0.59);
-		font-size: 12px;
+		font-size: var(--12px);
 		text-transform: uppercase;
-		font-family: "Atlas Typewriter", monospace;
+		font-family: var(--mono);
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 		text-rendering: optimizeLegibility;
@@ -506,7 +506,7 @@
 
 	@media only screen and (max-width: 350px) {
 		.link a {
-			font-size: 16px;
+			font-size: var(--16px);
 			line-height: 22px;
 		}
 	}
