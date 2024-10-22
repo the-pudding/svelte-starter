@@ -1,3 +1,9 @@
+/*
+usage:
+import Viewport from "$runes/Viewport.svelte.js";
+const viewport = new Viewport();
+*/
+
 import debounce from "lodash.debounce";
 
 function getWidth() {

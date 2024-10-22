@@ -1,10 +1,6 @@
 <script>
-	import { onMount } from "svelte";
 	import inView from "$actions/inView.js";
 	import wordmark from "$svg/wordmark-shadow.svg";
-
-	let localURL;
-	let stories = [];
 
 	const v = Date.now();
 	const url = `https://pudding.cool/assets/data/stories.json?v=${v}`;
@@ -23,8 +19,10 @@
 		{ name: "rss", url: "https://pudding.cool/feed/index.xml" }
 	];
 
-	onMount(async () => {
-		localURL = window.location.href;
+	let stories = $state([]);
+
+	$effect(async () => {
+		const localURL = window.location.href;
 		const response = await fetch(url);
 		const data = await response.json();
 		stories = data.filter((d) => !localURL.includes(d.url)).slice(0, 4);
@@ -51,7 +49,7 @@
 
 	<section class="about">
 		<div class="wordmark">
-			{@html wordmark}
+			<a href="https://pudding.cool">{@html wordmark}</a>
 		</div>
 		<p>
 			<a href="https://pudding.cool" target="_self">The Pudding</a>
