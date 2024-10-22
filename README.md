@@ -109,6 +109,10 @@ Located in `src/components/helpers`.
 import Example from "$components/helpers/Example.svelte";
 ```
 
+*Available*
+* `Scrolly.svelte`: Scrollytelling.
+
+*Need to migrate*
 * `ButtonSet.svelte`: Accessible button group inputs.
 * `Chunk.svelte`: Split text into smaller dom element chunks.
 * `Countdown.svelte`: Countdown timer text.
@@ -116,14 +120,12 @@ import Example from "$components/helpers/Example.svelte";
 * `Figure.svelte`: A barebones chart figure component to handle slots.
 * `MotionToggle.svelte`: A toggle button to enable/disable front-end user motion preference.
 * `Range.svelte`: Customizable range slider.
-* `Scrolly.svelte`: Scrollytelling.
 * `ShareLink.svelte`: Button to share link natively/copy to clipboard.
 * `SortTable.svelte`: Sortable semantic table with customizable props.
 * `Slider.svelte (and Slider.Slide.svelte)`: A slider widget, especially useful for swipe/slide stories.
 * `Tap.svelte`: Edge-of-screen tapping library, designed to integrate with slider.
 * `Tip.svelte`: Button that links to Strip payment link.
 * `Toggle.svelte`: Accessible toggle inputs.
-* `WIP.svelte`: A sticky banner saying this project is a WIP.
 
 ### Headless Components
 
@@ -156,22 +158,23 @@ import example from "$actions/action.js";
 * `inView.js`: detect when an element enters or exits the viewport.
 * `resize.js`: detect when an element is resized.
 
-### Stores
+### Runes
 
-These are located in `src/stores`. You can put custom ones in `src/stores/misc.js` or create unique files for more complex ones.
+These are located in `src/runes`. You can put custom ones in `src/runes/misc.js` or create unique files for more complex ones.
 
 ```js
 // Usage
-import example from "$stores/example.js";
-import { example } from "$stores/misc.js";
+import example from "$runes/example.js";
+import { example } from "$runes/misc.js";
 ```
-
-* `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.
-* `previous`: returns the previous value of another store.
-* `reducedMotion`: returns a boolean of front-end user event to enable/disable motion preference.
-* `scrollY`: returns a number of window vertical scroll position. It is throttled using rAF for performance.
-* `timer`: returns an object `{ timer, elapsed }`. `timer` has 5 methods (start, stop, toggle, set, reset) and `elapsed` is a store that is the number of ms.
+*Available*
 * `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance.
+
+*Need to migrate*
+* `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.
+* `previous`: returns the previous value of another value.
+* `scrollY`: returns a number of window vertical scroll position. It is throttled using rAF for performance.
+* `timer`: returns an object `{ timer, elapsed }`. `timer` has 5 methods (start, stop, toggle, set, reset) and `elapsed` is a value that is the number of ms.
 
 ### Utils
 
@@ -191,7 +194,6 @@ import example from "$utils/example.js";
 * `localStorage.js`: Read and write to local storage.
 * `mapToArray.js`: Convenience function to convert a map to an array.
 * `move.js`: transform translate function shorthand.
-* `previous.js`: keep track of the previous value of a store.
 * `transformSvg.js`: Custom transition lets you apply an svg transform property with the in/out svelte transition. Parameters (with defaults):
 * `translate.js`: Convenience function for transform translate css.
 * `urlParams.js`: Get and set url parameters.
