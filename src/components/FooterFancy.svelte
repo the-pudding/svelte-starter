@@ -4,7 +4,7 @@
 <script>
 	import { onMount } from "svelte";
 	import { shuffle } from "d3";
-	import logo from "$svg/main-logo.svg";
+	import wordmark from "$svg/wordmark-line.svg";
 	import arrow from "$svg/arrow-footer.svg";
 
 	let localURL;
@@ -182,8 +182,8 @@
 		</div>
 
 		<div class="section section-last">
-			<div class="logo">
-				<a href="https://pudding.cool" target="_self">{@html logo}</a>
+			<div class="wordmark">
+				<a href="https://pudding.cool" target="_self">{@html wordmark}</a>
 			</div>
 			<p>Made with <span class="heart">{`<3`}</span>by journalist-engineers</p>
 			<a class="privacy" href="https://pudding.cool/privacy/">Privacy Policy</a>
@@ -428,13 +428,13 @@
 		line-height: 1.2;
 	}
 
-	.logo {
+	.wordmark {
 		max-width: 240px;
 		transform: rotate(-4deg);
 		margin: 0;
 	}
 
-	.logo a {
+	.wordmark a {
 		border: none;
 		text-decoration: none;
 	}
