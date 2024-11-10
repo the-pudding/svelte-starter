@@ -5,7 +5,7 @@
 			"$components/*": "./src/components/*",
 			"$data/*": "./src/data/*",
 			"$routes/*": "./src/routes/*",
-			"$stores/*": "./src/stores/*",
+			"$runes/*": "./src/runes/*",
 			"$styles/*": "./src/styles/*",
 			"$svg/*": "./src/svg/*",
 			"$utils/*": "./src/utils/*",
