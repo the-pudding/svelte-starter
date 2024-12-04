@@ -24,6 +24,7 @@
 	--color-fg: var(--color-gray-900);
 	--color-primary: var(--color-black);
 	--color-link: var(--color-black);
+	--color-link-hover: var(--color-black);
 	--color-focus: var(--color-red);
 	--color-mark: var(--color-yellow);
 	--color-selection: var(--color-gray-300);
@@ -74,4 +75,10 @@ h5 {
 
 h6 {
 	font-size: var(--20px, 20px);
+}
+
+svg {
+	display: block;
+	width: 100%;
+	height: auto;
 }
