@@ -40,25 +40,9 @@
 }
 
 /* dark theme */
-/* this is a starting place for dark mode - test before deploying */
-
 /* @media screen and (prefers-color-scheme:dark) {
 	:root {
-		--color-bg: var(--color-gray-900);
-		--color-fg: var(--color-gray-100);
-		--color-primary: var(--color-white);
-		--color-link: var(--color-white);
-		--color-focus: var(--color-red);
-		--color-mark: var(--color-yellow);
-		--color-selection: var(--color-gray-600);
-		--color-border: var(--color-gray-600);
-		--color-button-bg: var(--color-gray-600);
-		--color-button-fg: var(--color-gray-100);
-		--color-button-hover: var(--color-gray-700);
-		--color-input-bg: var(--color-gray-800);
-		--color-input-fg: var(--color-gray-100);
-		--color-placeholder: var(--color-gray-400);
-		--color-text-outline: var(--color-bg);
+		
 	}
 } */
 

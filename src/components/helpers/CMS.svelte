@@ -1,7 +1,7 @@
 <script>
 	// components: an object of components that map to section names (e.g., { "Hero": Hero }) where Hero is a Svelte component
 	// body: an array of objects that contain a {section, content} obj
-	let { components, body } = $props();
+	let { components = {}, body = [] } = $props();
 </script>
 
 {#each body as { section, content }}

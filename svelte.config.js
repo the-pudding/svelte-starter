@@ -8,8 +8,6 @@ const preprocess = sveltePreprocess({
 	}
 });
 
-// TODO switch
-
 const config = {
 	compilerOptions: {
 		runes: true

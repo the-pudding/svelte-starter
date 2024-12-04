@@ -1,5 +1,6 @@
 import { readFileSync } from "fs";
 import { sveltekit } from "@sveltejs/kit/vite";
+import { defineConfig } from "vite";
 import { timeFormat } from "d3";
 import path from "path";
 import svg from "vite-plugin-svgstring";
@@ -8,7 +9,7 @@ import dsv from "@rollup/plugin-dsv";
 const { version } = JSON.parse(readFileSync("package.json", "utf8"));
 const timestamp = timeFormat("%Y-%m-%d-%H:%M")(new Date());
 
-const config = {
+export default defineConfig({
 	define: {
 		__VERSION__: JSON.stringify(version),
 		__TIMESTAMP__: JSON.stringify(timestamp)
@@ -26,6 +27,4 @@ const config = {
 			$utils: path.resolve("./src/utils")
 		}
 	}
-};
-
-export default config;
+});
