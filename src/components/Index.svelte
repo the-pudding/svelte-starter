@@ -6,4 +6,6 @@
 	// const data = getContext("data");
 </script>
 
-<!-- <Footer recirc={true} /> -->
+<svelte:boundary onerror={(e) => console.error(e)}>
+	<Footer recirc={true} />
+</svelte:boundary>
