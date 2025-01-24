@@ -1,6 +1,6 @@
 {
 	"name": "svelte-starter",
-	"version": "6.8.0",
+	"version": "6.9.0",
 	"scripts": {
 		"gdoc": "node tasks/fetch-google.js",
 		"style": "node tasks/style-dictionary.js",
@@ -11,6 +11,7 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
+		"@lucide/svelte": "^0.474.0-rc.0",
 		"@rollup/plugin-dsv": "^3.0.5",
 		"@sveltejs/adapter-static": "^3.0.8",
 		"@sveltejs/kit": "^2.16.1",
@@ -23,11 +24,11 @@
 		"postcss": "^8.5.1",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
-		"rollup": "^4.31.0",
+		"rollup": "^4.32.0",
 		"rollup-plugin-svg": "^2.0.0",
 		"runed": "^0.23.1",
-		"style-dictionary": "^4.3.1",
-		"svelte": "5.19.1",
+		"style-dictionary": "^4.3.2",
+		"svelte": "5.19.2",
 		"svelte-preprocess": "^6.0.3",
 		"typescript": "^5.7.3",
 		"vite": "^6.0.11",
