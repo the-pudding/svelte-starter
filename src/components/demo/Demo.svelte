@@ -6,6 +6,7 @@
 	import DemoScrolly from "$components/demo/Demo.Scrolly.svelte";
 	import DemoMicroCMS from "$components/demo/Demo.MicroCMS.svelte";
 	import DemoSvelte5 from "$components/demo/Demo.Svelte5.svelte";
+	import DemoLoadData from "$components/demo/Demo.LoadData.svelte";
 	let value = $state(0);
 
 	function onRandom(v) {
@@ -21,6 +22,7 @@
 	<DemoSvelteElement />
 	<DemoSvelteComponent />
 	<DemoMicroCMS />
+	<DemoLoadData />
 	<DemoScrolly />
 </div>
 

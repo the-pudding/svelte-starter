@@ -10,9 +10,10 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 
 ### Features
 
-- [Lucide Icons](https://lucide.dev/) for simple/easy svg icons
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs and Sheets
+- [Lucide Icons](https://lucide.dev/) for simple/easy svg icons
 - [Style Dictionary](https://amzn.github.io/style-dictionary/) for CSS/JS style parity
+- [Runed](https://runed.dev/docs) for svelte5 rune utilities
 - CSV, JSON, and SVG imports
 - SSR static-hosted builds by default
 
@@ -204,7 +205,17 @@ import example from "$utils/example.js";
 For `img` tags, use relative paths:
 
 ```html
-<img src="assets/demo/test.jpg" alt="cat" />
+<img src="assets/demo/test.jpg" />
+```
+
+or use `base` if on a sub route:
+
+```html
+<script>
+	import { base } from "$app/paths";
+</script>
+
+<img src="{base}/assets/demo/test.jpg"  />
 ```
 
 For CSS background images, use absolute paths:
