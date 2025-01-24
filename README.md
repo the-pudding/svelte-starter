@@ -164,18 +164,15 @@ import example from "$actions/action.js";
 These are located in `src/runes`. You can put custom ones in `src/runes/misc.js` or create unique files for more complex ones.
 
 ```js
-// Usage
-import example from "$runes/example.js";
-import { example } from "$runes/misc.js";
+import { example } from "$runes/misc/misc.js";
 ```
-*Available*
-* `viewport`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance.
 
-*Need to migrate*
-* `mq`: returns an object of media queries booleans if they are enabled or not. You can modify them in the js file.
-* `previous`: returns the previous value of another value.
-* `scrollY`: returns a number of window vertical scroll position. It is throttled using rAF for performance.
-* `timer`: returns an object `{ timer, elapsed }`. `timer` has 5 methods (start, stop, toggle, set, reset) and `elapsed` is a value that is the number of ms.
+* `useWindowDimensions`: returns an object `{ width, height }` of the viewport dimensions. It is debounced for performance.
+* `useClipboard`: copy content to clipboard.
+* `useFetcher`: load async data from endpoints (local or external).
+* `useWindowFocus`: determine if the window is in focus or not.
+
+For more preset runes, use [runed](https://runed.dev/docs) which is preloaded. 
 
 ### Utils
 
