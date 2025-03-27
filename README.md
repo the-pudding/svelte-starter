@@ -48,6 +48,13 @@ A shortcut for github pages:
 make github
 ```
 
+To create a password-protected github build:
+
+Make sure you have a `.env` file in your root with a value of `PASSWORD=yourpassword` 
+```bash
+make protected
+```
+
 Deploying to Pudding AWS:
 ```bash
 make pudding
