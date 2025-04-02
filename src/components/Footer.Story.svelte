@@ -19,7 +19,7 @@
 			<p class="month">{month}</p>
 		</div>
 	{/if}
-	<a {href} rel="external" target="_blank" class="inner">
+	<a href="{base}/{href}" rel="external" target="_blank" class="inner">
 		<div class="screenshot">
 			<img
 				src="{imagePath}/{slug}.jpg"
