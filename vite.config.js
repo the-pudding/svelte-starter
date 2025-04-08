@@ -26,5 +26,8 @@ export default defineConfig({
 			$svg: path.resolve("./src/svg"),
 			$utils: path.resolve("./src/utils")
 		}
+	},
+	ssr: {
+		noExternal: ["bits-ui"]
 	}
 });
