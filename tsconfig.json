@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"verbatimModuleSyntax": true,
+		"moduleResolution": "bundler",
+		"module": "ESNext",
+		"target": "ESNext"
+	},
+	"include": ["src/**/*"]
+}
