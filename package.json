@@ -1,6 +1,6 @@
 {
 	"name": "svelte-starter",
-	"version": "6.11.0",
+	"version": "6.11.1",
 	"scripts": {
 		"gdoc": "node tasks/fetch-google.js",
 		"style": "node tasks/style-dictionary.js",
