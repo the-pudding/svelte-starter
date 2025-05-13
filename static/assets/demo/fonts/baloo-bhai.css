@@ -1,7 +1,16 @@
 @font-face {
 	font-family: "Baloo Bhai";
-	src: url("https://pudding.cool/assets/fonts/baloo-bhai/baloo-bhai-2-v16-latin-regular.woff2") format("woff2");
+	src: url("https://pudding.cool/assets/fonts/baloo-bhai/baloo-bhai-2-v28-latin-regular.woff2") format("woff2");
 	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Baloo Bhai";
+	src: url("https://pudding.cool/assets/fonts/baloo-bhai/baloo-bhai-2-v28-latin-700.woff2") format("woff2");
+	font-weight: 700;
 	font-style: normal;
 	font-stretch: normal;
 	font-display: swap;
