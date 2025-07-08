@@ -37,22 +37,25 @@ npm run dev
 Change the script in `package.json` to `"dev": "svelte-kit dev --host"` to test on your local network on a different device.
 
 ## Deploy
+Check out the `Makefile` for specific tasks.
+
+### Staging (on Github)
+```bash
+npm run staging
+```
+
+### Production (on AWS for pudding.cool)
+```bash
+npm run prodution
+```
+
+### Manual
 ```bash
 npm run build
 ```
-
 This generates a directory called `build` with the statically rendered app.
 
-A shortcut for github pages:
-```bash
-make github
-```
-
-Deploying to Pudding AWS:
-```bash
-make pudding
-```
-
+### Password-Protected
 To create a password-protected build:
 
 Make sure you have a `.env` file in your root with a value of `PASSWORD=yourpassword` 
@@ -60,7 +63,7 @@ Make sure you have a `.env` file in your root with a value of `PASSWORD=yourpass
 make protect
 ```
 
-Then run either deploy above.
+Then run either `make github` or `make pudding`.
 
 ## Style
 
