@@ -76,8 +76,8 @@
 					<section class="text">
 						We’ve published <strong>{storyCount}</strong> awesome stories such
 						as
-						{#each stories as { short, url }, i}
-							<a href={url} target="_blank" rel="noreferrer">{short}</a>,&nbsp;
+						{#each stories as { short, href }, i}
+							<a {href} target="_blank" rel="noreferrer">{short}</a>,&nbsp;
 						{/each}and more.
 					</section>
 				{/if}
