@@ -28,9 +28,11 @@
 			name: "Instagram",
 			url: "https://www.instagram.com/the.pudding"
 		},
-		{ name: "Twitter/X", url: "https://twitter.com/puddingviz/" },
-		{ name: "TikTok", url: "https://www.tiktok.com/@the_pudding" },
+		{ name: "Email", url: "https://pudding.cool/subscribe" },
+		{ name: "Bluesky", url: "https://bsky.app/profile/puddingviz.bsky.social" },
 		{ name: "YouTube", url: "https://www.youtube.com/@thepudding" },
+		{ name: "Twitter/X", url: "https://twitter.com/puddingviz/" },
+		{ name: "Threads", url: "https://www.threads.com/@the.pudding" },
 		{ name: "RSS", url: "https://pudding.cool/feed/index.xml" }
 	];
 
