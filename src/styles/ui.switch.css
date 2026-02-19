@@ -1,0 +1,55 @@
+.bits-switch {
+  font-family: var(--font-form);
+}
+
+.bits-switch [data-switch-root] {
+  --padding: 0.25rem;
+  --height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: calc(var(--height) * 2 + var(--padding) * 2);
+  height: calc(var(--height) + var(--padding) * 2);
+  border-radius: 9999px;
+  padding: var(--padding);
+  transition: background 0.25s ease;
+  background: oklch(from var(--color-button-bg-primary) calc(l + 0.5) c h); /* unchecked */
+}
+
+.bits-switch [data-switch-root][data-state="checked"] {
+  background: var(--color-button-bg-primary);
+}
+
+.bits-switch [data-switch-thumb] {
+  display: block;
+  width: var(--height);
+  height: var(--height);
+  border-radius: 9999px;
+  background: var(--color-button-fg-primary);
+  transition: transform 0.25s ease;
+}
+
+.bits-switch [data-switch-root][data-state="checked"] [data-switch-thumb] {
+  transform: translateX(calc(var(--height)));
+}
+
+/* label placement */
+.bits-switch[data-label-position="left"] {
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+}
+
+.bits-switch[data-label-position="right"] {
+  gap: 0.5rem;
+}
+
+.bits-switch[data-label-position="top"] {
+  flex-direction: column-reverse;
+  gap: 0.25rem;
+}
+
+.bits-switch[data-label-position="bottom"] {
+  flex-direction: column;
+  gap: 0.25rem;
+}

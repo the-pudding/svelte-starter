@@ -14,7 +14,7 @@
 <Button.Root
 	{href}
 	{disabled}
-	class={className}
+	class="bits-button {className}"
 	{...restProps}
 	data-size={size}
 	data-variant={variant}

@@ -1,8 +1,11 @@
 <script>
 	import DollarSign from "@lucide/svelte/icons/dollar-sign";
 	import Button from "$components/ui/Button.svelte";
+	import Switch from "$components/ui/Switch.svelte";
 	const variants = ["default", "secondary", "outline", "ghost", "link"];
 	const sizes = ["sm", "default", "lg", "icon"];
+
+	let switchChecked = $state(true);
 </script>
 
 <div id="ui">
@@ -31,6 +34,13 @@
 					>
 				</div>
 			{/each}
+		</div>
+	</section>
+
+	<section>
+		<h2>Switch</h2>
+		<div>
+			<Switch labelText="Toggle me" bind:checked={switchChecked} />
 		</div>
 	</section>
 </div>
