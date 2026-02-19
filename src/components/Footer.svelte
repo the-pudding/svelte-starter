@@ -170,7 +170,7 @@
 		max-width: calc(var(--width-column-wide, 1280px) - var(--margin, 16px) * 2);
 		padding: 16px;
 		margin: 32px auto 100px auto;
-		font-family: var(--sans);
+		font-family: var(--font-sans);
 	}
 
 	.top {

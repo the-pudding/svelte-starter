@@ -6,20 +6,26 @@
 /* colors defined in variables.css */
 :root {
 	/* font */
-	--sans: "Atlas Grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-	--serif: "Tiempos Text", Iowan Old Style, Times New Roman, Times, serif;
-	--mono: Menlo, Consolas, Monaco, monospace;
+	--font-sans: "Atlas Grotesk", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+	--font-serif: "Tiempos Text", Iowan Old Style, Times New Roman, Times, serif;
+	--font-mono: Menlo, Consolas, Monaco, monospace;
 
 	/* z-index */
-	--z-bottom: -100;
-	--z-middle: 0;
-	--z-top: 100;
-	--z-overlay: 1000;
+	--z-bottom: -1;
+	--z-base: 1;
+	--z-top: 10;
+	--z-overlay: 100;
+	--z-modal: 1000;
 
 	/* presets (used in reset.css) */
-	--border-radius: 2px;
-	--font-body: var(--serif);
-	--font-form: var(--sans);
+	--font-body: var(--font-serif);
+	--font-form: var(--font-sans);
+	
+	--radius-xs: 0.125rem;
+	--radius-sm: 0.25rem;
+	--radius-md: 0.5rem;
+	--radius-lg: 1rem;
+	
 	--color-bg: var(--color-white);
 	--color-fg: var(--color-gray-900);
 	--color-primary: var(--color-black);
