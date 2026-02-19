@@ -1,6 +1,6 @@
 {
 	"name": "svelte-starter",
-	"version": "6.16.0",
+	"version": "6.17.0",
 	"scripts": {
 		"gdoc": "node tasks/fetch-google.js",
 		"style": "node tasks/style-dictionary.js",
@@ -11,7 +11,7 @@
 		"format": "prettier --write --plugin-search-dir=. ."
 	},
 	"devDependencies": {
-		"@lucide/svelte": "^0.563.1",
+		"@lucide/svelte": "^0.575.0",
 		"@rollup/plugin-dsv": "^3.0.5",
 		"@sveltejs/adapter-cloudflare": "^7.2.6",
 		"@sveltejs/adapter-static": "^3.0.9",
@@ -29,7 +29,7 @@
 		"rollup-plugin-svg": "^2.0.0",
 		"runed": "^0.37.1",
 		"style-dictionary": "^5.2.0",
-		"svelte": "5.49.0",
+		"svelte": "^5.53.0",
 		"svelte-preprocess": "^6.0.3",
 		"typescript": "^5.9.2",
 		"vite": "^7.3.1",
@@ -37,7 +37,7 @@
 	},
 	"type": "module",
 	"engines": {
-		"node": ">= 18.20.4"
+		"node": ">= 22.22.0"
 	},
 	"browserslist": "> 0.5%, last 4 versions, not ie <= 11, not ie_mob <= 11"
 }
