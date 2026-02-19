@@ -62,8 +62,8 @@ input[type="reset"],
 input[type="button"] {
 	-webkit-appearance: none;
 	appearance: none;
-	background-color: var(--color-button-bg, lightgray);
-	color: var(--color-button-fg, black);
+	background-color: var(--color-button-bg-primary, lightgray);
+	color: var(--color-button-fg-primary, black);
 	border-radius: var(--radius-sm, 0);
 	border: none;
 	font-family: var(--font-form, sans-serif);
@@ -246,7 +246,7 @@ ol, ul {
 	input[type="button"]:hover,
 	input[type="submit"]:hover,
 	input[type="reset"]:hover {
-		background: var(--color-button-hover, lightgray);
+		background: oklch(from var(--color-button-bg-primary) calc(l - 0.1) c h);
 	}	
 
 	button:disabled:hover,
@@ -256,6 +256,6 @@ ol, ul {
 	input[type="reset"]:disabled:hover {
 		opacity: 0.5;
 		cursor: not-allowed;
-		background: var(--color-button-bg, lightgray);
+		background: var(--color-button-bg-primary, lightgray);
 	}
 }

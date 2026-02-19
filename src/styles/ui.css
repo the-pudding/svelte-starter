@@ -1,0 +1,94 @@
+/* BUTTON */
+[data-button-root] {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-size: inherit;
+	outline: none;
+	text-decoration: none;
+	border-radius: var(--radius-md);
+	font-family: var(--font-form);
+	transition: transform 0.25s ease, background 0.25s ease;
+}
+
+[data-button-root]:active {
+	transform: scale(0.95);
+}
+
+/* size (default, sm, lg, icon) */
+[data-button-root][data-size="default"] {
+	padding: 0.5rem 1rem;
+}
+
+[data-button-root][data-size="sm"] {
+	padding: 0.375rem 0.75rem;
+}
+
+[data-button-root][data-size="lg"] {
+	padding: 0.75rem 1.5rem;
+}
+
+[data-button-root][data-size="icon"] {
+	padding: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+}
+
+/* variant (default, outline, secondary, ghost, link, round) */
+[data-button-root][data-variant="default"] {
+	--bg: var(--color-button-bg-primary);
+	--fg: var(--color-button-fg-primary);
+	background: var(--bg);
+	color: var(--fg);
+}
+
+[data-button-root][data-variant="default"]:hover {
+	background: oklch(from var(--bg) calc(l + 0.2) c h);
+}
+
+[data-button-root][data-variant="outline"] {
+	--bg: transparent;
+	--fg: var(--color-fg);
+	--border: 1px solid var(--color-primary);
+	background: var(--bg);
+	color: var(--fg);
+	border: var(--border);
+}
+
+[data-button-root][data-variant="outline"]:hover {
+	background: oklch(from var(--bg) calc(l - 0.2) c h);
+}
+
+[data-button-root][data-variant="secondary"] {
+	--bg: var(--color-button-bg-secondary);
+	--fg: var(--color-button-fg-secondary);
+	background: var(--bg);
+	color: var(--fg);
+}
+
+[data-button-root][data-variant="secondary"]:hover {
+	background: oklch(from var(--bg) calc(l - 0.2) c h);
+}
+
+[data-button-root][data-variant="ghost"] {
+	--bg: transparent;
+	--fg: var(--color-fg);
+	background: var(--bg);
+	color: var(--fg);
+}
+
+[data-button-root][data-variant="link"] {
+	--bg: transparent;
+	--fg: var(--color-link);
+	--hover: var(--color-link-hover);
+	background: var(--bg);
+	color: var(--fg);
+	text-decoration: underline;
+}
+
+/* className */
+[data-button-root].circle {
+	border-radius: 50%;
+	padding: 0;
+}

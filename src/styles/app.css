@@ -2,6 +2,7 @@
 @import "normalize.css";
 @import "font.css";
 @import "reset.css";
+@import "ui.css"; /* optional for bits UI components */
 
 /* colors defined in variables.css */
 :root {
@@ -20,7 +21,7 @@
 	/* presets (used in reset.css) */
 	--font-body: var(--font-serif);
 	--font-form: var(--font-sans);
-	
+
 	--radius-xs: 0.125rem;
 	--radius-sm: 0.25rem;
 	--radius-md: 0.5rem;
@@ -31,13 +32,14 @@
 	--color-primary: var(--color-black);
 	--color-link: var(--color-black);
 	--color-link-hover: var(--color-black);
-	--color-focus: var(--color-red);
+	--color-focus: var(--color-gray-500);
 	--color-mark: var(--color-yellow);
 	--color-selection: var(--color-gray-300);
 	--color-border: var(--color-gray-300);
-	--color-button-bg: var(--color-gray-300);
-	--color-button-fg: var(--color-gray-900);
-	--color-button-hover: var(--color-gray-400);
+	--color-button-fg-primary: var(--color-white);
+	--color-button-bg-primary: var(--color-gray-900);
+	--color-button-fg-secondary: var(--color-white);
+	--color-button-bg-secondary: var(--color-gray-500);
 	--color-input-bg: var(--color-gray-50);
 	--color-input-fg: var(--color-gray-900);
 	--color-placeholder: var(--color-gray-500);
