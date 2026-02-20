@@ -46,7 +46,7 @@ input, textarea {
 	appearance: none;
 	background-color: var(--color-input-bg, whitesmoke);
 	color: var(--color-input-fg, black);
-	border-radius: var(--radius-sm, 0);
+	border-radius: var(--radius-md, 0);
 	border: none;
 	font-family: var(--font-form, sans-serif);
 	font-size: inherit;
@@ -64,7 +64,7 @@ input[type="button"] {
 	appearance: none;
 	background-color: var(--color-button-bg-primary, lightgray);
 	color: var(--color-button-fg-primary, black);
-	border-radius: var(--radius-sm, 0);
+	border-radius: var(--radius-md, 0);
 	border: none;
 	font-family: var(--font-form, sans-serif);
 	font-size: inherit;

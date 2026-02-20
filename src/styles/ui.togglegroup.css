@@ -1,0 +1,38 @@
+.bits-togglegroup[data-toggle-group-root] {
+	display: inline-flex;
+	border-radius: var(--radius-md);
+	border: 1px solid var(--color-border);
+	background: var(--color-bg);
+	color: var(--color-fg);
+	overflow: hidden;
+}
+
+.bits-togglegroup [data-toggle-group-item] {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-size: inherit;
+	outline: none;
+	text-decoration: none;
+	border-radius: 0;
+	border-right: 1px solid var(--color-border);
+	font-family: var(--font-form);
+	transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease;
+	background: transparent;
+	color: inherit;
+	padding: 0.5rem 0.75rem;
+}
+
+.bits-togglegroup [data-toggle-group-item]:last-child {
+	border-right: none;
+}
+
+.bits-togglegroup [data-toggle-group-item][data-state="on"] {
+	background: var(--color-selection);
+}
+
+.bits-togglegroup [data-toggle-group-item-icon] {
+	width: 1rem;
+	height: 1rem;
+}

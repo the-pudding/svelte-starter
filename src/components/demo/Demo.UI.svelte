@@ -1,8 +1,12 @@
 <script>
 	import DollarSign from "@lucide/svelte/icons/dollar-sign";
+	import TextCenter from "@lucide/svelte/icons/text-align-center";
+	import TextEnd from "@lucide/svelte/icons/text-align-end";
+	import TextStart from "@lucide/svelte/icons/text-align-start";
 	import Button from "$components/ui/Button.svelte";
 	import Switch from "$components/ui/Switch.svelte";
 	import Select from "$components/ui/Select.svelte";
+	import ToggleGroup from "$components/ui/ToggleGroup.svelte";
 	const variants = ["default", "secondary", "outline", "ghost", "link"];
 	const sizes = ["sm", "default", "lg", "icon"];
 	const selectItems = [
@@ -18,9 +22,17 @@
 		label
 	}));
 
-	let switchChecked = $state(true);
-	let singleValue = $state(undefined);
-	let multiValue = $state([]);
+	const toggleItems = [
+		{ value: "left", label: "Left" },
+		{ value: "center", label: "Center" },
+		{ value: "right", label: "Right" }
+	];
+
+	const toggleItemsIcons = [
+		{ value: "left", label: "Left", icon: TextStart },
+		{ value: "center", label: "Center", icon: TextCenter },
+		{ value: "right", label: "Right", icon: TextEnd }
+	];
 </script>
 
 <div id="ui">
@@ -61,7 +73,7 @@
 
 		<div class="switches">
 			<div>
-				<Switch labelText="Toggle me" bind:checked={switchChecked} />
+				<Switch labelText="Toggle me" />
 			</div>
 
 			<div>
@@ -77,18 +89,21 @@
 	<section class="select">
 		<h2>Select</h2>
 		<div>
-			<Select items={selectItemsFlat} bind:value={multiValue} />
-			<Select
-				items={selectItems}
-				bind:value={singleValue}
-				placeholder="Select from group"
-			/>
+			<Select items={selectItemsFlat} />
+			<Select items={selectItems} placeholder="Select from group" />
 			<Select
 				items={selectItemsFlat}
 				multiple={true}
-				bind:value={multiValue}
 				placeholder="Select multiple"
 			/>
+		</div>
+	</section>
+
+	<section>
+		<h2>Toggle Group</h2>
+		<div class="togglegroups">
+			<ToggleGroup items={toggleItems} required={true} />
+			<ToggleGroup items={toggleItemsIcons} />
 		</div>
 	</section>
 </div>
@@ -122,7 +137,8 @@
 		font-size: var(--14px);
 	}
 
-	.switches {
+	.switches,
+	.togglegroups {
 		display: flex;
 		gap: 2rem;
 		flex-wrap: wrap;
