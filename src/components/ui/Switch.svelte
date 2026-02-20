@@ -3,14 +3,15 @@
 	let {
 		id = useId(),
 		checked = $bindable(false),
+		size = "default", // "default" | "sm"
 		labelText,
-		labelPosition = "right",
+		labelPosition = "right", // "right" | "left" | "top" | "bottom"
 		class: className,
 		...restProps
 	} = $props();
 </script>
 
-<div class="bits-switch" data-label-position={labelPosition}>
+<div class="bits-switch" data-label-position={labelPosition} data-size={size}>
 	<Switch.Root {id} class={className} {...restProps} bind:checked>
 		<Switch.Thumb />
 	</Switch.Root>

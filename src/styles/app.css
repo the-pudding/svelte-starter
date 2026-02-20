@@ -29,6 +29,7 @@
 	
 	--color-bg: var(--color-white);
 	--color-fg: var(--color-gray-900);
+	--color-fg-light: var(--color-gray-500);
 	--color-primary: var(--color-black);
 	--color-link: var(--color-black);
 	--color-link-hover: var(--color-black);

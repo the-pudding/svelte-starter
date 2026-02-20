@@ -2,9 +2,9 @@
 	import { Button } from "bits-ui";
 	let {
 		children,
-		class: className,
-		variant = "default",
-		size = "default",
+		class: className, // "circle"
+		variant = "default", // "default" | "primary" | "secondary" | "ghost" | "link" | "outline"
+		size = "default", // "default" | "sm" | "lg" | "icon"
 		href = undefined,
 		disabled,
 		...restProps

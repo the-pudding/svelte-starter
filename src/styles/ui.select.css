@@ -1,0 +1,89 @@
+/* SELECT */
+[data-select-trigger] {
+	--min-width: 12rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	padding: 0.5rem;
+	background: var(--color-bg);
+	color: var(--color-fg);
+	font-family: var(--font-form);
+	font-size: inherit;
+	cursor: pointer;
+	width: var(--min-width);
+}
+
+[data-select-trigger]:hover {
+	background: var(--color-bg);
+}
+
+[data-select-trigger]:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+[data-select-value] {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+[data-select-icon] {
+	width: 1rem;
+	height: 1rem;
+	margin-left: 0.5rem;
+	opacity: 0.7;
+}
+
+[data-select-content] {
+	--min-width: 12rem;
+	z-index: var(--z-overlay);
+	background: var(--color-bg);
+	border: 1px solid var(--color-border);
+	border-radius: var(--radius-md);
+	width: var(--min-width);
+	overflow: hidden;
+	padding: 0.5rem;
+	font-family: var(--font-form);
+}
+
+[data-select-item] {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem;
+	cursor: pointer;
+	position: relative;
+	user-select: none;
+	outline: none;
+}
+
+[data-select-item][data-highlighted] {
+	background: oklch(from var(--color-bg) calc(l - 0.05) c h);
+}
+
+[data-select-item][data-selected] [data-select-item-indicator] {
+	display: inline-flex;
+}
+
+[data-select-item-indicator] {
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+
+[data-select-item-indicator] {
+	width: 1rem;
+	height: 1rem;
+}
+
+[data-select-group-label] {
+	padding: 0.5rem;
+	font-size: 0.75em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--color-fg-light);
+}
