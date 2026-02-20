@@ -37,8 +37,6 @@
 		const selected = items.find((i) => i.value === value);
 		return selected ? selected.label : placeholder;
 	});
-
-	$inspect(value);
 </script>
 
 <Select.Root

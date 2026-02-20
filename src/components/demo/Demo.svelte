@@ -16,7 +16,6 @@
 
 <div id="demo">
 	<h1>Demo</h1>
-	<DemoSvelte5 bind:value random={onRandom} />
 	<DemoLink />
 	<DemoImg />
 	<DemoSvelteElement />
@@ -24,6 +23,7 @@
 	<DemoMicroCMS />
 	<DemoLoadData />
 	<DemoScrolly />
+	<DemoSvelte5 bind:value random={onRandom} />
 </div>
 
 <style>
