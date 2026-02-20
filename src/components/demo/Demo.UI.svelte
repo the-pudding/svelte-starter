@@ -7,6 +7,7 @@
 	import Switch from "$components/ui/Switch.svelte";
 	import Select from "$components/ui/Select.svelte";
 	import ToggleGroup from "$components/ui/ToggleGroup.svelte";
+	import Slider from "$components/ui/Slider.svelte";
 	const variants = ["default", "secondary", "outline", "ghost", "link"];
 	const sizes = ["sm", "default", "lg", "icon"];
 	const selectItems = [
@@ -104,6 +105,13 @@
 		<div class="togglegroups">
 			<ToggleGroup items={toggleItems} required={true} />
 			<ToggleGroup items={toggleItemsIcons} />
+		</div>
+	</section>
+
+	<section>
+		<h2>Slider</h2>
+		<div>
+			<Slider min={0} max={100} step={1} value={50} />
 		</div>
 	</section>
 </div>

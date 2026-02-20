@@ -1,0 +1,41 @@
+.bits-slider[data-slider-root] {
+	--slider-size: 0.5rem;
+	--slider-thumb-size: 2rem;
+	--slider-thumb-color: var(--color-button-bg-primary);
+	--slider-thumb-border: var(--color-bg);
+	--slider-track-color: var(--color-selection);
+	--slider-track-active-color: var(--color-fg-light);
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.bits-slider [data-slider-range-bg] {
+	display: block;
+	background: var(--slider-track-color);
+	height: var(--slider-size);
+	width: 100%;
+	border-radius: var(--radius-sm);
+}
+
+.bits-slider [data-slider-range] {
+	display: block;
+	height: 100%;
+	background: var(--slider-track-active-color);
+}
+
+.bits-slider [data-slider-thumb] {
+	display: block;
+	width: var(--slider-thumb-size);
+	height: var(--slider-thumb-size);
+	background: var(--slider-thumb-color);
+	border-radius: 50%;
+	border: 2px solid var(--slider-thumb-border);
+	transition: background 0.25s ease;
+}
+
+.bits-slider [data-slider-thumb]:active {
+	outline: var(--color-focus);
+}
