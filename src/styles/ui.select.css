@@ -61,7 +61,7 @@
 }
 
 [data-select-item][data-highlighted] {
-	background: oklch(from var(--color-bg) calc(l - 0.05) c h);
+	background: var(--color-selection);
 }
 
 [data-select-item][data-selected] [data-select-item-indicator] {

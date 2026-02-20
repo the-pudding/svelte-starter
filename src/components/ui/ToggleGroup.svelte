@@ -12,7 +12,11 @@
 		...restProps
 	} = $props();
 
-	let internalValue = $state(value);
+	let internalValue = $state(
+		required
+			? value || (type === "single" ? items[0]?.value : [items[0]?.value])
+			: undefined
+	);
 
 	// somewhat hacky way to reset the value if required is true and the user tries to deselect the current value
 	async function onValueChange(newValue) {
