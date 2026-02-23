@@ -40,4 +40,10 @@
 	{#each preloadFont as href}
 		<link rel="preload" {href} as="font" type="font/woff2" crossorigin />
 	{/each}
+
+	<script
+		data-goatcounter="https://thepudding.goatcounter.com/count"
+		async
+		src="//gc.zgo.at/count.js"
+	></script>
 </svelte:head>
