@@ -20,7 +20,7 @@ const fetchGoogle = async ({ id, gid }) => {
 		if (gid) return text;
 
 		const parsed = archieml.load(text);
-		const str = JSON.stringify(parsed);
+		const str = JSON.stringify(parsed, null, 2);
 		return str;
 	} catch (err) {
 		throw new Error(err);
