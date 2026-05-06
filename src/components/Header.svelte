@@ -1,6 +1,6 @@
 <script>
 	// shadow, plain, line, bubble
-	import wordmark from "$svg/wordmark_script_stacked_plain.svg";
+	import wordmark from "$svg/wordmark-script-stacked-plain.svg";
 </script>
 
 <header>
