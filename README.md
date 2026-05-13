@@ -4,6 +4,7 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 
 ### Notes
 * _Do not use or reproduce The Pudding logos or fonts without written permission._
+* _Please remove the [goatcounter analytics line](https://github.com/the-pudding/svelte-starter/blob/main/src/app.html#L9) ._
 * _Prettier Formatting: Disable any text editor Prettier extensions to take advantage of the built-in rules._
 
 ### Features
