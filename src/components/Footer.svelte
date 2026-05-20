@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from "svelte";
 	import { shuffle } from "d3";
-	import wordmark from "$svg/wordmark_script_stacked_sticker.svg";
+	import wordmark from "$svg/wordmark-script-stacked-sticker.svg";
 	import linkOutArrow from "$svg/arrow-up-right.svg";
 	import Story from "$components/Footer.Story.svelte";
 
