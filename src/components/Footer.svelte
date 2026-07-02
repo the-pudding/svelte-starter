@@ -29,7 +29,7 @@
 			url: "https://www.instagram.com/the.pudding"
 		},
 		{ name: "Email", url: "https://pudding.cool/subscribe" },
-		{ name: "Bluesky", url: "https://bsky.app/profile/puddingviz.bsky.social" },
+		{ name: "Bluesky", url: "https://bsky.app/profile/pudding.cool" },
 		{ name: "YouTube", url: "https://www.youtube.com/@thepudding" },
 		{ name: "Twitter/X", url: "https://twitter.com/puddingviz/" },
 		{ name: "Threads", url: "https://www.threads.com/@the.pudding" },
