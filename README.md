@@ -11,7 +11,7 @@ This [starter template](https://github.com/the-pudding/svelte-starter) aims to q
 
 - [ArchieML](http://archieml.org/) for micro-CMS powered by Google Docs and Sheets
 - [Lucide Icons](https://lucide.dev/) for simple/easy svg icons
-- [Style Dictionary](https://amzn.github.io/style-dictionary/) for CSS/JS style parity
+- [Style Dictionary](https://github.com/style-dictionary/style-dictionary) for CSS/JS style parity
 - [Runed](https://runed.dev/docs) for svelte5 rune utilities
 - CSV, JSON, and SVG imports
 - SSR static-hosted builds by default
