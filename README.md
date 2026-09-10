@@ -68,7 +68,7 @@ Then run either `make github` or `make pudding`.
 
 There are a few stylesheets included by default in `src/styles`. Refer to them in `app.css`, the place for applying global styles.
 
-For variable parity in both CSS and JS, modify files in the `properties` folder using the [Style Dictionary](https://amzn.github.io/style-dictionary/) API.
+For variable parity in both CSS and JS, modify files in the `properties` folder using the [Style Dictionary](https://github.com/style-dictionary/style-dictionary) API.
 
 Run `npm run style` to regenerate the style dictionary.
 
