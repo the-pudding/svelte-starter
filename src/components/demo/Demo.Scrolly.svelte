@@ -4,13 +4,18 @@
 </script>
 
 <section id="scrolly">
-	<h2>Scrolly <span>{value || "-"}</span></h2>
+	<!-- Adding `aria-hidden="true"` to the background section will hide all children content from screen readers -->
+	<div class="background" aria-hidden="true">
+		<h2>Scrolly <span>{value || "-"}</span></h2>
+	</div>
 	<div class="spacer"></div>
 	<Scrolly bind:value>
 		{#each [0, 1, 2, 3, 4] as text, i}
 			{@const active = value === i}
 			<div class="step" class:active>
 				<p>{text}</p>
+				<!-- Use screen reader only elements to describe the graphic in each step -->
+				<p class="sr-only">Describe the graphic in step {text}</p>
 			</div>
 		{/each}
 	</Scrolly>
@@ -18,7 +23,7 @@
 </section>
 
 <style>
-	h2 {
+	.background {
 		position: sticky;
 		top: 4em;
 	}
