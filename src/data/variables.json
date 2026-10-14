@@ -48,5 +48,16 @@
     "96px": "6rem",
     "112px": "7rem",
     "128px": "8rem"
+  },
+  "block": {
+    "narrow": "45ch",
+    "content": "60ch",
+    "wide": "800px",
+    "wider": "1000px",
+    "widest": "1440px",
+    "full": "100%"
+  },
+  "container": {
+    "padding": "clamp(1rem, 6vw, 4.5rem)"
   }
 }

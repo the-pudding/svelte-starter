@@ -1,0 +1,27 @@
+{
+	"block": {
+		"narrow": {
+			"value": "45ch"
+		},
+		"content": {
+			"value": "60ch"
+		},
+		"wide": {
+			"value": "800px"
+		},
+		"wider": {
+			"value": "1000px"
+		},
+		"widest": {
+			"value": "1440px"
+		},
+		"full": {
+			"value": "100%"
+		}
+	},
+	"container": {
+		"padding": {
+			"value": "clamp(1rem, 6vw, 4.5rem)"
+		}
+	}
+}

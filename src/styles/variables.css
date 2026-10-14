@@ -47,4 +47,11 @@
   --96px: 6rem;
   --112px: 7rem;
   --128px: 8rem;
+  --block-narrow: 45ch;
+  --block-content: 60ch;
+  --block-wide: 800px;
+  --block-wider: 1000px;
+  --block-widest: 1440px;
+  --block-full: 100%;
+  --container-padding: clamp(1rem, 6vw, 4.5rem);
 }
