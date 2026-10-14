@@ -8,6 +8,7 @@
 	import DemoMicroCMS from "$components/demo/Demo.MicroCMS.svelte";
 	import DemoSvelte5 from "$components/demo/Demo.Svelte5.svelte";
 	import DemoLoadData from "$components/demo/Demo.LoadData.svelte";
+	import DemoBlocks from "$components/demo/Demo.Blocks.svelte";
 	let value = $state(0);
 
 	function onRandom(v) {
@@ -23,6 +24,7 @@
 	<DemoSvelteComponent />
 	<DemoMicroCMS />
 	<DemoLoadData />
+	<DemoBlocks />
 	<DemoScrolly />
 	<DemoScrollySwitch />
 	<DemoSvelte5 bind:value random={onRandom} />
